@@ -1,8 +1,16 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/EnderStorage.cfg"
+hash = "bceb6f296f06908bac3f0cae25febb277e204cba4235fc158b5a6cf0f13e404c"
+
+[[files]]
+file = "config/defaultoptions/keybindings.txt"
+hash = "cd4fc121e2413810c38208cb4f56f68dfb721e72860af933d91a2d338566fdae"
+
+[[files]]
 file = "config/defaultoptions/options.txt"
-hash = "ba5bdfb1caba9e7b424e46d4fb17759e10952d724211e4e6ac81271a0fe1de7f"
+hash = "e21ab08c3cfa8e3e40b41026fabf317c48bc6101652996360f82808680f8a186"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
@@ -117,12 +125,32 @@ file = "config/gtceu.yaml"
 hash = "5c595b82e6c7a3170a0bd9b7c39ea4172d772d0802785c7dfc823e1b6ee5f04e"
 
 [[files]]
+file = "config/itemcollectors-common.toml"
+hash = "f68e602c7292d564a95e4f8e6d3373dfb590150b8946fcf6b578d2b03e1e6eb4"
+
+[[files]]
 file = "config/jei/jei-client.ini"
-hash = "080fd3f4e17c5f264f656e1617075627cf60be4ba37c639c52c3ff3e2bc9ae34"
+hash = "f823e9a4e0b53c8243fb0386e706a3665b74f1803fb40845ca1643aefd76a39b"
+
+[[files]]
+file = "config/nerb.yaml"
+hash = "297c899fead9c3e358d9fc45edcc241f4ffbc25b71a8c1c2c84609d8110b8eca"
 
 [[files]]
 file = "config/quark-common.toml"
 hash = "19c727bc7043ff3db487e6e15099919cf5482d079735a19094802f57770e5954"
+
+[[files]]
+file = "config/sidebar_buttons.json"
+hash = "bb68140eb59e24dc3461b3cc1d187808d21a906efc580f5d343d995f5e117201"
+
+[[files]]
+file = "config/sophisticatedbackpacks-common.toml"
+hash = "67c90bbdfca3c7488d9496df0af4d1be7483634a0c4d179281d1c7c91ef32e7b"
+
+[[files]]
+file = "config/supplementaries-client.toml"
+hash = "f5f04d0792bac2e09027b4b54af90776877a25de61b65910beffe582e9c1ff3a"
 
 [[files]]
 file = "defaultconfigs/ftbchunks/client-config.snbt"
@@ -145,6 +173,10 @@ file = "defaultconfigs/ftbquests/client-config.snbt"
 hash = "4ce84f0da35036f810959086ea1043062993bf34ae704fc9cd4f1a67810090a6"
 
 [[files]]
+file = "icon.png"
+hash = "767787e282b97ca09f91ce04ce49eab39be03b7232d3867c1375c404e3e2924d"
+
+[[files]]
 file = "kubejs/README.txt"
 hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
 
@@ -155,6 +187,10 @@ hash = "783d78bd1ee61d3b32273670dff9d82c34cd74c5ae899a10f104f473828d5bbc"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/example_item.png"
 hash = "45a5f56eba6066ad05c70988a32b72c50cfeb6e35857739bd582007011ea002b"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/intake_slip.png"
+hash = "330fa6ad6300f10d4d213f0f29537feb056bfaeb6adb44fbd7c26e651ddc5546"
 
 [[files]]
 file = "kubejs/client_scripts/example.js"
@@ -169,8 +205,28 @@ file = "kubejs/config/common.properties"
 hash = "9ad7883a77ab47efbb73dcd5e5ead9f0abada8c75d85c8c4ae632af31376d4e3"
 
 [[files]]
+file = "kubejs/config/packicon.png"
+hash = "767787e282b97ca09f91ce04ce49eab39be03b7232d3867c1375c404e3e2924d"
+
+[[files]]
+file = "kubejs/server_scripts/example.js"
+hash = "a19b7c81a150bd965b153ded9c45ee7649eaad9e10d0a5ec1d662e7b15ceadb2"
+
+[[files]]
+file = "kubejs/server_scripts/story_intro.js"
+hash = "460b3bb562d3a2853c02a169fed7959f16461914568b2e9f40b5f76f9ac26dee"
+
+[[files]]
 file = "kubejs/startup_scripts/example.js"
 hash = "395c96d3ddd178821db851f387e91560e606ea752177f66d2016f12bd0542b8f"
+
+[[files]]
+file = "kubejs/startup_scripts/gtt0.js"
+hash = "3b5822aeed9e886b4d0806433ade5f4f76a6b5a81aabba4009e4defb41ab907b"
+
+[[files]]
+file = "kubejs/startup_scripts/gtt0items.js"
+hash = "2a0cda0f615d9bb9668db1f13ca96cf3358001b3f6a8017ba00082365cdac426"
 
 [[files]]
 file = "mods/advanced-peripherals.pw.toml"
@@ -895,6 +951,11 @@ metafile = true
 [[files]]
 file = "mods/polylib.pw.toml"
 hash = "947d5f3b9213360b68e9b65a8d2d5111939e82e248cf61eb02137f119c6eaeb6"
+metafile = true
+
+[[files]]
+file = "mods/probejs.pw.toml"
+hash = "25f4863fba654a2b603a90f52ce5f0e17871c4249fd5c7bef3d40a6c8d9e36de"
 metafile = true
 
 [[files]]
