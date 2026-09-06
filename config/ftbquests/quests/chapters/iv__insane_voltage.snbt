@@ -196,7 +196,6 @@
 				{
 					id: "7C5D37940A0C8409"
 					item: "gtceu:polybenzimidazole_ingot"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -281,7 +280,6 @@
 				{
 					id: "5E8D6AA09A113AE0"
 					item: "gtceu:large_assembler"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -312,7 +310,6 @@
 				{
 					id: "4C89839747EDFFF5"
 					item: "gtceu:tungstensteel_large_boiler"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -587,7 +584,6 @@
 				{
 					id: "529358AADE55D801"
 					item: "gtceu:iv_lapotronic_battery"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -634,7 +630,6 @@
 				{
 					id: "71D5FE3076C1F56C"
 					item: "gtceu:nether_star_dust"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1005,7 +1000,6 @@
 				{
 					id: "749F36AC9B4B92B1"
 					item: "gtceu:large_cutter"
-					optional_task: true
 					type: "item"
 				}
 			]

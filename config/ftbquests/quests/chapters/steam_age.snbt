@@ -663,7 +663,6 @@
 				{
 					id: "04946F2F0923EFFE"
 					item: "gtceu:rubber_ingot"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1233,7 +1232,6 @@
 							value: "forge:plates/wood"
 						}
 					}
-					optional_task: true
 					title: "Wood Plates"
 					type: "item"
 				}
@@ -1614,7 +1612,6 @@
 				{
 					id: "2586D1FC6BC5E53C"
 					item: "gtceu:charcoal_pile_igniter"
-					optional_task: true
 					type: "item"
 				}
 				{

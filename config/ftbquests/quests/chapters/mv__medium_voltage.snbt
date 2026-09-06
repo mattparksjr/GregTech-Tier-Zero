@@ -152,7 +152,6 @@
 				{
 					id: "1CB0F32E8293B5D7"
 					item: "gtceu:lubricant_bucket"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -233,7 +232,6 @@
 				{
 					id: "01BF2D557A9EF2B0"
 					item: "gtceu:sulfuric_naphtha_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -985,7 +983,6 @@
 				{
 					id: "2EACE2CF99B4B3D3"
 					item: "gtceu:ram_wafer"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1870,7 +1867,6 @@
 							value: "forge:ores/oilsands"
 						}
 					}
-					optional_task: true
 					title: "Oilsands Ore"
 					type: "item"
 				}
@@ -2036,7 +2032,6 @@
 				{
 					id: "6E4D818CE088D7D4"
 					item: "gtceu:sulfuric_light_fuel_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -2152,13 +2147,11 @@
 				{
 					id: "295D2CE93D4CE067"
 					item: "gtceu:ruby_lens"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "675EBF60F3465538"
 					item: "gtceu:ilc_wafer"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -2186,13 +2179,11 @@
 				{
 					id: "6D4D63F75646DB1C"
 					item: "gtceu:sapphire_lens"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "6705F883970BDD89"
 					item: "gtceu:ulpic_wafer"
-					optional_task: true
 					type: "item"
 				}
 				{

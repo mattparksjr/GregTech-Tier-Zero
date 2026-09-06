@@ -44,7 +44,6 @@
 				{
 					id: "10AC8DC9332D084C"
 					item: "gtceu:zero_point_module"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -148,7 +147,6 @@
 				{
 					id: "4598D1D78A71E514"
 					item: "gtceu:enriched_naquadah_sulfate_dust"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -296,7 +294,6 @@
 				{
 					id: "4A49FE8B35B48D97"
 					item: "gtceu:naquadria_sulfate_dust"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -363,7 +360,6 @@
 				{
 					id: "705422BF26C76199"
 					item: "gtceu:zpm_lapotronic_battery"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -399,7 +395,6 @@
 				{
 					id: "2C60B79F78094E6A"
 					item: "gtceu:zpm_energy_output_hatch"
-					optional_task: true
 					type: "item"
 				}
 			]

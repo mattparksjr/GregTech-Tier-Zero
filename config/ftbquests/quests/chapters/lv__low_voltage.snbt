@@ -536,7 +536,6 @@
 				{
 					id: "560D4D0D6BECE006"
 					item: "gtceu:bronze_large_boiler"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1284,7 +1283,6 @@
 					count: 6L
 					id: "3B6DC3146DB686BF"
 					item: "gtceu:sapphire_dust"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -2308,7 +2306,6 @@
 							MaxCharge: 2147483647L
 						}
 					}
-					optional_task: true
 					type: "item"
 				}
 				{

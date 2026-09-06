@@ -8,7 +8,9 @@
 		id: "gtceu:iron_wrench"
 		tag: {
 			Damage: 0
-			GT.Tool: { }
+			GT.Tool: {
+				DefaultEnchantments: [ ]
+			}
 		}
 	}
 	id: "2F8B0AFE317363C9"
@@ -1635,6 +1637,6 @@
 			y: -2.25d
 		}
 	]
-	subtitle: ["Welcome to &6GTCP&r! Glad to have you here."]
+	subtitle: ["Welcome to &6GTT0&r!"]
 	title: "Introduction"
 }

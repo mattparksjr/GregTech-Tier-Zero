@@ -2,7 +2,7 @@
 	default_autoclaim_rewards: "disabled"
 	default_consume_items: false
 	default_quest_disable_jei: false
-	default_quest_shape: "square"
+	default_quest_shape: "rsquare"
 	default_reward_team: false
 	detection_delay: 20
 	disable_gui: false
@@ -10,17 +10,17 @@
 	drop_loot_crates: false
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
-	hide_excluded_quests: false
-	icon: "kubejs:greg_icon"
+	hide_excluded_quests: true
+	icon: "gtceu:tritanium_gear"
 	lock_message: "eSFSDF"
 	loot_crate_no_drop: {
 		boss: 0
 		monster: 600
 		passive: 4000
 	}
-	pause_game: false
+	pause_game: true
 	progression_mode: "default"
 	show_lock_icons: true
-	title: "GregTech Community Pack"
+	title: "GregTech: Tier Zero"
 	version: 13
 }

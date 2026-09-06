@@ -147,7 +147,6 @@
 				{
 					id: "3872B1D118426B33"
 					item: "gtceu:steel_large_boiler"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -325,7 +324,6 @@
 							value: "forge:lenses"
 						}
 					}
-					optional_task: true
 					title: "Any #forge:lenses"
 					type: "item"
 				}
@@ -404,13 +402,11 @@
 				{
 					id: "19C5FBCD216DCE26"
 					item: "gtceu:lpic_chip"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "3CB30E3B0B6353C2"
 					item: "gtceu:sodium_potassium_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -480,7 +476,6 @@
 					count: 15L
 					id: "7046AD026C55153C"
 					item: "gtceu:bauxite_dust"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -818,7 +813,6 @@
 							]
 						}
 					}
-					optional_task: true
 					title: "Plascrete or Cleanroom Glass"
 					type: "item"
 				}
@@ -902,13 +896,11 @@
 				{
 					id: "24886FDFB1DE74E0"
 					item: "gtceu:hydrofluoric_acid_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "690DEB428063A459"
 					item: "gtceu:chloroform_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1053,7 +1045,6 @@
 				{
 					id: "1CB85F57BA45252D"
 					item: "gtceu:gelled_toluene"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1141,7 +1132,6 @@
 				{
 					id: "3DC62CA60F006A06"
 					item: "gtceu:ender_pearl_dust"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1183,7 +1173,6 @@
 				{
 					id: "2CD60F6FFD4C1DFF"
 					item: "gtceu:hv_laser_engraver"
-					optional_task: true
 					type: "item"
 				}
 			]

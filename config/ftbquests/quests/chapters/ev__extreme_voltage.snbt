@@ -188,7 +188,6 @@
 				{
 					id: "1225B9C57910A98A"
 					item: "gtceu:brown_glass_lens"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -226,7 +225,6 @@
 				{
 					id: "38A33D0B4E9CD811"
 					item: "gtceu:ev_energy_output_hatch"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -294,7 +292,6 @@
 				{
 					id: "422782D7BAC8024B"
 					item: "gtceu:platinum_dust"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -376,7 +373,6 @@
 				{
 					id: "486FD2A6FCEFDFEF"
 					item: "gtceu:ev_lapotronic_battery"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -478,7 +474,6 @@
 				{
 					id: "4BEA3166CD486845"
 					item: "gtceu:tungsten_steel_dust"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -661,7 +656,6 @@
 				{
 					id: "7D2406F7A603AAAE"
 					item: "gtceu:titanium_large_boiler"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -828,13 +822,11 @@
 					count: 16L
 					id: "1276318CB2F198F7"
 					item: "gtceu:carbon_fibers"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "47E901701A935F9D"
 					item: "gtceu:nano_cpu_wafer"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1153,14 +1145,12 @@
 							value: "forge:dusts/uraninite"
 						}
 					}
-					optional_task: true
 					title: "Uraninite Dust"
 					type: "item"
 				}
 				{
 					id: "19027B3E2E43BAFF"
 					item: "gtceu:uranium_hexafluoride_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1367,7 +1357,6 @@
 							value: "forge:ingots/silicone_rubber"
 						}
 					}
-					optional_task: true
 					title: "Silicone Rubber Ingot"
 					type: "item"
 				}
