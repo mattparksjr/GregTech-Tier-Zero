@@ -1,0 +1,13 @@
+name = "GregTech Modern Utilities"
+filename = "gtmutils-2.10.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "13dc786b616ef44ba61c8e4d23d8090ff9164ca3"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8728484
+project-id = 1235020

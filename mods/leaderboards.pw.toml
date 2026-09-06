@@ -1,0 +1,13 @@
+name = "Leaderboards"
+filename = "leaderboards-1.20.1-Forge-2.0.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b6aa3bf11e4f547d7f6b3c8394484e34fe406afb"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8201372
+project-id = 1367888
