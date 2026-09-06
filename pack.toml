@@ -1,4 +1,4 @@
-name = "GregTech: Tier Zero"
+name = "GregTech Tier Zero"
 author = "Iterable"
 version = "0.1.0"
 pack-format = "packwiz:1.1.0"
@@ -6,7 +6,7 @@ pack-format = "packwiz:1.1.0"
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "04e7e800db24ed42af660e5f249a7e4023fbfc45afcc1330a799c2b6b75192db"
+hash = "104a5717af8f47f6ea168730352342ccee1de31871e420efb5358f195240ced8"
 
 [versions]
 forge = "47.4.0"
