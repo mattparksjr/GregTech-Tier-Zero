@@ -8,7 +8,7 @@ PlayerEvents.loggedIn(event => {
 })
 
 ItemEvents.rightClicked(event => {
-  const { item, player, server } = event
+  const { item, player } = event
 
   if (item.id !== 'kubejs:intake_slip') return
 

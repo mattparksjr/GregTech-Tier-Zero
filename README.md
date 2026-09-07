@@ -9,5 +9,5 @@ Modpack is not public yet. You will need to build from source
 Please refer to their tutorials page for more info.
 
 # Credits
-[GregTech Modern Community Pack](https://github.com/GregTechCEu/GregTech-Modern-Community-Pack), for a well put together base modlist and questline
-Iterable, for creating the pack
+[GregTech Modern Community Pack](https://github.com/GregTechCEu/GregTech-Modern-Community-Pack), for a well put together base modlist and questline    
+[Iterable](https://github.com/mattparksjr), for creating the pack

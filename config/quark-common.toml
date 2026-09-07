@@ -733,21 +733,21 @@
 		#Can any wool color be dyed?
 		"Dye Any Wool" = true
 		#Can other stone-like materials be used for crafting stone tools?
-		"Better Stone Tool Crafting" = true
+		"Better Stone Tool Crafting" = false
 		#Can a dispenser be crafted by adding a bow to a dropper?
-		"Enable Dispenser" = true
+		"Enable Dispenser" = false
 		#Can a repeater be crafted with the pattern for a redstone torch?
-		"Enable Repeater" = true
+		"Enable Repeater" = false
 		#Can you craft a minecart around blocks which can be placed inside?
-		"Enable Minecarts" = true
+		"Enable Minecarts" = false
 		#Can you craft a boat around a chest to directly make a chest boat?
-		"Enable Chest Boats" = true
+		"Enable Chest Boats" = false
 		#Can you craft four chests at once using logs?
-		"Logs To Chests" = true
+		"Logs To Chests" = false
 		#Can Coral be crafted into dye?
-		"Coral To Dye" = true
+		"Coral To Dye" = false
 		#Can cookies, paper, and bread be crafted in a 2x2 crafting table?
-		"Bent Recipes" = true
+		"Bent Recipes" = false
 		#Can Rotten Flesh and Poisonous Potatoes be composted?
 		"Compostable Toxins" = true
 		#Does Dragon Breath return a bottle when used as a reagent or material?
@@ -755,15 +755,15 @@
 		#Can torches can be used as fuel in furnaces?
 		"Torches Burn" = true
 		#Can bones be smelted down to bone meal?
-		"Bone Meal Utility" = true
+		"Bone Meal Utility" = false
 		#Can Charcoal be crafted into Black Dye?
-		"Charcoal To Black Dye" = true
+		"Charcoal To Black Dye" = false
 		#Can two Logs be used instead of a Chest to make a Hopper?
-		"Easy Hopper" = true
+		"Easy Hopper" = false
 		#Can two Logs be used to craft 16 sticks?
-		"Easy Sticks" = true
+		"Easy Sticks" = false
 		#Can raw ore blocks be smelted, taking 9x the time a normal item?
-		"Smelt Raw Ore Blocks" = true
+		"Smelt Raw Ore Blocks" = false
 
 [world]
 	"Ancient Wood" = true

@@ -24,6 +24,9 @@ ServerEvents.recipes(event => {
 
 function remove(event) {
   event.remove({ id: 'minecraft:crafting_table' })
+  event.remove({ output: 'rechiseled:chisel'})
+
+  event.remove({ mod: 'elevatorid' })
 }
 
 function add(event) {
@@ -34,6 +37,16 @@ function add(event) {
   ], {
     P: 'minecraft:planks',
     F: 'minecraft:flint'
+  })
+
+  event.shaped('rechiseled:chisel', [
+    'FP',
+    'SH',
+  ], {
+    H: '#gtceu:tools/crafting_hammers',
+    F: '#gtceu:tools/crafting_files',
+    P: '#forge:plates/iron',
+    S: 'minecraft:stick'
   })
 
 }
