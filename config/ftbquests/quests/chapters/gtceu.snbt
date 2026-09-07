@@ -1,68 +1,178 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: "square"
+	default_quest_shape: "rsquare"
+	default_quest_size: 0.75d
 	filename: "gtceu"
 	group: ""
-	icon: {
-		Count: 1
-		id: "gtceu:iron_wrench"
-		tag: {
-			Damage: 0
-			GT.Tool: {
-				DefaultEnchantments: [ ]
-			}
-		}
-	}
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
+	icon: "supplementaries:netherite_door"
 	id: "2F8B0AFE317363C9"
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			description: [
-				"This modpack is intended as a guide on &b&lGregtech: Community Edition Unofficial Modern&r&r (also known as &aGTCEu Modern&r or &aCEu Modern&r), a continuation of &aGTCE&r - which is in itself a fork of Gregtech."
+				"&l&8[&6PROJECT-MANAGER&8]"
 				""
-				"New content has been added to every tier, even going up to &3Ultimate Voltage,&r and there is also a non-negligible amount of new &dQuality of Life&r."
+				"&6Welcome,&r Inmate."
 				""
-				"&aCEu Modern&r brings the mod up to date with &erecent versions&r of Minecraft &o(as of writing this)&r. You can open the questbook with the default keybind &6F4&r, but feel free to change it if it isn't to your tastes."
-				"{@pagebreak}"
-				"This is a &2pure &lTech&r&2 modpack&r, focused on GregTech and its progression. You'll find &6no better place&r to learn about this mod and all the features it adds!"
+				"You have been sent to this planet as &cpunishment&r for your &4crimes.&r You are lucky though, it seems by sharing the names of your &cco-conspirators&r you have been assigned a planet with a rich history of life and &4death.&r It could always be much worse..."
 				""
-				"The questbook you're reading is &ebrimming with information&r to guide you through the modpack, so check it out if you find yourself getting lost.  We wrote it with both &dold-school veterans&r and &bnewcomers&r in mind."
+				"Your only hope to return to your &6home&r is to complete &l&6THE PROJECT&r. Think of it as your way of paying humanity for the &ccrimes&r you commited. Oh, you don't remember what you did? Well... you'll remember with time I suppose."
+				""
+				"Check this button to offically begin your sentence."
 			]
-			icon: "kubejs:greg_icon"
+			icon: "chipped:victorian_iron_bars_pikes"
 			id: "25289F9E8AE01C29"
-			rewards: [{
-				auto: "invisible"
-				icon: "minecraft:cooked_beef"
-				id: "6FD85EC9BD99C866"
-				item: "gtceu:sus_record"
-				title: "Steak"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "0CB1F2A9813F6B05"
+					item: {
+						Count: 1
+						id: "minecraft:leather_helmet"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "unbreaking"
+								lvl: 1
+							}]
+							HideFlags: 128
+							Trim: {
+								material: "netherite"
+								pattern: "vex"
+							}
+							display: {
+								Lore: ["[{\"text\":\"Standard Prison Uniform\",\"italic\":false,\"color\":\"#948484\"}]"]
+								Name: "[{\"text\":\"Prison Suit\",\"italic\":false,\"underlined\":true,\"color\":\"#ff0000\"}]"
+								color: 16351261
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "32695898AEE71B72"
+					item: {
+						Count: 1
+						id: "minecraft:leather_chestplate"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "unbreaking"
+								lvl: 1
+							}]
+							HideFlags: 128
+							Trim: {
+								material: "netherite"
+								pattern: "vex"
+							}
+							display: {
+								Lore: ["[{\"text\":\"Standard Prison Uniform\",\"italic\":false,\"color\":\"#948484\"}]"]
+								Name: "[{\"text\":\"Prison Suit\",\"italic\":false,\"underlined\":true,\"color\":\"#ff0000\"}]"
+								color: 16351261
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "36A871185BA7BBA7"
+					item: {
+						Count: 1
+						id: "minecraft:leather_leggings"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "unbreaking"
+								lvl: 1
+							}]
+							HideFlags: 128
+							Trim: {
+								material: "netherite"
+								pattern: "vex"
+							}
+							display: {
+								Lore: ["[{\"text\":\"Standard Prison Uniform\",\"italic\":false,\"color\":\"#948484\"}]"]
+								Name: "[{\"text\":\"Prison Suit\",\"italic\":false,\"underlined\":true,\"color\":\"#ff0000\"}]"
+								color: 16351261
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0BEF3F0469645E2E"
+					item: {
+						Count: 1
+						id: "minecraft:leather_boots"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "unbreaking"
+								lvl: 1
+							}]
+							HideFlags: 128
+							Trim: {
+								material: "netherite"
+								pattern: "vex"
+							}
+							display: {
+								Lore: ["[{\"text\":\"Standard Prison Uniform\",\"italic\":false,\"color\":\"#948484\"}]"]
+								Name: "[{\"text\":\"Prison Suit\",\"italic\":false,\"underlined\":true,\"color\":\"#ff0000\"}]"
+								color: 16351261
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2741686804BDEB96"
+					item: {
+						Count: 1
+						id: "minecraft:soul_lantern"
+						tag: {
+							display: {
+								Lore: ["[{\"text\":\"We are required by regulation to provide a single light source.\",\"italic\":false,\"color\":\"gray\"}]"]
+								Name: "[{\"text\":\"Guiding Light\",\"bold\":true,\"italic\":false,\"underlined\":true,\"color\":\"aqua\"}]"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 1.2d
-			subtitle: "We hope you enjoy your stay"
+			subtitle: "Ready to start your sentence?"
 			tasks: [{
 				id: "6C1F570DB9013DE7"
-				title: "Welcome!"
+				title: "Begin sentence..."
 				type: "checkmark"
 			}]
-			title: "Welcome to GregTech CEu!"
+			title: "Welcome to &4Tier Zero&r, Inmate"
 			x: -0.75d
 			y: -1.5d
 		}
 		{
 			dependencies: ["25289F9E8AE01C29"]
 			description: [
-				"If you're familiar with GregTech, you may be aware of its &cmany nerfs&r to vanilla recipes. &bGTCEu&r doesn't go easy on you - take a look at the crafting recipes for &eBuckets&r or &ePaper&r. However, we'll ease off the insanity in earlygame, and 1 Log will give you 4 Planks. &aRejoice!&r"
+				"First order of business is getting yourself settled. First grab some logs, and make a crafting table."
 				""
-				"&o&8\"My adventure starts with some tree punching!? Huh, I thought GregTech was supposed to shake things up a bit...\"&r"
+				"The flint? Find some gravel or go loot some. Take this time to explore and setup your base of operations."
+				""
+				"&o&8Tip: Eating unique foods increases your total health pool!&r&r"
 			]
 			icon: "minecraft:oak_log"
 			id: "0EAF2C5B5EB755C5"
-			shape: "square"
+			rewards: [{
+				count: 2
+				id: "0C609F96BBD85AA0"
+				item: "delightful:cactus_steak"
+				type: "item"
+			}]
+			shape: "rsquare"
 			size: 0.75d
-			subtitle: "Begin your playthrough as before"
+			subtitle: "We all gotta start somewhere right?"
 			tasks: [
 				{
 					count: 6L
@@ -75,7 +185,7 @@
 						}
 					}
 					match_nbt: false
-					title: "Any Logs"
+					title: "Get some logs"
 					type: "item"
 				}
 				{
@@ -161,13 +271,13 @@
 			id: "0C690272ED4FB1C3"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "More like SNORE generation!"
+			subtitle: "I mean, it might be safer this way?"
 			tasks: [{
 				id: "3FA401CACE8BBE5D"
 				title: "Woah, ores sure sound exciting."
 				type: "checkmark"
 			}]
-			title: "Ore Generation"
+			title: "Caves are pretty useless..."
 			x: -2.25d
 			y: -3.0d
 		}
@@ -697,7 +807,7 @@
 			}]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "Murder, she Wrought"
+			subtitle: "A use for your charocal"
 			tasks: [{
 				id: "3DAB1D757B3B049D"
 				item: {
@@ -832,7 +942,7 @@
 				type: "item"
 			}]
 			size: 0.75d
-			subtitle: "Isn't it ironic... don't you think?"
+			subtitle: "You can't progress without it"
 			tasks: [{
 				id: "063705687ED657F5"
 				item: {
@@ -878,7 +988,7 @@
 				title: "Iron-bearing Ores"
 				type: "item"
 			}]
-			title: "Iron, Iron, Iron!"
+			title: "Iron age"
 			x: 0.75d
 			y: -3.0d
 		}
@@ -1214,11 +1324,13 @@
 		{
 			dependencies: ["0EAF2C5B5EB755C5"]
 			description: [
-				"Okay, we were generous enough to leave Wood-to-Plank-ratios &cuntouched&r, but this is GregTech - charcoal smelting is &4&lnot possible&r in a Furnace. You'll need to make a &d&lCoke Oven&r to get your grubby hands on some &6charcoal&r."
+				"Okay, you want to make some torches?"
 				""
-				"Wooden planks are still pretty good as &6furnace fuel&r, especially since you get &l&3four&r from one log."
+				"Well, bad news. You'll need to make a coke oven first. For now, grab some logs and we'll help you out."
 				""
-				"If this displeases you - normally you'd be able to &brevert this back&r to vanilla behaviour in the &aGTCEu&r configs, but the configuration option is bugged. To &erevert&r the nerf, you can delete the \"charcoal.js\" script in &bkubejs/server_scripts&r!"
+				"It is important to take note that many items have diffrent recipes. The first one shown is not always the best. Take your time and explore recipes as you progress, you may find much cheaper alternatives as time goes on."
+				""
+				"PS: You're gonna need ALOT of wood. Get to chopping!"
 			]
 			icon: "minecraft:charcoal"
 			id: "36DD94945D5B4A80"
@@ -1233,6 +1345,7 @@
 			subtitle: "Not here!"
 			tasks: [{
 				count: 48L
+				icon: "minecraft:oak_log"
 				id: "3DF01E4FACBB1D53"
 				item: {
 					Count: 1
@@ -1241,10 +1354,10 @@
 						value: "minecraft:logs"
 					}
 				}
-				title: "We demand more logs."
+				title: "You're gonna need &bALOT&r of these"
 				type: "item"
 			}]
-			title: "Charcoal?"
+			title: "Getting some torches"
 			x: 0.75d
 			y: -1.5d
 		}
@@ -1459,34 +1572,35 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["25289F9E8AE01C29"]
 			description: [
-				"Be sure to &aproperly&r read &lthis&r quest - it has some &dimportant information&r that will remain relevant all throughout your playthrough."
+				"Okay okay, whats so important?"
 				""
-				"Informative quests such as this will appear in the chapter they are unlocked. You can also consult the &b\"Guides + More\"&r quest tab if you feel like you're forgetting something."
+				"It is important to note that some mods may be gated by progression. As you progress you will unlock better gear, so following along the questline can be benefical to humanity and yourself."
 				""
-				"The quest structure is intended to guide you through all the major milestones in &aGregTech&r progression. Every single quest should be &2beneficial&r to look at in some way - if something is 100% optional, we'll mention it, so don't worry about missing anything crucial."
-				"{@pagebreak}"
-				"There are no drawbacks to playing this modpack in &dPeaceful&r - in fact, we highly urge you to do so, as there is little benefit from hostile mobs. Feel free to also to use &o/keepInventory&r, &o/sethome&r, and abuse minimap teleport as you see fit."
+				"The quests are not a hard requirement, but may prove helpful. GregTech can be a very complex mod."
+				"If you ever feel lost, check the guides."
 				""
-				"Although we won't force these settings onto you, we &4don't&r intend for this modpack to provide a punishing &eSurvival&r experience, but more so help you learn the ins and outs of &aGregTech CEu&r."
-				"{@pagebreak}"
-				"Lastly, it's good to be &lsavvy&r with &eEMI.&r &aGregTech&r items will frequently have several recipes, so you should never assume the first recipe &eEMI&r displays is the most efficient. \"Professional\" &eEMI&r usage involves the &bidentification of patterns&r in autogenerated recipes (example: all the Iron related items &6macerate&r into Iron Dust)."
-				""
-				"When complex recipes arise - and we won't sugarcoat, &aGTCEu&r can be intimidating - we'll make sure to direct you towards the more &5efficient routes&r. However, we urge you to experiment on your own. It's no fun to follow the quest book by rote, right?"
+				"&8&oPS: If you need to throw items away, you can void items with the trash icon in your inventory. &4NO REFUNDS&r&8,&r&r&r"
 			]
 			icon: "ftbquests:book"
 			id: "13E9DF7E980CFC5B"
-			shape: "circle"
+			rewards: [{
+				id: "6521432F36562181"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "rsquare"
 			size: 0.75d
 			subtitle: "Read this, and read it again!"
 			tasks: [{
 				id: "04CC2E592A648F06"
-				title: "I have read this page multiple times"
+				title: "Yeah yeah get on with it"
 				type: "checkmark"
 			}]
 			title: "Important Information"
-			x: -2.25d
-			y: -1.5d
+			x: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2001CB4968D3E0A2"]
@@ -1512,28 +1626,26 @@
 			y: -4.5d
 		}
 		{
-			description: [
-				"New to this updated pack is a &dGuides + More&r section. The information inside is available to view at any time, but whenever it becomes relevant, you will be &6directed towards it&r for some light reading."
-				""
-				"The information found inside may interest you if you would like &amore of an insight&r into some of &bGTCEu's mechanics&r - and in some cases, is absolutely indispensable."
-				""
-				"Quests that unlock a tutorial node will have an &6orange-ish descriptor&r at the bottom of the quest description."
-				""
-				"Get reading!"
-			]
+			dependencies: ["25289F9E8AE01C29"]
+			description: ["As you progress though the pack you will unlock more tip and tricks related reading in the Guides section. These are not required reading but they will provide you with more in depth info to help you as you progress. If a quest unlocks a new guide, it will say so at the bottom of the description."]
 			icon: "minecraft:lectern"
 			id: "008ABF78E56209F7"
-			shape: "circle"
+			rewards: [{
+				id: "324E56BFCFD971B0"
+				item: "quark:music_disc_ocean"
+				type: "item"
+			}]
+			shape: "rsquare"
 			size: 0.75d
-			subtitle: "Tips and tricks to help you prosper"
+			subtitle: "Your guiding light is pretty limited...."
 			tasks: [{
 				id: "382566FB9E8CFE29"
-				title: "Alright, I get it, I get it"
+				title: "Sure... I'll read all that,,,"
 				type: "checkmark"
 			}]
-			title: "Tutorialised"
+			title: "Lost? Need a guide?"
 			x: -0.75d
-			y: 0.0d
+			y: 0.375d
 		}
 		{
 			dependencies: ["0EAF2C5B5EB755C5"]
@@ -1565,53 +1677,20 @@
 			y: -4.5d
 		}
 		{
-			description: [
-				"Think this pack is &atoo easy&r? Wanting some unique experiences to sink your teeth into?"
-				""
-				"We've gathered some GTCEu Modern-flavored recommendations in this quest."
-				"{@pagebreak}"
-				"&lMonifactory&r"
-				"&dMonifactory&r is a 1.20.1 modpack based on &eNomifactory CEu&r (which was on 1.12.2!). It aims to streamline and simplify the earlier parts of GregTech, while interweaving other tech mods into GTCEu Modern's progression. It also features a &2Hard&r and an &aExpert&r mode for the challenge-minded!"
-				""
-				"In its current state, the pack is on the cusp of a pack-changing update, 0.13. Any worlds at &cHigh Voltage&r or higher will likely need a fresh restart."
-				"{@pagebreak}"
-				"&lCosmic Frontiers&r"
-				"- &7Ghostipedia et al."
-				""
-				"&dCosmic Frontiers&r is a 1.20.1 modpack with gameplay &ba little more difficult&r than this pack, and a focus on interactions between many mods and GTCEu Modern. You'll explore the stars above and travel to the depths below, all whilst tackling &eintricately woven&r progression that ties together the &7mechanical&r and the &5arcane&r."
-				""
-				"In its current state, the pack is considered to be in &2early alpha&r. However, progress has been curated through &3LuV&r. It's an experience like no other!"
-				"{@pagebreak}"
-				"&lAll the Mods: Gravitas 2"
-				"- &7ATMTeam"
-				""
-				"Starting from &6primitive Stone Age technology&r, hand-knapping your tools and foraging for food, you'll need to progress through the ages covering many &bclassic and new&r mods. This is seamlessly complemented by mods such as TerraFirmaCraft, Create New Age, Stargate Journey and &8(obviously)&r GregTech."
-				""
-				"You'll find yourself transitioning from a &2primitive beginning&r, smashing rocks together, to smashing atoms together, soon &dpowering your voyages&r to the stars and beyond!"
-				"{@pagebreak}"
-				"&lStar Technology"
-				"- &7trulyno"
-				""
-				"&6Star Technology&r is more of a laid-back GregTech &dskyblock modpack&r where you play as a scientist stranded in an &balternate dimension&r after a dimensional travel experiment &4catastrophically fails&r."
-				""
-				"Progression in this pack will take you above and beyond &3UHV&r, with numerous unique &aStargates&r to craft, and even a remixed &o\"Gregified\"&r Mystical Agriculture."
-				""
-				"Once again, this pack features a Hard mode, and a Desert mod (called Abydos!)."
-				""
-				"Note that the pack is still under &eheavy development&r, but you should be able to achieve the &o\"Classic Stargate\"&r as of version Zeta!"
-			]
+			dependencies: ["25289F9E8AE01C29"]
+			description: ["Blank"]
 			icon: "minecraft:netherite_upgrade_smithing_template"
 			id: "63DC162144871509"
-			shape: "circle"
+			shape: "rsquare"
 			size: 0.75d
 			tasks: [{
 				id: "3E3D67B53234AD1A"
-				title: "Whoah, these sound cool."
+				title: "Blank"
 				type: "checkmark"
 			}]
-			title: "What Else Can I Play?"
-			x: -2.25d
-			y: 0.0d
+			title: "Blank"
+			x: -2.625d
+			y: -0.75d
 		}
 		{
 			dependencies: ["0C690272ED4FB1C3"]
@@ -1636,7 +1715,33 @@
 			x: -2.25d
 			y: -2.25d
 		}
+		{
+			dependencies: ["25289F9E8AE01C29"]
+			description: [
+				"Sentence aside, this modpack is not designed to be super hardcore."
+				""
+				"Play on easy mode, with /home, turn off pollution, go to creative to build your base. "
+				""
+				"However you want to play the pack, feel free to modify your experience to fit your gameplay style. After all, if your sentence is not fun, how will you be able to be normal back home?"
+			]
+			id: "65509207D979ABEE"
+			rewards: [{
+				id: "59FA083A47FF5788"
+				item: "twigs:azalea_flowers"
+				type: "item"
+			}]
+			size: 0.75d
+			subtitle: "&6All &cinmates &6are welcome here &4<3"
+			tasks: [{
+				id: "48004310881C0572"
+				title: "&6Done!"
+				type: "checkmark"
+			}]
+			title: "&3I will check my settings"
+			x: -2.625d
+			y: -1.5d
+		}
 	]
 	subtitle: ["Welcome to &6GTT0&r!"]
-	title: "Introduction"
+	title: "Checking In"
 }

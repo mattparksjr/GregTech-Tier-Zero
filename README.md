@@ -7,3 +7,7 @@ Modpack is not public yet. You will need to build from source
 # Building
 [Packwiz](https://packwiz.infra.link/) will allow you to build the pack.
 Please refer to their tutorials page for more info.
+
+# Credits
+[GregTech Modern Community Pack](https://github.com/GregTechCEu/GregTech-Modern-Community-Pack), for a well put together base modlist and questline
+Iterable, for creating the pack

@@ -389,6 +389,11 @@ hash = "78bcb2e1589baaa14ecccb6fca39293a5b4ac8d7f6f5a6ee1a6a812e3a5a958c"
 metafile = true
 
 [[files]]
+file = "mods/clean-swing-through-grass.pw.toml"
+hash = "47fb31c0dd8d57b949af33591d811bad064e29599d5753ea8a6011e0e1498d0c"
+metafile = true
+
+[[files]]
 file = "mods/client-crafting.pw.toml"
 hash = "d1bc88420cb023524aa2882dbe54be724d144729e82183aa3b892756b9599eae"
 metafile = true
@@ -426,6 +431,11 @@ metafile = true
 [[files]]
 file = "mods/controlling.pw.toml"
 hash = "1e56f528d8e21b0cf9c52c3d6deea2a4eafa408170b39a070195dbf66617f373"
+metafile = true
+
+[[files]]
+file = "mods/cooking-for-blockheads.pw.toml"
+hash = "919eac641320df56ffaad0132877cb67bd8b942ee23eeb0f137993c8df18b952"
 metafile = true
 
 [[files]]
@@ -554,8 +564,18 @@ hash = "945b821d82d9558ed6e026cf4bb5d57d8c794aee95799cdd8061c2c56ffa6815"
 metafile = true
 
 [[files]]
+file = "mods/extreme-sound-muffler.pw.toml"
+hash = "978586ac2d00b1117b6af9a977dd8fa7d1e29b683aa0d13fc0f6455d7cade48c"
+metafile = true
+
+[[files]]
 file = "mods/factory-blocks.pw.toml"
 hash = "75aa30ef36dde7927544464166076277e1990d7a5ea15309b6280440e14e5225"
+metafile = true
+
+[[files]]
+file = "mods/falling-leaves-forge.pw.toml"
+hash = "e2396d07e1058482e0792e8c7aa5c90cf54e198c8c4bf64293ec6b5abe5e91a2"
 metafile = true
 
 [[files]]
@@ -566,6 +586,11 @@ metafile = true
 [[files]]
 file = "mods/farmers-structures.pw.toml"
 hash = "1c1c1a903167a496967a3f61cf7b91d8b61acadf79a7d13cbaf0ceaa3bd7739e"
+metafile = true
+
+[[files]]
+file = "mods/fast-async-world-save-forge-fabric.pw.toml"
+hash = "e6362452d4834dc0919f89ea95b7242c3a5c4d61a0ebfc425ecfc6c71dc5afd0"
 metafile = true
 
 [[files]]
@@ -634,6 +659,11 @@ hash = "8a185af41fb24e83e4497c9362943723b6afee585cf8a3bf280ac155d29bf593"
 metafile = true
 
 [[files]]
+file = "mods/ftb-filter-system.pw.toml"
+hash = "306994966b56905bb3468a0a9abb5bbcef853d4b1081526e62143c86fe473932"
+metafile = true
+
+[[files]]
 file = "mods/ftb-library-forge.pw.toml"
 hash = "efa75ee4aae90dea11316b6e61aecaf9433eeb3d0821f78b4eca41acbbd73e8f"
 metafile = true
@@ -641,6 +671,11 @@ metafile = true
 [[files]]
 file = "mods/ftb-quests-forge.pw.toml"
 hash = "7b2cc450f553b82439ae9422b8c2b4406dae1af3c48f7ce791a3576acff1d122"
+metafile = true
+
+[[files]]
+file = "mods/ftb-quests-freeze-fix.pw.toml"
+hash = "da0b17b7213c2e71a9b4e18a572e631db3f1cbff422447de9dedcf3e0260a803"
 metafile = true
 
 [[files]]
@@ -861,6 +896,11 @@ metafile = true
 [[files]]
 file = "mods/memory-settings.pw.toml"
 hash = "77795c52eb118126fde729bc7a60b7fbaeb6af9a97e8760eca7dddad10710326"
+metafile = true
+
+[[files]]
+file = "mods/merequester.pw.toml"
+hash = "edd3084dd2c10ae697ace9bb2c6a249c6a9d4d92a6d02247169fdab60e55b286"
 metafile = true
 
 [[files]]
@@ -1139,6 +1179,11 @@ hash = "a01449c29314bff0ad2047911d8253641801e01997709f53fa5b3f52954232a3"
 metafile = true
 
 [[files]]
+file = "mods/terrablender.pw.toml"
+hash = "fde3d3b1607636100e382dce1bba80ab4608ebfa1ef888a37b86bc8c7dcbafe5"
+metafile = true
+
+[[files]]
 file = "mods/terralith.pw.toml"
 hash = "b0978cb7ae7b79c5be89b323ca1bd038f693ff6d11c43dfcbd63953964149af2"
 metafile = true
@@ -1186,6 +1231,11 @@ metafile = true
 [[files]]
 file = "mods/twigs.pw.toml"
 hash = "75ac47ef3a388aa5416f86415f79d262f68f5c8195c7a1a89f081b348a64c81f"
+metafile = true
+
+[[files]]
+file = "mods/visuality-reforged.pw.toml"
+hash = "a484c0c37751873f93dc01a09a972b7fa7333234a790d0391dd8aa1249dc79ee"
 metafile = true
 
 [[files]]

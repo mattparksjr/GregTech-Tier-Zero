@@ -8,7 +8,7 @@ PlayerEvents.loggedIn(event => {
 })
 
 ItemEvents.rightClicked(event => {
-  const { item, player, level } = event
+  const { item, player, server } = event
 
   if (item.id !== 'kubejs:intake_slip') return
 
@@ -31,11 +31,18 @@ ItemEvents.rightClicked(event => {
   ]
 
   lines.forEach(line => player.tell(line))
-  player.playSound('minecraft:block.beacon.activate', 0.4, 1.6)
 
   if (!player.isCreative()) {
     item.shrink(1)
   }
+
+  player.server.runCommandSilent(
+    'playsound minecraft:block.beacon.activate master '
+    + player.username + ' '
+    + player.x + ' ' + player.y + ' ' + player.z
+    + ' 0.4 1.6'
+  )
+
 
   event.cancel()
 })
