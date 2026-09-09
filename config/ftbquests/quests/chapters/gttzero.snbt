@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "rsquare"
 	default_quest_size: 0.75d
-	filename: "gtceu"
+	filename: "gttzero"
 	group: ""
 	hide_quest_details_until_startable: true
 	hide_quest_until_deps_visible: true
@@ -17,7 +17,7 @@
 				""
 				"&6Welcome,&r Inmate."
 				""
-				"You have been sent to this planet as &cpunishment&r for your &4crimes.&r You are lucky though, it seems by sharing the names of your &cco-conspirators&r you have been assigned a planet with a rich history of life and &4death.&r It could always be much worse..."
+				"You have been sent to this planet as &cpunishment&r for your &4crimes.&r You are lucky though, it seems by sharing the names of your &cco-conspirators&r you have been assigned given a few, shall we say, perks. For starters, your planet has &alife&r and is rich with resources. The same cannot be said for &csome...&r"
 				""
 				"Your only hope to return to your &6home&r is to complete &l&6THE PROJECT&r. Think of it as your way of paying humanity for the &ccrimes&r you commited. Oh, you don't remember what you did? Well... you'll remember with time I suppose."
 				""
@@ -150,17 +150,19 @@
 				type: "checkmark"
 			}]
 			title: "Welcome to &4Tier Zero&r, Inmate"
-			x: -0.75d
-			y: -1.5d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["25289F9E8AE01C29"]
 			description: [
-				"First order of business is getting yourself settled. First grab some logs, and make a crafting table."
+				"&l&8[&6PROJECT-MANAGER&8]"
 				""
-				"The flint? Find some gravel or go loot some. Take this time to explore and setup your base of operations."
+				"First order of business is getting yourself &9settled.&r First grab some logs, and make a crafting table."
 				""
-				"&o&8Tip: Eating unique foods increases your total health pool!&r&r"
+				"The flint? Find some &7gravel&r or go loot some. Take this time to explore and setup your &abase&r of operations."
+				""
+				"&o&8Tip: Eating &bunique&r &8foods increases your total health pool!&r&r"
 			]
 			icon: "minecraft:oak_log"
 			id: "0EAF2C5B5EB755C5"
@@ -194,12 +196,12 @@
 					type: "item"
 				}
 			]
-			title: "The Beginning of it All"
-			x: -0.75d
-			y: -3.0d
+			title: "The project begins"
+			x: 1.875d
+			y: 0.0d
 		}
 		{
-			dependencies: ["0EAF2C5B5EB755C5"]
+			dependencies: ["284FF001F6EB9649"]
 			description: [
 				"Here's a &6nifty&r list of some resources that you'll need in bulk for early-game. Collect more than we're asking for in this quest - you'll end up running out before you know it, and it's always a good habit to gather more than you need in &aGregTech&r."
 				""
@@ -251,65 +253,75 @@
 				}
 			]
 			title: "What do I need to progress?"
-			x: -0.75d
-			y: -4.5d
+			x: 1.32d
+			y: -1.98d
 		}
 		{
 			dependencies: ["0EAF2C5B5EB755C5"]
 			description: [
-				"The ore generation in &2GregTech&r is very different to vanilla or normal modded Minecraft. All ores generate in &6huge veins&r, which can contain &dhundreds&o&r of ore blocks."
+				"&l&8[&6PROJECT-MANAGER&8]&r&r"
 				""
-				"GTCEu now features the functionality of &dVisual Prospecting&r natively, which will mark discovered veins on your map. &9Right Click&r an ore block in the vein, or a surface rock to add it to the map. You can toggle the ore vein view in the lower left corner of the fullscreen map."
+				"Another &abenefit&r for you. Your planet is rich with natural &aresources.&r It seems the &cnatives&r aren't using them anyways."
+				"The ore here generates much differently from what you might expect, the veins are &6huge&r, and contain many stacks of ore."
+				""
+				"Your in-built mapping system can help you here. When you right click an &aore&r in a new vein, or a &bsurface rock&r it will be added to your map. You can &atoggle&r this with the button on the right of your map."
 				"{@pagebreak}"
 				"The full extent of ore generation is explained in the Tips and Tricks tab, but here is what you need to know:"
 				""
-				"&9-&r Ore veins generate in a &4Grid&r. Every vein is &9spaced by (approximately) 3 chunks&r from one to another in a cardinal direction."
+				"&6-&r Ore veins generate in a grid. Every vein is spaced by &o(approximately)&r 3 chunks from one to another in a cardinal direction."
 				""
-				"&9-&r It's a good practice to make &dWaypoints&r (default &4N&r) for every vein you've found and and to label their type. You may want to come back to the vein several times."
+				"&bPS: &8Press 'j' for a full screen map, and waypoint management. I wonder if other buttons control this map too..."
+				""
+				"&bThis quest unlocks a guide."
 			]
 			icon: "gtceu:cobaltite_ore"
 			id: "0C690272ED4FB1C3"
+			rewards: [{
+				id: "772D0DF5575FA11B"
+				item: "brewinandchewin:jerky"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "I mean, it might be safer this way?"
+			subtitle: "Caves are too scary anyways"
 			tasks: [{
 				id: "3FA401CACE8BBE5D"
-				title: "Woah, ores sure sound exciting."
+				title: "I will not enter random holes."
 				type: "checkmark"
 			}]
-			title: "Caves are pretty useless..."
-			x: -2.25d
-			y: -3.0d
+			title: "Dont just enter &oany&r random hole..."
+			x: 2.97d
+			y: -0.99d
 		}
 		{
-			dependencies: ["0EAF2C5B5EB755C5"]
+			dependencies: ["284FF001F6EB9649"]
 			description: [
-				"Were you aware that &aGregTech&r comes with its own set of tools? If not, you may also be pleasantly surprised to hear that they &6&lsurpass&r their vanilla equivalents."
+				"&l&8[&6PROJECT-MANAGER&8]&r&r"
 				""
-				"Let's use the GregTech Axe as an example. If you use one to mine a log in a tree, it'll fell the &2entire tree&r for you. Timber!"
+				"We are going to need &ba lot&r of wood. Most standard tools have been given an &6upgraded&r version. In fact, your normal iron pickaxe or diamond sword are most likely much &cweaker&r then you would expect. For example, this axe will cut an &a&oENTIRE&r&r tree for you. Top to bottom. The spade, the mining hammer, the &9crowbar,&r the scythe. These tools come with built in features, and gain more durability and damage depending on what material you use. "
 				""
-				"Constant \"lumberjacking\" will eat through your Axe's &9durability&r in seconds, so you may want to make your Axe out of a &estronger material&r such as &bDiamond&r. Just be careful you don't make a vanilla Diamond Axe."
-				""
-				"As a reward, take these &2Spruce saplings&r and use them to make some big trees. You'll need to do a lot of smelting in the near future, and planks will tide you over as an &deffective&r fuel source!"
+				"For your first axe, perhaps &7flint&r might be an easy option?"
 			]
 			icon: {
 				Count: 1
 				id: "gtceu:steel_axe"
 				tag: {
 					Damage: 0
-					GT.Tool: { }
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+					}
 				}
 			}
 			id: "13354F24F80F65FB"
 			rewards: [{
-				count: 8
-				id: "60E07F9D0763E8E1"
-				item: "minecraft:spruce_sapling"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "2EFD5AC75574BC1F"
+				table_id: 8465547841247992009L
+				type: "random"
 			}]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "Who needs Veinminer?"
+			subtitle: "Oh the poor, poor forest"
 			tasks: [{
 				id: "3880A08A72884627"
 				item: {
@@ -321,13 +333,13 @@
 								Count: 1b
 								id: "gtceu:aluminium_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 2
 										MaxDamage: 767
 										ToolSpeed: 8.0f
@@ -339,13 +351,13 @@
 								Count: 1b
 								id: "gtceu:vanadium_steel_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 3
 										MaxDamage: 1535
 										ToolSpeed: 5.0f
@@ -357,6 +369,7 @@
 								Count: 1b
 								id: "gtceu:naquadah_alloy_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
@@ -364,7 +377,6 @@
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 5
 										MaxDamage: 3071
 										ToolSpeed: 42.0f
@@ -376,13 +388,13 @@
 								Count: 1b
 								id: "gtceu:flint_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 2
 										MaxDamage: 63
 										ToolSpeed: 3.5f
@@ -394,13 +406,13 @@
 								Count: 1b
 								id: "gtceu:red_steel_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 3
 										MaxDamage: 2559
 										ToolSpeed: 9.0f
@@ -412,13 +424,13 @@
 								Count: 1b
 								id: "gtceu:blue_steel_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 3
 										MaxDamage: 1023
 										ToolSpeed: 17.0f
@@ -430,6 +442,7 @@
 								Count: 1b
 								id: "gtceu:rose_gold_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									Enchantments: [{
 										id: "minecraft:fortune"
@@ -440,7 +453,6 @@
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 2
 										MaxDamage: 767
 										ToolSpeed: 14.0f
@@ -452,13 +464,13 @@
 								Count: 1b
 								id: "gtceu:hsse_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 4
 										MaxDamage: 3071
 										ToolSpeed: 7.0f
@@ -470,13 +482,13 @@
 								Count: 1b
 								id: "gtceu:iron_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 2
 										MaxDamage: 255
 										ToolSpeed: 4.0f
@@ -488,13 +500,13 @@
 								Count: 1b
 								id: "gtceu:titanium_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 3
 										MaxDamage: 1535
 										ToolSpeed: 10.0f
@@ -506,6 +518,7 @@
 								Count: 1b
 								id: "gtceu:neutronium_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
@@ -513,7 +526,6 @@
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 6
 										MaxDamage: 65534
 										ToolSpeed: 182.0f
@@ -526,6 +538,7 @@
 								Count: 1b
 								id: "gtceu:duranium_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
@@ -533,7 +546,6 @@
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 5
 										MaxDamage: 8191
 										ToolSpeed: 16.0f
@@ -545,13 +557,13 @@
 								Count: 1b
 								id: "gtceu:bronze_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 2
 										MaxDamage: 191
 										ToolSpeed: 5.0f
@@ -563,6 +575,7 @@
 								Count: 1b
 								id: "gtceu:invar_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									Enchantments: [
 										{
@@ -579,7 +592,6 @@
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 2
 										MaxDamage: 383
 										ToolSpeed: 6.0f
@@ -591,6 +603,7 @@
 								Count: 1b
 								id: "gtceu:sterling_silver_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									Enchantments: [{
 										id: "minecraft:smite"
@@ -601,7 +614,6 @@
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 2
 										MaxDamage: 767
 										ToolSpeed: 5.0f
@@ -613,13 +625,13 @@
 								Count: 1b
 								id: "gtceu:cobalt_brass_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 2
 										MaxDamage: 1023
 										ToolSpeed: 4.5f
@@ -631,13 +643,13 @@
 								Count: 1b
 								id: "gtceu:tungsten_steel_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 4
 										MaxDamage: 2047
 										ToolSpeed: 11.0f
@@ -649,6 +661,7 @@
 								Count: 1b
 								id: "gtceu:damascus_steel_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									Enchantments: [{
 										id: "minecraft:fortune"
@@ -659,7 +672,6 @@
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 3
 										MaxDamage: 1023
 										ToolSpeed: 8.0f
@@ -671,13 +683,13 @@
 								Count: 1b
 								id: "gtceu:tungsten_carbide_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 4
 										MaxDamage: 1023
 										ToolSpeed: 62.0f
@@ -689,13 +701,13 @@
 								Count: 1b
 								id: "gtceu:wrought_iron_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 2
 										MaxDamage: 383
 										ToolSpeed: 4.0f
@@ -707,13 +719,13 @@
 								Count: 1b
 								id: "gtceu:ultimet_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 4
 										MaxDamage: 2047
 										ToolSpeed: 12.0f
@@ -725,13 +737,13 @@
 								Count: 1b
 								id: "gtceu:steel_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 3
 										MaxDamage: 511
 										ToolSpeed: 7.0f
@@ -743,13 +755,13 @@
 								Count: 1b
 								id: "gtceu:stainless_steel_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 3
 										MaxDamage: 1023
 										ToolSpeed: 9.0f
@@ -761,13 +773,13 @@
 								Count: 1b
 								id: "gtceu:diamond_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 3
 										MaxDamage: 767
 										ToolSpeed: 8.0f
@@ -778,15 +790,18 @@
 						]
 					}
 				}
-				title: "Grab any Lumber Axe!"
+				title: "Craft a lumber axe"
 				type: "item"
 			}]
-			title: "Lumbering On"
-			x: -2.25d
-			y: -4.5d
+			title: "Embrace your inner lumberjack"
+			x: 0.99d
+			y: -1.32d
 		}
 		{
-			dependencies: ["36DD94945D5B4A80"]
+			dependencies: [
+				"36DD94945D5B4A80"
+				"1ECBA1CBFFB9F625"
+			]
 			dependency_requirement: "one_completed"
 			description: [
 				"Wrought Iron has a very low carbon content, but that's enough to make it &btougher&r than regular Iron."
@@ -821,8 +836,8 @@
 				type: "item"
 			}]
 			title: "Better Than Iron"
-			x: 0.75d
-			y: 0.0d
+			x: 2.97d
+			y: 1.32d
 		}
 		{
 			dependencies: ["1ECBA1CBFFB9F625"]
@@ -866,8 +881,8 @@
 				type: "item"
 			}]
 			title: "STOP! Hammer time!"
-			x: 2.25d
-			y: -3.0d
+			x: 5.625d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2001CB4968D3E0A2"]
@@ -887,7 +902,9 @@
 				id: "gtceu:steel_mining_hammer"
 				tag: {
 					Damage: 0
-					GT.Tool: { }
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+					}
 				}
 			}
 			id: "4A365A7CC9E374F9"
@@ -915,8 +932,8 @@
 				type: "item"
 			}]
 			title: "Hammer down!"
-			x: 2.25d
-			y: -4.5d
+			x: 7.5d
+			y: 0.99d
 		}
 		{
 			dependencies: ["0EAF2C5B5EB755C5"]
@@ -989,8 +1006,8 @@
 				type: "item"
 			}]
 			title: "Iron age"
-			x: 0.75d
-			y: -3.0d
+			x: 3.75d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7DEB73FD649BDFB6"]
@@ -1055,8 +1072,8 @@
 				}
 			]
 			title: "Important Tools"
-			x: 3.75d
-			y: -3.0d
+			x: 7.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2001CB4968D3E0A2"]
@@ -1100,7 +1117,7 @@
 				item: "gtceu:damascus_steel_ingot"
 				type: "item"
 			}]
-			size: 0.75d
+			size: 0.66d
 			tasks: [
 				{
 					id: "4055931FAD6A5087"
@@ -1164,8 +1181,8 @@
 				}
 			]
 			title: "More Tools"
-			x: 5.25d
-			y: -3.0d
+			x: 6.6d
+			y: -0.99d
 		}
 		{
 			dependencies: ["2001CB4968D3E0A2"]
@@ -1204,8 +1221,8 @@
 				type: "item"
 			}]
 			title: "Coke Oven"
-			x: 5.25d
-			y: -4.5d
+			x: 9.0d
+			y: -1.7999999999999998d
 		}
 		{
 			dependencies: ["2001CB4968D3E0A2"]
@@ -1249,8 +1266,8 @@
 				type: "item"
 			}]
 			title: "Onwards to the Age of Bronze!"
-			x: 3.75d
-			y: -1.5d
+			x: 9.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["45969FFBF88F4FBB"]
@@ -1281,8 +1298,8 @@
 				type: "item"
 			}]
 			title: "Bronze Age? No, &6Steam Age&r!"
-			x: 5.25d
-			y: -1.5d
+			x: 10.799999999999999d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7DEB73FD649BDFB6"]
@@ -1318,8 +1335,8 @@
 				type: "item"
 			}]
 			title: "Greg has struck"
-			x: 2.25d
-			y: -1.5d
+			x: 5.61d
+			y: -0.99d
 		}
 		{
 			dependencies: ["0EAF2C5B5EB755C5"]
@@ -1342,7 +1359,7 @@
 			}]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "Not here!"
+			subtitle: "Not here! Maybe a local has some"
 			tasks: [{
 				count: 48L
 				icon: "minecraft:oak_log"
@@ -1358,8 +1375,8 @@
 				type: "item"
 			}]
 			title: "Getting some torches"
-			x: 0.75d
-			y: -1.5d
+			x: 1.65d
+			y: 0.99d
 		}
 		{
 			dependencies: ["45969FFBF88F4FBB"]
@@ -1390,8 +1407,8 @@
 				type: "checkmark"
 			}]
 			title: "More mods?"
-			x: 2.25d
-			y: 0.0d
+			x: 9.9d
+			y: -1.32d
 		}
 		{
 			dependencies: ["45969FFBF88F4FBB"]
@@ -1476,8 +1493,8 @@
 				}
 			]
 			title: "A Minor Test of Strength"
-			x: 3.75d
-			y: 0.0d
+			x: 9.9d
+			y: 1.98d
 		}
 		{
 			dependencies: ["45969FFBF88F4FBB"]
@@ -1568,20 +1585,23 @@
 				}
 			]
 			title: "Early Investments"
-			x: 5.25d
-			y: 0.0d
+			x: 8.58d
+			y: 1.98d
 		}
 		{
 			dependencies: ["25289F9E8AE01C29"]
 			description: [
-				"Okay okay, whats so important?"
+				"&l&8[&6PROJECT-MANAGER&8]"
+				"&4NOW!&r"
 				""
-				"It is important to note that some mods may be gated by progression. As you progress you will unlock better gear, so following along the questline can be benefical to humanity and yourself."
+				"&7&oOkay okay, whats so important?&r&8&r"
 				""
-				"The quests are not a hard requirement, but may prove helpful. GregTech can be a very complex mod."
+				"It is important to note that some mods may be &bgated&r by progression. As you progress you will unlock better gear, so following along the &aquestline&r can be benefical to humanity and yourself."
+				""
+				"The quests are not a &chard&r requirement, but may prove helpful. GregTech can be a very &bcomplex&r mod."
 				"If you ever feel lost, check the guides."
 				""
-				"&8&oPS: If you need to throw items away, you can void items with the trash icon in your inventory. &4NO REFUNDS&r&8,&r&r&r"
+				"&8&oPS: If you need to throw items away, you can void items with the trash icon(&dT&r &8to toggle) in your inventory. &4NO REFUNDS&r&8,&r&r&r"
 			]
 			icon: "ftbquests:book"
 			id: "13E9DF7E980CFC5B"
@@ -1599,8 +1619,8 @@
 				type: "checkmark"
 			}]
 			title: "Important Information"
-			x: -1.5d
-			y: 0.0d
+			x: -0.75d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2001CB4968D3E0A2"]
@@ -1622,12 +1642,18 @@
 				type: "item"
 			}]
 			title: "Crafting Station"
-			x: 3.75d
-			y: -4.5d
+			x: 7.5d
+			y: -1.32d
 		}
 		{
 			dependencies: ["25289F9E8AE01C29"]
-			description: ["As you progress though the pack you will unlock more tip and tricks related reading in the Guides section. These are not required reading but they will provide you with more in depth info to help you as you progress. If a quest unlocks a new guide, it will say so at the bottom of the description."]
+			description: [
+				"&l&8[&6PROJECT-MANAGER&8]"
+				""
+				"Yet another perk for your &cconfession:&r"
+				""
+				"As you progress though the pack you will unlock more &btips and tricks&r related reading in the Guides section. These are not required reading but they will provide you with more in depth info to help you as you progress. If a &aquest&r unlocks a new guide, it will say so at the bottom of the description."
+			]
 			icon: "minecraft:lectern"
 			id: "008ABF78E56209F7"
 			rewards: [{
@@ -1644,11 +1670,11 @@
 				type: "checkmark"
 			}]
 			title: "Lost? Need a guide?"
-			x: -0.75d
-			y: 0.375d
+			x: 0.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["0EAF2C5B5EB755C5"]
+			dependencies: ["284FF001F6EB9649"]
 			description: [
 				"Rubber Trees can be found in &aForest&r, &2Jungle&r or &aSwamp&r biomes."
 				""
@@ -1673,56 +1699,74 @@
 				type: "item"
 			}]
 			title: "Gettin' Shaded under a Rubber Tree"
-			x: 0.75d
-			y: -4.5d
+			x: 2.31d
+			y: -1.98d
 		}
 		{
 			dependencies: ["25289F9E8AE01C29"]
-			description: ["Blank"]
+			description: [
+				"&l&8[&6PROJECT-MANAGER&8]"
+				""
+				"Well, you may be wondering what &6&lTHE PROJECT&r&r is. See while you were out commiting &ccrimes&r and crafting a &cdevious&r plot, the rest of us respectable people have real problems to solve. Like the ever growing need for our &agovernment&r to have more and more power. We have long &boutgrown&r the resources of just our home, and we need people like you to deliver the items we need most. In a way, you can think of it as &asaving&r the planet, or saving your pet cat."
+				""
+				"&l&6THE PROJECT&r&r is no easy feat, but it's your &conly&r hope of coming home."
+			]
 			icon: "minecraft:netherite_upgrade_smithing_template"
 			id: "63DC162144871509"
+			rewards: [{
+				id: "75477021CD7FB060"
+				item: "delightful:glow_jam_cookie"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.75d
+			subtitle: "I'll give you a cookie..."
 			tasks: [{
 				id: "3E3D67B53234AD1A"
-				title: "Blank"
+				title: "I will do my best!"
 				type: "checkmark"
 			}]
-			title: "Blank"
-			x: -2.625d
-			y: -0.75d
+			title: "What is &6&lTHE PROJECT"
+			x: -1.5d
+			y: 0.75d
 		}
 		{
 			dependencies: ["0C690272ED4FB1C3"]
 			description: [
-				"Whilst frolicking about on the surface, you may have spotted a couple of &dSurface rocks&r."
+				"&l&8[&6PROJECT-MANAGER&8]&r&r"
+				"If you happen to spot &arocks&r along the surface as you travel, they are showing you what kind of &6vein&r can be found below. Right clicking will add it to your &amap.&r "
 				""
-				"These little guys indicate the type of veins that are below them. Just right-click &7(or mine!)&r the surface rock to receive a corresponding pile of &aTiny Dust&r. This will also add the vein to your minimap."
-				"{@pagebreak}"
-				"You can now use &2EMI&r to learn more about the vein beneath your feet. Just press &dU&r on the Tiny Dust you mined from the rock, find the corresponding Raw Ore, and press &dR&r. From there, navigate to the &6Ore Vein Diagram&r. This page contains details on what &btypes of ores&r generate with it, their &3generation patterns&r, their &espawning dimension&r and &dY-level range&r, and their &aspawning weight&r, which is the chance it spawns."
+				"If you gather enough tiny piles to make a full dust, hitting '&dr&r' on the dust will bring up many pages. From there navigate to the &bOre Processing Diagram&r. From there clicking on the raw ore will being up all veins which contain this &6ore.&r Each vein will show what ores it contains, the generation pattern, &bdimensions&r they can spawn in, the y levels, and the &aspawning weight&r(how common it is). "
 			]
 			icon: "gtceu:cobalt_indicator"
 			id: "3296B815876C3181"
+			rewards: [{
+				id: "4342F0CA71BBEBBE"
+				item: "brewinandchewin:beer"
+				type: "item"
+			}]
 			shape: "circle"
 			size: 0.5d
-			subtitle: "Awakening your inner geologist"
+			subtitle: "Ooooo shiny!"
 			tasks: [{
 				id: "3C54F075FEE53897"
-				title: "I love prospecting!"
+				title: "I will extract many, many ores"
 				type: "checkmark"
 			}]
-			title: "This Rocks!"
-			x: -2.25d
-			y: -2.25d
+			title: "Rocks and twigs and stones"
+			x: 3.0d
+			y: -1.75d
 		}
 		{
 			dependencies: ["25289F9E8AE01C29"]
 			description: [
-				"Sentence aside, this modpack is not designed to be super hardcore."
+				"&l&8[&6PROJECT-MANAGER&8]"
 				""
-				"Play on easy mode, with /home, turn off pollution, go to creative to build your base. "
+				"Sentence aside, this modpack is not designed to be super &chardcore.&r"
 				""
-				"However you want to play the pack, feel free to modify your experience to fit your gameplay style. After all, if your sentence is not fun, how will you be able to be normal back home?"
+				"Play on &beasy&r mode, with /home, turn off pollution, go to creative to build your base. "
+				""
+				"However you want to play the pack, feel free to modify your &6experience&r to fit your gameplay style. After all, if your sentence is not fun, how will you be able to be &anormal&r back home?"
 			]
 			id: "65509207D979ABEE"
 			rewards: [{
@@ -1738,8 +1782,49 @@
 				type: "checkmark"
 			}]
 			title: "&3I will check my settings"
-			x: -2.625d
-			y: -1.5d
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0EAF2C5B5EB755C5"]
+			id: "284FF001F6EB9649"
+			tasks: [{
+				id: "7739523FAC46735B"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Time to extract!"
+			x: 1.875d
+			y: -1.125d
+		}
+		{
+			dependencies: [
+				"1ECBA1CBFFB9F625"
+				"7DEB73FD649BDFB6"
+			]
+			id: "21706037F2C68C70"
+			size: 0.66d
+			subtitle: "Dying would be less then ideal"
+			tasks: [{
+				id: "4E82E70761AF59AC"
+				item: {
+					Count: 1
+					id: "minecraft:iron_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Getting gear'd"
+			x: 4.95d
+			y: 1.32d
 		}
 	]
 	subtitle: ["Welcome to &6GTT0&r!"]

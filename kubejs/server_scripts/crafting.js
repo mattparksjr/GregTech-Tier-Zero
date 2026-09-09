@@ -35,7 +35,7 @@ function add(event) {
     'FF',
     'PP'
   ], {
-    P: 'minecraft:planks',
+    P: '#minecraft:logs',
     F: 'minecraft:flint'
   })
 

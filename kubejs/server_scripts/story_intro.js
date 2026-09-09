@@ -11,7 +11,7 @@ ItemEvents.rightClicked(event => {
   const { item, player } = event
 
   if (item.id !== 'kubejs:intake_slip') return
-
+  
   const lines = [
     Text.of('[ARBITER TERMINAL — INTAKE RECORD]').color('gold').bold(true),
     Text.of('――――――――――――――――――――――――――――――').color('dark_gray'),
@@ -19,7 +19,9 @@ ItemEvents.rightClicked(event => {
       .append(Text.of(player.name.string).color('yellow'))
       .append(Text.of(', your intake has been processed.').color('white')),
     Text.of('Inmate ID is ').color('white')
-      .append(Text.of('INMATE-0690').color('yellow')),
+      .append(Text.of('INMATE-' +
+         getRandomInt().toString() + getRandomInt().toString() + getRandomInt().toString() + getRandomInt().toString()
+    ).color('yellow')),
     Text.of('Sentencing classification: ').color('white')
       .append(Text.of('TIER ZERO').color('red').bold(true)),
     Text.of('Tier Zero is considered the lowest classification. Good luck.').color('gray').italic(true),
@@ -46,3 +48,7 @@ ItemEvents.rightClicked(event => {
 
   event.cancel()
 })
+
+function getRandomInt() {
+  return Math.floor(Math.random() * 10);
+}

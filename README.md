@@ -10,4 +10,5 @@ Please refer to their tutorials page for more info.
 
 # Credits
 [GregTech Modern Community Pack](https://github.com/GregTechCEu/GregTech-Modern-Community-Pack), for a well put together base modlist and questline    
+[Star Technology](https://www.curseforge.com/minecraft/modpacks/star-technology), for great examples of a modern gt pack
 [Iterable](https://github.com/mattparksjr), for creating the pack

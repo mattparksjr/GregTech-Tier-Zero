@@ -21,8 +21,8 @@ file = "config/ftbquests/quests/chapters/ev__extreme_voltage.snbt"
 hash = "4e3858dcabe7015e228562c8268e81ad9f6fb5ef00452f3c6de90c626bb27cae"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/gtceu.snbt"
-hash = "dab9f8017069d5a0d082ff31411f2fcc07cb164aef7d0bd3f9de6cd00989d04a"
+file = "config/ftbquests/quests/chapters/gttzero.snbt"
+hash = "6e44a07d4d792be55c94739a5840d1ef14a3ec1b548ee65b666987e42a56d80d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/heating_coils.snbt"
@@ -107,6 +107,10 @@ hash = "30aba890142a543fdcb40c8755578fe7e3fc105e43d8f9bfe7916e3f3ce16678"
 [[files]]
 file = "config/ftbquests/quests/reward_tables/hv_components.snbt"
 hash = "9b642be66ea1dfe0ec06781642f33038d0cd8f7cf0a7d14089696c98427398b1"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/lumber_jack.snbt"
+hash = "352601f973c091d2a0c22ae3ccba5e94fb2db04470747eb7160c56349d4d2d3e"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/platinum_group_processing.snbt"
@@ -201,8 +205,12 @@ file = "kubejs/assets/kubejs/textures/item/intake_slip.png"
 hash = "330fa6ad6300f10d4d213f0f29537feb056bfaeb6adb44fbd7c26e651ddc5546"
 
 [[files]]
-file = "kubejs/client_scripts/example.js"
-hash = "152019ed6e0410a82805a95ea10f1ad1a17beaf2b50864d89b8fa9d172129ac7"
+file = "kubejs/assets/sophisticatedbackpacks/lang/en_us.json"
+hash = "5b59e5067cd2d39c51dcf8e76e3c5b4b2d5ddfa3e453702464d5c56ed3c2f289"
+
+[[files]]
+file = "kubejs/client_scripts/jei.js"
+hash = "8657618cafe69548a550dd31565f045d2776ff0879db28f7d151afdac7d49d15"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -218,19 +226,15 @@ hash = "767787e282b97ca09f91ce04ce49eab39be03b7232d3867c1375c404e3e2924d"
 
 [[files]]
 file = "kubejs/server_scripts/crafting.js"
-hash = "d9190348b8378681f05dec53f4e1f9cc9b132c96ab7eb17e8ecacbba995f41fc"
-
-[[files]]
-file = "kubejs/server_scripts/example.js"
-hash = "a19b7c81a150bd965b153ded9c45ee7649eaad9e10d0a5ec1d662e7b15ceadb2"
+hash = "c5eeefbe02cb012d10c81ffff5b66e305da676b67786bcd55e7c0e52c6f39838"
 
 [[files]]
 file = "kubejs/server_scripts/sophisticated_backpacks/backpacks.js"
-hash = "1775346c21ad9ee1cf3a9ca1431b98c86a2f7dba25b967ee197c752a761c7687"
+hash = "05847a366759dddb3701b8addbe79e613016e5860380f61cde7108924e5cee31"
 
 [[files]]
 file = "kubejs/server_scripts/story_intro.js"
-hash = "0c0b9b5764af2ab36c9b0aeb4f297a1cc23a8a7b8acd93e91da936c285c7fdf3"
+hash = "bf0a8770cd4fa597b93a9e572595d53e2c7c3676d8526820f2b1afee63887fa6"
 
 [[files]]
 file = "kubejs/startup_scripts/example.js"
@@ -702,6 +706,11 @@ metafile = true
 [[files]]
 file = "mods/ftb-teams-forge.pw.toml"
 hash = "efda76423b21f9bfab4ad8d0411f0b06a199ab7e3e12ca16dc0586c1828b8f07"
+metafile = true
+
+[[files]]
+file = "mods/ftb-xmod-compat.pw.toml"
+hash = "39e65bf3c47517cdb2f9b4b49c6632dd56db797744faaf8b1a3726b1b95aacb4"
 metafile = true
 
 [[files]]
