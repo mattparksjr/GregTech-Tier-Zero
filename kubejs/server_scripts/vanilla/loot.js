@@ -1,4 +1,5 @@
 LootJS.modifiers((event) => {
+  console.log("GTT0: Modifiying loot tables");
   event
     .addEntityLootModifier("minecraft:blaze")
     .replaceLoot("minecraft:blaze_rod", "gtceu:sulfur_dust", true);

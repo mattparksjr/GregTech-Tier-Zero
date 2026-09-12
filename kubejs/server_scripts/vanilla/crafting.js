@@ -4,11 +4,13 @@ ServerEvents.recipes((event) => {
 });
 
 function remove(event) {
+  console.log("GTT0: Removing vanilla crafting recipes");
   event.remove({ id: "minecraft:crafting_table" });
   event.remove({ output: "#minecraft:beds" });
 }
 
 function add(event) {
+  console.log("GTT0: Adding vanilla crafting recipes");
   event.campfireCooking(
     "#minecraft:logs_that_burn",
     "gtceu:small_ash_dust",
@@ -23,8 +25,8 @@ function add(event) {
       .shaped(`minecraft:${color}_bed`, ["CCC", "PPP", "FHF"], {
         C: `minecraft:${color}_carpet`,
         P: "#minecraft:planks",
-        H: "#gtceu:tools/crafting_hammers",
-        F: MELLET,
+        H: MELLET,
+        F: "#forge:fences/wooden",
       })
       .damageIngredient(MELLET);
   });

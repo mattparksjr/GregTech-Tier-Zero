@@ -1,4 +1,5 @@
 ServerEvents.recipes((event) => {
+  console.log("GTT0: Modifiying Sophisticated Backpack recipes");
   event.remove({ id: "sophisticatedbackpacks:backpack" });
   event.remove({ id: "sophisticatedbackpacks:copper_backpack" });
   event.remove({ id: "sophisticatedbackpacks:iron_backpack_from_copper" });

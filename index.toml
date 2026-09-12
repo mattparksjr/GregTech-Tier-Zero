@@ -1,16 +1,12 @@
 hash-format = "sha256"
 
 [[files]]
-file = "AI_POLICY.md"
-hash = "c11d721405ce1244e2c30f17f9896784026daf893fb99ebdcefadae15bc61821"
-
-[[files]]
 file = "config/EnderStorage.cfg"
 hash = "55a2f732ab7023abc0ac4d2a0741555d8185ef360f19fdf0285bc3412c952e41"
 
 [[files]]
 file = "config/chloride-client.toml"
-hash = "282f551ad512c8ccba2367debf93ecd9941d59f2598d3df67d59bcf07715a832"
+hash = "f85ab8d467c2915e3a560a63d907b2505d884fc25d6cac29663dbc1d9c978647"
 
 [[files]]
 file = "config/darkmodeeverywhereshaders.json"
@@ -158,7 +154,7 @@ hash = "5c595b82e6c7a3170a0bd9b7c39ea4172d772d0802785c7dfc823e1b6ee5f04e"
 
 [[files]]
 file = "config/item_obliterator.json5"
-hash = "9636d28c931e3d93b7102d62a2d291e6ab59041603c61db5c78fb3c94270ad8f"
+hash = "51fb8450a54153227e5d9c4099ed20809bfac94077498de9f69bae3a0ab15225"
 
 [[files]]
 file = "config/itemcollectors-common.toml"
@@ -262,7 +258,7 @@ hash = "5b59e5067cd2d39c51dcf8e76e3c5b4b2d5ddfa3e453702464d5c56ed3c2f289"
 
 [[files]]
 file = "kubejs/client_scripts/jei.js"
-hash = "8657618cafe69548a550dd31565f045d2776ff0879db28f7d151afdac7d49d15"
+hash = "c84358383954d07cc6cd6f5b39dc18a64030a52d1da3f64b82da84772c1c4415"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -278,31 +274,31 @@ hash = "767787e282b97ca09f91ce04ce49eab39be03b7232d3867c1375c404e3e2924d"
 
 [[files]]
 file = "kubejs/server_scripts/farmersdelight/removals.js"
-hash = "9547f73527266d201d0f0a72f533529f1558c033e9f8e42da03f4a7ec2230a75"
+hash = "14cc41b51c192a949ec61a561344fcf0d19c0808d1a341494bdb14992d88313f"
 
 [[files]]
-file = "kubejs/server_scripts/gtt0_crafting.js"
-hash = "0dfa3151f68f3e56f0fdf8f90e7a669ac700a5d6f632e50d5c680eb4755b6144"
+file = "kubejs/server_scripts/gtt0/gtt0_crafting.js"
+hash = "5b63272a1fc6aaa1067c21dd0215c9fba6d639aa22cf8f625e26a8adf9a5dd60"
 
 [[files]]
-file = "kubejs/server_scripts/sophisticated_backpacks/backpacks.js"
-hash = "8d6b31f225e4c9604d7decec7d6c9b805d378977c4c05b9842e022cfb9aebdfe"
-
-[[files]]
-file = "kubejs/server_scripts/story_intro.js"
+file = "kubejs/server_scripts/gtt0/story_intro.js"
 hash = "d26c9f5c39ed18a9c09252f5d372640b8865f9ad29a838e368d6e75afd09eb0c"
 
 [[files]]
+file = "kubejs/server_scripts/sophisticated_backpacks/backpacks.js"
+hash = "a633d34c45ebfbd1f193715553c93a4e981836afb1f2bcb97aeb8bd0ed2a3f7d"
+
+[[files]]
 file = "kubejs/server_scripts/supplementaries/crafting.js"
-hash = "fd9b279b511e88f0aff12827efd7564ccdc01fe0e915f0702c6fcc9e3ba1b0c8"
+hash = "c53c6728fb4dd61a524ef7b4e4399ab21ca448a12de287cc338fa5cde77b9c61"
 
 [[files]]
 file = "kubejs/server_scripts/vanilla/crafting.js"
-hash = "515230cfa0d0466e0bf4728cc89d433730d7bb0253b5e548f9bfdf72e63a27ef"
+hash = "f4516383a7c3862cef8c36c4e93590ce2f70917c02ca61147bc635089951f609"
 
 [[files]]
 file = "kubejs/server_scripts/vanilla/loot.js"
-hash = "c426704a8749e261b5e5d2b140362b5f76992c1edf7b9267ddb02e0ef3fe9c37"
+hash = "39b6e4a52582728ab92d1fa46382c0d7ac032fa5b9c257e5986deb3d56761ace"
 
 [[files]]
 file = "kubejs/startup_scripts/gtt0.js"
@@ -1466,6 +1462,10 @@ metafile = true
 file = "mods/zfastnoise.pw.toml"
 hash = "debf725764848c1b3c08882c7a452e3eb59078810b4918f74ae520ec371f773f"
 metafile = true
+
+[[files]]
+file = "shaderpacks/ComplementaryReimagined_r5.9 + EuphoriaPatches_1.10.0.txt"
+hash = "90aca29af4fc06fbec319d481b3c9c57e0f3c4f8fa50611061c15ee48e2c2af5"
 
 [[files]]
 file = "shaderpacks/complementary-reimagined.pw.toml"
