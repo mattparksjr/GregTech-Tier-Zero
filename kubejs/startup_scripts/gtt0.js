@@ -1,1 +1,1 @@
-Platform.mods.kubejs.name = 'GTT0';
+Platform.mods.kubejs.name = "GTT0";

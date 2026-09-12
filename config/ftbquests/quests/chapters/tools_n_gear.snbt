@@ -1,0 +1,576 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	default_quest_size: 0.75d
+	filename: "tools_n_gear"
+	group: ""
+	hide_quest_until_deps_visible: true
+	icon: {
+		Count: 1
+		id: "legendary_monsters:annihilator_helmet"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "5ADCFED0028446E6"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1ECBA1CBFFB9F625"]
+			id: "04637BD27BD58F51"
+			subtitle: "It's about time..."
+			tasks: [{
+				count: 16L
+				id: "7226D66CB9DADEEA"
+				item: { Count: 8, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			title: "Iron secured"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04637BD27BD58F51"]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2323AAB72EC647F3"
+			subtitle: "It weighs more too!"
+			tasks: [
+				{
+					id: "150DF0B6B9E65170"
+					item: {
+						Count: 1
+						id: "minecraft:iron_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2629F10D0C7CEAED"
+					item: {
+						Count: 1
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "385BC760642DCC21"
+					item: {
+						Count: 1
+						id: "minecraft:iron_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "77DC0FE8257D7000"
+					item: {
+						Count: 1
+						id: "minecraft:iron_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "751AFDED71D7873D"
+					item: {
+						Count: 1
+						id: "minecraft:shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "An upgrade from your jumpsuit"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["04637BD27BD58F51"]
+			description: [
+				"Perfect, your first hammer."
+				""
+				"All of GregTech's tools can be made from many different materials. Each one provides more or less durablity, so it is worth browsing to find the best one for your level. "
+				""
+				"These tools are not consumed when crafted with, instead they take durablity damage. Your first hammer can be iron, or wrought iron if you are a high achiever. It is generally a good idea to make tools out of the best material you can, as they will last much longer"
+				""
+				"PS: GregTech tools can be repaired in an anvil. Your hammer can also mute machines if you right-click them."
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_hammer"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "723121584EB9D875"
+			optional: true
+			rewards: [{
+				id: "74F37774CD93CAAC"
+				item: "gtceu:iron_plate"
+				random_bonus: 3
+				type: "item"
+			}]
+			subtitle: "Hammer yourself to more tools"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "gtceu:iron_hammer"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							HarvestLevel: 2
+							MaxDamage: 255
+							ToolSpeed: 6.0f
+						}
+						HideFlags: 2
+					}
+				}
+				id: "0CDCF23183D37717"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:tools/crafting_hammers"
+					}
+				}
+				title: "Any hammer"
+				type: "item"
+			}]
+			title: "When all you have is a hammer"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["723121584EB9D875"]
+			id: "12D6698F3F2B80B7"
+			tasks: [{
+				count: 8L
+				id: "4B7FEA0E884D135C"
+				item: { Count: 8, id: "gtceu:iron_plate" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["12D6698F3F2B80B7"]
+			description: [
+				"Feeling thirsty?"
+				""
+				"The bucket recipe may not be what you expected. It now requires plates. Plates can be made with two ingots and the new hammer you just made. This ratio does get better with time. For now, take note of how this basic recipe has been changed, there are many more around the corner. "
+				""
+				"Take this &6Wooden Barrel&r full of &bWater&r as a reward. Its portable atleast."
+			]
+			id: "17DF87A40EA9ADEC"
+			shape: "circle"
+			size: 0.5d
+			subtitle: "Thats one way to use a plate"
+			tasks: [{
+				id: "76C330D4EDA1F0C9"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			title: "I NEED WATER!"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["12D6698F3F2B80B7"]
+			description: [
+				"More GregTech tools are required for progression - here are the ones to lay eyes on."
+				""
+				"&9&lWrench:&r A crafting tool, but also the correct tool for GregTech machines... perfect if you think using pickaxes is unethical. It can also double as a &6wrench for other mods&r. Right-click allows you to set the output side of GregTech machines, and sneak-right-clicking rotates machines."
+				""
+				"&9&lFile:&r A crafting tool... and that's it. Yay!"
+				""
+				"&9&lSaw:&r Yet another crafting tool. If we were any more evil, we would force its use if you wanted to obtain 4 Planks and 4 Sticks from their respective crafting recipes. That being said, you can still use it to get &a6 Planks per Log&r, if you wish."
+				"{@pagebreak}"
+				"&eNote:&r Any Quest with GregTech tools can be completed with the tool crafted from any material, not just the one displayed."
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:tungsten_steel_wrench"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						Mode: 2b
+					}
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 4
+						MaxDamage: 2047
+						ToolSpeed: 13.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "2D431D70896370B6"
+			subtitle: "I did tell you that you'd need more..."
+			tasks: [
+				{
+					id: "013546BE6B5303BF"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:tools/crafting_wrenches"
+						}
+					}
+					title: "Any #gtceu:tools/crafting_wrenches"
+					type: "item"
+				}
+				{
+					id: "0F6B43F785FCA74B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:tools/crafting_files"
+						}
+					}
+					title: "Any #gtceu:tools/crafting_files"
+					type: "item"
+				}
+				{
+					id: "233389B87EAD9893"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:tools/crafting_saws"
+						}
+					}
+					title: "Any #gtceu:tools/crafting_saws"
+					type: "item"
+				}
+			]
+			title: "The first set of tools"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D431D70896370B6"]
+			description: [
+				"This hammer isn't quite like the ones you'll use for crafting. It actually works as a &d3x3 pickaxe&r!"
+				""
+				"Shift-right-click with a mining hammer in your hand to adjust the area of effect."
+				""
+				"Make &bgood use&r of these hammers! They'll help you to clear out an entire vein in &6record time&r."
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_mining_hammer"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						AoEColumn: 1
+						AoELayer: 0
+						AoERow: 1
+						MaxAoEColumn: 1
+						MaxAoELayer: 0
+						MaxAoERow: 1
+						TorchPlacing: 1b
+					}
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 2
+						MaxDamage: 767
+						ToolSpeed: 4.8f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "1367AB0E198A3681"
+			subtitle: "Now I can mine for real"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "gtceu:iron_mining_hammer"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							AoEColumn: 1
+							AoELayer: 0
+							AoERow: 1
+							MaxAoEColumn: 1
+							MaxAoELayer: 0
+							MaxAoERow: 1
+							TorchPlacing: 1b
+						}
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							HarvestLevel: 2
+							MaxDamage: 767
+							ToolSpeed: 4.8f
+						}
+						HideFlags: 2
+					}
+				}
+				id: "2839DDB5FA68F813"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/mining_hammers"
+					}
+				}
+				title: "Any mining hammer"
+				type: "item"
+			}]
+			title: "A mining hammer!?!?!"
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2D431D70896370B6"]
+			description: [
+				"More tools - they're not critically important right now, but you'll need to make these at some point."
+				""
+				"&9&lScrewdriver:&r A crafting tool. It's used for special configuration of machines and covers."
+				""
+				"&9&lWire Cutter:&r A crafting tool. You'll need it if you want to configure wire connections. Right-clicking on wires will enable or disable connection to other blocks."
+				""
+				"&9&lMortar:&r A crafting tool, used to grind various things down into dust form."
+				""
+				"&9&lKnife:&r A pretty mediocre weapon, better suited as - &oyou guessed it&r - a crafting tool!"
+				""
+				"&9&lSoft Mallet:&r A tool to toggle machine operation with a simple right-click."
+				"{@pagebreak}"
+				"There are a couple of other tools that are quite niche, but deserve a mention."
+				""
+				"&9&lCrowbar:&r A helpful tool that can remove covers from &aGregTech&r machines by right-clicking the side."
+				""
+				"&9&lScythe:&r A powerful farming tool that can automatically replant your crops in a large area. It's also a surprisingly good weapon!"
+				""
+				"&9&lPlunger:&r A tool to clear stuck fluids from GregTech&a machines."
+				"{@pagebreak}"
+				"&e&lNote:&r This quest's reward is &3Damascus Steel&r - a rare material which can only be found as overworld loot. It far surpasses the materials you have now, so be sure to use it."
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_screwdriver"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						MaxDamage: 255
+					}
+					HideFlags: 2
+				}
+			}
+			id: "0438F790A210B487"
+			subtitle: "You didn't think that was all did you?"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "gtceu:wood_mallet"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								MaxDamage: 127
+							}
+							HideFlags: 2
+						}
+					}
+					id: "3F99D32ABA509F45"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:tools/crafting_mallets"
+						}
+					}
+					title: "Any soft mallet"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "gtceu:iron_knife"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								AttackDamage: 2.0f
+								AttackSpeed: 3.0f
+								DefaultEnchantments: [ ]
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					id: "5092D173CCD6D42E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:tools/crafting_knives"
+						}
+					}
+					title: "Any knife"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "gtceu:iron_mortar"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					id: "7DD94CE51B5FC297"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:tools/crafting_mortars"
+						}
+					}
+					title: "Any Mortar"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "gtceu:iron_wire_cutter"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					id: "4BEDC9EFDA285F35"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:tools/crafting_wire_cutters"
+						}
+					}
+					title: "Any wire cutters"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "gtceu:iron_screwdriver"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					id: "68B53A057767384E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/screwdrivers"
+						}
+					}
+					title: "Any screwdriver"
+					type: "item"
+				}
+			]
+			title: "The rest of the tools"
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2D431D70896370B6"]
+			description: [
+				"Tired of having to keep all of your ingredients in your inventory?"
+				""
+				"Worry no more! With a crafting station you are able to pull items from adjacent inventories! If you place a chest next to the station, you will be able to see the contents while crafting in the station. Neet right?"
+			]
+			id: "578DF832D10B39C7"
+			size: 0.66d
+			subtitle: "Microcrafting just got easier"
+			tasks: [{
+				icon: "craftingstation:crafting_station"
+				id: "1851186068914C97"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "craftingstation:crafting_station"
+							}
+							{
+								Count: 1b
+								id: "craftingstation:crafting_station_slab"
+							}
+						]
+					}
+				}
+				title: "Crafting station, or slab"
+				type: "item"
+			}]
+			x: 5.61d
+			y: -0.66d
+		}
+	]
+	subtitle: ["So maybe you wont die?"]
+	title: "Tools N Gear"
+}

@@ -160,7 +160,7 @@
 				""
 				"First order of business is getting yourself &9settled.&r First grab some logs, and make a crafting table."
 				""
-				"The flint? Find some &7gravel&r or go loot some. Take this time to explore and setup your &abase&r of operations."
+				"The flint? Find some &7gravel&r or go loot some. Take this time to explore and maybe find your &abase&r of operations."
 				""
 				"&o&8Tip: Eating &bunique&r &8foods increases your total health pool!&r&r"
 			]
@@ -197,7 +197,7 @@
 				}
 			]
 			title: "The project begins"
-			x: 1.875d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -270,7 +270,7 @@
 				""
 				"&6-&r Ore veins generate in a grid. Every vein is spaced by &o(approximately)&r 3 chunks from one to another in a cardinal direction."
 				""
-				"&bPS: &8Press 'j' for a full screen map, and waypoint management. I wonder if other buttons control this map too..."
+				"&bPS: &7Press 'j' for a full screen map, and waypoint management. I wonder if there are other hotkeys too..."
 				""
 				"&bThis quest unlocks a guide."
 			]
@@ -290,8 +290,8 @@
 				type: "checkmark"
 			}]
 			title: "Dont just enter &oany&r random hole..."
-			x: 2.97d
-			y: -0.99d
+			x: 3.3d
+			y: -1.32d
 		}
 		{
 			dependencies: ["284FF001F6EB9649"]
@@ -836,104 +836,8 @@
 				type: "item"
 			}]
 			title: "Better Than Iron"
-			x: 2.97d
-			y: 1.32d
-		}
-		{
-			dependencies: ["1ECBA1CBFFB9F625"]
-			description: [
-				"Alright - your first &oproper&r &aGregTech&r tool. The first of &dmany&r."
-				""
-				"GT tools can be made out of many different materials. When used in crafting recipes, they &baren't consumed&r, instead losing durability. You'll want to start with an Iron tool - but you could opt for Wrought Iron if you already tackled that quest."
-				""
-				"&9&lHammer&f:&r A crafting tool that shows up in a lot of earlygame recipes. Its secondary function is muting machines by &msmacking&r right-clicking them."
-				""
-				"As a sidenote on all &aGregTech&r tools, you can repair them in an Anvil using the material of the tool itself, just like any vanilla tool. If you are finding yourself short on experience, &eBottles o' Enchanting&r are now craftable."
-			]
-			id: "7DEB73FD649BDFB6"
-			rewards: [{
-				id: "6C50A2A3D43D3FEE"
-				item: "gtceu:iron_plate"
-				random_bonus: 2
-				type: "item"
-			}]
-			shape: "square"
-			size: 0.75d
-			subtitle: "Your first GT Tool!"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "gtceu:steel_hammer"
-					tag: {
-						Damage: 0
-						GT.Tool: { }
-					}
-				}
-				id: "1A4DDB914D7D2F3C"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:tools/hammers"
-					}
-				}
-				title: "Any Hammer!"
-				type: "item"
-			}]
-			title: "STOP! Hammer time!"
-			x: 5.625d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2001CB4968D3E0A2"]
-			description: [
-				"This hammer isn't quite like the ones you'll use for crafting. It actually works as a &d3x3 pickaxe&r!"
-				""
-				"If you're familiar with &a&lTinker's Construct&r, it behaves &esimilarly&r to hammers from that mod."
-				""
-				"Shift-right-click with a mining hammer in your hand to adjust the area of effect."
-				""
-				"Make &bgood use&r of these hammers! They'll help you to clear out an entire vein in &6record time&r."
-				""
-				"&eNote:&r Any quest with GregTech tools can be complete with tools crafted from any material - not just the one displayed."
-			]
-			icon: {
-				Count: 1
-				id: "gtceu:steel_mining_hammer"
-				tag: {
-					Damage: 0
-					GT.Tool: {
-						DefaultEnchantments: [ ]
-					}
-				}
-			}
-			id: "4A365A7CC9E374F9"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "Mining just became efficient"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "gtceu:steel_mining_hammer"
-					tag: {
-						Damage: 0
-						GT.Tool: { }
-					}
-				}
-				id: "4F372C393ADC6CE2"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:tools/mining_hammers"
-					}
-				}
-				title: "Any Mining Hammer will do."
-				type: "item"
-			}]
-			title: "Hammer down!"
-			x: 7.5d
-			y: 0.99d
+			x: 5.28d
+			y: 0.66d
 		}
 		{
 			dependencies: ["0EAF2C5B5EB755C5"]
@@ -1006,186 +910,11 @@
 				type: "item"
 			}]
 			title: "Iron age"
-			x: 3.75d
+			x: 4.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["7DEB73FD649BDFB6"]
-			description: [
-				"More GregTech tools are required for progression - here are the ones to lay eyes on."
-				""
-				"&9&lWrench:&r A crafting tool, but also the correct tool for GregTech machines... perfect if you think using pickaxes is unethical. It can also double as a &6wrench for other mods&r. Right-click allows you to set the output side of GregTech machines, and sneak-right-clicking rotates machines."
-				""
-				"&9&lFile:&r A crafting tool... and that's it. Yay!"
-				""
-				"&9&lSaw:&r Yet another crafting tool. If we were any more evil, we would force its use if you wanted to obtain 4 Planks and 4 Sticks from their respective crafting recipes. That being said, you can still use it to get &a6 Planks per Log&r, if you wish."
-				"{@pagebreak}"
-				"&eNote:&r Any Quest with GregTech tools can be completed with the tool crafted from any material, not just the one displayed."
-			]
-			icon: {
-				Count: 1
-				id: "gtceu:iron_wrench"
-				tag: {
-					Damage: 0
-					GT.Tool: { }
-				}
-			}
-			id: "2001CB4968D3E0A2"
-			shape: "square"
-			size: 0.75d
-			tasks: [
-				{
-					id: "54E092F42DA65B86"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:tools/wrenches"
-						}
-					}
-					title: "Any Wrench!"
-					type: "item"
-				}
-				{
-					id: "4D6B7E2B4C8E5747"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:tools/files"
-						}
-					}
-					title: "Any File!"
-					type: "item"
-				}
-				{
-					id: "23D6CF49FC7E82A9"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:tools/saws"
-						}
-					}
-					title: "Any Saw!"
-					type: "item"
-				}
-			]
-			title: "Important Tools"
-			x: 7.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2001CB4968D3E0A2"]
-			description: [
-				"More tools - they're not critically important right now, but you'll need to make these at some point."
-				""
-				"&9&lScrewdriver:&r A crafting tool. It's used for special configuration of machines and covers."
-				""
-				"&9&lWire Cutter:&r A crafting tool. You'll need it if you want to configure wire connections. Right-clicking on wires will enable or disable connection to other blocks."
-				""
-				"&9&lMortar:&r A crafting tool, used to grind various things down into dust form."
-				""
-				"&9&lKnife:&r A pretty mediocre weapon, better suited as - &oyou guessed it&r - a crafting tool!"
-				""
-				"&9&lSoft Mallet:&r A tool to toggle machine operation with a simple right-click."
-				"{@pagebreak}"
-				"There are a couple of other tools that are quite niche, but deserve a mention."
-				""
-				"&9&lCrowbar:&r A helpful tool that can remove covers from &aGregTech&r machines by right-clicking the side."
-				""
-				"&9&lScythe:&r A powerful farming tool that can automatically replant your crops in a large area. It's also a surprisingly good weapon!"
-				""
-				"&9&lPlunger:&r A tool to clear stuck fluids from GregTech&a machines."
-				"{@pagebreak}"
-				"&e&lNote:&r This quest's reward is &3Damascus Steel&r - a rare material which can only be found as overworld loot. It far surpasses the materials you have now, so be sure to use it."
-			]
-			icon: {
-				Count: 1
-				id: "gtceu:iron_screwdriver"
-				tag: {
-					Damage: 0
-					GT.Tool: {
-						DefaultEnchantments: [ ]
-					}
-				}
-			}
-			id: "5C3501DD3B4788FA"
-			rewards: [{
-				count: 16
-				id: "433F0ED89B586383"
-				item: "gtceu:damascus_steel_ingot"
-				type: "item"
-			}]
-			size: 0.66d
-			tasks: [
-				{
-					id: "4055931FAD6A5087"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:tools/screwdrivers"
-						}
-					}
-					title: "Any Screwdriver!"
-					type: "item"
-				}
-				{
-					id: "0CB546DCA11BB335"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:tools/wire_cutters"
-						}
-					}
-					title: "Any Wire Cutter!"
-					type: "item"
-				}
-				{
-					id: "4DF1C23D7DD1FAD6"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:tools/mortars"
-						}
-					}
-					title: "Any Mortar!"
-					type: "item"
-				}
-				{
-					id: "397DD831CA0665E7"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:tools/knives"
-						}
-					}
-					title: "Any Knife!"
-					type: "item"
-				}
-				{
-					id: "1BFE642ED0595A93"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:tools/mallets"
-						}
-					}
-					title: "Any Soft Mallet!"
-					type: "item"
-				}
-			]
-			title: "More Tools"
-			x: 6.6d
-			y: -0.99d
-		}
-		{
-			dependencies: ["2001CB4968D3E0A2"]
+			dependencies: ["1ECBA1CBFFB9F625"]
 			description: [
 				"The &e&lCoke Oven&r will likely be your first &aGregTech&r multiblock. Congratulations!"
 				""
@@ -1200,8 +929,6 @@
 				"If the Coke Oven happens to fully fill up on &eCreosote&r that you are not using, break and replace the Coke Oven block. &3Automated fluid voiding&r is available later in the game."
 				""
 				"&lTip:&r A bucket of Creosote fuels a furnace for &c32&r items! Take full advantage of this to stop burning planks."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o The concept of multiblocks is a modded Minecraft classic. Think of IC2's Nuclear Reactor, or Railcraft's Coke Oven - truly revolutionary at the time!&r"
 			]
 			icon: "gtceu:coke_oven"
 			id: "4946FC5BCA4CCA88"
@@ -1221,11 +948,11 @@
 				type: "item"
 			}]
 			title: "Coke Oven"
-			x: 9.0d
-			y: -1.7999999999999998d
+			x: 6.0d
+			y: -1.2d
 		}
 		{
-			dependencies: ["2001CB4968D3E0A2"]
+			dependencies: ["1ECBA1CBFFB9F625"]
 			description: [
 				"More resources are always nice. You're getting close to entering the &6age of Steam&r - Copper and Tin are required in many &6Steam Age&r machines, so check the ore tab to find out what veins they can be found in, and get mining!"
 				""
@@ -1238,35 +965,26 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "2C28FA1A5275D24E"
-				table_id: 1702176335602373230L
 				type: "choice"
 			}]
 			size: 0.75d
-			subtitle: "Gather more resources!"
-			tasks: [{
-				count: 32L
-				id: "616556ECE4DB6103"
-				item: {
-					Count: 32
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "minecraft:copper_ingot"
-							}
-							{
-								Count: 1b
-								id: "gtceu:tin_ingot"
-							}
-						]
-					}
+			subtitle: "Iron is pretty bad anyways"
+			tasks: [
+				{
+					count: 64L
+					id: "56D60E8CB348F390"
+					item: { Count: 64, id: "minecraft:copper_ingot" }
+					type: "item"
 				}
-				title: "32 Copper or Tin"
-				type: "item"
-			}]
-			title: "Onwards to the Age of Bronze!"
-			x: 9.0d
+				{
+					count: 8L
+					id: "2F1385687A3EE74C"
+					item: { Count: 8, id: "gtceu:tin_ingot" }
+					type: "item"
+				}
+			]
+			title: "Onto the bronze age"
+			x: 6.5d
 			y: 0.0d
 		}
 		{
@@ -1298,54 +1016,17 @@
 				type: "item"
 			}]
 			title: "Bronze Age? No, &6Steam Age&r!"
-			x: 10.799999999999999d
+			x: 8.5d
 			y: 0.0d
-		}
-		{
-			dependencies: ["7DEB73FD649BDFB6"]
-			description: [
-				"The bucket recipe has been &d&lchanged.&r It now requires plates - &owahoo&r."
-				""
-				"Plates are used absolutely &beverywhere&r in &aGregTech&r. Combining two ingots with your new &9hammer&r in a crafting table will make a plate. This ratio is kind of &cexpensive,&r but better recipes for plates will come later."
-				""
-				"Take this &6Wooden Barrel&r full of &bWater&r as a reward. Huh... isn't that an odd reward? We just wanted to show you that all &aGTCEu&r tanks are portable."
-			]
-			icon: "minecraft:bucket"
-			id: "592BD683A48C2AA2"
-			rewards: [{
-				id: "68D4ECFA9AD5349A"
-				item: {
-					Count: 1
-					id: "gtceu:wood_drum"
-					tag: {
-						Fluid: {
-							Amount: 16000L
-							FluidName: "minecraft:water"
-						}
-					}
-				}
-				type: "item"
-			}]
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "#realism"
-			tasks: [{
-				id: "5DD165E4EB34C022"
-				item: "minecraft:bucket"
-				type: "item"
-			}]
-			title: "Greg has struck"
-			x: 5.61d
-			y: -0.99d
 		}
 		{
 			dependencies: ["0EAF2C5B5EB755C5"]
 			description: [
-				"Okay, you want to make some torches?"
+				"Okay, you want to make some &6torches?&r"
 				""
-				"Well, bad news. You'll need to make a coke oven first. For now, grab some logs and we'll help you out."
+				"Well, &cbad&r news. You'll need to make a coke oven first. For now, grab some &6logs&r and we'll help you out."
 				""
-				"It is important to take note that many items have diffrent recipes. The first one shown is not always the best. Take your time and explore recipes as you progress, you may find much cheaper alternatives as time goes on."
+				"It is important to take note that &l&6many&r&r items have diffrent recipes. The first one shown is not &aalways&r the best. Take your time and explore recipes as you progress, you may find much cheaper &aalternatives&r as time goes on."
 				""
 				"PS: You're gonna need ALOT of wood. Get to chopping!"
 			]
@@ -1375,40 +1056,8 @@
 				type: "item"
 			}]
 			title: "Getting some torches"
-			x: 1.65d
-			y: 0.99d
-		}
-		{
-			dependencies: ["45969FFBF88F4FBB"]
-			description: [
-				"In this &blightweight&r modpack, we've included enough QoL to &o(hopefully)&r fit your needs, and the pack is &aperfectly playable&r as is."
-				""
-				"&dStorage Drawers&r and &dApplied Energistics 2&r make an appearance to help with &estorage&r and &6logistics&r. Their recipes have been modified to fit progression, but you hopefully won't need to play 50 hours to make your first &5Molecular Assembler&r. There are also a few other mods that you may wish to pursue for some &ahelpful QoL&r."
-				"{@pagebreak}"
-				"But maybe you require... &osomething more&r?"
-				""
-				"If you're playing solo, feel free to &aadd mods&r to your instance. Some more &bQoL&r could be nice... more &3Tech&r could sate your cravings... maybe even some &5magic mods&r, as long as you don't add &eProjectE&r. Promise?"
-				""
-				"On the 1.12.2 version of &aGregtech: CEu&r, there were multiple &aGregTech&r addons that may be ported to 1.20.1 in future. Rest assured that this pack will do its &dbest&r to support them if they make it to this version!"
-			]
-			icon: "minecraft:structure_void"
-			id: "1283B4D7B5D82193"
-			rewards: [{
-				id: "460EC827273306A5"
-				item: "storagedrawers:quantify_key"
-				type: "item"
-			}]
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "Omw to install DecoCraft"
-			tasks: [{
-				id: "70C69E5432F6C3BE"
-				title: "I accept responsibility for any mod conflicts ;)"
-				type: "checkmark"
-			}]
-			title: "More mods?"
-			x: 9.9d
-			y: -1.32d
+			x: 4.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["45969FFBF88F4FBB"]
@@ -1493,8 +1142,8 @@
 				}
 			]
 			title: "A Minor Test of Strength"
-			x: 9.9d
-			y: 1.98d
+			x: 6.93d
+			y: 0.99d
 		}
 		{
 			dependencies: ["45969FFBF88F4FBB"]
@@ -1585,8 +1234,8 @@
 				}
 			]
 			title: "Early Investments"
-			x: 8.58d
-			y: 1.98d
+			x: 6.2700000000000005d
+			y: 0.99d
 		}
 		{
 			dependencies: ["25289F9E8AE01C29"]
@@ -1601,7 +1250,8 @@
 				"The quests are not a &chard&r requirement, but may prove helpful. GregTech can be a very &bcomplex&r mod."
 				"If you ever feel lost, check the guides."
 				""
-				"&8&oPS: If you need to throw items away, you can void items with the trash icon(&dT&r &8to toggle) in your inventory. &4NO REFUNDS&r&8,&r&r&r"
+				"&8&oPS: If you need to throw items away, you can void items with the trash icon(&dT&r &8to toggle) in your inventory. "
+				"&4NO REFUNDS."
 			]
 			icon: "ftbquests:book"
 			id: "13E9DF7E980CFC5B"
@@ -1621,29 +1271,6 @@
 			title: "Important Information"
 			x: -0.75d
 			y: 1.5d
-		}
-		{
-			dependencies: ["2001CB4968D3E0A2"]
-			description: [
-				"Crafting can quickly get &etiresome&r. How about making use of your &2new saw&r to make this Crafting table?"
-				""
-				"It allows you to craft from adjacent inventories, making classic &aGregTech&r microcrafting so much less &4tedious&r."
-				""
-				"Saw the table again for a lower-profile Slab version."
-			]
-			icon: "craftingstation:crafting_station"
-			id: "411AB552514EA14C"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "No, Tinkers' is not in this modpack"
-			tasks: [{
-				id: "30D40010C8E6E115"
-				item: "craftingstation:crafting_station"
-				type: "item"
-			}]
-			title: "Crafting Station"
-			x: 7.5d
-			y: -1.32d
 		}
 		{
 			dependencies: ["25289F9E8AE01C29"]
@@ -1754,8 +1381,8 @@
 				type: "checkmark"
 			}]
 			title: "Rocks and twigs and stones"
-			x: 3.0d
-			y: -1.75d
+			x: 3.3d
+			y: -2.0d
 		}
 		{
 			dependencies: ["25289F9E8AE01C29"]
@@ -1768,6 +1395,7 @@
 				""
 				"However you want to play the pack, feel free to modify your &6experience&r to fit your gameplay style. After all, if your sentence is not fun, how will you be able to be &anormal&r back home?"
 			]
+			icon: "enderio:vibrant_gear"
 			id: "65509207D979ABEE"
 			rewards: [{
 				id: "59FA083A47FF5788"
@@ -1787,44 +1415,121 @@
 		}
 		{
 			dependencies: ["0EAF2C5B5EB755C5"]
+			description: [
+				"&l&8[&6PROJECT-MANAGER&8]"
+				""
+				"Make some tools."
+				""
+				"While &avanilla&r tools are nice, &6GregTech&r tools offers some very good &bupgrades&r over their vanilla counterpart. "
+				"Oh and, you'll be needing even more &adifferent&r tools going forwards. Ever heard of a &dbuzzsaw?&r"
+			]
 			id: "284FF001F6EB9649"
-			tasks: [{
-				id: "7739523FAC46735B"
-				item: {
-					Count: 1
-					id: "minecraft:wooden_pickaxe"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "63DCD9A3FBB617AF"
+				table_id: 4972831587633459473L
+				type: "choice"
 			}]
+			subtitle: "Home here I come"
+			tasks: [
+				{
+					id: "7739523FAC46735B"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "572E434D8C1CFDAD"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
 			title: "Time to extract!"
-			x: 1.875d
+			x: 2.0d
 			y: -1.125d
 		}
 		{
-			dependencies: [
-				"1ECBA1CBFFB9F625"
-				"7DEB73FD649BDFB6"
+			dependencies: ["25289F9E8AE01C29"]
+			description: [
+				"&l&8[&6PROJECT-MANAGER&8]"
+				""
+				"Playing on a &6server&r or with &afriends?&r It might be a good idea to make a &dteam&r or something."
+				"Check out the &6guide&r for more info"
+				""
+				"&bThis quest unlocks a guide.&r"
 			]
-			id: "21706037F2C68C70"
-			size: 0.66d
-			subtitle: "Dying would be less then ideal"
+			icon: "farmersdelight:sweet_berry_cheesecake_slice"
+			id: "79438B57B5D9F940"
+			rewards: [{
+				id: "1E867A16244A5FFC"
+				type: "xp"
+				xp: 15
+			}]
+			size: 0.75d
 			tasks: [{
-				id: "4E82E70761AF59AC"
-				item: {
-					Count: 1
-					id: "minecraft:iron_helmet"
-					tag: {
-						Damage: 0
-					}
-				}
+				id: "395A230B85B87CB5"
+				title: "Oh! Thanks!"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0EAF2C5B5EB755C5"]
+			description: [
+				"&l&8[&6PROJECT-MANAGER&8]"
+				""
+				"Now that you have some tools, make a &6base.&r If you die we will have &cwasted&r our time giving you a chance to &aredeem&r yourself."
+				""
+				"It is generally a good idea to build somewhere that has easy access to &9water&r, or is not a super dry &denvironment.&r It's your &alife&r though."
+			]
+			icon: "minecraft:orange_bed"
+			id: "2C5D0CA656DBEF0B"
+			rewards: [{
+				id: "59345C23B083E28E"
+				item: "minecraft:campfire"
 				type: "item"
 			}]
-			title: "Getting gear'd"
-			x: 4.95d
-			y: 1.32d
+			subtitle: "Or a lawn, or a cave, or"
+			tasks: [
+				{
+					id: "6AE9584910FC8925"
+					item: "minecraft:furnace"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6D74F8EBDA920097"
+					item: { Count: 4, id: "minecraft:chest" }
+					type: "item"
+				}
+				{
+					id: "5EE91FAE217185A8"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:beds"
+						}
+					}
+					title: "Grab a bed"
+					type: "item"
+				}
+			]
+			title: "Making a field a home"
+			x: 4.5d
+			y: -1.0d
 		}
 	]
 	subtitle: ["Welcome to &6GTT0&r!"]

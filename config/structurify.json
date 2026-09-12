@@ -1,0 +1,171 @@
+{
+  "config_version": "2.0.35",
+  "config_datetime": "2026-09-11_21-47-03",
+  "general": {
+    "prevent_structure_overlap": true,
+    "overlap_padding": 2
+  },
+  "structure_namespaces": [
+    {
+      "name": "global",
+      "enable_min_distance_from_world_center": true,
+      "min_distance_from_world_center": 64
+    }
+  ],
+  "structures": [
+    {
+      "name": "minecraft:pillager_outpost",
+      "is_disabled": true
+    },
+    {
+      "name": "structory:abandoned_chapel",
+      "is_disabled": true
+    },
+    {
+      "name": "structory:dense_forest_ruin",
+      "is_disabled": true
+    },
+    {
+      "name": "structory:firetower",
+      "is_disabled": true
+    },
+    {
+      "name": "structory:jungle_ruin",
+      "is_disabled": true
+    },
+    {
+      "name": "structory:northern_ruin",
+      "is_disabled": true
+    },
+    {
+      "name": "structory:ruin_grassy",
+      "is_disabled": true
+    },
+    {
+      "name": "structory:swamp_ruin",
+      "is_disabled": true
+    },
+    {
+      "name": "structory:taiga_ruin_surface",
+      "is_disabled": true
+    },
+    {
+      "name": "structory:taiga_ruin_underground",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:desert_outpost",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:fortified_desert_village",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:fortified_village",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:glacial_hut",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:igloo",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:mage_complex",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:mage_tower",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:mage_tower_autumn",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:mage_tower_spring",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:mage_tower_summer",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:mage_tower_winter",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:rubble_desert",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:rubble_forest",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:rubble_jungle",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:rubble_mesa",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:rubble_mountain",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:rubble_taiga",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:spire",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:underground/frosted_dungeon",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:underground/giant_bee_hive",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:underground/mining_outpost",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:underground/oak_cabin",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:underground/old_refinery",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:underground/sunken_tower",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:underground/witch_hut",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:underground_cabin",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:valley_lodge",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:witch_hut",
+      "is_disabled": true
+    }
+  ],
+  "structure_sets": [],
+  "structure_template_pools": []
+}

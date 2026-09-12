@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
   // Surgical: one specific recipe by its id
   //event.remove({ id: 'gtceu:smelting/sticky_resin_from_slime' })
 
@@ -12,41 +12,36 @@ ServerEvents.recipes(event => {
   //event.remove({ input: '#forge:ingots/iron' })
 
   // Anything producing a given output
- // event.remove({ output: 'minecraft:cobblestone' })
+  // event.remove({ output: 'minecraft:cobblestone' })
 
   // Combine filters: only assembler recipes that use steel plates
   //event.remove({ type: 'gtceu:assembler', input: '#forge:plates/steel' })
 
-  remove(event)
-  add(event)
-  
-})
+  remove(event);
+  add(event);
+});
 
 function remove(event) {
-  event.remove({ id: 'minecraft:crafting_table' })
-  event.remove({ output: 'rechiseled:chisel'})
+  event.remove({ output: "rechiseled:chisel" });
 
-  event.remove({ mod: 'elevatorid' })
+  event.remove({ mod: "elevatorid" });
 }
 
 function add(event) {
+  const HAMMER = Ingredient.of("#gtceu:tools/crafting_hammers");
+  const SAW = Ingredient.of("#gtceu:tools/crafting_saws");
 
-  event.shaped('minecraft:crafting_table', [
-    'FF',
-    'PP'
-  ], {
-    P: '#minecraft:logs',
-    F: 'minecraft:flint'
-  })
+  event.shaped("rechiseled:chisel", ["FP", "SH"], {
+    H: HAMMER,
+    F: "#gtceu:tools/crafting_files",
+    P: "#forge:plates/iron",
+    S: "minecraft:stick",
+  });
 
-  event.shaped('rechiseled:chisel', [
-    'FP',
-    'SH',
-  ], {
-    H: '#gtceu:tools/crafting_hammers',
-    F: '#gtceu:tools/crafting_files',
-    P: '#forge:plates/iron',
-    S: 'minecraft:stick'
-  })
-
+  event
+    .shaped("craftingstation:crafting_station", ["CS"], {
+      C: "minecraft:crafting_table",
+      S: SAW,
+    })
+    .damageIngredient(SAW);
 }

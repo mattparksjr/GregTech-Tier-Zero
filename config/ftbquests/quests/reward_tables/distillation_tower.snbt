@@ -1,7 +1,7 @@
 {
 	id: "3A28954F13F42800"
 	loot_size: 1
-	order_index: 5
+	order_index: 4
 	rewards: [
 		{ count: 4, item: "gtceu:lv_super_tank" }
 		{ count: 16, item: "gtceu:clean_machine_casing" }

@@ -759,6 +759,18 @@
 			x: 3.0d
 			y: 1.98d
 		}
+		{
+			dependencies: ["79438B57B5D9F940"]
+			id: "6D80EA22C67AF6B5"
+			size: 0.75d
+			tasks: [{
+				id: "0B6665B3E86CB110"
+				title: "Playing on a server?"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
 	]
 	subtitle: ["For the Modern Minecrafter"]
 	title: "Tips and Tricks"

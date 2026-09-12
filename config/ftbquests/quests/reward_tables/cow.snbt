@@ -1,0 +1,10 @@
+{
+	id: "45030BFB54BBF111"
+	loot_size: 1
+	order_index: 8
+	rewards: [
+		{ count: 4, item: "minecraft:cooked_beef" }
+		{ count: 2, item: "minecraft:leather" }
+	]
+	title: "cow"
+}

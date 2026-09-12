@@ -1,0 +1,13 @@
+name = "Anvil Fix"
+filename = "AnvilFix-Forge-2.0.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2d679246fa8065c2509638bbfd8c2038e2eca859"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7512742
+project-id = 305480
