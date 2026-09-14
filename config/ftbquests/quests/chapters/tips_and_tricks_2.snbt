@@ -761,8 +761,16 @@
 		}
 		{
 			dependencies: ["79438B57B5D9F940"]
+			description: [
+				"If you are playing on a server, with some friends or foes, these tips might be useful."
+				""
+				"- Create a team(from your inventory screen) and invite your teamates. This allowes you to share land claims"
+				"- Claim your base area, and hold shift while claiming to keep the chunks loaded."
+				"- "
+			]
 			id: "6D80EA22C67AF6B5"
 			size: 0.75d
+			subtitle: "These might help..."
 			tasks: [{
 				id: "0B6665B3E86CB110"
 				title: "Playing on a server?"
@@ -770,6 +778,25 @@
 			}]
 			x: 0.0d
 			y: -1.0d
+		}
+		{
+			icon: "artifacts:villager_hat"
+			id: "0BCD895BE58B9342"
+			rewards: [{
+				count: 4
+				id: "2D071B597A90261B"
+				item: "minecraft:book"
+				type: "item"
+			}]
+			subtitle: "Yes, i know, more reading"
+			tasks: [{
+				id: "4753C2DA0906414B"
+				title: "Nice to meet you!"
+				type: "checkmark"
+			}]
+			title: "I am your guide"
+			x: 3.0d
+			y: -2.0d
 		}
 	]
 	subtitle: ["For the Modern Minecrafter"]

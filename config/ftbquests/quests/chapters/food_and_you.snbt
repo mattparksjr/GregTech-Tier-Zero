@@ -8,23 +8,100 @@
 	id: "4E67FECA78FDF737"
 	order_index: 2
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["12D6698F3F2B80B7"]
-		id: "4B901D37494392A9"
-		tasks: [
-			{
-				id: "002F6992EDC5667A"
-				item: "farmersdelight:cooking_pot"
+	quests: [
+		{
+			dependencies: ["12D6698F3F2B80B7"]
+			id: "4B901D37494392A9"
+			tasks: [
+				{
+					id: "002F6992EDC5667A"
+					item: "farmersdelight:cooking_pot"
+					type: "item"
+				}
+				{
+					id: "53ED5BE18088B929"
+					item: "farmersdelight:stove"
+					type: "item"
+				}
+				{
+					id: "17198C3F3E9DE4F4"
+					item: {
+						Count: 1
+						id: "farmersdelight:skillet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["284FF001F6EB9649"]
+			id: "6397A09039E01339"
+			subtitle: "Let's get some calories"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "gtceu:flint_hoe"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							MaxDamage: 63
+						}
+						HideFlags: 2
+					}
+				}
+				id: "676452C4E0AF4DDE"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:hoes"
+					}
+				}
+				title: "Any hoe will do!"
 				type: "item"
-			}
-			{
-				id: "53ED5BE18088B929"
-				item: "farmersdelight:stove"
+			}]
+			title: "Extracting is pretty demanding"
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["07415D6305C3B1D2"]
+			id: "0D9D9AB4BB1F05C6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7E1610460FCAA19E"
+				table_id: 1020229738181151667L
+				type: "random"
+			}]
+			subtitle: "Who doesn't enjoy a picnic?"
+			tasks: [{
+				id: "3E07C9B8B0B583DC"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Open: 0b
+							SelectedSlot: 0b
+							Size: 6
+						}
+					}
+					id: "supplementaries:lunch_basket"
+				}
 				type: "item"
-			}
-		]
-		x: -1.0d
-		y: -1.0d
-	}]
+			}]
+			title: "Its picnic time!!"
+			x: 1.0d
+			y: -1.5d
+		}
+	]
 	title: "Food and you"
 }

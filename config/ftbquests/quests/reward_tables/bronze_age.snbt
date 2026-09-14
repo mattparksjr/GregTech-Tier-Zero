@@ -3,8 +3,12 @@
 	loot_size: 1
 	order_index: 0
 	rewards: [
-		{ count: 32, item: "minecraft:copper_ingot" }
-		{ count: 32, item: "gtceu:tin_ingot" }
+		{ count: 8, item: "gtceu:bronze_ingot", weight: 0.75f }
+		{ item: "gtceu:steam_machine_casing" }
+		{ count: 16, item: "minecraft:copper_ingot" }
+		{ item: "sophisticatedstorage:basic_to_iron_tier_upgrade", weight: 0.5f }
+		{ item: "sophisticatedstorage:basic_to_gold_tier_upgrade", weight: 0.25f }
+		{ count: 4, item: "storagedrawers:oak_full_drawers_1" }
 	]
 	title: "bronze_age"
 }

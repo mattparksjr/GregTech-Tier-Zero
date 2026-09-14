@@ -38,15 +38,15 @@ hash = "4e3858dcabe7015e228562c8268e81ad9f6fb5ef00452f3c6de90c626bb27cae"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/food_and_you.snbt"
-hash = "997b69cca3906e517103168d76a9d518136b633ce5e839cebf5ae4fc64663c24"
+hash = "578568ae1da37753ecb7fa4852e134f84cf06ea27a68ff19e9790b749e206b17"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/gttzero.snbt"
-hash = "19f575d4637e568fc0ea4022c266758569888c6bb16cd1f9aa74e847226f476f"
+hash = "0d6c28ba2456805caef0922d5547d5a3258dea5409c12940f0dc9c35deee6c78"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/heating_coils.snbt"
-hash = "3de3b8987fbd6652079f9a6f8ff7f0d140753eb94563b31554648a09990d89e1"
+hash = "e546a567a328171baad1c7ae00a2ca3c4e8daef1cfcc57c1046697259a734ce6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/hv__high_voltage.snbt"
@@ -62,7 +62,7 @@ hash = "4f17446c9d0224ad1531b652524373cec0dc24d17f1e568a793579242e952cc1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/lv__low_voltage.snbt"
-hash = "c848a1026005920d82f20f3ff3c36568ccf8ab074a91d77774ced2712ad24047"
+hash = "aea7a383692f8e14c0e9b23af86a207583127c5974fc334071101699503f0993"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/multiblock_dilemma.snbt"
@@ -74,7 +74,7 @@ hash = "6f11e8140370fcaa7c5944fca08f79637cf15303e7c4e6c25f8e7e7ea2d10a4c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ore_generation.snbt"
-hash = "8da352c4c37d424388e2dbf21b8bc600d75eb1c505a1fffc0a610cd61d4ec890"
+hash = "ac698d0a3d1325c496b61cf60ff8acdb3d9096672c1a0bd1179c15cb9632269a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ore_processing.snbt"
@@ -90,15 +90,15 @@ hash = "070e4c59640dc3014745eb4f2b83f918342a92c7dbec9a44c7e003500de90904"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/steam_age.snbt"
-hash = "b6e582199ad4a324863dcfa84f4b4d5033e89faf80ed91dfda6c143b85394daf"
+hash = "584d9e653222a76784832ba8e6013ba808a50cb1aa057e2268e04f82b862d2c1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tips_and_tricks_2.snbt"
-hash = "483090b047f60620f0e17b89773e0ae82bc17b6f0888bd706cfee86719c437d7"
+hash = "31e933eb0b1b624b1efda5dffd1af84959d7923af8ce544d235c78c4b71d4167"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tools_n_gear.snbt"
-hash = "6565b604215c00b9c2493cd6233af0a5fb21c44cfb8224ecad9cff79ac06ea58"
+hash = "dd18db0e5c3304daf47a3e24974bff9b62b36f035dfa676f21891b4b181aa56e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/uv__ultimate_voltage.snbt"
@@ -114,43 +114,51 @@ hash = "5c0e3df0f6f1f78f8f8d3c026c2bba53bd0ff2d132c31f95f482a53b9b97fd51"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/bronze_age.snbt"
-hash = "2f244ef5e65a15f5b901c66994ad7b05f02424eed022c6a54f28cd751c1f43b3"
+hash = "f296b54b31697a35ff9f4578e434ba56b1c7874e30c73aff1eae545252309111"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/cow.snbt"
-hash = "10632b09a78220d0f4f6f009f9714c091d8c13cbaaf88442837b2b7a8126a1ea"
+hash = "50b983ef1d0bfa9648a40e95da68ccc6acc57028ddaec318614a0d592b7427c0"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/distillation_tower.snbt"
-hash = "e2299b04a268da17491e57a66ad5a794d3f3b98ac1c3773fc2022315be07a67f"
+hash = "47b752f245fee5edfc8e7e3cfab1bca120e4f2a5b17440059d1758428f557a6c"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/gallium_arsenide.snbt"
-hash = "95ac53ac1a58defcfac3814744a3e6955bfb06d3cde48b56950749f644c4f58d"
+hash = "1f4af73a601ba1141e59fef434a151c842b3c6b538e427e7a8cec62f4ee31c28"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/good_food.snbt"
+hash = "b5441fb31ca56764e739595eeecb6485b8d65c14ddef4a7023de8d469242693b"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/hv.snbt"
-hash = "03098a6e07cb605f9e461d50f3db748bed3f46af76c7536500065db3fb95825c"
+hash = "30aba890142a543fdcb40c8755578fe7e3fc105e43d8f9bfe7916e3f3ce16678"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/hv_components.snbt"
-hash = "fa86874586baa2711b22b6ce6e55c10f34c0c9bf4f8fcaf1d78f806d54ce67ec"
+hash = "9b642be66ea1dfe0ec06781642f33038d0cd8f7cf0a7d14089696c98427398b1"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/light.snbt"
+hash = "4530535606eee6cf50bb5ce47bd02b0b5f7fb42e9ff9d90249991f9962ec1aef"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/lumber_jack.snbt"
-hash = "4b49cfff87be71b02242e1f471c8f023dc5e96edee009881273f8270d1625ad3"
+hash = "352601f973c091d2a0c22ae3ccba5e94fb2db04470747eb7160c56349d4d2d3e"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/platinum_group_processing.snbt"
-hash = "12f789d1f2dbb3760dde906907ddd5a09159fd85537b5e833e42fd8947594599"
+hash = "200df4c6786fbc39eba413b02852d119bc6504d2aa69e81190a3315ad4235925"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/polyethylene.snbt"
-hash = "023458a0e68ef7a0313decafcc2c3fd7d9aa4c0e50205a810b43a7ee9bd047e5"
+hash = "eabe28ddac2199f5214206746cf61a607988105a7baabde195d9c38f71db78ac"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/titanium.snbt"
-hash = "70b455ff0f135eb50420056d2fa1c726b58f9796851cec0e5d849d2906234320"
+hash = "f299e4a0caf1c1278462827f3ed1fd111ce647b58d0ef39500831acf7ccefa41"
 
 [[files]]
 file = "config/gtceu.yaml"
@@ -213,6 +221,10 @@ file = "config/tectonic.json"
 hash = "5cfc786298304110d088e15814f93ea629b653ea696056a2ec01e931ac9b7f58"
 
 [[files]]
+file = "config/undergarden-common.toml"
+hash = "8b0238177c5adaae02651658dabfee1ff031ef21bbf725399d06afaa4342e69a"
+
+[[files]]
 file = "config/waystones-common.toml"
 hash = "c2edbbf6c3296bcd3d124f38ed3021d4efe6fdaa01860c972e1e73d574f4d388"
 
@@ -262,7 +274,7 @@ hash = "5b59e5067cd2d39c51dcf8e76e3c5b4b2d5ddfa3e453702464d5c56ed3c2f289"
 
 [[files]]
 file = "kubejs/client_scripts/jei.js"
-hash = "95ee928d49f2fa54bbc5ca1f97c6a6d09230e84f0385f01f56fa5c7266cbec90"
+hash = "d185d9eda2f67a670f8b41752cd01d0f47cf7634e63294f793a74e4976e5958d"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -279,6 +291,50 @@ hash = "767787e282b97ca09f91ce04ce49eab39be03b7232d3867c1375c404e3e2924d"
 [[files]]
 file = "kubejs/config/probejs.json"
 hash = "eb0bfaed60482e4e159ff4e2452cc098de57689f7cc82b4c9d9f112548173da6"
+
+[[files]]
+file = "kubejs/data/undergarden/worldgen/configured_feature/cloggrum_ore.json"
+hash = "36c868a4d489659f2f63bb3fb2a7fbff55373fc9365723187893d7e8d18f4458"
+
+[[files]]
+file = "kubejs/data/undergarden/worldgen/configured_feature/coal_ore.json"
+hash = "36c868a4d489659f2f63bb3fb2a7fbff55373fc9365723187893d7e8d18f4458"
+
+[[files]]
+file = "kubejs/data/undergarden/worldgen/configured_feature/diamond_ore.json"
+hash = "36c868a4d489659f2f63bb3fb2a7fbff55373fc9365723187893d7e8d18f4458"
+
+[[files]]
+file = "kubejs/data/undergarden/worldgen/configured_feature/froststeel_ore.json"
+hash = "36c868a4d489659f2f63bb3fb2a7fbff55373fc9365723187893d7e8d18f4458"
+
+[[files]]
+file = "kubejs/data/undergarden/worldgen/configured_feature/gold_ore.json"
+hash = "36c868a4d489659f2f63bb3fb2a7fbff55373fc9365723187893d7e8d18f4458"
+
+[[files]]
+file = "kubejs/data/undergarden/worldgen/configured_feature/ice_ore.json"
+hash = "36c868a4d489659f2f63bb3fb2a7fbff55373fc9365723187893d7e8d18f4458"
+
+[[files]]
+file = "kubejs/data/undergarden/worldgen/configured_feature/iron_ore.json"
+hash = "36c868a4d489659f2f63bb3fb2a7fbff55373fc9365723187893d7e8d18f4458"
+
+[[files]]
+file = "kubejs/data/undergarden/worldgen/configured_feature/regalium_ore.json"
+hash = "36c868a4d489659f2f63bb3fb2a7fbff55373fc9365723187893d7e8d18f4458"
+
+[[files]]
+file = "kubejs/data/undergarden/worldgen/configured_feature/sediment_ore.json"
+hash = "36c868a4d489659f2f63bb3fb2a7fbff55373fc9365723187893d7e8d18f4458"
+
+[[files]]
+file = "kubejs/data/undergarden/worldgen/configured_feature/shiverstone_ore.json"
+hash = "36c868a4d489659f2f63bb3fb2a7fbff55373fc9365723187893d7e8d18f4458"
+
+[[files]]
+file = "kubejs/data/undergarden/worldgen/configured_feature/utherium_ore.json"
+hash = "36c868a4d489659f2f63bb3fb2a7fbff55373fc9365723187893d7e8d18f4458"
 
 [[files]]
 file = "kubejs/probe/cache/cachedForgeEvents.json"
@@ -642,11 +698,15 @@ hash = "51c5e78f8f813d835700a4fbbc2dc7e7af20c56b5d20d429b0644e3bcb5ea325"
 
 [[files]]
 file = "kubejs/server_scripts/farmersdelight/crafting.js"
-hash = "bc7ec6992d04bd52bcc72fe3799bef67d08f793cc5bb6584e4e46270b6198b1e"
+hash = "a5970dd19ca7eab11404142d975796af2e3c167ca1403dd060adc9da6d170872"
+
+[[files]]
+file = "kubejs/server_scripts/greg/crafting.js"
+hash = "569739ff429a7d0d5ed4b8865f5db1ea2211e05c3ffcce8453e10c84e0a06fe7"
 
 [[files]]
 file = "kubejs/server_scripts/gtt0/gtt0_crafting.js"
-hash = "3d494344ade48e1242cccd7ec27141f5af5b333c729e611b2753ac1ae2b496e0"
+hash = "56eb7fcf499d87dd7dcb26c4273ab8302119e83f0520bfe80e26fdb27b7d3dfd"
 
 [[files]]
 file = "kubejs/server_scripts/gtt0/story_intro.js"
@@ -661,8 +721,20 @@ file = "kubejs/server_scripts/supplementaries/crafting.js"
 hash = "e1cb5ca1adaa23fe639f8f9a97fbe249c8f91c9298dea0497f93da4906968048"
 
 [[files]]
+file = "kubejs/server_scripts/tags/block_tags.js"
+hash = "d64b53b6df6c0a7428da31dae1e42c1f385b10449b45dba966ea536a427aa743"
+
+[[files]]
+file = "kubejs/server_scripts/tags/item_tags.js"
+hash = "17ff476f1d3ca6bae8fb5a9f8f809ebe999520454f9a98682423167bfefca60d"
+
+[[files]]
+file = "kubejs/server_scripts/undergarden/crafting.js"
+hash = "854a49b2ec25f8cac8a981a93e88acf981a3810ad5115bb99825f2f324978133"
+
+[[files]]
 file = "kubejs/server_scripts/vanilla/crafting.js"
-hash = "3b101a91f8ef4a95fcec04dd3bdb8cc800b90e819dbbd3551741f5079fd5b45d"
+hash = "d901de22d7988d8f22314d252799209f6cd151dbabd1d65adebd2e2d6c294590"
 
 [[files]]
 file = "kubejs/server_scripts/vanilla/loot.js"
@@ -899,6 +971,11 @@ metafile = true
 [[files]]
 file = "mods/cooking-for-blockheads.pw.toml"
 hash = "919eac641320df56ffaad0132877cb67bd8b942ee23eeb0f137993c8df18b952"
+metafile = true
+
+[[files]]
+file = "mods/corn-delight.pw.toml"
+hash = "46825e471dad02e385c6f9ee32762db042ba77ec1ad67ca50489e5d15add8a7a"
 metafile = true
 
 [[files]]
@@ -1442,6 +1519,11 @@ hash = "e72f73611904e14d915418f0e3c6cb483cdc600e211375c2eceb393fec5b80f1"
 metafile = true
 
 [[files]]
+file = "mods/mysterious-mountain-lib.pw.toml"
+hash = "d9137b72bc26bc45a9010da6a06cad48d20bd0463e9c70a977a28416836b0eab"
+metafile = true
+
+[[files]]
 file = "mods/mystical-agradditions.pw.toml"
 hash = "557af60462fd714ead361c411eff8068d8a023ed14c276b904821653155cee99"
 metafile = true
@@ -1592,6 +1674,11 @@ hash = "21a65898c3292880bf020c3c7e1e9da3e3725b046625d24cb5e0742d342621a0"
 metafile = true
 
 [[files]]
+file = "mods/simple-planes.pw.toml"
+hash = "d9821b8380ffab6096b1e3331a74976c7180094f70a32a0890e73baa18007d83"
+metafile = true
+
+[[files]]
 file = "mods/simple-voice-chat.pw.toml"
 hash = "c6f89f978b3d9372182b2398d08a572bd3f499fcae24b664f76a3d5fedf993b7"
 metafile = true
@@ -1709,6 +1796,11 @@ metafile = true
 [[files]]
 file = "mods/terralith.pw.toml"
 hash = "b0978cb7ae7b79c5be89b323ca1bd038f693ff6d11c43dfcbd63953964149af2"
+metafile = true
+
+[[files]]
+file = "mods/the-undergarden.pw.toml"
+hash = "4a51e5a0f11ba9b7599dcea129862829bfd028c57bf9997f9513b38defbc7e51"
 metafile = true
 
 [[files]]

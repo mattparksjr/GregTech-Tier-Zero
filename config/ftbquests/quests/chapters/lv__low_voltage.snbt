@@ -1008,20 +1008,6 @@
 				}
 			}
 			id: "1646BF9194100E57"
-			rewards: [
-				{
-					count: 8
-					id: "2DF635DEFA2D4DCD"
-					item: "gtceu:nickel_ore"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "0F7FB05B78AAFB96"
-					item: "gtceu:copper_ore"
-					type: "item"
-				}
-			]
 			size: 0.75d
 			subtitle: "Baby's first heating coil"
 			tasks: [{

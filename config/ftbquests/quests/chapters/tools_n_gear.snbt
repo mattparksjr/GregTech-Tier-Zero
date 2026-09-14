@@ -172,6 +172,11 @@
 		}
 		{
 			dependencies: ["723121584EB9D875"]
+			description: [
+				""
+				""
+				"With this, you have unlocked the ability to craft MUCH better food!"
+			]
 			id: "12D6698F3F2B80B7"
 			tasks: [{
 				count: 8L
@@ -569,6 +574,69 @@
 			}]
 			x: 5.61d
 			y: -0.66d
+		}
+		{
+			dependencies: [
+				"2323AAB72EC647F3"
+				"5D17DFCF6672404C"
+			]
+			id: "4F4AA12F813FC875"
+			rewards: [{
+				count: 2
+				id: "0889274E1F2428F7"
+				item: "brewinandchewin:steel_toe_stout"
+				type: "item"
+			}]
+			subtitle: "Only slightly worse then diamond"
+			tasks: [
+				{
+					id: "607AAAF5684A5FEE"
+					item: {
+						Count: 1
+						id: "gtceu:steel_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "28986F8A1B226FE2"
+					item: {
+						Count: 1
+						id: "gtceu:steel_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7567DE474CA2A702"
+					item: {
+						Count: 1
+						id: "gtceu:steel_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "70CF0834D523B655"
+					item: {
+						Count: 1
+						id: "gtceu:steel_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Iron man?"
+			x: 1.5d
+			y: -1.5d
 		}
 	]
 	subtitle: ["So maybe you wont die?"]

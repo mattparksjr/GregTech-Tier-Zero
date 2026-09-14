@@ -36,9 +36,11 @@ ItemEvents.rightClicked((event) => {
     Text.of("Tier Zero is considered the lowest classification. Good luck.")
       .color("gray")
       .italic(true),
-    Text.of('Discharge can be achieved by completing "the project."')
+    Text.of('Discharge can be achieved by completing: "')
       .color("gray")
       .italic(true),
+    Text.of("THE PROJECT").color("gold").bold(true),
+    Text.of('".').color("gray"),
     Text.of("— ARBITER, Site Overseer").color("dark_gray").italic(true),
     Text.of("――――――――――――――――――――――――――――――").color("dark_gray"),
     Text.of("Tip: ")

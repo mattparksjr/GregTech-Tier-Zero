@@ -1,10 +1,10 @@
 {
+	autofocus_id: "25289F9E8AE01C29"
 	default_hide_dependency_lines: false
 	default_quest_shape: "rsquare"
 	default_quest_size: 0.75d
 	filename: "gttzero"
 	group: ""
-	hide_quest_details_until_startable: true
 	hide_quest_until_deps_visible: true
 	icon: "supplementaries:netherite_door"
 	id: "2F8B0AFE317363C9"
@@ -203,11 +203,9 @@
 		{
 			dependencies: ["284FF001F6EB9649"]
 			description: [
-				"Here's a &6nifty&r list of some resources that you'll need in bulk for early-game. Collect more than we're asking for in this quest - you'll end up running out before you know it, and it's always a good habit to gather more than you need in &aGregTech&r."
+				"&l&8[&6PROJECT-MANAGER&8]"
 				""
-				"We'd actually advise that you &etackle this quest first&r, so that you can claim its &breward&r. That way, you can do a little bit of main (read: &ointeresting&r) progression &4&lBEFORE&r you're forced to go mining."
-				""
-				"Eight furnaces might seem &cexcessive&r if you're new to &aGregTech,&r but trust us... you can never have too many."
+				"If you have any hope of surviving, you will need to get used to getting resources in bulk. It's also a good idea to gather more then quests require as you move forwards. Economies of scale is your friend. If you do this quest before mining, you can craft yourself some nice tools for the journey. "
 			]
 			icon: "minecraft:sugar_cane"
 			id: "0436F7B60BDEB091"
@@ -219,22 +217,23 @@
 			}]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "Gather some resources!"
+			subtitle: "Its only the start..."
 			tasks: [
 				{
-					count: 4L
+					consume_items: true
+					count: 8L
 					id: "37DD7A28A3A7CB26"
 					item: "minecraft:sugar_cane"
 					type: "item"
 				}
 				{
-					count: 32L
+					count: 64L
 					id: "0F60FE32A8F7720E"
 					item: "minecraft:sand"
 					type: "item"
 				}
 				{
-					count: 32L
+					count: 64L
 					id: "23A44568A9FAACA2"
 					item: "minecraft:clay_ball"
 					type: "item"
@@ -252,7 +251,7 @@
 					type: "item"
 				}
 			]
-			title: "What do I need to progress?"
+			title: "Resources for days"
 			x: 1.32d
 			y: -1.98d
 		}
@@ -801,21 +800,22 @@
 			dependencies: [
 				"36DD94945D5B4A80"
 				"1ECBA1CBFFB9F625"
+				"07415D6305C3B1D2"
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"Wrought Iron has a very low carbon content, but that's enough to make it &btougher&r than regular Iron."
+				"&l&8[&6PROJECT-MANAGER&8]"
 				""
-				"&aGregTech&r tools made of Wrought Iron are &650% more durable&r than their Iron cousins. You might want to consider using Wrought Iron until you unlock &2something better&r."
+				"Wrought Iron has a &btougher&r than regular Iron."
 				""
-				"To obtain Wrought Iron, you can &6smelt&r Iron Nuggets into Wrought Iron Nuggets, then recombine them into an ingot. Make sure you don't convert all of your Iron supply, as the two &4&laren't&r interchangeable."
+				"&aTools&r made of Wrought Iron are &650% more durable&r than their Iron cousins. "
 				""
-				"This may be time-consuming, but rest assured, you'll unlock a &ebetter way&r to produce Wrought Iron before long."
+				"To obtain Wrought Iron, you can &6smelt&r Iron Nuggets into Wrought Iron Nuggets, then recombine with a &bCompressor&r them into an ingot. Make sure you don't convert all of your Iron supply, as the two &4&laren't&r interchangeable."
 			]
 			icon: "gtceu:wrought_iron_ingot"
 			id: "563C96885A227C9F"
 			rewards: [{
-				count: 5
+				count: 8
 				id: "3CDB383AFEBDB519"
 				item: "gtceu:wrought_iron_ingot"
 				type: "item"
@@ -842,6 +842,8 @@
 		{
 			dependencies: ["0EAF2C5B5EB755C5"]
 			description: [
+				"&l&8[&6PROJECT-MANAGER&8]"
+				""
 				"In the real world, iron isn't &oonly&r found as pure Iron Ore. Instead, it's found in a &avariety&r of &eoxide forms&r or &eminerals&r."
 				""
 				"You'll want to go and collect quite a bit of Iron, because you're going to need &9a bunch&r very soon. If you're struggling to find some, the &aOre Generation&r quest tab contains a lot of information on &eore veins&r. You may also want to check the Ore Spawn Information and Ore Byproduct List tabs in &2EMI&r."
@@ -916,11 +918,11 @@
 		{
 			dependencies: ["1ECBA1CBFFB9F625"]
 			description: [
-				"The &e&lCoke Oven&r will likely be your first &aGregTech&r multiblock. Congratulations!"
+				"&l&8[&6PROJECT-MANAGER&8]"
 				""
-				"It is used to make &aCoke&r from &eCoal&r, or &aCharcoal&r from &eWood&r, in addition to &dliquid Creosote&r as a &3bonus&r output."
+				"The &e&lCoke Oven&r is used to make &aCoke&r from &eCoal&r, or &aCharcoal&r from &eWood&r, in addition to &dliquid Creosote&r as a &3bonus&r output."
 				""
-				"Take a look at the &6Multiblock Preview&r tab in EMI (press &dU&r over the controller block of any Multiblock!) to see the structure pattern."
+				"Take a look at the &6Multiblock Preview&r tab in JEI (press &dU&r over the controller block of any Multiblock!) to see the structure pattern."
 				"{@pagebreak}"
 				"&9Note:&r &lAny&r Brick block can be replaced with a &3Coke Oven Hatch&r. You can have up to five of them."
 				""
@@ -941,31 +943,42 @@
 			}]
 			shape: "gear"
 			size: 1.2d
-			subtitle: "Your first big project... hopefully"
-			tasks: [{
-				id: "3545479A7C09CDFC"
-				item: "gtceu:coke_oven"
-				type: "item"
-			}]
-			title: "Coke Oven"
+			subtitle: "Your first step to the project"
+			tasks: [
+				{
+					id: "3545479A7C09CDFC"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "3C0A39127D8CD92A"
+					item: { Count: 25, id: "gtceu:coke_oven_bricks" }
+					type: "item"
+				}
+			]
+			title: "Torches! Finally!"
 			x: 6.0d
 			y: -1.2d
 		}
 		{
 			dependencies: ["1ECBA1CBFFB9F625"]
 			description: [
-				"More resources are always nice. You're getting close to entering the &6age of Steam&r - Copper and Tin are required in many &6Steam Age&r machines, so check the ore tab to find out what veins they can be found in, and get mining!"
+				"&l&8[&6PROJECT-MANAGER&8]"
 				""
-				"If the different ore names are &bconfusing&r, you can tell which elements an ore holds at a glance by reading the &dmolecular formula&r in its tooltip. Copper is &oCu&r, Tin is &oSn&r, Iron is &oFe&r, and you can consult a &3periodic table&r for the rest. It's time to brush up on your chemistry - you'll need it for &llater&r."
+				"Copper and Tin are required in many &6Steam Age&r machines, so check the ore tab to find out what veins they can be found in, and get mining!"
 				""
-				"This quest can be completed with &9either metal&r, so you can claim the metal you're missinng as the reward. Be sure to find a source of both soon, as a &a&ocertain&r&a Copper-Tin alloy&r will be needed to get through the &6Steam Age&r."
+				"If the different ore names are &bconfusing&r, you can tell which elements an ore holds at a glance by reading the &dmolecular formula&r in its tooltip. Copper is &oCu&r, Tin is &oSn&r, Iron is &oFe&r."
+				""
+				"Be sure to find a source of both soon, as a &a&ocertain&r&a Copper-Tin alloy&r will be needed to get through the &6Steam Age&r."
 			]
 			icon: "minecraft:copper_ingot"
 			id: "45969FFBF88F4FBB"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "2C28FA1A5275D24E"
-				type: "choice"
+				icon: "gtceu:bronze_ingot"
+				id: "7BA02278246BAE4A"
+				table_id: 1702176335602373230L
+				type: "random"
 			}]
 			size: 0.75d
 			subtitle: "Iron is pretty bad anyways"
@@ -990,38 +1003,46 @@
 		{
 			dependencies: ["45969FFBF88F4FBB"]
 			description: [
-				"&6Bronze&r is an &2alloy&r of Copper and Tin. Grind down 3 parts Copper and 1 part Tin into dust, then combine and smelt them. If you are confused on how this is done, take a look at the &o\"&dMore Tools&r&o\"&r quest."
+				"&l&8[&6PROJECT-MANAGER&8]"
+				""
+				"&6Bronze&r is an &2alloy&r of Copper and Tin. Grind down 3 parts Copper and 1 part Tin into dust, then combine and smelt them. If you are confused on how this is done, take a look at the \"The rest of the tools\" quest."
 				""
 				"Don't spend your entire supply of Copper and Tin on Bronze right now! You'll soon be able to get a better ratio for your Bronze."
 				""
 				"&6&lThe progression now continues in the Steam Age chapter.&r"
-				"{@pagebreak}"
-				"&l&3Lore:&r&o Bronze in real life is closer to a ratio of 7:1 for Copper to Tin. Here (and in most of modded Minecraft) this is &4not&f the case for the sake of game balance. There are a lot of things like this that need to be tweaked - &eno realism here&f."
 			]
 			icon: "gtceu:bronze_ingot"
 			id: "315DBB3B23F95E0D"
 			rewards: [{
-				count: 32
-				id: "5F229B651404DF0E"
-				item: "minecraft:clay_ball"
+				count: 4
+				id: "54FBAD5865B5390E"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:gold_barrel"
+					tag: {
+						woodType: "spruce"
+					}
+				}
 				type: "item"
 			}]
 			shape: "gear"
 			size: 1.2d
-			subtitle: "Humanity's first alloy - and yours too!"
+			subtitle: "No, no free games, just hot water"
 			tasks: [{
 				count: 24L
 				id: "39AEA2923971A2B5"
 				item: "gtceu:bronze_ingot"
 				type: "item"
 			}]
-			title: "Bronze Age? No, &6Steam Age&r!"
+			title: "Finally! Steam!"
 			x: 8.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["0EAF2C5B5EB755C5"]
 			description: [
+				"&l&8[&6PROJECT-MANAGER&8]"
+				""
 				"Okay, you want to make some &6torches?&r"
 				""
 				"Well, &cbad&r news. You'll need to make a coke oven first. For now, grab some &6logs&r and we'll help you out."
@@ -1032,12 +1053,20 @@
 			]
 			icon: "minecraft:charcoal"
 			id: "36DD94945D5B4A80"
-			rewards: [{
-				count: 16
-				id: "5408859E43668198"
-				item: "minecraft:coal"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "5408859E43668198"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "53F6C9AC64D0FED8"
+					table_id: 5561749523964946395L
+					type: "choice"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "Not here! Maybe a local has some"
@@ -1062,11 +1091,11 @@
 		{
 			dependencies: ["45969FFBF88F4FBB"]
 			description: [
-				"Don't worry, these crafts are actually useful - you'll be required to make &ehundreds more&r of these components. It's good to start building the habit."
+				"&l&8[&6PROJECT-MANAGER&8]"
 				""
-				"It's generally wise to get familiar with the idea of &o\"&bbulk-crafting&r&o\"&r - if you need 1 plate, try making 8, etc. This means you'll have lots of these &dintermediates&r ready for future crafts. It might seem unreasonable to craft &astacks of rods&r or &ascrews&r especially this early on, but they will always end up being used, saving you a lot of micro-crafting in the future."
+				"You'll be required to make &ehundreds more&r of these components. It's good to start building the habit."
 				""
-				"If you needed &6any more&r convincing, take a peek at the &drewards&r for this quest."
+				"It's generally wise to get familiar with the idea of &o\"&bbulk-crafting&r&o\"&r - if you need 1 plate, try making 8, etc. This means you'll have lots of these &dintermediates&r ready for future crafts. "
 			]
 			icon: "minecraft:bone_meal"
 			id: "49A04E63F40D65C0"
@@ -1075,12 +1104,6 @@
 					count: 64
 					id: "6292C644EE1ACA59"
 					item: "minecraft:bone_meal"
-					type: "item"
-				}
-				{
-					count: 12
-					id: "380C42204033B5C4"
-					item: "minecraft:potato"
 					type: "item"
 				}
 				{
@@ -1123,10 +1146,15 @@
 					}
 					type: "item"
 				}
+				{
+					id: "51A10655EF8381DB"
+					item: "sereneseasons:calendar"
+					type: "item"
+				}
 			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "Put your micro-crafting talent to the task!"
+			subtitle: "Get used to it..."
 			tasks: [
 				{
 					count: 16L
@@ -1141,63 +1169,27 @@
 					type: "item"
 				}
 			]
-			title: "A Minor Test of Strength"
+			title: "Microcrafting!!?!?"
 			x: 6.93d
 			y: 0.99d
 		}
 		{
 			dependencies: ["45969FFBF88F4FBB"]
 			description: [
+				"&l&8[&6PROJECT-MANAGER&8]"
+				""
 				"Iron, Copper and Tin will only get you so far. &4Redstone&r and &bDiamond&r will occasionally be required during the &6Steam Age&r, whereas Nickel, Lead and Silver are also nice to have. All will come in handy &asoon enough&r."
 				""
 				"&o&8Consult the ore tab if you're struggling to find these materials!&r"
 			]
 			icon: "gtceu:silver_ingot"
 			id: "62212F2B51AC779E"
-			rewards: [
-				{
-					count: 128
-					id: "2C6F42288FF9B7DA"
-					item: "minecraft:sand"
-					type: "item"
-				}
-				{
-					count: 128
-					id: "5242721C19BCC092"
-					item: "minecraft:clay_ball"
-					type: "item"
-				}
-				{
-					count: 64
-					id: "04BE5FBBF9402D5D"
-					item: "minecraft:redstone"
-					type: "item"
-				}
-				{
-					count: 24
-					id: "2D409B8436727D1C"
-					item: "gtceu:nickel_ingot"
-					type: "item"
-				}
-				{
-					count: 24
-					id: "35EE3F4BAAE41AC3"
-					item: "gtceu:lead_ingot"
-					type: "item"
-				}
-				{
-					count: 24
-					id: "70008D5488014AF1"
-					item: "gtceu:silver_ingot"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "29963CB493F50CC0"
-					item: "minecraft:diamond"
-					type: "item"
-				}
-			]
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "066A9D47E8A3BD05"
+				table_id: 1020229738181151667L
+				type: "random"
+			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "Sometimes, you gotta be inefficient... to be efficient!"
@@ -1233,7 +1225,7 @@
 					type: "item"
 				}
 			]
-			title: "Early Investments"
+			title: "More and more and more"
 			x: 6.2700000000000005d
 			y: 0.99d
 		}
@@ -1241,6 +1233,7 @@
 			dependencies: ["25289F9E8AE01C29"]
 			description: [
 				"&l&8[&6PROJECT-MANAGER&8]"
+				""
 				"&4NOW!&r"
 				""
 				"&7&oOkay okay, whats so important?&r&8&r"
@@ -1303,6 +1296,8 @@
 		{
 			dependencies: ["284FF001F6EB9649"]
 			description: [
+				"&l&8[&6PROJECT-MANAGER&8]"
+				""
 				"Rubber Trees can be found in &aForest&r, &2Jungle&r or &aSwamp&r biomes."
 				""
 				"Breaking Rubber Logs will yield &6Sticky Resin&r, which will be important moving forwards."
@@ -1313,19 +1308,19 @@
 			rewards: [{
 				id: "4D70B6467A188FDD"
 				item: "gtceu:sticky_resin"
-				random_bonus: 3
+				random_bonus: 7
 				type: "item"
 			}]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "No, this isn't IC2"
+			subtitle: "TURN THE RUBBER! wait.. rubber?"
 			tasks: [{
 				count: 8L
 				id: "76851CD51E99CA38"
 				item: "gtceu:rubber_sapling"
 				type: "item"
 			}]
-			title: "Gettin' Shaded under a Rubber Tree"
+			title: "R-r-r-rubber"
 			x: 2.31d
 			y: -1.98d
 		}
@@ -1361,6 +1356,7 @@
 			dependencies: ["0C690272ED4FB1C3"]
 			description: [
 				"&l&8[&6PROJECT-MANAGER&8]&r&r"
+				""
 				"If you happen to spot &arocks&r along the surface as you travel, they are showing you what kind of &6vein&r can be found below. Right clicking will add it to your &amap.&r "
 				""
 				"If you gather enough tiny piles to make a full dust, hitting '&dr&r' on the dust will bring up many pages. From there navigate to the &bOre Processing Diagram&r. From there clicking on the raw ore will being up all veins which contain this &6ore.&r Each vein will show what ores it contains, the generation pattern, &bdimensions&r they can spawn in, the y levels, and the &aspawning weight&r(how common it is). "
@@ -1493,6 +1489,8 @@
 				"Now that you have some tools, make a &6base.&r If you die we will have &cwasted&r our time giving you a chance to &aredeem&r yourself."
 				""
 				"It is generally a good idea to build somewhere that has easy access to &9water&r, or is not a super dry &denvironment.&r It's your &alife&r though."
+				""
+				"You might also notice you need a &atool&r for your bed. If you aren't a &4thief,&r you can make the &6hammer&r out of wood for now."
 			]
 			icon: "minecraft:orange_bed"
 			id: "2C5D0CA656DBEF0B"

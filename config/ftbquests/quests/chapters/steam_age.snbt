@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "steam_age"
 	group: "693226878D58638A"
+	hide_quest_until_deps_visible: true
 	icon: "gtceu:bronze_brick_casing"
 	id: "3B89FB8839204148"
 	order_index: 0
@@ -497,8 +498,6 @@
 				"Later you can use a &8ULV&r or &7LV&r Output Hatch to further boost the Pump's output."
 				""
 				"&2Reminder:&r Use a Wrench to rotate GregTech blocks (sneak right-click)."
-				""
-				"&l&3Lore:&r&o This Multiblock was ported from GT IMPACT, a classic 1.7.10 GregTech modpack."
 			]
 			id: "13901DA3D4F5C5A6"
 			rewards: [{
@@ -509,7 +508,7 @@
 			}]
 			shape: "square"
 			size: 0.75d
-			subtitle: "There's no such thing as \"free\" water"
+			subtitle: "Water ain't free"
 			tasks: [{
 				id: "03501AB173BA60EE"
 				item: "gtceu:primitive_pump"
@@ -726,9 +725,9 @@
 			icon: "gtceu:bronze_normal_fluid_pipe"
 			id: "1FFD2242B94A7378"
 			rewards: [{
-				count: 2
-				id: "66E3F49541CA77B9"
-				item: "minecraft:golden_apple"
+				count: 4
+				id: "04220AF3E316C341"
+				item: "gtceu:steel_normal_fluid_pipe"
 				type: "item"
 			}]
 			shape: "rsquare"
@@ -768,9 +767,10 @@
 						]
 					}
 				}
+				title: "Bronze pipes"
 				type: "item"
 			}]
-			title: "Fluid Pipes"
+			title: "Flowing fluids"
 			x: -1.125d
 			y: 0.75d
 		}
@@ -798,13 +798,13 @@
 			id: "5DD49D500327A0E2"
 			shape: "gear"
 			size: 1.2d
-			subtitle: "Putting the Steam in Steam Age"
+			subtitle: "I hardly knew er'"
 			tasks: [{
 				id: "0F864E85D4956919"
 				item: "gtceu:lp_steam_solid_boiler"
 				type: "item"
 			}]
-			title: "Pressure Cookin'"
+			title: "Boiler?"
 			x: 0.0d
 			y: 0.75d
 		}
@@ -1030,10 +1030,6 @@
 				"To get &dPotin&r, you should start by crafting its &eDust&r form."
 				""
 				"Get a &dPotin&r pipe of any size to complete this quest."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o &dPotin Fluid Pipes&f were first seen in &9GT++&f, an addon to GT5, and are a considerable power spike for players in a relatively unknown pack called &4GT:NH&f. We wanted to spread some of that joy."
-				""
-				"&oIn the real world, &dPotin&f is an alloy used in coins, not pipes. GTCEu just gets more unrealistic by the day..."
 			]
 			icon: "gtceu:potin_normal_fluid_pipe"
 			id: "3C70B0717E9377A4"
@@ -1778,5 +1774,5 @@
 		}
 	]
 	subtitle: ["Harness the power of Steam and learn the basics"]
-	title: "Steam Age"
+	title: "&6Steam Age"
 }

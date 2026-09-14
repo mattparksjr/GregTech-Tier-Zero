@@ -51,5 +51,12 @@
       R: "#forge:rods/iron",
       H: HAMMER,
     });
+
+    event.recipes.gtceu
+      .compressor("straw_bale")
+      .itemInputs("9x farmersdelight:straw")
+      .itemOutputs("farmersdelight:straw_bale")
+      .EUt(1)
+      .duration(150);
   }
 })();

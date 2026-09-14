@@ -1,0 +1,17 @@
+{
+	id: "0E28958A9D93CBB3"
+	loot_size: 1
+	order_index: 11
+	rewards: [
+		{ count: 4, item: "brewinandchewin:ham_and_cheese_sandwich" }
+		{ count: 4, item: "brewinandchewin:creamy_onion_soup" }
+		{ count: 4, item: "brewinandchewin:scarlet_pierogi" }
+		{ count: 4, item: "farmersdelight:hamburger" }
+		{ count: 4, item: "farmersdelight:dumplings" }
+		{ count: 4, item: "farmersdelight:fried_rice" }
+		{ count: 4, item: "farmersdelight:noodle_soup" }
+		{ count: 4, item: "farmersdelight:bacon_and_eggs" }
+		{ count: 4, item: "farmersdelight:ratatouille" }
+	]
+	title: "good_food"
+}

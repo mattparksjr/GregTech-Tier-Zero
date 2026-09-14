@@ -46,19 +46,14 @@
 		{
 			dependencies: ["0C690272ED4FB1C3"]
 			description: [
-				"Some of the details are repeated from the introduction quest, but we feel like we needed to expand on the explanation if you want to know all the details!"
-				""
-				"Ready for some \"light\" reading?"
-				"{@pagebreak}"
 				"Each vein can contain up to four different ores."
 				""
 				"Ore veins generate in a &4Grid&r. Every vein is spaced by 3 chunks from one to another in a cardinal direction. Each vein generates in an individual \"pattern\" - some are &6round&r, some are &asnakey&r, and others you'll discover for yourself."
 				""
-				"They spawn at the &4Center&r of the Chunks which have both their X and Z coordinates be at &b1 plus a multiple of 3&r (-8, -5, -2, 1, 4, 7, ...). You will typically find two veins in the selected chunk - one will be in the Stone layer, and the other vein lays deeper in the Deepslate layer."
+				"You will typically find two veins in the selected chunk - one will be in the Stone layer, and the other vein lays deeper in the Deepslate layer."
 				""
 				"However, Ore veins may be deleted by caves, Oil deposits, or from trying to generate above the ground."
 				"{@pagebreak}"
-				"It's a good practice to make &dWaypoints&r to every vein you find, and to label their type. You may want to come back to it several times."
 				""
 				"A classic Ore vein is &d7 blocks&r tall, and ores generate in 4 different patterns:"
 				"- The &9Top Ore&r generates in the higher 4 layers of the vein."
@@ -70,14 +65,19 @@
 			]
 			icon: "gtceu:cobalt_ore"
 			id: "41730E340B3D8EDA"
+			rewards: [{
+				id: "314B57B4C67E77C1"
+				type: "xp"
+				xp: 30
+			}]
 			shape: "square"
 			size: 1.5d
-			subtitle: "You'll be an expert by the time you finish reading this!"
+			subtitle: "We struck gold!"
 			tasks: [{
 				id: "502C58F19FF7DE24"
 				type: "checkmark"
 			}]
-			title: "Ore Generation"
+			title: "Getting rich!"
 			x: 2.0d
 			y: 0.0d
 		}

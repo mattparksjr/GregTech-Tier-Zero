@@ -8,6 +8,9 @@
     console.log("GTT0: Removing vanilla crafting recipes");
     event.remove({ id: "minecraft:crafting_table" });
     event.remove({ output: "#minecraft:beds" });
+    event.remove({ output: "minecraft:blast_furnace" });
+    event.remove({ output: "minecraft:hay_block" });
+    event.remove({ id: "minecraft:wheat" });
   }
 
   function add(event) {
@@ -36,5 +39,18 @@
       P: "#minecraft:logs",
       F: "minecraft:flint",
     });
+
+    event.shaped("minecraft:blast_furnace", ["PPP", "PFP", "SSS"], {
+      P: "#forge:plates/iron",
+      F: "#forge:furnaces",
+      S: "minecraft:smooth_stone",
+    });
+
+    event.recipes.gtceu
+      .compressor("hay")
+      .itemInputs("9x minecraft:wheat")
+      .itemOutputs("minecraft:hay_block")
+      .EUt(1)
+      .duration(250);
   }
 })();
