@@ -257,6 +257,14 @@ file = "kubejs/README.txt"
 hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
 
 [[files]]
+file = "kubejs/assets/gtceu/lang/en_us.json"
+hash = "4fdc11eb7192563c65a7c8576397a1da21a00d8fa63bac997705cfe931d57ac9"
+
+[[files]]
+file = "kubejs/assets/gtt0/lang/en_us.json"
+hash = "b1a5d40257947fc29fae3b1777d8328a38ed3a479bfd251fc89f124f60ae6004"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/block/example_block.png"
 hash = "783d78bd1ee61d3b32273670dff9d82c34cd74c5ae899a10f104f473828d5bbc"
 
@@ -275,6 +283,10 @@ hash = "5b59e5067cd2d39c51dcf8e76e3c5b4b2d5ddfa3e453702464d5c56ed3c2f289"
 [[files]]
 file = "kubejs/client_scripts/jei.js"
 hash = "d185d9eda2f67a670f8b41752cd01d0f47cf7634e63294f793a74e4976e5958d"
+
+[[files]]
+file = "kubejs/client_scripts/lang.js"
+hash = "99b0d2a950565d5edafc86b8216d84f002dac24bf95512cefb9e894c5833fc65"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -706,11 +718,15 @@ hash = "569739ff429a7d0d5ed4b8865f5db1ea2211e05c3ffcce8453e10c84e0a06fe7"
 
 [[files]]
 file = "kubejs/server_scripts/gtt0/gtt0_crafting.js"
-hash = "56eb7fcf499d87dd7dcb26c4273ab8302119e83f0520bfe80e26fdb27b7d3dfd"
+hash = "2cc3a842f1d543456aaa261a4d4853ce6e8f888a6f2e173c508631dd80714598"
 
 [[files]]
 file = "kubejs/server_scripts/gtt0/story_intro.js"
-hash = "d26c9f5c39ed18a9c09252f5d372640b8865f9ad29a838e368d6e75afd09eb0c"
+hash = "5fcda70be2fdf8cabc54d7ccbe6af94e958a99f2381bd2f60ae89a405fcd03cc"
+
+[[files]]
+file = "kubejs/server_scripts/ore/ore_veins.js"
+hash = "982ed062d0d23f287c3626b566e203fee500f32cc0dca7fb1719d8596842b378"
 
 [[files]]
 file = "kubejs/server_scripts/sophisticated_backpacks/backpacks.js"
@@ -721,8 +737,12 @@ file = "kubejs/server_scripts/supplementaries/crafting.js"
 hash = "e1cb5ca1adaa23fe639f8f9a97fbe249c8f91c9298dea0497f93da4906968048"
 
 [[files]]
+file = "kubejs/server_scripts/tags/biome_tags.js"
+hash = "ed73dadfb67b7ab99fcca99612cee325a979c6f50328803a2f233b1ace9b6df9"
+
+[[files]]
 file = "kubejs/server_scripts/tags/block_tags.js"
-hash = "d64b53b6df6c0a7428da31dae1e42c1f385b10449b45dba966ea536a427aa743"
+hash = "a1d6b6bacfea68a489c9266f7373b375b790f371c9a285b5eb7ea9665256f151"
 
 [[files]]
 file = "kubejs/server_scripts/tags/item_tags.js"
@@ -730,7 +750,7 @@ hash = "17ff476f1d3ca6bae8fb5a9f8f809ebe999520454f9a98682423167bfefca60d"
 
 [[files]]
 file = "kubejs/server_scripts/undergarden/crafting.js"
-hash = "854a49b2ec25f8cac8a981a93e88acf981a3810ad5115bb99825f2f324978133"
+hash = "8953208cb43fe6e212720af25d20b858b964ffb9c92a08cd075d314fca0df94a"
 
 [[files]]
 file = "kubejs/server_scripts/vanilla/crafting.js"
@@ -742,7 +762,7 @@ hash = "39b6e4a52582728ab92d1fa46382c0d7ac032fa5b9c257e5986deb3d56761ace"
 
 [[files]]
 file = "kubejs/startup_scripts/gtt0.js"
-hash = "d8fd48109568410622dd303fdc420422848a499e348a7036339ac182e757b995"
+hash = "5dbab08ff09525fb00835a2c51f8cbae9e8017de3713db4163dce3257da10887"
 
 [[files]]
 file = "kubejs/startup_scripts/gtt0items.js"
@@ -1064,6 +1084,36 @@ hash = "a1575677daaaf6ea6dac12e5a10073e34025e5ca2c35b6d36ad4a5a0edbc0e82"
 metafile = true
 
 [[files]]
+file = "mods/emi-loot.pw.toml"
+hash = "7bb64cd8e6d14b65132c4d25d66cf499092f31816efdcbeef484bf73385440d9"
+metafile = true
+
+[[files]]
+file = "mods/emi-ores.pw.toml"
+hash = "cebdf3f29156dbae79c6a172428f6ac5093dd3c9b54334989b602298113c1653"
+metafile = true
+
+[[files]]
+file = "mods/emi-professions-emip.pw.toml"
+hash = "cd093dcf4ada8caca686939c3d024817f771e7d5f2eea1bb1d898172c7f50723"
+metafile = true
+
+[[files]]
+file = "mods/emi-trades-villager-trading-emi-plugin.pw.toml"
+hash = "27b1964e1583318e348f75fcb6a955c47f0d8650fcef62c6a07b7b1891bd2526"
+metafile = true
+
+[[files]]
+file = "mods/emi.pw.toml"
+hash = "d48a1ea93de8cd5febb95ba52989d8d9ab4e998cfbdf9c1076a9f2e571d2fcbe"
+metafile = true
+
+[[files]]
+file = "mods/emiffect-status-effects-emi-plugin.pw.toml"
+hash = "cf53ff3d2ea7e7aed6a8045414b2c9b80405ce1e26d1c2d43bd75a9ddaf715c9"
+metafile = true
+
+[[files]]
 file = "mods/enchantment-descriptions.pw.toml"
 hash = "e4c69a3551a4343fc76fb135266aecac0042863693f04d2c58a26c71b6e988d9"
 metafile = true
@@ -1244,6 +1294,11 @@ hash = "a48fa17dc56ef41784086e446ca7d392d49c01fa1851717b9eede84c9259bf58"
 metafile = true
 
 [[files]]
+file = "mods/fzzy-config.pw.toml"
+hash = "a8ef024a2cbf9641d81eee63a2cf40e3d5d0bffb5f094ff7935257bfa91ba34b"
+metafile = true
+
+[[files]]
 file = "mods/geckolib.pw.toml"
 hash = "898fd2704dd260ae8f3dc20b4416439751f0a9e76367c4f0bbdac886b6987802"
 metafile = true
@@ -1416,6 +1471,11 @@ metafile = true
 [[files]]
 file = "mods/legendary-monsters.pw.toml"
 hash = "3eaee703183bf6a2263653233ca9ffe7f4de5a117583214ff99bea8c45f1f787"
+metafile = true
+
+[[files]]
+file = "mods/lets-do-emi-compat.pw.toml"
+hash = "fc740ae6b3bba27163afcde645b3d2cbc82d3bda275cbe66d8e2770cc98392fb"
 metafile = true
 
 [[files]]
@@ -1634,6 +1694,11 @@ hash = "f198c723a6b4c497b24b5a95b433db65b87aaf4d2f7886f90ef14af4848c8d7a"
 metafile = true
 
 [[files]]
+file = "mods/reliable-emi.pw.toml"
+hash = "12f167ea2b5a6c8619c39adae565c96987cac7fb289291ce388152aaf716a56f"
+metafile = true
+
+[[files]]
 file = "mods/remove-terralith-intro-message.pw.toml"
 hash = "2e9dead89853555c8d909fe2549af2db5e5051c690fae695df93d2369aa8314c"
 metafile = true
@@ -1736,11 +1801,6 @@ metafile = true
 [[files]]
 file = "mods/spice-of-life-carrot-edition.pw.toml"
 hash = "08faa8239705d280e41d353888bf717906fe71b1d5b9278bac9f5cd87b07efb3"
-metafile = true
-
-[[files]]
-file = "mods/starlight-forge.pw.toml"
-hash = "348f844432259e19f3098ac6b47be813611ee324786f276d9d231781c094db90"
 metafile = true
 
 [[files]]

@@ -1,84 +1,53 @@
-() => {
-  GTCEuServerEvents.oreVeins((event) => {
-    console.log("========== GT ORE VEINS ==========");
+GTCEuServerEvents.oreVeins((event) => {
+  console.log("GTTO: Registering ore veins");
 
-    event.modifyAll((id, vein) => {
-      console.log("");
-      console.log("===================================");
-      console.log("ID: " + id);
-      console.log("===================================");
+  event.add("gtt0:under_galena", (vein) => {
+    vein.weight(60);
+    vein.clusterSize(35);
+    vein.density(0.25);
+    vein.discardChanceOnAirExposure(0);
 
-      // Basic properties
-      try {
-        console.log("Weight: " + vein.weight());
-      } catch (e) {
-        console.log("Weight: ERROR " + e);
-      }
+    vein.layer("undergarden");
+    vein.dimensions(new ResourceLocation("undergarden", "undergarden"));
+    vein.biomes("#gtt0:is_under");
 
-      try {
-        console.log("Density: " + vein.density());
-      } catch (e) {
-        console.log("Density: ERROR " + e);
-      }
+    vein.heightRangeUniform(0, 45);
 
-      try {
-        console.log("Cluster Size: " + vein.clusterSize());
-      } catch (e) {
-        console.log("Cluster Size: ERROR " + e);
-      }
-
-      try {
-        console.log("Layer: " + vein.layer());
-      } catch (e) {
-        console.log("Layer: ERROR " + e);
-      }
-
-      try {
-        console.log("Dimensions: " + vein.dimensionFilter());
-      } catch (e) {
-        console.log("Dimensions: ERROR " + e);
-      }
-
-      try {
-        console.log("Y Range: " + vein.range());
-      } catch (e) {
-        console.log("Y Range: ERROR " + e);
-      }
-
-      try {
-        console.log("Discard Chance: " + vein.discardChanceOnAirExposure());
-      } catch (e) {
-        console.log("Discard Chance: ERROR " + e);
-      }
-
-      // Generator
-      try {
-        const generator = vein.veinGenerator();
-
-        console.log("Generator: " + generator);
-
-        if (generator != null) {
-          console.log("Generator Class: " + generator.getClass().getName());
-        }
-      } catch (e) {
-        console.log("Generator: ERROR " + e);
-      }
-
-      console.log("-----------------------------------");
-    });
-
-    console.log("========== END GT ORE VEINS ==========");
-
-    (event.add("gtt0:under_galena"),
-      (vein) => {
-        vein.weight(80);
-        vein.clusterSize();
-        vein.density();
-        vein.discardChanceOnAirExposure(0);
-
-        vein.layer("");
-        vein.dimensions("");
-        vein.biomes("");
-      });
+    vein.layeredVeinGenerator((generator) =>
+      generator.buildLayerPattern((pattern) =>
+        pattern
+          .layer((l) => l.weight(3).mat(GTMaterials.Galena).size(2, 4))
+          .layer((l) => l.weight(2).mat(GTMaterials.Silver).size(1, 1))
+          .layer((l) => l.weight(1).mat(GTMaterials.Lead).size(1, 1)),
+      ),
+    );
   });
-};
+
+  event.add("gtt0:under_banded_iron", (vein) => {
+    vein.weight(30);
+    vein.clusterSize(45);
+    vein.density(1.0);
+    vein.discardChanceOnAirExposure(0);
+
+    vein.layer("undergarden");
+    vein.dimensions(new ResourceLocation("undergarden", "undergarden"));
+    vein.biomes("#gtt0:is_under");
+
+    vein.heightRangeUniform(0, 40);
+
+    vein.veinedVeinGenerator((generator) =>
+      generator
+        .oreBlock(GTMaterials.Goethite, 3)
+        .oreBlock(GTMaterials.Limonite, 2)
+        .oreBlock(GTMaterials.Hematite, 2)
+        .rareBlock(GTMaterials.Gold, 1)
+        .rareBlockChance(0.075)
+        .veininessThreshold(0.01)
+        .maxRichnessThreshold(0.2)
+        .minRichness(0.7)
+        .maxRichness(1.0)
+        .edgeRoundoffBegin(3)
+        .maxEdgeRoundoff(0.1),
+    );
+  });
+});

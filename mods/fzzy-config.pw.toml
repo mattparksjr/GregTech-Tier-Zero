@@ -1,0 +1,13 @@
+name = "Fzzy Config"
+filename = "fzzy_config-0.7.7+1.20.1+forge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1a4f550dea4fb6316a96591dc46a463ee1f6602b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8883366
+project-id = 1005914
