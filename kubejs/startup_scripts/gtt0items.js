@@ -5,4 +5,10 @@ StartupEvents.registry("item", (event) => {
     .maxStackSize(1)
     .rarity("epic")
     .glow(true);
+
+  event
+    .create("intake_form")
+    .displayName("Intake Forms")
+    .maxStackSize(1)
+    .tooltip("§l§aPlease return forms to the jailer.");
 });

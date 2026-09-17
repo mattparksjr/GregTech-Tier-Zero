@@ -12,6 +12,7 @@
     event.remove({ id: "craftingstation:crafting_station_slab" });
     event.remove({ mod: "elevatorid" });
     event.remove({ mod: "travelanchors" });
+    //event.remove({ mod: "waystones" });
     event.remove({ output: "solclassic:basket" });
     event.remove({ output: "solclassic:wicker_basket" });
     event.remove({ output: "supplementaries:lunch_basket" });

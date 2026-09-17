@@ -1,9 +1,12 @@
 PlayerEvents.loggedIn((event) => {
   const player = event.player;
 
-  if (!player.persistentData.getBoolean("got_start_items")) {
-    player.persistentData.putBoolean("got_start_items", true);
-    player.give(Item.of("kubejs:intake_slip"));
+  if (!player.persistentData.getBoolean("did_start")) {
+    player.persistentData.putBoolean("did_start", true);
+    event.server.runCommandSilent(
+      `gamemode adventure ${event.player.username}`,
+    );
+    player.give(Item.of("kubejs:intake_form"));
   }
 });
 

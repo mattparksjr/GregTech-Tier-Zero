@@ -15,7 +15,7 @@ GTCEuStartupEvents.registry("gtceu:dimension_marker", (event) => {
   console.log("GTTO - Registering dimension markers");
   event
     .create("undergarden:undergarden")
-    .iconSupplier(() => Items.OBSIDIAN)
+    .iconSupplier(() => Item.of("undergarden:shard_o_lantern").getItem())
     .tier(0)
     .overrideName("Undergarden");
 });
