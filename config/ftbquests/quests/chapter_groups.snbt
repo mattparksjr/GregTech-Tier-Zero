@@ -1,7 +1,8 @@
 {
 	chapter_groups: [
-		{ id: "693226878D58638A", title: "Climbing the Ranks" }
-		{ id: "288DA1F92F7C0A7A", title: "Guides + More" }
-		{ id: "1C1C4FB2AFCF489D", title: "&6&lTHE PROJECT&r Milestones" }
+		{ id: "654FB0E3A74D3A0F", title: "Welcome to &cTier Zero" }
+		{ id: "2C05954F2D341591", title: "&l&6THE PROJECT" }
+		{ id: "5CE9BE4D83DC44C7", title: "&3Guides&r \\& Info" }
+		{ id: "747D79EDBEC17087", title: "&6&lTHE PROJECT&r Milestones" }
 	]
 }

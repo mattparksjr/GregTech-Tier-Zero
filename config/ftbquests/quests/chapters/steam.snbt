@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "steam"
+	group: "747D79EDBEC17087"
+	icon: "gtceu:bronze_ingot"
+	id: "02F925CFA2D21219"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["22C13C0F238F6165"]
+		id: "7EB9606E3DE994C2"
+		tasks: [{
+			id: "7601AAA9AB5D1C44"
+			item: "gtceu:lp_steam_solid_boiler"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "&6Steam"
+}

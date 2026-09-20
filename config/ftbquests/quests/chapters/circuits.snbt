@@ -1,0 +1,13 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "circuits"
+	group: "2C05954F2D341591"
+	icon: "gtceu:good_electronic_circuit"
+	id: "426EDCF2CB3E776F"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	subtitle: ["The quest for the best circuit"]
+	title: "Circuits"
+}

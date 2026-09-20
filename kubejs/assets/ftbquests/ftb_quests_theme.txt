@@ -1,0 +1,77 @@
+[*]
+background: ftbquests:textures/gui/terminal/background.png; tile_size=64
+extra_quest_shapes: terminal
+text_color: #A8FFC0
+hover_text_color: #E9FFF0
+disabled_text_color: #3C6B4A
+
+widget_border: #1A6B34
+widget_background: #B008140C
+symbol_in: #33FF66
+symbol_out: #14803A
+
+panel: part:ftbquests:textures/gui/terminal/ui.png; pos=0,0,32,32; corner=4
+button: part:ftbquests:textures/gui/terminal/ui.png; pos=32,0,32,32; corner=4
+hover_button: part:ftbquests:textures/gui/terminal/ui.png; pos=64,0,32,32; corner=4
+disabled_button: part:ftbquests:textures/gui/terminal/ui.png; pos=96,0,32,32; corner=4
+text_box: part:ftbquests:textures/gui/terminal/ui.png; pos=128,0,32,32; corner=4
+context_menu: part:ftbquests:textures/gui/terminal/ui.png; pos=160,0,32,32; corner=4
+scroll_bar_background: part:ftbquests:textures/gui/terminal/ui.png; pos=192,0,32,32; corner=4
+scroll_bar: part:ftbquests:textures/gui/terminal/ui.png; pos=224,0,32,32; corner=4
+container_slot: part:ftbquests:textures/gui/terminal/ui.png; pos=0,32,32,32; corner=4
+quest_view_background: part:ftbquests:textures/gui/terminal/ui.png; pos=32,32,32,32; corner=6
+
+check_icon: ftbquests:textures/gui/terminal/check.png
+alert_icon: ftbquests:textures/gui/terminal/alert.png
+close_icon: ftbquests:textures/gui/terminal/close.png
+settings_icon: ftbquests:textures/gui/terminal/settings.png
+pin_icon_on: ftbquests:textures/gui/terminal/pin_on.png
+pin_icon_off: ftbquests:textures/gui/terminal/pin_off.png
+collect_rewards_icon: ftbquests:textures/gui/terminal/collect_rewards.png
+checkmark_task_active: ftbquests:textures/gui/terminal/task_active.png
+checkmark_task_inactive: ftbquests:textures/gui/terminal/task_inactive.png
+left_arrow: ftbquests:textures/gui/terminal/arrow_left.png
+right_arrow: ftbquests:textures/gui/terminal/arrow_right.png
+support_icon: ftbquests:textures/gui/terminal/support.png
+wiki_icon: ftbquests:textures/gui/terminal/wiki.png
+editor_icon_on: ftbquests:textures/gui/terminal/editor_on.png
+editor_icon_off: ftbquests:textures/gui/terminal/editor_off.png
+hidden_icon: ftbquests:textures/gui/terminal/hidden.png
+link_icon: ftbquests:textures/gui/terminal/link.png
+save_icon: ftbquests:textures/gui/terminal/save.png
+prefs_icon: ftbquests:textures/gui/terminal/prefs.png
+emergency_items_icon: ftbquests:textures/gui/terminal/emergency_items.png
+guide_icon: ftbquests:textures/gui/terminal/guide.png
+modpack_icon: ftbquests:textures/gui/terminal/modpack.png
+reward_table_icon: ftbquests:textures/gui/terminal/reward_table.png
+shop_icon: ftbquests:textures/gui/terminal/shop.png
+delete_icon: ftbquests:textures/gui/terminal/delete.png
+reload_icon: ftbquests:textures/gui/terminal/reload.png
+download_icon: ftbquests:textures/gui/terminal/download.png
+edit_icon: ftbquests:textures/gui/terminal/edit.png
+move_up_icon: ftbquests:textures/gui/terminal/move_up.png
+move_down_icon: ftbquests:textures/gui/terminal/move_down.png
+
+tasks_text_color: #A8FFC0
+rewards_text_color: #B6FF3B
+quest_view_border: #33FF66
+quest_view_title: #33FF66
+
+quest_completed_color: #FF33FF66
+quest_started_color: #FFB6FF3B
+quest_not_started_color: #FF1F7A3A
+quest_locked_color: #FF2A3A2E
+
+dependency_line_completed_color: #FF33FF66
+dependency_line_uncompleted_color: #C41F7A3A
+dependency_line_requires_color: #FF3DFFD0
+dependency_line_required_for_color: #FFB6FF3B
+dependency_line_thickness: 0.2
+
+[warning]
+quest_not_started_color: #FF7A5A00
+quest_started_color: #FFFFB000
+
+[optional]
+quest_not_started_color: #FF14401F
+quest_started_color: #FF2E8C4A

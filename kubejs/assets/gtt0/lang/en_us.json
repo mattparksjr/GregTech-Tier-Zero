@@ -2,6 +2,7 @@
     "gtt0:under_galena": "Galena Vein",
     "gtt0:under_banded_iron": "Banded Iron Vein",
     "gtt0:under_redstone": "Redstone Vein",
-    "gtt0:under_tetrahedrite": "Tetragedrite Vein",
-    "gtt0:under_coal": "Coal Vein"
+    "gtt0:under_tetrahedrite": "Tetrahedrite Vein",
+    "gtt0:under_coal": "Coal Vein",
+    "gtt0:under_danburite": "Danburite Vein" 
 }

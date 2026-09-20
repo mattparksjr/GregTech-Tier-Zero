@@ -1,5 +1,5 @@
 GTCEuServerEvents.oreVeins((event) => {
-  console.log("GTTO: Registering ore veins");
+  console.log("GTT0: Registering ore veins");
 
   event.add("gtt0:under_galena", (vein) => {
     vein.weight(60);
@@ -119,8 +119,30 @@ GTCEuServerEvents.oreVeins((event) => {
     );
   });
 
-  console.log("GTT0: Removing ore veins");
-  GTCEuServerEvents.oreVeins((event) => {
-    event.remove("gtceu:galena_vein");
+  event.add("gtt0:under_danburite", (vein) => {
+    vein.weight(25);
+    vein.clusterSize(30);
+    vein.density(0.2);
+    vein.discardChanceOnAirExposure(0);
+
+    vein.layer("undergarden");
+    vein.dimensions(new ResourceLocation("undergarden", "undergarden"));
+    vein.biomes("#gtt0:is_under");
+
+    vein.heightRangeUniform(10, 50);
+
+    vein.layeredVeinGenerator((generator) =>
+      generator.buildLayerPattern((pattern) =>
+        pattern
+          .layer((l) =>
+            l.weight(3).mat(GTMaterials.get("danburite")).size(2, 4),
+          )
+          .layer((l) => l.weight(2).mat(GTMaterials.Topaz).size(1, 1))
+          .layer((l) => l.weight(1).mat(GTMaterials.Quartzite).size(1, 1)),
+      ),
+    );
   });
+
+  console.log("GTT0: Removing ore veins");
+  event.remove("gtceu:galena_vein");
 });

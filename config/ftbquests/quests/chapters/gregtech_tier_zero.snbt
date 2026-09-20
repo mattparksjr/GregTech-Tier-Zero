@@ -1,0 +1,650 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "gregtech_tier_zero"
+	group: "654FB0E3A74D3A0F"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_complete: true
+	id: "497C7ED634653892"
+	order_index: 0
+	progression_mode: "linear"
+	quest_links: [{
+		id: "017E2B711DA8D6CD"
+		linked_quest: "7EB9606E3DE994C2"
+		x: 12.5d
+		y: 6.0d
+	}]
+	quests: [
+		{
+			description: [
+				"&4&n&lTHE ARBITER:&r&r&r"
+				""
+				"Welcome &cprisoner,&r to GregTech: &4Tier Zero&r."
+				""
+				"You have woken up in the &blobby&r of your local jail. After turning in your"
+				"paperwork, you will be able to begin your &csentence.&r "
+				""
+				"You have been sent to &n&4Tier Zero&r&r. The lowest level possible for a &ccriminal&r like yourself."
+				""
+				"It seems however, that due to your &bconfession&r and the information on your friends that you gave us, you have a chance at returning home. If you complete &6&lTHE PROJECT&r&r."
+				""
+				"&7Ha, good luck&r"
+			]
+			icon: "chipped:victorian_iron_bars_pikes"
+			id: "5E3C05B265C2CC3D"
+			rewards: [
+				{
+					id: "547F32AD589BE6D3"
+					item: {
+						Count: 1
+						id: "minecraft:leather_helmet"
+						tag: {
+							Damage: 0
+							HideFlags: 128
+							Trim: {
+								material: "netherite"
+								pattern: "vex"
+							}
+							display: {
+								Lore: ["[{\"text\":\"Standard prison outfit.\",\"italic\":false,\"color\":\"gray\"}]"]
+								Name: "[{\"text\":\"Prison Suit\",\"italic\":false,\"underlined\":true,\"color\":\"dark_red\"}]"
+								color: 16351261
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2963A1D8F9BF2EC5"
+					item: {
+						Count: 1
+						id: "minecraft:leather_chestplate"
+						tag: {
+							Damage: 0
+							HideFlags: 128
+							Trim: {
+								material: "netherite"
+								pattern: "vex"
+							}
+							display: {
+								Lore: ["[{\"text\":\"Standard prison outfit.\",\"italic\":false,\"color\":\"gray\"}]"]
+								Name: "[{\"text\":\"Prison Suit\",\"italic\":false,\"underlined\":true,\"color\":\"dark_red\"}]"
+								color: 16351261
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3AF6280F18117134"
+					item: {
+						Count: 1
+						id: "minecraft:leather_leggings"
+						tag: {
+							Damage: 0
+							HideFlags: 128
+							Trim: {
+								material: "netherite"
+								pattern: "vex"
+							}
+							display: {
+								Lore: ["[{\"text\":\"Standard prison outfit.\",\"italic\":false,\"color\":\"gray\"}]"]
+								Name: "[{\"text\":\"Prison Suit\",\"italic\":false,\"underlined\":true,\"color\":\"dark_red\"}]"
+								color: 16351261
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "49C3B5974ABED1E2"
+					item: {
+						Count: 1
+						id: "minecraft:leather_boots"
+						tag: {
+							Damage: 0
+							HideFlags: 128
+							Trim: {
+								material: "netherite"
+								pattern: "vex"
+							}
+							display: {
+								Lore: ["[{\"text\":\"Standard prison outfit.\",\"italic\":false,\"color\":\"gray\"}]"]
+								Name: "[{\"text\":\"Prison Suit\",\"italic\":false,\"underlined\":true,\"color\":\"dark_red\"}]"
+								color: 16351261
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1BA66E8E796D6809"
+					item: {
+						Count: 1
+						id: "minecraft:soul_lantern"
+						tag: {
+							display: {
+								Lore: ["[{\"text\":\"It gets very dark at night...\",\"italic\":false,\"color\":\"gray\"}]"]
+								Name: "[{\"text\":\"Guiding Light\",\"italic\":false,\"color\":\"dark_aqua\"}]"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			subtitle: "Ready to begin your sentence?"
+			tasks: [{
+				icon: "enderio:nutritious_stick"
+				id: "39A6860614CD2B65"
+				observe_type: 5
+				timer: 0L
+				title: "Talk to the jailer"
+				to_observe: "minecraft:zombie_villager"
+				type: "observation"
+			}]
+			title: "Welcome to &4Tier Zero"
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5E3C05B265C2CC3D"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"Hello. I am your &6project manager&r. I will show you each of the steps required to complete &6&lTHE PROJECT&r&r."
+				""
+				"First, gather some logs and flint. &7Flint&r can be found by punching gravel. You need atleast &b2&r to make your first tools."
+			]
+			icon: "minecraft:oak_log"
+			id: "0D7AA43F529DAF81"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "787B2A76184FD23F"
+				item: "delightful:cactus_steak"
+				type: "item"
+			}]
+			subtitle: "Your sentence, that is."
+			tasks: [
+				{
+					icon: "minecraft:grass_block"
+					id: "2F1CE3E0ADF74E4A"
+					observe_type: 0
+					timer: 0L
+					title: "Look at grass!"
+					to_observe: "minecraft:grass_block"
+					type: "observation"
+				}
+				{
+					count: 4L
+					icon: "minecraft:oak_log"
+					id: "7AE32B7BF76AAF53"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					title: "Grab some logs. (any)"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "71CE2C22715FFBF7"
+					item: { Count: 2, id: "minecraft:flint" }
+					type: "item"
+				}
+			]
+			title: "And so it begins...."
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0D7AA43F529DAF81"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"Great. Combine your logs and &7gravel&r to make a crafting table. Craft your first set of tools and prepare to &bextract!&r"
+				""
+				"Nights can get pretty &ddark&r and spooky on this planet... a &cweapon&r is a must"
+			]
+			id: "73F509181B98AA29"
+			rewards: [{
+				id: "7D98D9EB3AB6961D"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "My hands hurt already"
+			tasks: [
+				{
+					id: "0E1DA967AD2B3F57"
+					item: "minecraft:crafting_table"
+					type: "item"
+				}
+				{
+					id: "159A63A608809E66"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1F459EC27D1045A4"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5BAE67F522ED5E6F"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Gettting some gear"
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5E3C05B265C2CC3D"]
+			description: [
+				"&b&n&lOops-E:&r&r&r"
+				""
+				"Hello. I am &bOops-E&r. I will provide you with tons of &dinformation&r about the world around you."
+				""
+				"Come check out my &6guides&r sometime, I'm sure they'll be helpful!"
+			]
+			id: "4A8E82E137B1112B"
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Snitches get... guides??"
+			tasks: [{
+				id: "14AE5A6F53FA80A5"
+				title: "Sure... Oops-E...."
+				type: "checkmark"
+			}]
+			x: 0.375d
+			y: -0.375d
+		}
+		{
+			dependencies: ["5E3C05B265C2CC3D"]
+			id: "4B78CB4BA01EB10A"
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Ooo fancy!"
+			tasks: [{
+				id: "4F95C8F05C906F54"
+				title: "Settings & You"
+				type: "checkmark"
+			}]
+			title: "Settings \\& You"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E3C05B265C2CC3D"]
+			id: "5A72F038158E61B2"
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Atleast the terrain is cool"
+			tasks: [{
+				id: "76270762EB828689"
+				title: "Playing on a server?"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["73F509181B98AA29"]
+			icon: "minecraft:charcoal"
+			id: "4F6FFD25C5487185"
+			rewards: [{
+				count: 12
+				id: "01A73CBEE1AACA16"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			subtitle: "How am I supposed to see??!?!"
+			tasks: [
+				{
+					count: 32L
+					id: "2C671B72E0169E34"
+					item: { Count: 32, id: "minecraft:sand" }
+					type: "item"
+				}
+				{
+					id: "71D6E0146B628879"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+			]
+			title: "No torches yet..."
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["73F509181B98AA29"]
+			id: "7FABAC2EF552971F"
+			tasks: [
+				{
+					id: "375F7F5440CB1EEF"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:beds"
+						}
+					}
+					title: "Any #minecraft:beds"
+					type: "item"
+				}
+				{
+					id: "7CF28A76E226E5B4"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:furnaces"
+						}
+					}
+					title: "Any #forge:furnaces"
+					type: "item"
+				}
+				{
+					id: "5C51B6E2966A1B3E"
+					item: "minecraft:chest"
+					type: "item"
+				}
+			]
+			title: "Make a hole.. a... home"
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["73F509181B98AA29"]
+			id: "2309B40792D974FC"
+			tasks: [
+				{
+					id: "2C9153BC1B54BAFA"
+					item: {
+						Count: 1
+						id: "gtceu:wood_mallet"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								MaxDamage: 127
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1EB19E5ECEBC7B8C"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7FABAC2EF552971F"]
+			id: "6BE46F4DEB3D95CD"
+			tasks: [{
+				id: "0D6B69ECB5627887"
+				item: {
+					Count: 1
+					id: "minecraft:stone_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "I need some ore"
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6BE46F4DEB3D95CD"]
+			id: "5D5BC2A7937EDE00"
+			tasks: [{
+				count: 32L
+				id: "5B70B8F60BA157ED"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"7FABAC2EF552971F"
+				"4F6FFD25C5487185"
+			]
+			id: "33BA7847698B9FCB"
+			tasks: [
+				{
+					count: 8L
+					id: "2EAAE27D7DC591DC"
+					item: { Count: 8, id: "minecraft:furnace" }
+					type: "item"
+				}
+				{
+					id: "39595A89FA9FB5EC"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 29L
+					id: "6594203B9080637A"
+					item: { Count: 29, id: "gtceu:coke_oven_bricks" }
+					type: "item"
+				}
+			]
+			title: "Let's get serious"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6BE46F4DEB3D95CD"]
+			id: "63D04BA5740B134B"
+			rewards: [{
+				count: 4
+				id: "01B873DB54DD9C73"
+				item: "minecraft:lantern"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7608ACC4FD4D06F6"
+				item: {
+					Count: 1
+					id: "gtceu:flint_axe"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							DisableShields: 1b
+							TreeFelling: 1b
+						}
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							HarvestLevel: 1
+							MaxDamage: 63
+							ToolSpeed: 2.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6BE46F4DEB3D95CD"]
+			id: "4FCED0BCD5B7DCBE"
+			tasks: [{
+				id: "09215F6322B44184"
+				title: "Dont enter random holes..."
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4FCED0BCD5B7DCBE"]
+			id: "02A0CDBE0307EAF4"
+			tasks: [{
+				count: 4L
+				id: "5545CD6AB3BF6DD7"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tiny_dusts"
+					}
+				}
+				title: "Find some surface rocks!"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5D5BC2A7937EDE00"]
+			id: "34ABAFBC574897FD"
+			subtitle: "The start of something big"
+			tasks: [{
+				id: "3DA60E9AEE8841AF"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:tools/crafting_hammers"
+					}
+				}
+				title: "Any hammer"
+				type: "item"
+			}]
+			title: "Your first useful new tool"
+			x: 12.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2309B40792D974FC"]
+			id: "33F9E32A08751BA4"
+			subtitle: "Don't let everyone touch the pot"
+			tasks: [{
+				id: "2A36571ACFBFBF2A"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:tools/crafting_knives"
+					}
+				}
+				title: "Any #gtceu:tools/crafting_knives"
+				type: "item"
+			}]
+			title: "Chef time"
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6BE46F4DEB3D95CD"]
+			id: "431C2F06FC69654A"
+			tasks: [
+				{
+					count: 27L
+					id: "79C1D438DD5E442E"
+					item: { Count: 27, id: "minecraft:copper_ingot" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "036F725D51AE51D6"
+					item: { Count: 9, id: "gtceu:tin_ingot" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"34ABAFBC574897FD"
+				"4F981170790BABE2"
+			]
+			id: "517D59F354FF6F2D"
+			tasks: [{
+				id: "39CAC30259AAB604"
+				item: {
+					Count: 1
+					id: "gtceu:iron_mining_hammer"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							AoEColumn: 1
+							AoELayer: 0
+							AoERow: 1
+							MaxAoEColumn: 1
+							MaxAoELayer: 0
+							MaxAoERow: 1
+							TorchPlacing: 1b
+						}
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							HarvestLevel: 2
+							MaxDamage: 767
+							ToolSpeed: 4.8f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["431C2F06FC69654A"]
+			id: "22C13C0F238F6165"
+			shape: "circle"
+			size: 1.5d
+			tasks: [{
+				count: 4L
+				id: "66B4D4B46094038C"
+				item: { Count: 4, id: "gtceu:bronze_ingot" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.0d
+		}
+	]
+	subtitle: ["The sentence begins"]
+	title: "GregTech: Tier Zero"
+}

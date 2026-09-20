@@ -1,0 +1,25 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_undergarden"
+	group: "654FB0E3A74D3A0F"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_complete: true
+	icon: "undergarden:shard_o_lantern"
+	id: "46548B6DB530C094"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "257591E6FAAB463F"
+		subtitle: "I hope you brought some light"
+		tasks: [{
+			dimension: "undergarden:undergarden"
+			id: "211D83EE3C24C1B1"
+			title: "Welcome to the Undergarden"
+			type: "dimension"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "The Undergarden"
+}

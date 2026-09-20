@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "multiblocks_galore"
+	group: "2C05954F2D341591"
+	icon: "gtceu:heatproof_machine_casing"
+	id: "3138C95AF9D43EEA"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "Multiblocks Galore"
+}

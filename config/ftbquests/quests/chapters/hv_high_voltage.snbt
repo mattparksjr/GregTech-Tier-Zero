@@ -1,0 +1,23 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hv_high_voltage"
+	group: "747D79EDBEC17087"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_complete: true
+	icon: "gtceu:hv_electric_motor"
+	id: "20F51665483DFFEC"
+	order_index: 3
+	quest_links: [ ]
+	quests: [{
+		id: "452B5A69D66792B0"
+		tasks: [{
+			id: "2421B0D327683D4C"
+			item: "gtceu:hv_machine_casing"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "HV (High Voltage)"
+}

@@ -1,0 +1,47 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tips_and_tricks"
+	group: "5CE9BE4D83DC44C7"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_complete: true
+	id: "008961422F38AE25"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4A8E82E137B1112B"]
+			id: "458115097246E448"
+			tasks: [{
+				id: "53306829806C671A"
+				title: "Cool"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A72F038158E61B2"]
+			id: "64D3DAAD174AA783"
+			tasks: [{
+				id: "56DCB83A20402D5A"
+				title: "Teams \\& You"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5A72F038158E61B2"]
+			id: "3DB5A9A5A02EABFA"
+			tasks: [{
+				id: "0DA6301C20020AD8"
+				title: "Chunk Pregeneration"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+	]
+	title: "Tips and Tricks"
+}

@@ -10,17 +10,17 @@
 	drop_loot_crates: false
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
-	hide_excluded_quests: true
-	icon: "gtceu:tritanium_gear"
-	lock_message: "eSFSDF"
+	hide_excluded_quests: false
+	icon: "gtceu:sterling_silver_gear"
+	lock_message: ""
 	loot_crate_no_drop: {
 		boss: 0
 		monster: 600
 		passive: 4000
 	}
 	pause_game: true
-	progression_mode: "default"
-	show_lock_icons: true
-	title: "GregTech: Tier Zero"
+	progression_mode: "linear"
+	show_lock_icons: false
+	title: "&l&6GregTech: &cTier Zero"
 	version: 13
 }

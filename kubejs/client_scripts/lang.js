@@ -11,4 +11,8 @@ ClientEvents.lang("en_us", (event) => {
     "Tetrahedrite Vein (Undergarden)",
   );
   event.add("gtceu.jei.ore_vein.under_coal", "Coal Vein (Undergarden)");
+  event.add(
+    "gtceu.jei.ore_vein.under_danburite",
+    "Danburite Vein (Undergarden)",
+  );
 });

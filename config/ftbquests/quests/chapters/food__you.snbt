@@ -1,0 +1,40 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "food__you"
+	group: "654FB0E3A74D3A0F"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_complete: true
+	icon: "corn_delight:cornbread_batter"
+	id: "0A7C83D2F80CA56A"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["73F509181B98AA29"]
+		id: "3C486B2F9687DA72"
+		subtitle: "Salads anyone?"
+		tasks: [{
+			id: "3333138F69446B7A"
+			item: {
+				Count: 1
+				id: "gtceu:flint_hoe"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						MaxDamage: 63
+					}
+					HideFlags: 2
+				}
+			}
+			type: "item"
+		}]
+		title: "Farming time..."
+		x: 0.0d
+		y: 0.0d
+	}]
+	subtitle: ["Staying fed!"]
+	title: "Food + you = "
+}

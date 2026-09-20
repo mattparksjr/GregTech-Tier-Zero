@@ -1,0 +1,23 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mv_medium_voltage"
+	group: "747D79EDBEC17087"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_complete: true
+	icon: "gtceu:mv_electric_motor"
+	id: "23FA237DFB0E6F86"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "72BE2F085F0D306D"
+		tasks: [{
+			id: "4725C5E19708ABFB"
+			item: "gtceu:mv_machine_casing"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "MV (Medium Voltage)"
+}

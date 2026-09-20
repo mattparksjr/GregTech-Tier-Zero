@@ -10,7 +10,6 @@ GTCEuStartupEvents.registry("gtceu:world_gen_layer", (event) => {
 });
 
 // Dimension Markers
-// Item.of("").getItem()
 GTCEuStartupEvents.registry("gtceu:dimension_marker", (event) => {
   console.log("GTTO - Registering dimension markers");
   event
@@ -31,4 +30,15 @@ GTCEuStartupEvents.registry("gtceu:tag_prefix", (event) => {
     .unificationEnabled(true)
     .materialIconType(GTMaterialIconType.ore)
     .generationCondition(ItemGenerationCondition.hasOreProperty);
+});
+
+GTCEuStartupEvents.registry("gtceu:material", (event) => {
+  event
+    .create("danburite")
+    .gem()
+    .ore()
+    .color(0xf2eedc)
+    .secondaryColor(0xd8d2b8)
+    .iconSet(GTMaterialIconSet.OPAL)
+    .components("1x calcium", "2x boron", "2x silicon", "8x oxygen");
 });
