@@ -8,19 +8,13 @@
 	icon: "gtceu:lv_electric_motor"
 	id: "01014269DA87B155"
 	order_index: 1
-	quest_links: [ ]
+	quest_links: [{
+		id: "7017817C89249E42"
+		linked_quest: "4ADB39C7032E2DC0"
+		x: 0.0d
+		y: 0.0d
+	}]
 	quests: [
-		{
-			dependencies: ["6C3F80DCBD0C5487"]
-			id: "54AC19D8345CCCA1"
-			tasks: [{
-				id: "75A3167587BA3A82"
-				item: "gtceu:lv_machine_casing"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 0.0d
-		}
 		{
 			dependencies: ["3100D8693E80D0ED"]
 			id: "784567B055370771"
@@ -44,7 +38,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["54AC19D8345CCCA1"]
+			dependencies: ["4ADB39C7032E2DC0"]
 			id: "3100D8693E80D0ED"
 			tasks: [{
 				id: "68166D9AA51C35BC"
@@ -54,6 +48,18 @@
 			x: 0.0d
 			y: 2.0d
 		}
+		{
+			dependencies: ["3100D8693E80D0ED"]
+			id: "741BFC9292659ABC"
+			tasks: [{
+				id: "487BBF576D07A75E"
+				item: "gtceu:lv_centrifuge"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
 	]
+	subtitle: ["Finally the power is on"]
 	title: "LV (Low voltage)"
 }

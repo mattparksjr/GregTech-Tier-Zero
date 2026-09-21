@@ -6,7 +6,12 @@
 	icon: "gtceu:heatproof_machine_casing"
 	id: "3138C95AF9D43EEA"
 	order_index: 2
-	quest_links: [ ]
+	quest_links: [{
+		id: "430546B6266FA447"
+		linked_quest: "5EF557A57C0D6CE5"
+		x: -2.0d
+		y: -1.5d
+	}]
 	quests: [
 		{
 			dependencies: ["6BE46F4DEB3D95CD"]

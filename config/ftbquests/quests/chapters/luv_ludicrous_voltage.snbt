@@ -9,6 +9,15 @@
 	id: "10EAAF4118086E9C"
 	order_index: 6
 	quest_links: [ ]
-	quests: [ ]
-	title: "LuV (Ludicrous Voltage)"
+	quests: [{
+		id: "45A675FB7577BFDE"
+		tasks: [{
+			id: "0DA28C9425B09529"
+			item: "gtceu:luv_machine_casing"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "&dLuV&r (Ludicrous Voltage)"
 }

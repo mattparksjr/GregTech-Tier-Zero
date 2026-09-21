@@ -134,12 +134,14 @@
 		{
 			dependencies: ["429B9DAEC54E3E2A"]
 			id: "018F0F8996576D39"
+			subtitle: "No money involved"
 			tasks: [{
 				count: 8L
 				id: "7C4A6425D54FB795"
 				item: { Count: 8, id: "farmersdelight:wheat_dough" }
 				type: "item"
 			}]
+			title: "Making that dough"
 			x: 0.0d
 			y: 4.0d
 		}
@@ -210,6 +212,95 @@
 			title: "Infinite milk??"
 			x: 6.5d
 			y: 6.5d
+		}
+		{
+			dependencies: ["3C486B2F9687DA72"]
+			icon: "sereneseasons:calendar"
+			id: "2212F2CF94FF13F6"
+			rewards: [{
+				id: "570B5D74748E5704"
+				item: "sereneseasons:calendar"
+				type: "item"
+			}]
+			subtitle: "It is too cold yet?"
+			tasks: [{
+				id: "31B34B9ACC050DC0"
+				title: "Seasons change"
+				type: "checkmark"
+			}]
+			title: "Why wont my cropps grow?"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2D594EF9E21C3EC8"]
+			id: "7E6AA5BF616626DB"
+			rewards: [
+				{
+					count: 4
+					id: "7CC259623619E4D1"
+					item: "minecraft:beetroot_seeds"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "280737EBC1DFF9A3"
+					table_id: 4892423741262930444L
+					type: "choice"
+				}
+			]
+			subtitle: "Rice bowls are my fav"
+			tasks: [
+				{
+					count: 4L
+					id: "2C674A78043F3B80"
+					item: { Count: 4, id: "farmersdelight:cabbage" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2CA47DE41B7F181E"
+					item: { Count: 4, id: "farmersdelight:rice" }
+					type: "item"
+				}
+			]
+			title: "More crops!"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33F9E32A08751BA4"]
+			id: "29AD5A592545FBC8"
+			tasks: [
+				{
+					count: 8L
+					id: "435F9E8A0111EA68"
+					item: { Count: 8, id: "farmersdelight:bacon" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6C1FB8B0F1FA02BB"
+					item: { Count: 8, id: "farmersdelight:minced_beef" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C486B2F9687DA72"]
+			icon: "artifacts:crystal_heart"
+			id: "1B95D86DDF18AD43"
+			shape: "circle"
+			size: 0.75d
+			tasks: [{
+				id: "06DE421543FAD8D9"
+				title: "Food details"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 1.5d
 		}
 	]
 	subtitle: ["Staying fed!"]

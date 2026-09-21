@@ -5,6 +5,7 @@
 	group: "5CE9BE4D83DC44C7"
 	hide_quest_details_until_startable: true
 	hide_quest_until_deps_complete: true
+	icon: "ftbquests:book"
 	id: "008961422F38AE25"
 	order_index: 0
 	quest_links: [ ]

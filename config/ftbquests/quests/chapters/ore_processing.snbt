@@ -9,6 +9,15 @@
 	id: "153809DE4D4AD9EF"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "6633216816BF17D1"
+		tasks: [{
+			id: "316E55239BC227E0"
+			item: "gtceu:lp_steam_macerator"
+			type: "item"
+		}]
+		x: -1.0d
+		y: 0.0d
+	}]
 	title: "Ore Processing"
 }

@@ -24,14 +24,46 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["36343A2284976FD5"]
+			dependencies: [
+				"36343A2284976FD5"
+				"741BFC9292659ABC"
+			]
 			id: "6BA7536D730F159C"
+			subtitle: "Its almost like the nether..."
 			tasks: [{
 				id: "28B91A49FCB6B439"
 				item: "undergarden:catalyst"
 				type: "item"
 			}]
+			title: "Entering the undergarden"
 			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["257591E6FAAB463F"]
+			id: "55480DBA01A8AE1B"
+			tasks: [{
+				count: 16L
+				id: "2A3A691B410E97CF"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:raw_lead"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_galena"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
 			y: 0.0d
 		}
 	]

@@ -42,6 +42,36 @@
 			x: 3.0d
 			y: -1.5d
 		}
+		{
+			id: "5EF557A57C0D6CE5"
+			tasks: [
+				{
+					id: "1C98D54DD22D02D7"
+					item: "gtceu:primitive_pump"
+					type: "item"
+				}
+				{
+					id: "0DAE5142D817E96B"
+					item: "gtceu:pump_hatch"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "25EA902DBE068879"
+					item: { Count: 10, id: "gtceu:pump_deck" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "5E52DAE1E9CCE7E3"
+					item: { Count: 10, id: "gtceu:treated_wood_frame" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
 	]
-	title: "&6Steam"
+	subtitle: ["The industrial revolution!"]
+	title: "&6Steam age"
 }

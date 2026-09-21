@@ -9,6 +9,15 @@
 	id: "194255C29507A318"
 	order_index: 8
 	quest_links: [ ]
-	quests: [ ]
-	title: "UV (Ultimate Voltage)"
+	quests: [{
+		id: "1438A2BA2670AEE5"
+		tasks: [{
+			id: "0693E0BB4B5FE2FE"
+			item: "gtceu:uv_machine_casing"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "&3UV&r (Ultimate Voltage)"
 }

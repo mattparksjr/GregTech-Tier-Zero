@@ -8,7 +8,12 @@
 	icon: "minecraft:raw_iron"
 	id: "7C4D11871931F1B2"
 	order_index: 1
-	quest_links: [ ]
+	quest_links: [{
+		id: "2948740813CDD5C2"
+		linked_quest: "02A0CDBE0307EAF4"
+		x: 0.0d
+		y: 0.0d
+	}]
 	quests: [ ]
 	title: "Ore Generation"
 }

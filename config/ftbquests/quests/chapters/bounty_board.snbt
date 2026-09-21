@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "bounty_board"
+	group: "654FB0E3A74D3A0F"
+	icon: "mysticalagriculture:awakened_supremium_sword"
+	id: "039FC443CD3C6ACA"
+	order_index: 4
+	quest_links: [ ]
+	quests: [{
+		id: "689A09F656BC0FC6"
+		tasks: [{
+			advancement: "minecraft:adventure/kill_a_mob"
+			criterion: ""
+			id: "6498F9240DC51247"
+			type: "advancement"
+		}]
+		x: -1.5d
+		y: -0.5d
+	}]
+	title: "Bounty Board"
+}

@@ -9,6 +9,15 @@
 	id: "057FE94F06695F85"
 	order_index: 5
 	quest_links: [ ]
-	quests: [ ]
-	title: "IV (Insane Voltage)"
+	quests: [{
+		id: "57BB4C8DB7AC9D9C"
+		tasks: [{
+			id: "70214F8BD1EF0F9B"
+			item: "gtceu:iv_machine_casing"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "&9IV&r (Insane Voltage)"
 }

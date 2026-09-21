@@ -5,6 +5,7 @@
 	group: "654FB0E3A74D3A0F"
 	hide_quest_details_until_startable: true
 	hide_quest_until_deps_complete: true
+	icon: "gtceu:sterling_silver_gear"
 	id: "497C7ED634653892"
 	order_index: 0
 	progression_mode: "linear"
@@ -16,10 +17,11 @@
 			y: 6.0d
 		}
 		{
-			id: "5283536001FE361F"
-			linked_quest: "54AC19D8345CCCA1"
-			x: 15.0d
-			y: 3.0d
+			id: "4267D27EA11D2C71"
+			linked_quest: "5F8218C2A390A8CD"
+			shape: "circle"
+			x: 8.0d
+			y: 6.0d
 		}
 	]
 	quests: [
@@ -167,7 +169,6 @@
 			]
 			icon: "minecraft:oak_log"
 			id: "0D7AA43F529DAF81"
-			optional: true
 			rewards: [{
 				count: 2
 				id: "787B2A76184FD23F"
@@ -219,6 +220,7 @@
 				""
 				"Nights can get pretty &ddark&r and spooky on this planet... a &cweapon&r is a must"
 			]
+			icon: "minecraft:crafting_table"
 			id: "73F509181B98AA29"
 			rewards: [{
 				id: "7D98D9EB3AB6961D"
@@ -279,6 +281,7 @@
 				""
 				"Come check out my &6guides&r sometime, I'm sure they'll be helpful!"
 			]
+			icon: "computercraft:monitor_advanced"
 			id: "4A8E82E137B1112B"
 			shape: "circle"
 			size: 0.75d
@@ -293,8 +296,18 @@
 		}
 		{
 			dependencies: ["5E3C05B265C2CC3D"]
-			description: ["&6&n&lPROJECT MANAGER:&r&r&r"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"It is vital to your &asuccess&r that you remain &6comfortable&r for your sentence. Check your game settings, adjust your sounds, or play on &deasy&r mode if that suits you. This pack is not designed to be super &chardcore,&r so play as you &5please&r!"
+			]
+			icon: "gtceu:iron_gear"
 			id: "4B78CB4BA01EB10A"
+			rewards: [{
+				id: "6B73AA54343BA835"
+				item: "farmersdelight:cake_slice"
+				type: "item"
+			}]
 			shape: "circle"
 			size: 0.75d
 			subtitle: "Ooo fancy!"
@@ -309,6 +322,14 @@
 		}
 		{
 			dependencies: ["5E3C05B265C2CC3D"]
+			description: [
+				"&b&n&lOops-E:&r&r&r"
+				""
+				"If you are playing on a server, I would &erecommend&r reading my &bguides&r for teams and &6chunk loading&r."
+				""
+				"If you are a server &cadmin,&r it might be useful to check your relevent &bguide&r too."
+			]
+			icon: "advanced_ae:printed_quantum_processor"
 			id: "5A72F038158E61B2"
 			shape: "circle"
 			size: 0.75d
@@ -323,6 +344,12 @@
 		}
 		{
 			dependencies: ["73F509181B98AA29"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"Yeah, you likely assumed you can just make charcoal. &4Wrong&r. "
+				"In order to craft more &6torches&r, you will need to make a &bCoke Oven&r. It's not all bad though, it has some useful &ebyproducts&r."
+			]
 			icon: "minecraft:charcoal"
 			id: "4F6FFD25C5487185"
 			rewards: [{
@@ -340,6 +367,7 @@
 					type: "item"
 				}
 				{
+					count: 32L
 					id: "71D6E0146B628879"
 					item: "minecraft:clay_ball"
 					type: "item"
@@ -351,7 +379,14 @@
 		}
 		{
 			dependencies: ["73F509181B98AA29"]
+			icon: "handcrafted:acacia_fancy_bed"
 			id: "7FABAC2EF552971F"
+			rewards: [{
+				count: 2
+				id: "50D1980707CE4B21"
+				item: "minecraft:oak_door"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "375F7F5440CB1EEF"
@@ -389,7 +424,22 @@
 		}
 		{
 			dependencies: ["73F509181B98AA29"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"A &bcutting board&r and knife are useful early tools. In order to make the cutting board, you will need a &dmallet.&r For now all you have access to is &ewood.&r "
+				""
+				"The cutting board will unlock new foods and recipes for &2progression!&r"
+			]
+			icon: "farmersdelight:cutting_board"
 			id: "2309B40792D974FC"
+			rewards: [{
+				count: 16
+				id: "012017F7E98F2E3C"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			subtitle: "Ninja time"
 			tasks: [
 				{
 					id: "2C9153BC1B54BAFA"
@@ -415,6 +465,7 @@
 					type: "item"
 				}
 			]
+			title: "Cutting board"
 			x: 6.5d
 			y: -0.5d
 		}
@@ -455,7 +506,9 @@
 				"7FABAC2EF552971F"
 				"4F6FFD25C5487185"
 			]
+			icon: "minecraft:furnace"
 			id: "33BA7847698B9FCB"
+			subtitle: "Coke Oven time!"
 			tasks: [
 				{
 					count: 8L
@@ -476,13 +529,19 @@
 				}
 			]
 			title: "Let's get serious"
-			x: 5.5d
-			y: 2.5d
+			x: 6.5d
+			y: 3.5d
 		}
 		{
-			dependencies: [
-				"6BE46F4DEB3D95CD"
-				"73F509181B98AA29"
+			dependencies: ["73F509181B98AA29"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"Your &6progress&r will require &bvast&r amounts of wood."
+				""
+				"Instead of making vanilla axes, it is much better to great &6GregTech&r tools. For example, a &dlumber&r axe will cut down an entire tree. "
+				""
+				"For your first one, make it out of &8flint.&r The better the material, the more &edurability.&r"
 			]
 			icon: "minecraft:oak_log"
 			id: "63D04BA5740B134B"
@@ -553,6 +612,7 @@
 		{
 			dependencies: ["4FCED0BCD5B7DCBE"]
 			id: "02A0CDBE0307EAF4"
+			shape: "circle"
 			subtitle: "Science Rocks"
 			tasks: [{
 				count: 4L
@@ -573,6 +633,22 @@
 		}
 		{
 			dependencies: ["5D5BC2A7937EDE00"]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_hammer"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
 			id: "34ABAFBC574897FD"
 			subtitle: "The start of something big"
 			tasks: [{
@@ -593,7 +669,38 @@
 		}
 		{
 			dependencies: ["2309B40792D974FC"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"Many of the recipes on the &bcutting board&r require a knife. First place your item on the board, then &dright-click&r with a knife. "
+				"As always, your first knife should be &8flint&r. This knife unlocks new food items, check them out in &bFood + You =&r"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:flint_knife"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						AttackDamage: 1.0f
+						AttackSpeed: 3.0f
+						DefaultEnchantments: [{
+							id: "minecraft:fire_aspect"
+							lvl: 1s
+						}]
+						MaxDamage: 63
+					}
+					HideFlags: 2
+				}
+			}
 			id: "33F9E32A08751BA4"
+			rewards: [{
+				count: 4
+				id: "1A521B20E9DCD8E2"
+				item: "minecraft:mutton"
+				type: "item"
+			}]
 			subtitle: "Don't let everyone touch the pot"
 			tasks: [{
 				id: "2A36571ACFBFBF2A"
@@ -613,6 +720,7 @@
 		}
 		{
 			dependencies: ["6BE46F4DEB3D95CD"]
+			icon: "minecraft:copper_ingot"
 			id: "431C2F06FC69654A"
 			tasks: [
 				{
@@ -661,6 +769,7 @@
 				}
 			}
 			id: "517D59F354FF6F2D"
+			shape: "circle"
 			subtitle: "3x3?!?!?"
 			tasks: [{
 				id: "39CAC30259AAB604"
@@ -691,8 +800,8 @@
 				type: "item"
 			}]
 			title: "A new mining tool"
-			x: 13.0d
-			y: 3.0d
+			x: 12.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["431C2F06FC69654A"]
@@ -709,7 +818,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["7FABAC2EF552971F"]
+			dependencies: ["73F509181B98AA29"]
 			description: [
 				"&6&n&lPROJECT MANAGER:&r&r&r"
 				""
@@ -725,13 +834,15 @@
 				table_id: 8891453423305491902L
 				type: "choice"
 			}]
+			shape: "circle"
+			size: 0.75d
 			subtitle: "Hope you aren't scared of the dark"
 			tasks: [{
 				id: "1D6900A45BEF4569"
 				title: "It gets real dark..."
 				type: "checkmark"
 			}]
-			x: 7.5d
+			x: 5.5d
 			y: 2.5d
 		}
 		{
@@ -751,6 +862,7 @@
 				"34ABAFBC574897FD"
 				"4F981170790BABE2"
 			]
+			icon: "gtceu:wrought_iron_ingot"
 			id: "3E8DBDCAAC05C51D"
 			tasks: [
 				{
@@ -769,6 +881,112 @@
 			title: "Wrought Iron??"
 			x: 13.5d
 			y: -1.0d
+		}
+		{
+			dependencies: ["33F9E32A08751BA4"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"Your &ecutting board&r has a much easier way to get &8flint&r, take your gravel and sift though it with a &dshovel&r. It is just a 10% chance, but it beats mining &9underwater&r."
+			]
+			id: "34D86B86F5D24969"
+			rewards: [{
+				id: "79B3993221926FB7"
+				item: {
+					Count: 1
+					id: "minecraft:stone_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Beats digging underwater"
+			tasks: [{
+				count: 4L
+				id: "603841E83FFEDDA1"
+				item: { Count: 4, id: "minecraft:flint" }
+				type: "item"
+			}]
+			title: "A better way to get flint"
+			x: 7.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["34D86B86F5D24969"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"If you craft yourself a &bmortar,&r you can get &8flint&r even easier then with a cutting board. It just takes 2 &8flint&r and 5 stone. Once you get access to &6materials&r like iron, it will be helpful to use those instead of &8flint&r. "
+				""
+				"Take note of this process, as you unlocked better &btech&r, you unlocked easier ways to get &2resources&r. The quests here will guide you, but if you want &6success&r you need to look into old recipies as you progress. Some will get much cheaper and &dfaster&r!"
+			]
+			id: "5C9BA462E867102A"
+			rewards: [{
+				id: "4B7339843ACAE5E6"
+				item: {
+					Count: 1
+					id: "gtceu:wrought_iron_mortar"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							MaxDamage: 383
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Who like manual labor anyways?"
+			tasks: [{
+				id: "4EFD63EF9A14D76E"
+				item: {
+					Count: 1
+					id: "gtceu:flint_mortar"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							MaxDamage: 63
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			title: "An even BETTER way to get flint"
+			x: 9.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"3E8DBDCAAC05C51D"
+				"6C1065B1FF6840F0"
+			]
+			id: "4ADB39C7032E2DC0"
+			tasks: [{
+				id: "2250DBE96CEF891E"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6C3F80DCBD0C5487"]
+			id: "6C1065B1FF6840F0"
+			tasks: [{
+				id: "0B10ED5CCA774F5B"
+				item: "gtceu:lv_machine_casing"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 3.0d
 		}
 	]
 	subtitle: ["The sentence begins"]

@@ -9,6 +9,15 @@
 	id: "2FE61E64CB6AEB5A"
 	order_index: 7
 	quest_links: [ ]
-	quests: [ ]
-	title: "ZPM (Zero Point Module)"
+	quests: [{
+		id: "0A0F1E3B34C29E1E"
+		tasks: [{
+			id: "0036C3282A4D075F"
+			item: "gtceu:zpm_machine_casing"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "&cZPM&r (Zero Point Module)"
 }

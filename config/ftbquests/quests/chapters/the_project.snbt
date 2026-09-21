@@ -13,6 +13,21 @@
 	id: "1654F4C1F464E415"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "784A9972859C1CB8"
+		tasks: [{
+			id: "123B89C3E7EAA629"
+			item: {
+				Count: 1
+				id: "gtceu:max_battery"
+				tag: {
+					Charge: 9223372036854775807L
+				}
+			}
+			type: "item"
+		}]
+		x: 0.5d
+		y: 0.0d
+	}]
 	title: "&6THE PROJECT"
 }
