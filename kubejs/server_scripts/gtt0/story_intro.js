@@ -35,10 +35,13 @@ ItemEvents.rightClicked((event) => {
   console.log("GTT0: Processing intake slip for a player...");
 
   player.tell(
-    Text.of("Finding a place to send you... ")
+    Text.of("Finding a safe place to send you... ")
       .color("aqua")
-      .append("This item may take a few seconds to react, dont panic.")
-      .color("gray"),
+      .append(
+        Text.of("This item may take awhile to react, dont panic.").color(
+          "gray",
+        ),
+      ),
   );
 
   const oldX = player.x;
@@ -46,7 +49,7 @@ ItemEvents.rightClicked((event) => {
   const oldZ = player.z;
 
   server.runCommandSilent(
-    `execute in minecraft:overworld run spreadplayers 0 0 100 3000 false ${player.username}`,
+    `execute in minecraft:overworld run spreadplayers 0 0 0 1000 false ${player.username}`,
   );
 
   if (!player.isCreative()) {
@@ -93,7 +96,7 @@ function waitForTeleport(server, player, oldX, oldY, oldZ, waited) {
 function finishIntake(player) {
   console.log(`GTT0: ${player.username} has been transferred.`);
 
-  server.runCommandSilent(`gamemode survival ${player.username}`);
+  player.server.runCommandSilent(`gamemode survival ${player.username}`);
 
   player.server.scheduleInTicks(60, () => {
     player.server.runCommandSilent(
@@ -189,6 +192,10 @@ function finishIntake(player) {
       player.tell(msg);
     });
   });
+
+  player.server.runCommandSilent(
+    `execute in minecraft:overworld run spawnpoint ${player.username} ${player.x} ${player.y} ${player.z}`,
+  );
 
   player.persistentData.putBoolean("right_click_busy", false);
 }

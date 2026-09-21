@@ -101,7 +101,7 @@ GTCEuServerEvents.oreVeins((event) => {
   });
 
   event.add("gtt0:under_coal", (vein) => {
-    vein.weight(80);
+    vein.weight(60);
     vein.clusterSize(42);
     vein.density(0.25);
     vein.discardChanceOnAirExposure(0);
@@ -139,6 +139,61 @@ GTCEuServerEvents.oreVeins((event) => {
           )
           .layer((l) => l.weight(2).mat(GTMaterials.Topaz).size(1, 1))
           .layer((l) => l.weight(1).mat(GTMaterials.Quartzite).size(1, 1)),
+      ),
+    );
+  });
+
+  event.add("gtt0:under_inferium", (vein) => {
+    vein.weight(50);
+    vein.clusterSize(35);
+    vein.density(0.3);
+    vein.discardChanceOnAirExposure(0);
+
+    vein.layer("undergarden");
+    vein.dimensions(new ResourceLocation("undergarden", "undergarden"));
+    vein.biomes("#gtt0:is_under");
+
+    vein.heightRangeUniform(0, 60);
+
+    vein.layeredVeinGenerator((generator) =>
+      generator.buildLayerPattern((pattern) =>
+        pattern
+          .layer((l) =>
+            l
+              .weight(3)
+              .block(() => Block.getBlock("mysticalagriculture:inferium_ore"))
+              .size(2, 4),
+          )
+          .layer((l) => l.weight(2).mat(GTMaterials.Quartzite).size(1, 2))
+          .layer((l) => l.weight(1).mat(GTMaterials.CertusQuartz).size(1, 1))
+          .layer((l) => l.weight(2).mat(GTMaterials.Barite).size(1, 2)),
+      ),
+    );
+  });
+
+  event.add("gtt0:end_inferium", (vein) => {
+    vein.weight(50);
+    vein.clusterSize(35);
+    vein.density(0.3);
+    vein.discardChanceOnAirExposure(0);
+
+    vein.layer("endstone");
+    vein.biomes("#minecraft:is_end");
+
+    vein.heightRangeUniform(10, 90);
+
+    vein.layeredVeinGenerator((generator) =>
+      generator.buildLayerPattern((pattern) =>
+        pattern
+          .layer((l) =>
+            l
+              .weight(3)
+              .block(() => Block.getBlock("mysticalagriculture:inferium_ore"))
+              .size(2, 4),
+          )
+          .layer((l) => l.weight(1).mat(GTMaterials.NetherQuartz).size(1, 1))
+          .layer((l) => l.weight(1).mat(GTMaterials.CertusQuartz).size(1, 1))
+          .layer((l) => l.weight(2).mat(GTMaterials.Barite).size(1, 2)),
       ),
     );
   });

@@ -15,4 +15,6 @@ ClientEvents.lang("en_us", (event) => {
     "gtceu.jei.ore_vein.under_danburite",
     "Danburite Vein (Undergarden)",
   );
+  event.add("gtceu.jei.ore_vein.under_inferium", "Inferium Vein (Undergarden)");
+  event.add("gtceu.jei.ore_vein.end_inferium", "Inferium Vein (End)");
 });

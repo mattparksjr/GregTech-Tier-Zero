@@ -11,6 +11,8 @@
     event.remove({ output: "minecraft:blast_furnace" });
     event.remove({ output: "minecraft:hay_block" });
     event.remove({ id: "minecraft:wheat" });
+    event.remove({ id: "minecraft:golden_carrot" });
+    event.remove({ id: "minecraft:bread" });
   }
 
   function add(event) {

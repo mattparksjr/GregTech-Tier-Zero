@@ -7,6 +7,29 @@
 	id: "3138C95AF9D43EEA"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["6BE46F4DEB3D95CD"]
+			id: "1AC027F8816A3004"
+			tasks: [{
+				id: "1F38AADE0C9173A6"
+				item: "gtceu:coke_oven"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["33BA7847698B9FCB"]
+			id: "7FDB1C07DAA48D69"
+			tasks: [{
+				id: "5431C7D8203A9C6C"
+				item: "gtceu:primitive_blast_furnace"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+	]
 	title: "Multiblocks Galore"
 }

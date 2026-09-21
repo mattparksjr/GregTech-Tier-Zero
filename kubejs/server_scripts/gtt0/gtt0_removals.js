@@ -29,7 +29,13 @@ const DISABLED_ITEMS = [
   "aquaculture:gold_fillet_knife",
   "aquaculture:diamond_fillet_knife",
   "aquaculture:neptunium_fillet_knife",
+  "enderio:sag_mill",
+  "enderio:alloy_smelter",
+  "enderio:wood_gear",
+  "enderio:stone_gear",
 ];
+
+const HIDDEN_MODS = ["itemfilters", "ftbquests", "ftbfiltersystem"];
 
 ServerEvents.recipes((event) => {
   console.log("GTT0 - Running mass item recipe removals.");
@@ -41,6 +47,9 @@ ServerEvents.recipes((event) => {
 ServerEvents.tags("item", (event) => {
   console.log("GTT0: - Running mass item #hide tag");
   DISABLED_ITEMS.forEach((item) => {
+    event.add("c:hidden_from_recipe_viewers", item);
+  });
+  HIDDEN_MODS.forEach((item) => {
     event.add("c:hidden_from_recipe_viewers", item);
   });
 });

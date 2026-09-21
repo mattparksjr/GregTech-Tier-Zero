@@ -9,17 +9,31 @@
 	id: "46548B6DB530C094"
 	order_index: 2
 	quest_links: [ ]
-	quests: [{
-		id: "257591E6FAAB463F"
-		subtitle: "I hope you brought some light"
-		tasks: [{
-			dimension: "undergarden:undergarden"
-			id: "211D83EE3C24C1B1"
-			title: "Welcome to the Undergarden"
-			type: "dimension"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["6BA7536D730F159C"]
+			id: "257591E6FAAB463F"
+			subtitle: "I hope you brought some light"
+			tasks: [{
+				dimension: "undergarden:undergarden"
+				id: "211D83EE3C24C1B1"
+				title: "Welcome to the Undergarden"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36343A2284976FD5"]
+			id: "6BA7536D730F159C"
+			tasks: [{
+				id: "28B91A49FCB6B439"
+				item: "undergarden:catalyst"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+	]
 	title: "The Undergarden"
 }

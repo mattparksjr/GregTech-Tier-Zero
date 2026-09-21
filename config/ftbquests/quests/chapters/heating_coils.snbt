@@ -3,10 +3,188 @@
 	default_quest_shape: ""
 	filename: "heating_coils"
 	group: "2C05954F2D341591"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_complete: true
 	icon: "gtceu:cupronickel_coil_block"
 	id: "09BF939B2161397B"
 	order_index: 3
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["774D0FB74627781B"]
+			id: "60BBE64FDEFB53EA"
+			tasks: [{
+				id: "22DD90343455E7DE"
+				item: "gtceu:cupronickel_coil_block"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["073D9B6DC58C2A49"]
+			id: "62F1D1F24A1DA093"
+			tasks: [{
+				id: "4D981AE8C6722449"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2191C9C6D6D5F8C8"]
+			id: "3D604B28A4A86ECE"
+			tasks: [{
+				id: "68D87E745D5BB3FB"
+				item: "gtceu:nichrome_coil_block"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["34A2D4FEE3A2CC77"]
+			id: "2C5FEBF5F6F9C54D"
+			tasks: [{
+				id: "5CD08EDC7BD4359B"
+				item: "gtceu:rtm_alloy_coil_block"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7A1C3D5912366C22"]
+			id: "384AA82E22FC85AB"
+			tasks: [{
+				id: "45C18B1089183E6E"
+				item: "gtceu:hssg_coil_block"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["431E87ADA12AFDAC"]
+			id: "670EE2B9902A48E6"
+			tasks: [{
+				id: "4F3F14C9D0137FE4"
+				item: "gtceu:naquadah_coil_block"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["79E72D6DC9562DD9"]
+			id: "7E52D17C38D6C57E"
+			tasks: [{
+				id: "12A6A3C36528C024"
+				item: "gtceu:trinium_coil_block"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["63DCD61286FF3FD8"]
+			id: "2A77E059E8E82175"
+			tasks: [{
+				id: "02653568E7AB0794"
+				item: "gtceu:tritanium_coil_block"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["784567B055370771"]
+			id: "774D0FB74627781B"
+			tasks: [{
+				id: "5714E5B63566D0F9"
+				item: "gtceu:cupronickel_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["774D0FB74627781B"]
+			id: "073D9B6DC58C2A49"
+			tasks: [{
+				id: "12E18D3C94812D1D"
+				item: "gtceu:kanthal_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["073D9B6DC58C2A49"]
+			id: "2191C9C6D6D5F8C8"
+			tasks: [{
+				id: "5CC548DD7905D14B"
+				item: "gtceu:nichrome_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			id: "34A2D4FEE3A2CC77"
+			tasks: [{
+				id: "51C5EBE7F9C162EA"
+				item: "gtceu:rtm_alloy_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["34A2D4FEE3A2CC77"]
+			id: "7A1C3D5912366C22"
+			tasks: [{
+				id: "44D59AC5DA619251"
+				item: "gtceu:hssg_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7A1C3D5912366C22"]
+			id: "431E87ADA12AFDAC"
+			tasks: [{
+				id: "4AF3184170CAAD89"
+				item: "gtceu:naquadah_ingot"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["431E87ADA12AFDAC"]
+			id: "79E72D6DC9562DD9"
+			tasks: [{
+				id: "70E90709B1A5092B"
+				item: "gtceu:trinium_ingot"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["79E72D6DC9562DD9"]
+			id: "63DCD61286FF3FD8"
+			tasks: [{
+				id: "15F8351F754AAAB8"
+				item: "gtceu:tritanium_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -2.5d
+		}
+	]
 	title: "Heating Coils"
 }

@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
   event.remove({ id: "sophisticatedbackpacks:netherite_backpack" });
 
   event.shaped("sophisticatedbackpacks:backpack", ["SLS", "LBL", "FPF"], {
-    S: "#forge:screws/wrought_iron",
+    S: "#forge:screws/bronze",
     L: "minecraft:leather",
     B: "gtceu:wood_crate",
     F: "farmersdelight:rope",
@@ -26,11 +26,11 @@ ServerEvents.recipes((event) => {
     ],
     pattern: ["SLS", "LBL", "FPF"],
     key: {
-      S: { tag: "forge:screws/bronze" },
+      S: { tag: "forge:screws/wrought_iron" },
       L: { item: "minecraft:leather" },
       B: { item: "sophisticatedbackpacks:backpack" },
       F: { item: "farmersdelight:rope" },
-      P: { tag: "forge:plates/invar" },
+      P: { tag: "forge:plates/wrought_iron" },
     },
     result: { item: "sophisticatedbackpacks:copper_backpack" },
   });

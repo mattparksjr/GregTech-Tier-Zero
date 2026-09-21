@@ -1,9 +1,9 @@
 {
-  "block.sophisticatedbackpacks.backpack":"Wrought Iron Backpack",
-  "item.sophisticatedbackpacks.backpack":"Wrought Iron Backpack",
+  "block.sophisticatedbackpacks.backpack":"Bronze Backpack",
+  "item.sophisticatedbackpacks.backpack":"Bronze Backpack",
   
-  "block.sophisticatedbackpacks.copper_backpack":"Bronze Backpack",
-  "item.sophisticatedbackpacks.copper_backpack":"Bronze Backpack",
+  "block.sophisticatedbackpacks.copper_backpack":"Wrought Iron Backpack",
+  "item.sophisticatedbackpacks.copper_backpack":"Wrought Iron Backpack",
   
   "block.sophisticatedbackpacks.iron_backpack":"Steel Backpack",
   "item.sophisticatedbackpacks.iron_backpack":"Steel Backpack",

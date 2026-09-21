@@ -7,16 +7,41 @@
 	id: "02F925CFA2D21219"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["22C13C0F238F6165"]
-		id: "7EB9606E3DE994C2"
-		tasks: [{
-			id: "7601AAA9AB5D1C44"
-			item: "gtceu:lp_steam_solid_boiler"
-			type: "item"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["22C13C0F238F6165"]
+			id: "7EB9606E3DE994C2"
+			subtitle: "Hot and steamy..."
+			tasks: [{
+				id: "7601AAA9AB5D1C44"
+				item: "gtceu:lp_steam_solid_boiler"
+				type: "item"
+			}]
+			title: "Babys First Boiler"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7499DE8654E6D85F"]
+			id: "10ABB9E4AFC497AD"
+			tasks: [{
+				id: "0BD94578DAA6399C"
+				item: "minecraft:anvil"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			id: "7499DE8654E6D85F"
+			tasks: [{
+				id: "3149B0EF0900C66C"
+				item: "gtceu:lp_steam_compressor"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+	]
 	title: "&6Steam"
 }

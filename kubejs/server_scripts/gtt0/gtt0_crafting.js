@@ -17,6 +17,8 @@
     event.remove({ output: "solclassic:wicker_basket" });
     event.remove({ output: "supplementaries:lunch_basket" });
     event.remove({ mod: "torchmaster" });
+    event.remove({ id: "minecraft:golden_carrot" });
+    event.remove({ mod: "hangglider" });
   }
 
   function add(event) {
@@ -25,6 +27,7 @@
     const HAMMER = "#gtceu:tools/crafting_hammers";
     const SAW = "#gtceu:tools/crafting_saws";
     const FILE = "#gtceu:tools/crafting_files";
+    const DRIVER = "gtceu:tools/crafting_screwdrivers";
 
     event
       .shaped("rechiseled:chisel", ["FP", "SH"], {
@@ -97,5 +100,67 @@
       .itemOutputs("torchmaster:frozen_pearl")
       .duration(300)
       .EUt(24);
+
+    event
+      .shaped("hangglider:glider_wing", ["HRL", "RLL", "LLL"], {
+        H: HAMMER,
+        R: "#forge:rods/steel",
+        L: "minecraft:leather",
+      })
+      .damageIngredient(HAMMER);
+
+    event
+      .shaped("hangglider:glider_framework", [" R ", "RHR", "RRR"], {
+        H: HAMMER,
+        R: "#forge:rods/steel",
+      })
+      .damageIngredient(HAMMER);
+
+    event
+      .shaped("hangglider:hang_glider", ["SPS", "WFW", "SDS"], {
+        S: "#forge:screws/steel",
+        P: "#forge:plates/steel",
+        W: "hangglider:glider_wing",
+        F: "hangglider:glider_framework",
+        D: DRIVER,
+      })
+      .damageIngredient(DRIVER);
+
+    event.shaped("hangglider:reinforced_hang_glider", ["SVS", "LML", "SVS"], {
+      S: "#forge:screws/vanadium_steel",
+      V: "#forge:rods/vanadium_steel",
+      L: "hangglider:glider_wing",
+      M: "hangglider:hang_glider",
+    });
+
+    event.recipes.gtceu
+      .assembler("gray_elevator")
+      .itemInputs(
+        "1x minecraft:ender_pearl",
+        "2x #forge:plates/obsidian",
+        "2x #forge:gears/steel",
+        "1x #forge:frames/steel",
+      )
+      .itemOutputs("elevatorid:elevator_gray")
+      .duration(600)
+      .EUt(128);
+
+    event.recipes.gtceu
+      .chemical_bath("elevator_washing")
+      .itemInputs("#elevatorid:elevators")
+      .inputFluids("gtceu:chlorine 50")
+      .itemOutputs("elevatorid:elevator_gray")
+      .duration(800)
+      .EUt(48);
+
+    Color.DYE.forEach((color) => {
+      event.recipes.gtceu
+        .chemical_bath(`${color}_elevator`)
+        .itemInputs("#elevatorid:elevators")
+        .inputFluids(`gtceu:${color}_dye 25"`)
+        .itemOutputs(`elevatorid:elevator_${color}`)
+        .duration(40)
+        .EUt(108);
+    });
   }
 })();

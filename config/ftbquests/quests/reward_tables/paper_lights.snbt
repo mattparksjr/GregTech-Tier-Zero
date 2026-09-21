@@ -1,0 +1,23 @@
+{
+	id: "7B64C9C7910E05BE"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ item: "mcwlights:pink_paper_lamp" }
+		{ item: "mcwlights:magenta_paper_lamp" }
+		{ item: "mcwlights:blue_paper_lamp" }
+		{ item: "mcwlights:light_blue_paper_lamp" }
+		{ item: "mcwlights:cyan_paper_lamp" }
+		{ item: "mcwlights:white_paper_lamp" }
+		{ item: "mcwlights:light_gray_paper_lamp" }
+		{ item: "mcwlights:gray_paper_lamp" }
+		{ item: "mcwlights:black_paper_lamp" }
+		{ item: "mcwlights:brown_paper_lamp" }
+		{ item: "mcwlights:red_paper_lamp" }
+		{ item: "mcwlights:orange_paper_lamp" }
+		{ item: "mcwlights:yellow_paper_lamp" }
+		{ item: "mcwlights:lime_paper_lamp" }
+		{ item: "mcwlights:green_paper_lamp" }
+	]
+	title: "paper_lights"
+}

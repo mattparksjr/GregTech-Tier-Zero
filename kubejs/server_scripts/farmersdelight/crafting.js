@@ -12,6 +12,8 @@
     event.remove({ id: "farmersdelight:cooking_pot" });
     event.remove({ id: "farmersdelight:stove" });
     event.remove({ id: "farmersdelight:skillet" });
+    event.remove({ id: "farmersdelight:wheat_dough_from_water" });
+    event.remove({ id: "farmersdelight:wheat_dough_from_flour_and_eggs" });
   }
 
   function add(event) {
@@ -58,5 +60,13 @@
       .itemOutputs("farmersdelight:straw_bale")
       .EUt(1)
       .duration(150);
+
+    event.recipes.gtceu
+      .mixer("wheat_dough")
+      .itemInputs("3x enderio:flour")
+      .inputFluids("minecraft:water 500")
+      .itemOutputs("4x farmersdelight:wheat_dough")
+      .duration(100)
+      .EUt(16);
   }
 })();

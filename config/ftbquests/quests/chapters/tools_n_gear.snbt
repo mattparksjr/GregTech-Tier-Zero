@@ -8,6 +8,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["5D5BC2A7937EDE00"]
 			id: "4B4B828B17B26F5D"
 			subtitle: "No iron man jokes I promise"
 			tasks: [
@@ -111,9 +112,125 @@
 					title: "Any #gtceu:tools/crafting_saws"
 					type: "item"
 				}
+				{
+					id: "1AA253E40BA54150"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:tools/crafting_screwdrivers"
+						}
+					}
+					title: "Any #gtceu:tools/crafting_screwdrivers"
+					type: "item"
+				}
+				{
+					id: "5C3A5D8B96D1C928"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:tools/crafting_wire_cutters"
+						}
+					}
+					title: "Any #gtceu:tools/crafting_wire_cutters"
+					type: "item"
+				}
 			]
+			title: "The rest of the crafting tools"
 			x: 0.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["6C3F80DCBD0C5487"]
+			id: "44B5CB7EEA4587B6"
+			tasks: [{
+				id: "08B24F6068F868C9"
+				item: {
+					Count: 1
+					id: "hangglider:hang_glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["44B5CB7EEA4587B6"]
+			id: "5336AA0D50443FDF"
+			tasks: [{
+				id: "60BD6BA3C74E8BF2"
+				item: {
+					Count: 1
+					id: "hangglider:reinforced_hang_glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["22C13C0F238F6165"]
+			id: "5F8218C2A390A8CD"
+			tasks: [{
+				id: "4B7C30F158AB0484"
+				item: {
+					Count: 1
+					id: "sophisticatedbackpacks:backpack"
+					tag: {
+						inventorySlots: 27
+						upgradeSlots: 1
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F8218C2A390A8CD"]
+			id: "5C7EE2FF1A0AE325"
+			tasks: [{
+				id: "4E525E6AEC560789"
+				item: {
+					Count: 1
+					id: "sophisticatedbackpacks:copper_backpack"
+					tag: {
+						inventorySlots: 45
+						upgradeSlots: 1
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6C3F80DCBD0C5487"
+				"5C7EE2FF1A0AE325"
+			]
+			id: "4C3A24EE6DDEA73A"
+			tasks: [{
+				id: "2C7FBD7260C2ECC7"
+				item: {
+					Count: 1
+					id: "sophisticatedbackpacks:iron_backpack"
+					tag: {
+						inventorySlots: 54
+						upgradeSlots: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
 		}
 	]
 	title: "Tools n' Gear"

@@ -4,5 +4,7 @@
     "gtt0:under_redstone": "Redstone Vein",
     "gtt0:under_tetrahedrite": "Tetrahedrite Vein",
     "gtt0:under_coal": "Coal Vein",
-    "gtt0:under_danburite": "Danburite Vein" 
+    "gtt0:under_danburite": "Danburite Vein" ,
+    "gtt0:under_inferium": "Inferium Vein",
+    "gtt0:end_inferium": "Inferium Vein"
 }

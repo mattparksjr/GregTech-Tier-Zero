@@ -8,12 +8,20 @@
 	id: "497C7ED634653892"
 	order_index: 0
 	progression_mode: "linear"
-	quest_links: [{
-		id: "017E2B711DA8D6CD"
-		linked_quest: "7EB9606E3DE994C2"
-		x: 12.5d
-		y: 6.0d
-	}]
+	quest_links: [
+		{
+			id: "017E2B711DA8D6CD"
+			linked_quest: "7EB9606E3DE994C2"
+			x: 12.5d
+			y: 6.0d
+		}
+		{
+			id: "5283536001FE361F"
+			linked_quest: "54AC19D8345CCCA1"
+			x: 15.0d
+			y: 3.0d
+		}
+	]
 	quests: [
 		{
 			description: [
@@ -285,13 +293,14 @@
 		}
 		{
 			dependencies: ["5E3C05B265C2CC3D"]
+			description: ["&6&n&lPROJECT MANAGER:&r&r&r"]
 			id: "4B78CB4BA01EB10A"
 			shape: "circle"
 			size: 0.75d
 			subtitle: "Ooo fancy!"
 			tasks: [{
 				id: "4F95C8F05C906F54"
-				title: "Settings & You"
+				title: "I will check my settings"
 				type: "checkmark"
 			}]
 			title: "Settings \\& You"
@@ -337,8 +346,8 @@
 				}
 			]
 			title: "No torches yet..."
-			x: 5.5d
-			y: 3.0d
+			x: 3.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["73F509181B98AA29"]
@@ -430,12 +439,14 @@
 		{
 			dependencies: ["6BE46F4DEB3D95CD"]
 			id: "5D5BC2A7937EDE00"
+			subtitle: "WTF are these ores???"
 			tasks: [{
 				count: 32L
 				id: "5B70B8F60BA157ED"
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
+			title: "Iron mining "
 			x: 10.5d
 			y: 1.0d
 		}
@@ -465,11 +476,15 @@
 				}
 			]
 			title: "Let's get serious"
-			x: 7.5d
-			y: 3.0d
+			x: 5.5d
+			y: 2.5d
 		}
 		{
-			dependencies: ["6BE46F4DEB3D95CD"]
+			dependencies: [
+				"6BE46F4DEB3D95CD"
+				"73F509181B98AA29"
+			]
+			icon: "minecraft:oak_log"
 			id: "63D04BA5740B134B"
 			rewards: [{
 				count: 4
@@ -477,46 +492,68 @@
 				item: "minecraft:lantern"
 				type: "item"
 			}]
-			tasks: [{
-				id: "7608ACC4FD4D06F6"
-				item: {
-					Count: 1
-					id: "gtceu:flint_axe"
-					tag: {
-						Damage: 0
-						DisallowContainerItem: 0b
-						GT.Behaviours: {
-							DisableShields: 1b
-							TreeFelling: 1b
+			subtitle: "You're gonna need a lot..."
+			tasks: [
+				{
+					id: "7608ACC4FD4D06F6"
+					item: {
+						Count: 1
+						id: "gtceu:flint_axe"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								DisableShields: 1b
+								TreeFelling: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								HarvestLevel: 1
+								MaxDamage: 63
+								ToolSpeed: 2.0f
+							}
+							HideFlags: 2
 						}
-						GT.Tool: {
-							DefaultEnchantments: [ ]
-							HarvestLevel: 1
-							MaxDamage: 63
-							ToolSpeed: 2.0f
-						}
-						HideFlags: 2
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
-			x: 8.5d
-			y: -0.5d
+				{
+					count: 32L
+					icon: "minecraft:oak_log"
+					id: "651017AD73351A34"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					title: "32x Logs"
+					type: "item"
+				}
+			]
+			title: "Need wood?"
+			x: 4.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["6BE46F4DEB3D95CD"]
+			icon: "minecraft:water_bucket"
 			id: "4FCED0BCD5B7DCBE"
+			subtitle: "No matter how tempting"
 			tasks: [{
 				id: "09215F6322B44184"
 				title: "Dont enter random holes..."
 				type: "checkmark"
 			}]
+			title: "Don't enter random holes"
 			x: 10.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["4FCED0BCD5B7DCBE"]
 			id: "02A0CDBE0307EAF4"
+			subtitle: "Science Rocks"
 			tasks: [{
 				count: 4L
 				id: "5545CD6AB3BF6DD7"
@@ -530,6 +567,7 @@
 				title: "Find some surface rocks!"
 				type: "item"
 			}]
+			title: "Surface Rocks"
 			x: 11.0d
 			y: -2.0d
 		}
@@ -598,7 +636,32 @@
 				"34ABAFBC574897FD"
 				"4F981170790BABE2"
 			]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_mining_hammer"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						AoEColumn: 1
+						AoELayer: 0
+						AoERow: 1
+						MaxAoEColumn: 1
+						MaxAoELayer: 0
+						MaxAoERow: 1
+						TorchPlacing: 1b
+					}
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 2
+						MaxDamage: 767
+						ToolSpeed: 4.8f
+					}
+					HideFlags: 2
+				}
+			}
 			id: "517D59F354FF6F2D"
+			subtitle: "3x3?!?!?"
 			tasks: [{
 				id: "39CAC30259AAB604"
 				item: {
@@ -627,6 +690,7 @@
 				}
 				type: "item"
 			}]
+			title: "A new mining tool"
 			x: 13.0d
 			y: 3.0d
 		}
@@ -643,6 +707,68 @@
 			}]
 			x: 10.0d
 			y: 6.0d
+		}
+		{
+			dependencies: ["7FABAC2EF552971F"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"Due to the way this planet rotates around it's &6sun,&r night time is very &cdark.&r It is &brecommended&r you not go outside at night, but if you must it would be wise to bring &dbackup&r lighting. Your life though..."
+				""
+				"&8PS: This can be turned off if it is too much. Check the guide on settings.&r"
+			]
+			icon: "minecraft:torch"
+			id: "43D784182B161937"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "13B26B6F677D968E"
+				table_id: 8891453423305491902L
+				type: "choice"
+			}]
+			subtitle: "Hope you aren't scared of the dark"
+			tasks: [{
+				id: "1D6900A45BEF4569"
+				title: "It gets real dark..."
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7EB9606E3DE994C2"]
+			id: "6C3F80DCBD0C5487"
+			tasks: [{
+				count: 8L
+				id: "24CD35CC653E2B04"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"34ABAFBC574897FD"
+				"4F981170790BABE2"
+			]
+			id: "3E8DBDCAAC05C51D"
+			tasks: [
+				{
+					count: 63L
+					id: "4F6D35EFDBCF8343"
+					item: { Count: 63, id: "minecraft:iron_nugget" }
+					type: "item"
+				}
+				{
+					count: 7L
+					id: "40F54FD26567A1D1"
+					item: { Count: 7, id: "gtceu:wrought_iron_ingot" }
+					type: "item"
+				}
+			]
+			title: "Wrought Iron??"
+			x: 13.5d
+			y: -1.0d
 		}
 	]
 	subtitle: ["The sentence begins"]

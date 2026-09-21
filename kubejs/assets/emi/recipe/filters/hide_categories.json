@@ -1,0 +1,14 @@
+{
+  "filters": [
+    { "category": "emi_loot:block_drops" },
+    { "category": "emi:world_interaction"},
+    { "category": "brewinandchewin:pouring"},
+    { "category": "ae2:inscriber"},
+    { "category": "ae2:charger"},
+    { "category": "mysticalagriculture:reprocessor"},
+    { "category": "mysticalagriculture:soul_extracting"},
+    { "category": "mysticalagriculture:soulium_spawner"},
+    { "category": "enderio:alloy_smelting"},
+    { "category": "enderio:sagmilling"}
+  ]
+}

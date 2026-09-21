@@ -9,32 +9,209 @@
 	id: "0A7C83D2F80CA56A"
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["73F509181B98AA29"]
-		id: "3C486B2F9687DA72"
-		subtitle: "Salads anyone?"
-		tasks: [{
-			id: "3333138F69446B7A"
-			item: {
-				Count: 1
-				id: "gtceu:flint_hoe"
-				tag: {
-					Damage: 0
-					DisallowContainerItem: 0b
-					GT.Behaviours: { }
-					GT.Tool: {
-						DefaultEnchantments: [ ]
-						MaxDamage: 63
-					}
-					HideFlags: 2
+	quests: [
+		{
+			dependencies: ["73F509181B98AA29"]
+			id: "3C486B2F9687DA72"
+			rewards: [
+				{
+					count: 4
+					id: "3D90918F92A1A397"
+					item: "minecraft:wheat_seeds"
+					type: "item"
 				}
-			}
-			type: "item"
-		}]
-		title: "Farming time..."
-		x: 0.0d
-		y: 0.0d
-	}]
+				{
+					count: 4
+					id: "670BD5B6924E206F"
+					item: "farmersdelight:tomato_seeds"
+					type: "item"
+				}
+			]
+			subtitle: "Salads anyone?"
+			tasks: [{
+				id: "3333138F69446B7A"
+				item: {
+					Count: 1
+					id: "gtceu:flint_hoe"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							MaxDamage: 63
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			title: "Farming time..."
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C486B2F9687DA72"]
+			id: "2D594EF9E21C3EC8"
+			rewards: [
+				{
+					count: 3
+					id: "06055052D1D5F3A4"
+					item: "minecraft:carrot"
+					random_bonus: 3
+					type: "item"
+				}
+				{
+					count: 3
+					id: "7AF41FA498CEEFE7"
+					item: "minecraft:potato"
+					random_bonus: 3
+					type: "item"
+				}
+			]
+			subtitle: "Who doesn't love salt on tomatoes?"
+			tasks: [{
+				count: 8L
+				id: "3382E6634BBF591A"
+				item: { Count: 8, id: "farmersdelight:tomato" }
+				type: "item"
+			}]
+			title: "Garden Tomatoes"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C486B2F9687DA72"]
+			id: "429B9DAEC54E3E2A"
+			rewards: [{
+				count: 4
+				id: "41A53EA03195231A"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			subtitle: "Bread is in the oven"
+			tasks: [{
+				count: 64L
+				id: "330F13667CC19D2C"
+				item: { Count: 64, id: "minecraft:wheat" }
+				type: "item"
+			}]
+			title: "Wheat Farm"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["33F9E32A08751BA4"]
+			id: "2D4D39918DE91C0F"
+			subtitle: "Warm, fresh meals"
+			tasks: [
+				{
+					id: "07E4E90EB651B90E"
+					item: "farmersdelight:cooking_pot"
+					type: "item"
+				}
+				{
+					id: "7B7D2FDB7547BB14"
+					item: {
+						Count: 1
+						id: "farmersdelight:skillet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0CF976F7C605318B"
+					item: "farmersdelight:stove"
+					type: "item"
+				}
+			]
+			title: "Kitchen 1.0"
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["429B9DAEC54E3E2A"]
+			id: "018F0F8996576D39"
+			tasks: [{
+				count: 8L
+				id: "7C4A6425D54FB795"
+				item: { Count: 8, id: "farmersdelight:wheat_dough" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2D4D39918DE91C0F"]
+			id: "60F58B345F6AA612"
+			tasks: [
+				{
+					count: 4L
+					id: "20B3A7B498ABA36C"
+					item: { Count: 4, id: "cookingforblockheads:tool_rack" }
+					type: "item"
+				}
+				{
+					id: "000C6E815B23F4CD"
+					item: "cookingforblockheads:toaster"
+					type: "item"
+				}
+				{
+					id: "060666AC58974554"
+					item: "cookingforblockheads:cooking_table"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "388895F78928AAD7"
+					item: { Count: 2, id: "cookingforblockheads:fridge" }
+					type: "item"
+				}
+				{
+					id: "502131389BE94291"
+					item: "cookingforblockheads:sink"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1150421E40552C91"
+					item: { Count: 2, id: "cookingforblockheads:counter" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "5D1D262FCDAD7522"
+					item: { Count: 12, id: "cookingforblockheads:white_kitchen_floor" }
+					type: "item"
+				}
+				{
+					id: "46FE56445135166F"
+					item: "cookingforblockheads:oven"
+					type: "item"
+				}
+			]
+			title: "Kitchen 2.0"
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"10ABB9E4AFC497AD"
+				"60F58B345F6AA612"
+			]
+			id: "03A91A745ADB0340"
+			tasks: [{
+				id: "07ED6D72FA1F38CC"
+				item: "cookingforblockheads:cow_jar"
+				type: "item"
+			}]
+			title: "Infinite milk??"
+			x: 6.5d
+			y: 6.5d
+		}
+	]
 	subtitle: ["Staying fed!"]
 	title: "Food + you = "
 }

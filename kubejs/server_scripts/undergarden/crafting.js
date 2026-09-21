@@ -23,6 +23,6 @@
       .inputFluids("gtceu:glue 500")
       .itemOutputs("undergarden:catalyst")
       .duration(100)
-      .EUt(30);
+      .EUt(32);
   }
 })();

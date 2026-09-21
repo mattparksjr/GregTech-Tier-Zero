@@ -10,7 +10,7 @@ ItemEvents.entityInteracted("kubejs:intake_form", (event) => {
 
   const lines = [
     [
-      80,
+      10,
       Text.of("THE JAILER:")
         .color("red")
         .bold(true)
@@ -61,7 +61,7 @@ ItemEvents.entityInteracted("kubejs:intake_form", (event) => {
     });
   });
 
-  server.scheduleInTicks(120, () => {
+  server.scheduleInTicks(280, () => {
     player.give("kubejs:intake_slip");
     player.persistentData.putLong("slip_given_at", server.ticks);
   });
