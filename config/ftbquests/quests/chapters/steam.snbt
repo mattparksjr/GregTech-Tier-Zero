@@ -10,7 +10,21 @@
 	quests: [
 		{
 			dependencies: ["22C13C0F238F6165"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"Think your ready for the &6steam age&r? Or do you just want that &dbackpack&r?"
+				"In any case, you will need a &eboiler&r. Take note that it generates a very tiny amount of &fsteam&r, so a pipe buffer might be helpful."
+				""
+				"&bThis quest unlocks a guide.&r"
+			]
 			id: "7EB9606E3DE994C2"
+			rewards: [{
+				count: 4
+				id: "16879CBD542E9B87"
+				item: "gtceu:bronze_normal_fluid_pipe"
+				type: "item"
+			}]
 			subtitle: "Hot and steamy..."
 			tasks: [{
 				id: "7601AAA9AB5D1C44"

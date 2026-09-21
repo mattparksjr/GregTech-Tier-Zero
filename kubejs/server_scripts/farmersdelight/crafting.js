@@ -14,6 +14,7 @@
     event.remove({ id: "farmersdelight:skillet" });
     event.remove({ id: "farmersdelight:wheat_dough_from_water" });
     event.remove({ id: "farmersdelight:wheat_dough_from_flour_and_eggs" });
+    event.remove({ id: "farmersdelight:rope" });
   }
 
   function add(event) {
@@ -37,6 +38,10 @@
       B: "minecraft:bucket",
       S: "farmersdelight:rope",
       R: "#forge:rods/iron",
+    });
+
+    event.shaped("farmersdelight:rope", ["SS", "SS"], {
+      S: "farmersdelight:straw",
     });
 
     event.shaped("farmersdelight:stove", ["PPP", "BGB", "BCB"], {

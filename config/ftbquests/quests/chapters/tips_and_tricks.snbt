@@ -12,18 +12,45 @@
 	quests: [
 		{
 			dependencies: ["4A8E82E137B1112B"]
+			description: [
+				"&b&n&lOops-E:&r&r&r"
+				""
+				"Hello prisoner! I hope your &csentence&r is going well. Anyways, I am &bOops-E&r your guide robot. On this page I will provide you more information about the world, &6mechanics&r and more as you progress. Check back &ehere&r from time to time. "
+				""
+				"Oh, and quests that unlock a &bguide&r will say so at the &dbottom&r!"
+			]
 			id: "458115097246E448"
+			rewards: [{
+				id: "372B8505B009FE9D"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Your friendly robot"
 			tasks: [{
 				id: "53306829806C671A"
 				title: "Cool"
 				type: "checkmark"
 			}]
+			title: "I am Oops-E"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["5A72F038158E61B2"]
+			description: [
+				"&b&n&lOops-E:&r&r&r"
+				""
+				"If you are playing with a &6team&r, it is a good idea to create a team with ftb teams, and invite your &bteammates&r. "
+				""
+				"This will allow you to share both &dland claims&r and quest progress. Each person also gets their own &drewards&r!"
+			]
 			id: "64D3DAAD174AA783"
+			rewards: [{
+				id: "60A360903C6D5BB9"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Everythings better with friends :3"
 			tasks: [{
 				id: "56DCB83A20402D5A"
 				title: "Teams \\& You"
@@ -34,12 +61,26 @@
 		}
 		{
 			dependencies: ["5A72F038158E61B2"]
+			description: [
+				"&b&n&lOops-E:&r&r&r"
+				""
+				"Just a heads up, if you want to avoid some of the &6world gen&r related &4lag&r, this pack features chunk pregenerator. "
+				""
+				"Check &d/pregen&r!"
+			]
 			id: "3DB5A9A5A02EABFA"
+			rewards: [{
+				id: "1CCAA6F2B2BB8D8A"
+				type: "xp"
+				xp: 5
+			}]
+			subtitle: "Server admins only kiddo"
 			tasks: [{
 				id: "0DA6301C20020AD8"
 				title: "Chunk Pregeneration"
 				type: "checkmark"
 			}]
+			title: "Server too laggy?"
 			x: 2.0d
 			y: -2.0d
 		}

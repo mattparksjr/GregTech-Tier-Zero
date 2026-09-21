@@ -195,7 +195,23 @@
 		}
 		{
 			dependencies: ["22C13C0F238F6165"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"A backpack would be a good &6investment&r at the moment. You will need a &6steam alloy smelter&r first though. Now's the time to pratice those &dcrafting&r skills. By hovering over an item and pressing:"
+				""
+				"&d&nR&r&r: View Recipe"
+				"&d&nU&r&r: View Usages"
+				"&d&nLeft Click&r&r: View Recipe"
+				"&d&nRight Click&r&r: View Usages"
+			]
 			id: "5F8218C2A390A8CD"
+			rewards: [{
+				id: "507349436FD94C8E"
+				item: "sophisticatedbackpacks:upgrade_base"
+				type: "item"
+			}]
+			subtitle: "How much can you carry?"
 			tasks: [{
 				id: "4B7C30F158AB0484"
 				item: {
@@ -208,6 +224,7 @@
 				}
 				type: "item"
 			}]
+			title: "Omg thank you..."
 			x: 2.5d
 			y: 0.0d
 		}
@@ -382,6 +399,23 @@
 			title: "The steel suit"
 			x: 0.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["4267D27EA11D2C71"]
+			id: "331901C9324F1628"
+			rewards: [{
+				count: 12
+				id: "41980EEB2AFB0A90"
+				item: "farmersdelight:rope"
+				type: "item"
+			}]
+			tasks: [{
+				id: "700523F042D6D591"
+				item: "sophisticatedbackpacks:upgrade_base"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
 		}
 	]
 	title: "Tools n' Gear"

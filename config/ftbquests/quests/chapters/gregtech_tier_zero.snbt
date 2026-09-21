@@ -379,14 +379,33 @@
 		}
 		{
 			dependencies: ["73F509181B98AA29"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"In order to keep yourself safe, I would highly &6recommned&r finding or creating a home. Grab these &esupplies&r to truly make yourself at &bhome&r."
+			]
 			icon: "handcrafted:acacia_fancy_bed"
 			id: "7FABAC2EF552971F"
-			rewards: [{
-				count: 2
-				id: "50D1980707CE4B21"
-				item: "minecraft:oak_door"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "50D1980707CE4B21"
+					item: "minecraft:oak_door"
+					type: "item"
+				}
+				{
+					id: "45207E0B8FFF5A80"
+					item: "minecraft:campfire"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4436CCC35316D86D"
+					item: "minecraft:chest"
+					type: "item"
+				}
+			]
+			subtitle: "Or a nice field, I like views"
 			tasks: [
 				{
 					id: "375F7F5440CB1EEF"
@@ -471,7 +490,32 @@
 		}
 		{
 			dependencies: ["7FABAC2EF552971F"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"Ready to begin &6mining&r? First make a better pickaxe. Now before you go running into a &ccave&r, read the connected quests afer this one. Ores &ddo not&r generate in the normal way. For now, you might want to bring a few &dpicks&r...."
+			]
 			id: "6BE46F4DEB3D95CD"
+			rewards: [
+				{
+					count: 6
+					id: "23A65CFFB58845D7"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					id: "76F5526A047905A7"
+					item: {
+						Count: 1
+						id: "minecraft:iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "It's too stuffy here"
 			tasks: [{
 				id: "0D6B69ECB5627887"
 				item: {
@@ -489,7 +533,18 @@
 		}
 		{
 			dependencies: ["6BE46F4DEB3D95CD"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"Okay, you read on on how ores spawn? Find an &6iron bearing vein&r, and grab a good amount. You will soon be using lots of &bresources&r."
+			]
 			id: "5D5BC2A7937EDE00"
+			rewards: [{
+				count: 8
+				id: "72B71B565F0E1DC1"
+				item: "gtceu:wrought_iron_ingot"
+				type: "item"
+			}]
 			subtitle: "WTF are these ores???"
 			tasks: [{
 				count: 32L
@@ -506,8 +561,20 @@
 				"7FABAC2EF552971F"
 				"4F6FFD25C5487185"
 			]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"It is time to get &6serious&r about your progress. First, &d8&r furances might seem like alot, but you will need these in short time."
+				""
+				"Next, create the &bCoke Oven&r. Check the quest page in &eMulitblock Galore&r for more info"
+			]
 			icon: "minecraft:furnace"
 			id: "33BA7847698B9FCB"
+			rewards: [{
+				id: "58DB826BB5077D50"
+				item: "gtceu:coke_oven_hatch"
+				type: "item"
+			}]
 			subtitle: "Coke Oven time!"
 			tasks: [
 				{
@@ -650,6 +717,12 @@
 				}
 			}
 			id: "34ABAFBC574897FD"
+			rewards: [{
+				count: 4
+				id: "4EA8E5A02C4CDFEE"
+				item: "minecraft:bamboo"
+				type: "item"
+			}]
 			subtitle: "The start of something big"
 			tasks: [{
 				id: "3DA60E9AEE8841AF"
@@ -720,8 +793,22 @@
 		}
 		{
 			dependencies: ["6BE46F4DEB3D95CD"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"The first important alloy you need is &6bronze&r. Bronze will be used to unlock the steam age and is &drequired&r if you ever hope to turn the power on. Note, like previously stated, as you &dprogress&r you will unlock &3better&r recipes, with the first few steam machines, you will be able to &dincrease&r your ratio for ingots."
+				""
+				"For now, grind your ingots with a &dmortar&r, and combine to &dsmelt&r."
+			]
 			icon: "minecraft:copper_ingot"
 			id: "431C2F06FC69654A"
+			rewards: [{
+				count: 8
+				id: "47CDDBCDD3494EDB"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			subtitle: "What a useful metal...."
 			tasks: [
 				{
 					count: 27L
@@ -735,9 +822,16 @@
 					item: { Count: 9, id: "gtceu:tin_ingot" }
 					type: "item"
 				}
+				{
+					count: 4L
+					id: "29309611AE4C9C84"
+					item: { Count: 4, id: "gtceu:bronze_ingot" }
+					type: "item"
+				}
 			]
-			x: 10.0d
-			y: 3.0d
+			title: "The first alloy"
+			x: 8.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -800,20 +894,37 @@
 				type: "item"
 			}]
 			title: "A new mining tool"
-			x: 12.0d
-			y: 2.5d
+			x: 13.5d
+			y: 3.0d
 		}
 		{
-			dependencies: ["431C2F06FC69654A"]
+			dependencies: [
+				"431C2F06FC69654A"
+				"34ABAFBC574897FD"
+			]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"Hammer your &6bronze&r into plates, you will need a lot of these in the &6steam age&r. You will soon get a better &erecipe&r though, so don't craft &dtoo&r many..."
+			]
 			id: "22C13C0F238F6165"
+			rewards: [{
+				count: 2
+				id: "631785FC0A06AB50"
+				item: "farmersdelight:mutton_wrap"
+				random_bonus: 2
+				type: "item"
+			}]
 			shape: "circle"
 			size: 1.5d
+			subtitle: "DING DING DING DING "
 			tasks: [{
 				count: 4L
 				id: "66B4D4B46094038C"
-				item: { Count: 4, id: "gtceu:bronze_ingot" }
+				item: "gtceu:bronze_plate"
 				type: "item"
 			}]
+			title: "Putting it all together"
 			x: 10.0d
 			y: 6.0d
 		}
