@@ -30,7 +30,7 @@
         S: "#forge:rods/wooden",
         P: "#minecraft:planks",
       })
-      .damageIngredient(MELLET);
+      .damageIngredient(MELLET, 2);
 
     event.shaped("farmersdelight:cooking_pot", ["SHS", "RBR", "PPP"], {
       H: "minecraft:wooden_shovel",
@@ -51,13 +51,15 @@
       C: "minecraft:campfire",
     });
 
-    event.shaped("farmersdelight:skillet", [" PP", "FPP", "SRH"], {
-      P: "#forge:plates/iron",
-      F: FILE,
-      S: "farmersdelight:rope",
-      R: "#forge:rods/iron",
-      H: HAMMER,
-    });
+    event
+      .shaped("farmersdelight:skillet", [" PP", "FPP", "SRH"], {
+        P: "#forge:plates/iron",
+        F: FILE,
+        S: "farmersdelight:rope",
+        R: "#forge:rods/iron",
+        H: HAMMER,
+      })
+      .damageIngredient(MELLET, 5);
 
     event.recipes.gtceu
       .compressor("straw_bale")

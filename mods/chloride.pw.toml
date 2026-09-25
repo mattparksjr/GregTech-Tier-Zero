@@ -1,6 +1,6 @@
 name = "(Sodium) Chloride"
 filename = "chloride-FORGE-mc1.20.1-v1.8.1.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"

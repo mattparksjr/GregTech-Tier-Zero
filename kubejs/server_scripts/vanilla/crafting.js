@@ -34,7 +34,7 @@
           H: MELLET,
           F: "#forge:fences/wooden",
         })
-        .damageIngredient(MELLET);
+        .damageIngredient(MELLET, 2);
     });
 
     event.shaped("minecraft:crafting_table", ["FF", "PP"], {

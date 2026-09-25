@@ -15,6 +15,6 @@
 
     event
       .shapelesss(Item.of("enderio:flour", 1), ["minecraft:wheat", MORTAR])
-      .damageIngredient(MORTAR);
+      .damageIngredient(MORTAR, 2);
   }
 };

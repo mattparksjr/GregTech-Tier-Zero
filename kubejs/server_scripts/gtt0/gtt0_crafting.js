@@ -36,21 +36,21 @@
         P: "#forge:plates/iron",
         S: "#forge:rods/wooden",
       })
-      .damageIngredient(HAMMER);
+      .damageIngredient(HAMMER, 2);
 
     event
       .shaped("craftingstation:crafting_station", ["CS"], {
         C: "minecraft:crafting_table",
         S: SAW,
       })
-      .damageIngredient(SAW);
+      .damageIngredient(SAW, 5);
 
     event
       .shaped("craftingstation:crafting_station_slab", ["CS"], {
         C: "craftingstation:crafting_station",
         S: SAW,
       })
-      .damageIngredient(SAW);
+      .damageIngredient(SAW, 2);
 
     event.shaped("supplementaries:lunch_basket", ["RWR", "SCS", "SSS"], {
       S: "farmersdelight:straw_bale",
@@ -107,14 +107,14 @@
         R: "#forge:rods/steel",
         L: "minecraft:leather",
       })
-      .damageIngredient(HAMMER);
+      .damageIngredient(HAMMER, 10);
 
     event
       .shaped("hangglider:glider_framework", [" R ", "RHR", "RRR"], {
         H: HAMMER,
         R: "#forge:rods/steel",
       })
-      .damageIngredient(HAMMER);
+      .damageIngredient(HAMMER, 10);
 
     event
       .shaped("hangglider:hang_glider", ["SPS", "WFW", "SDS"], {
@@ -124,7 +124,7 @@
         F: "hangglider:glider_framework",
         D: DRIVER,
       })
-      .damageIngredient(DRIVER);
+      .damageIngredient(DRIVER, 10);
 
     event.shaped("hangglider:reinforced_hang_glider", ["SVS", "LML", "SVS"], {
       S: "#forge:screws/vanadium_steel",
