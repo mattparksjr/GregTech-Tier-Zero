@@ -1,17 +1,17 @@
 (() => {
+  const GTT0 = global.GTT0;
+
   ServerEvents.recipes((event) => {
+    GTT0.logModify("Undergarden");
     remove(event);
     add(event);
   });
 
   function remove(event) {
-    console.log("GTT0: Removing Undergarden crafting recipes");
-    event.remove({ id: "undergarden:catalyst" });
+    GTT0.removeById(event, "Undergarden", ["undergarden:catalyst"]);
   }
 
   function add(event) {
-    console.log("GTT0: Adding Undergarden crafting recipes");
-
     event.recipes.gtceu
       .assembler("undergarden:catalyst")
       .itemInputs(
@@ -22,7 +22,7 @@
       )
       .inputFluids("gtceu:glue 500")
       .itemOutputs("undergarden:catalyst")
-      .duration(100)
+      .duration(400)
       .EUt(32);
   }
 })();

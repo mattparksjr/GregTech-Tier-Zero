@@ -1,0 +1,13 @@
+name = "Make Bubbles Pop [Client] [Fabric/Forge]"
+filename = "make_bubbles_pop-0.3.0-forge-mc1.19.4-1.20.4.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "b918de5212256c7f39acd2d125ec12704a226a3c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5532600
+project-id = 605235

@@ -1,13 +1,13 @@
-name = "GregTech Tier Zero"
+name = "GTT0"
 author = "Iterable"
-version = "0.1.0"
+version = "0.2.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "c930b48dfa22422bb387fe7573537d16f5fed93db06205f01fe40381e8625c80"
+hash = "ffaf865a68bfc95eab0bcad35ee29b5c41fbe9413e52d17c992704b773dc39f8"
 
 [versions]
-forge = "47.4.0"
+forge = "47.4.10"
 minecraft = "1.20.1"

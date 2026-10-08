@@ -1,4 +1,6 @@
 (() => {
+  const GTT0 = global.GTT0;
+
   ServerEvents.recipes((event) => {
     console.log("GTT0: Modifiying General World recipes");
     remove(event);
@@ -6,37 +8,40 @@
   });
 
   function remove(event) {
-    event.remove({ input: "projectvibrantjourneys:ice_chunks" });
-    event.remove({ input: "projectvibrantjourneys:rocks" });
-    event.remove({ input: "projectvibrantjourneys:mossy_rocks" });
-    event.remove({ input: "twigs:pebble" });
+    GTT0.removeByInput(event, "World", [
+      "projectvibrantjourneys:ice_chunks",
+      "projectvibrantjourneys:rocks",
+      "projectvibrantjourneys:mossy_rocks",
+      "twigs:pebble",
+    ]);
   }
 
   function add(event) {
-    event.recipes.gtceu
-      .compressor("ice_from_chunks")
-      .itemInputs("4x projectvibrantjourneys:ice_chunks")
-      .itemOutputs("minecraft:ice")
-      .EUt(1)
-      .duration(200);
-    event.recipes.gtceu
-      .compressor("rocks_from_chunks")
-      .itemInputs("4x projectvibrantjourneys:rocks")
-      .itemOutputs("minecraft:cobblestone")
-      .EUt(1)
-      .duration(200);
-    event.recipes.gtceu
-      .compressor("mossy_rocks_from_chunks")
-      .itemInputs("4x projectvibrantjourneys:mossy_rocks")
-      .itemOutputs("minecraft:mossy_cobblestone")
-      .EUt(1)
-      .duration(200);
-
-    event.recipes.gtceu
-      .compressor("cobble_from_pebble")
-      .itemInputs("4x twigs:pebble")
-      .itemOutputs("minecraft:cobblestone")
-      .EUt(1)
-      .duration(200);
+    GTT0.basicBlockCompressorBatch(event, "World", [
+      {
+        id: "ice_from_chunks",
+        block: "minecraft:ice",
+        item: "projectvibrantjourneys:ice_chunks",
+        count: 4,
+      },
+      {
+        id: "rocks_from_chunks",
+        block: "minecraft:cobblestone",
+        item: "projectvibrantjourneys:rocks",
+        count: 4,
+      },
+      {
+        id: "mossy_rocks_from_chunks",
+        block: "minecraft:mossy_cobblestone",
+        item: "projectvibrantjourneys:mossy_rocks",
+        count: 4,
+      },
+      {
+        id: "cobble_from_pebble",
+        block: "minecraft:cobblestone",
+        item: "twigs:pebble",
+        count: 4,
+      },
+    ]);
   }
 })();

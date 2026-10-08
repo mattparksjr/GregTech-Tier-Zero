@@ -1,20 +1,20 @@
-() => {
+(() => {
+  const GTT0 = global.GTT0;
+
   ServerEvents.recipes((event) => {
-    console.log("GTT0: Modifiying EnderIO recipes");
-    remove(event);
+    const MOD = "EnderIO";
+    GTT0.logModify(MOD);
+
+    GTT0.removeTypes(event, MOD, ["enderio:alloying", "enderio:sag_milling"]);
+
+    GTT0.removeByOutput(event, MOD, ["enderio:flour"]);
+
     add(event);
   });
 
-  function remove(event) {
-    event.remove({ type: "enderio:alloying" });
-    event.remove({ type: "enderio:sag_milling" });
-  }
-
   function add(event) {
-    const MORTAR = Ingredient.of("#gtceu:tools/crafting_mortars");
-
     event
-      .shapelesss(Item.of("enderio:flour", 1), ["minecraft:wheat", MORTAR])
-      .damageIngredient(MORTAR, 2);
+      .shapeless(Item.of("enderio:flour", 1), ["minecraft:wheat", GTT0.MORTAR])
+      .damageIngredient(GTT0.MORTAR, 2);
   }
-};
+})();

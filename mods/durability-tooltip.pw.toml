@@ -1,6 +1,6 @@
 name = "Durability Tooltip"
 filename = "durabilitytooltip-1.2.0-forge-mc1.20.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"

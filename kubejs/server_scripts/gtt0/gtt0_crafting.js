@@ -1,63 +1,57 @@
 (() => {
+  const GTT0 = global.GTT0;
+
   ServerEvents.recipes((event) => {
+    GTT0.logModify("GTT0");
     remove(event);
     add(event);
   });
 
   function remove(event) {
-    console.log("GTT0: Removing GTT0 crafting recipes");
+    GTT0.removeByMod(event, "GTT0", [
+      "elevatorid",
+      "travelanchors",
+      "torchmaster",
+      "hangglider",
+      //"waystones"
+    ]);
 
-    event.remove({ output: "rechiseled:chisel" });
-    event.remove({ id: "craftingstation:crafting_station" });
-    event.remove({ id: "craftingstation:crafting_station_slab" });
-    event.remove({ mod: "elevatorid" });
-    event.remove({ mod: "travelanchors" });
-    //event.remove({ mod: "waystones" });
-    event.remove({ output: "solclassic:basket" });
-    event.remove({ output: "solclassic:wicker_basket" });
-    event.remove({ output: "supplementaries:lunch_basket" });
-    event.remove({ mod: "torchmaster" });
-    event.remove({ id: "minecraft:golden_carrot" });
-    event.remove({ mod: "hangglider" });
+    GTT0.removeByOutput(event, "GTT0", [
+      "chisel:chisel",
+      "solclassic:basket",
+      "solclassic:wicker_basket",
+    ]);
+
+    GTT0.removeById(event, "GTT0", [
+      "minecraft:golden_carrot",
+      "craftingstationjei:crafting_station",
+      "craftingstationjei:crafting_station_slab",
+    ]);
   }
 
   function add(event) {
-    console.log("GTT0: Adding GTT0 crafting recipes");
-
-    const HAMMER = "#gtceu:tools/crafting_hammers";
-    const SAW = "#gtceu:tools/crafting_saws";
-    const FILE = "#gtceu:tools/crafting_files";
-    const DRIVER = "gtceu:tools/crafting_screwdrivers";
-
     event
-      .shaped("rechiseled:chisel", ["FP", "SH"], {
-        H: HAMMER,
-        F: FILE,
+      .shaped("chisel:chisel", ["FP", "SH"], {
+        H: GTT0.HAMMER,
+        F: GTT0.FILE,
         P: "#forge:plates/iron",
         S: "#forge:rods/wooden",
       })
-      .damageIngredient(HAMMER, 2);
+      .damageIngredient(GTT0.HAMMER, 2);
 
     event
-      .shaped("craftingstation:crafting_station", ["CS"], {
+      .shaped("craftingstationjei:crafting_station", ["CS"], {
         C: "minecraft:crafting_table",
-        S: SAW,
+        S: GTT0.SAW,
       })
-      .damageIngredient(SAW, 5);
+      .damageIngredient(GTT0.SAW, 5);
 
     event
-      .shaped("craftingstation:crafting_station_slab", ["CS"], {
-        C: "craftingstation:crafting_station",
-        S: SAW,
+      .shaped("craftingstationjei:crafting_station_slab", ["CS"], {
+        C: "craftingstationjei:crafting_station",
+        S: GTT0.SAW,
       })
-      .damageIngredient(SAW, 2);
-
-    event.shaped("supplementaries:lunch_basket", ["RWR", "SCS", "SSS"], {
-      S: "farmersdelight:straw_bale",
-      R: "farmersdelight:rope",
-      W: "#forge:rods/wooden",
-      C: "#forge:chests/wooden",
-    });
+      .damageIngredient(GTT0.SAW, 2);
 
     event.shaped("torchmaster:megatorch", ["PRP", "DCD", "SLS"], {
       P: "#forge:plates/iron",
@@ -103,18 +97,18 @@
 
     event
       .shaped("hangglider:glider_wing", ["HRL", "RLL", "LLL"], {
-        H: HAMMER,
+        H: GTT0.HAMMER,
         R: "#forge:rods/steel",
         L: "minecraft:leather",
       })
-      .damageIngredient(HAMMER, 10);
+      .damageIngredient(GTT0.HAMMER, 10);
 
     event
       .shaped("hangglider:glider_framework", [" R ", "RHR", "RRR"], {
-        H: HAMMER,
+        H: GTT0.HAMMER,
         R: "#forge:rods/steel",
       })
-      .damageIngredient(HAMMER, 10);
+      .damageIngredient(GTT0.HAMMER, 10);
 
     event
       .shaped("hangglider:hang_glider", ["SPS", "WFW", "SDS"], {
@@ -122,9 +116,9 @@
         P: "#forge:plates/steel",
         W: "hangglider:glider_wing",
         F: "hangglider:glider_framework",
-        D: DRIVER,
+        D: GTT0.SCREWDRIVER,
       })
-      .damageIngredient(DRIVER, 10);
+      .damageIngredient(GTT0.SCREWDRIVER, 10);
 
     event.shaped("hangglider:reinforced_hang_glider", ["SVS", "LML", "SVS"], {
       S: "#forge:screws/vanadium_steel",

@@ -1,5 +1,8 @@
 (() => {
+  const GTT0 = global.GTT0;
+
   ServerEvents.recipes((event) => {
+    GTT0.logModify("Mystical Agriculture");
     remove(event);
     add(event);
   });
@@ -7,7 +10,9 @@
   function remove(event) {
     console.log("GTT0: Removing Mystical Agriculture recipes");
 
-    event.remove({ output: "mysticalagriculture:prosperity_shard" });
+    GTT0.removeByOutput(event, "Mystical Agriculture", [
+      "mysticalagriculture:prosperity_shard",
+    ]);
   }
 
   function add(event) {
@@ -17,6 +22,6 @@
       .itemInputs("gtceu:danburite_gem")
       .itemOutputs("4x mysticalagriculture:prosperity_shard")
       .duration(100)
-      .EUt(16);
+      .EUt(20);
   }
 })();

@@ -4,3 +4,5 @@
 # Exclude repo specific stuff
 /README.md
 /AI_POLICY.md
+*.log
+*.html

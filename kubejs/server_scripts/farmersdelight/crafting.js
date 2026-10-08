@@ -1,36 +1,36 @@
 (() => {
+  const GTT0 = global.GTT0;
+
   ServerEvents.recipes((event) => {
+    GTT0.logModify("Farmers Delight");
     remove(event);
     add(event);
   });
 
   function remove(event) {
-    console.log("GTT0: Removing Farmers Delight recipes");
-    event.remove({ id: "farmersdelight:straw" });
-    event.remove({ id: "farmersdelight:straw_bale" });
-    event.remove({ id: "farmersdelight:cutting_board" });
-    event.remove({ id: "farmersdelight:cooking_pot" });
-    event.remove({ id: "farmersdelight:stove" });
-    event.remove({ id: "farmersdelight:skillet" });
-    event.remove({ id: "farmersdelight:wheat_dough_from_water" });
-    event.remove({ id: "farmersdelight:wheat_dough_from_flour_and_eggs" });
-    event.remove({ id: "farmersdelight:rope" });
+    GTT0.removeById(event, "Farmers Delight", [
+      "farmersdelight:straw",
+      "farmersdelight:straw_bale",
+      "farmersdelight:cutting_board",
+      "farmersdelight:cooking_pot",
+      "farmersdelight:stove",
+      "farmersdelight:skillet",
+      "farmersdelight:wheat_dough_from_water",
+      "farmersdelight:wheat_dough_from_egg",
+      "farmersdelight:rope",
+    ]);
   }
 
   function add(event) {
     console.log("GTT0: Adding Farmers Delight recipes");
 
-    const MELLET = Ingredient.of("#gtceu:tools/crafting_mallets");
-    const FILE = Ingredient.of("#gtceu:tools/crafting_files");
-    const HAMMER = Ingredient.of("#gtceu:tools/crafting_hammers");
-
     event
       .shaped("farmersdelight:cutting_board", [" H ", "SPP", "SPP"], {
-        H: MELLET,
+        H: GTT0.MELLET,
         S: "#forge:rods/wooden",
         P: "#minecraft:planks",
       })
-      .damageIngredient(MELLET, 2);
+      .damageIngredient(GTT0.MELLET, 2);
 
     event.shaped("farmersdelight:cooking_pot", ["SHS", "RBR", "PPP"], {
       H: "minecraft:wooden_shovel",
@@ -54,19 +54,20 @@
     event
       .shaped("farmersdelight:skillet", [" PP", "FPP", "SRH"], {
         P: "#forge:plates/iron",
-        F: FILE,
+        F: GTT0.FILE,
         S: "farmersdelight:rope",
         R: "#forge:rods/iron",
-        H: HAMMER,
+        H: GTT0.HAMMER,
       })
-      .damageIngredient(MELLET, 5);
+      .damageIngredient(GTT0.HAMMER, 5)
+      .damageIngredient(GTT0.FILE, 5);
 
-    event.recipes.gtceu
-      .compressor("straw_bale")
-      .itemInputs("9x farmersdelight:straw")
-      .itemOutputs("farmersdelight:straw_bale")
-      .EUt(1)
-      .duration(150);
+    GTT0.basicBlockCompressor(
+      event,
+      "straw_bale",
+      "farmersdelight:straw_bale",
+      "farmersdelight:straw",
+    );
 
     event.recipes.gtceu
       .mixer("wheat_dough")

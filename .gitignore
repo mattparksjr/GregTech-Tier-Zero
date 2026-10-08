@@ -1,5 +1,9 @@
 # Exclude exported CurseForge zip files
 *.zip
 
+# Catch any stray logs
+*.log
+*.html
+
 # Exclude exported Modrinth modpacks
 *.mrpack

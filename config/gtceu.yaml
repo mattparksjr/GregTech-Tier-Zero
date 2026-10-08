@@ -267,7 +267,7 @@ machines:
 
   # The base amount of ticks per block for electric singleblock ore miners
   # Default: 320
-  minerSpeed: 320
+  minerSpeed: 280
 
   # Makes nearly every GCYM Multiblock require blocks which set their maximum voltages.
   # Default: false
