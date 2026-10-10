@@ -28,7 +28,7 @@ features:
   webCoolantIOMultiplier: 0.0
 
   # Whether the coins/credits are enabled.
-  coinsEnabled: true
+  coinsEnabled: false
 
   # Whether the custom MV tools are enabled.
   customMVToolsEnabled: false
@@ -65,4 +65,3 @@ features:
 
   # Whether the Infinite Spray Can should be enabled.
   infiniteSprayCanEnabled: false
-

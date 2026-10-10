@@ -6,7 +6,12 @@
 	icon: "gtceu:bronze_ingot"
 	id: "02F925CFA2D21219"
 	order_index: 0
-	quest_links: [ ]
+	quest_links: [{
+		id: "13573EFB5535F735"
+		linked_quest: "121EFDE9E1D9945C"
+		x: 7.5d
+		y: -3.5d
+	}]
 	quests: [
 		{
 			dependencies: ["22C13C0F238F6165"]
@@ -38,26 +43,32 @@
 		{
 			dependencies: ["7499DE8654E6D85F"]
 			id: "10ABB9E4AFC497AD"
+			subtitle: "Yep that hurts too."
 			tasks: [{
 				id: "0BD94578DAA6399C"
 				item: "minecraft:anvil"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 0.0d
+			x: 4.0d
+			y: 2.0d
 		}
 		{
+			dependencies: ["5282C6AFBBF7E46D"]
 			id: "7499DE8654E6D85F"
+			subtitle: "No not an air compressor"
 			tasks: [{
 				id: "3149B0EF0900C66C"
 				item: "gtceu:lp_steam_compressor"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -1.5d
+			title: "Compressor"
+			x: 5.5d
+			y: 2.0d
 		}
 		{
+			dependencies: ["7EB9606E3DE994C2"]
 			id: "5EF557A57C0D6CE5"
+			subtitle: "I hope you have some rubber"
 			tasks: [
 				{
 					id: "1C98D54DD22D02D7"
@@ -82,8 +93,310 @@
 					type: "item"
 				}
 			]
+			title: "It's pumpin' time"
 			x: 0.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["7EB9606E3DE994C2"]
+			id: "5BF8E876B8B7C6D3"
+			tasks: [{
+				id: "3AC9ED812A35DB33"
+				item: "gtceu:lp_steam_alloy_smelter"
+				type: "item"
+			}]
+			title: "First alloys"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5282C6AFBBF7E46D"]
+			id: "7B926195E8B0ACD5"
+			subtitle: "Doubles ore btw..."
+			tasks: [{
+				id: "3BA38A9A915F4635"
+				item: "gtceu:lp_steam_macerator"
+				type: "item"
+			}]
+			title: "Grinder"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5D5AA282130DEA7A"]
+			id: "5282C6AFBBF7E46D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "11EC4DFE8D2F711F"
+				table_id: 2602732507309901945L
+				type: "choice"
+			}]
+			subtitle: "Yep, that hurts..."
+			tasks: [{
+				id: "361BEBE6A35F898D"
+				item: "minecraft:piston"
+				type: "item"
+			}]
+			title: "Are you ready to suffer?"
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["10ABB9E4AFC497AD"]
+			id: "54F4AB7CC785BB84"
+			subtitle: "3:2 plates!"
+			tasks: [{
+				id: "754CEFF7166C4DF8"
+				item: "gtceu:lp_steam_forge_hammer"
+				type: "item"
+			}]
+			title: "Forge Hammer"
+			x: 4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7EB9606E3DE994C2"]
+			id: "547910044CE964F4"
+			shape: "circle"
+			subtitle: "Wow thats alot!"
+			tasks: [
+				{
+					count: 32L
+					id: "1370D4E1A9C6CCD7"
+					item: { Count: 32, id: "gtceu:raw_redstone" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "1007D9926669EE84"
+					item: { Count: 64, id: "minecraft:redstone" }
+					type: "item"
+				}
+			]
+			title: "Early game redstone"
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5BF8E876B8B7C6D3"]
+			id: "5D5AA282130DEA7A"
+			subtitle: "Electric (not really)"
+			tasks: [{
+				count: 8L
+				id: "3BB96EE3EFF50E98"
+				item: { Count: 8, id: "gtceu:red_alloy_ingot" }
+				type: "item"
+			}]
+			title: "Second alloy"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5BF8E876B8B7C6D3"]
+			id: "66A937134133C737"
+			subtitle: "I see you!"
+			tasks: [{
+				id: "5F0273B103DB8C95"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			title: "Glass"
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["66A937134133C737"]
+			id: "7FBE2CC8962691CD"
+			tasks: [{
+				id: "4E7B875E18D6DA3F"
+				item: "gtceu:lp_steam_extractor"
+				type: "item"
+			}]
+			title: "Extractor!"
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7FBE2CC8962691CD"]
+			id: "039272E5D633D6BA"
+			tasks: [{
+				id: "576330AB2C84354B"
+				item: "gtceu:raw_rubber_dust"
+				type: "item"
+			}]
+			title: "An important resource"
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"039272E5D633D6BA"
+				"121EFDE9E1D9945C"
+			]
+			id: "305AF102D042430D"
+			rewards: [{
+				count: 4
+				id: "2F34C4C5A4F3ADBE"
+				item: "gtceu:rubber_plate"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "1A6A640878EE1349"
+				item: "gtceu:rubber_ingot"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["305AF102D042430D"]
+			id: "57B0250DAC3E10BB"
+			tasks: [
+				{
+					count: 8L
+					id: "6FC74760898C3ED6"
+					item: { Count: 8, id: "gtceu:tin_single_wire" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "33D0E26A8D8EA7CA"
+					item: { Count: 8, id: "gtceu:tin_single_cable" }
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7FBE2CC8962691CD"]
+			id: "23A6138E73612B8A"
+			size: 0.75d
+			tasks: [{
+				id: "02900565436A4BA4"
+				item: "gtceu:hp_steam_extractor"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7EB9606E3DE994C2"]
+			id: "49A7BD36656A4731"
+			tasks: [{
+				id: "59F41A711C91ECFF"
+				item: "gtceu:lp_steam_solar_boiler"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["49A7BD36656A4731"]
+			id: "7EF8F59A43E22046"
+			size: 0.75d
+			tasks: [{
+				id: "46E91B9B6DB84442"
+				item: "gtceu:hp_steam_solar_boiler"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7EB9606E3DE994C2"]
+			id: "6C76BC81184800C4"
+			size: 0.75d
+			tasks: [{
+				id: "00C36C3B1212238B"
+				item: "gtceu:hp_steam_solid_boiler"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7EB9606E3DE994C2"]
+			id: "19286CB091AA4DC5"
+			tasks: [{
+				id: "121A6AC7D879C8D0"
+				item: "gtceu:lp_steam_liquid_boiler"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["19286CB091AA4DC5"]
+			id: "07061B3840E4C3E2"
+			size: 0.75d
+			tasks: [{
+				id: "2AE3B0B0210302DB"
+				item: "gtceu:hp_steam_liquid_boiler"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5282C6AFBBF7E46D"]
+			id: "2B031DA6FF048612"
+			tasks: [{
+				id: "7D520BC790787169"
+				item: "gtceu:lp_steam_furnace"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2B031DA6FF048612"]
+			id: "2CF5EBE487595FE5"
+			size: 0.75d
+			tasks: [{
+				id: "7F55581D30F65094"
+				item: "gtceu:hp_steam_furnace"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7B926195E8B0ACD5"]
+			id: "67D6AE39E4A194BF"
+			size: 0.75d
+			tasks: [{
+				id: "245A3CDC5A43FFD3"
+				item: "gtceu:hp_steam_macerator"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7499DE8654E6D85F"]
+			id: "52D7281BD8A5826A"
+			size: 0.75d
+			tasks: [{
+				id: "1447707272082839"
+				item: "gtceu:hp_steam_compressor"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["54F4AB7CC785BB84"]
+			id: "5807B35A46B13919"
+			size: 0.75d
+			tasks: [{
+				id: "38B1FDFD594BD213"
+				item: "gtceu:hp_steam_forge_hammer"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.5d
 		}
 	]
 	subtitle: ["The industrial revolution!"]

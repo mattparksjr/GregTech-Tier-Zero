@@ -1,0 +1,17 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "growing_rich"
+	group: "2C05954F2D341591"
+	icon: "mysticalagriculture:awakened_supremium_essence"
+	id: "6D300F3A6855C384"
+	order_index: 4
+	quest_links: [{
+		id: "17AB5C64A565F950"
+		linked_quest: "0CD7B40783F7E492"
+		x: 0.0d
+		y: 0.5d
+	}]
+	quests: [ ]
+	title: "Growing rich"
+}

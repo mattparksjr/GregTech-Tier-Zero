@@ -59,6 +59,17 @@
 			x: 0.0d
 			y: 4.0d
 		}
+		{
+			dependencies: ["741BFC9292659ABC"]
+			id: "7BB206ED3E47A25E"
+			tasks: [{
+				id: "0C15A0032FD62082"
+				item: "gtceu:glue_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
 	]
 	subtitle: ["Finally the power is on"]
 	title: "LV (Low voltage)"

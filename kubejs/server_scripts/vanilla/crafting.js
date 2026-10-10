@@ -18,6 +18,8 @@
       "#minecraft:beds",
       "minecraft:blast_furnace",
       "minecraft:hay_block",
+      "minecraft:smoker",
+      "minecraft:stonecutter",
     ]);
   }
 
@@ -25,8 +27,8 @@
     console.log("GTT0: Adding vanilla crafting recipes");
 
     event.campfireCooking(
-      "#minecraft:logs_that_burn",
       "gtceu:small_ash_dust",
+      "#minecraft:logs_that_burn",
       0,
       600,
     );
@@ -51,6 +53,18 @@
       P: "#forge:plates/iron",
       F: "#forge:furnaces",
       S: "minecraft:smooth_stone",
+    });
+
+    event.shaped("minecraft:smoker", ["PPP", "PFP", "LLL"], {
+      P: "#forge:plates/iron",
+      F: "#forge:furnaces",
+      L: "#minecraft:logs",
+    });
+
+    event.shaped("minecraft:stonecutter", ["   ", "PBP", "SSS"], {
+      P: "#forge:plates/iron",
+      S: "minecraft:smooth_stone",
+      B: "gtceu:steel_buzz_saw_blade",
     });
 
     GTT0.basicBlockCompressor(

@@ -100,6 +100,7 @@
 		}
 		{
 			dependencies: ["784567B055370771"]
+			description: ["&6&n&lPROJECT MANAGER:&r&r&r"]
 			id: "774D0FB74627781B"
 			tasks: [{
 				id: "5714E5B63566D0F9"
@@ -132,6 +133,7 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["2191C9C6D6D5F8C8"]
 			id: "34A2D4FEE3A2CC77"
 			tasks: [{
 				id: "51C5EBE7F9C162EA"

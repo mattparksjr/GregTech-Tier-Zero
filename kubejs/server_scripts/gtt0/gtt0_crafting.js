@@ -20,6 +20,10 @@
       "chisel:chisel",
       "solclassic:basket",
       "solclassic:wicker_basket",
+      "enderchests:ender_chest",
+      "enderchests:ender_bag",
+      "endertanks:ender_tank",
+      "endertanks:ender_bucket",
     ]);
 
     GTT0.removeById(event, "GTT0", [
@@ -156,5 +160,69 @@
         .duration(40)
         .EUt(108);
     });
+
+    event.recipes.gtceu
+      .alloy_smelter("glass_from_dust")
+      .itemInputs("2x gtceu:glass_dust")
+      .itemOutputs("minecraft:glass")
+      .EUt(2)
+      .duration(100);
+
+    event.recipes.gtceu
+      .assembler("ender_pouch")
+      .itemInputs("1x minecraft:ender_eye", "4x minecraft:leather")
+      .itemOutputs("enderchests:ender_pouch")
+      .duration(100)
+      .EUt(128);
+
+    event.recipes.gtceu
+      .assembler("ender_bag")
+      .itemInputs(
+        "1x enderchests:ender_pouch",
+        "4x minecraft:blaze_powder",
+        "2x #forge:ingots/steel",
+        "2x #minecraft:wool",
+      )
+      .itemOutputs("enderchests:ender_bag")
+      .duration(100)
+      .EUt(128);
+
+    event.recipes.gtceu
+      .assembler("ender_chest")
+      .itemInputs(
+        "1x enderchests:ender_pouch",
+        "4x minecraft:blaze_powder",
+        "2x #forge:ingots/steel",
+        "4x minecraft:obsidian",
+      )
+      .itemOutputs("enderchests:ender_chest")
+      .duration(140)
+      .EUt(128);
+
+    event.recipes.gtceu
+      .assembler("ender_tank")
+      .itemInputs(
+        "1x gtceu:wood_drum",
+        "4x minecraft:blaze_powder",
+        "2x #forge:ingots/steel",
+        "2x gtceu:ender_pearl_dust",
+        "4x minecraft:obsidian",
+      )
+      .itemOutputs("endertanks:ender_tank")
+      .duration(140)
+      .EUt(128);
+
+    event.recipes.gtceu
+      .assembler("ender_bucket")
+      .itemInputs(
+        "1x minecraft:bucket",
+        "4x minecraft:blaze_powder",
+        "2x #forge:ingots/steel",
+        "2x gtceu:ender_pearl_dust",
+        "1x minecraft:obsidian",
+      )
+      .itemOutputs("endertanks:ender_bucket")
+      .duration(140)
+      .EUt(128);
   }
 })();

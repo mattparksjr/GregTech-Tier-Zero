@@ -9,15 +9,29 @@
 	id: "153809DE4D4AD9EF"
 	order_index: 2
 	quest_links: [ ]
-	quests: [{
-		id: "6633216816BF17D1"
-		tasks: [{
-			id: "316E55239BC227E0"
-			item: "gtceu:lp_steam_macerator"
-			type: "item"
-		}]
-		x: -1.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["02F925CFA2D21219"]
+			id: "6633216816BF17D1"
+			tasks: [{
+				id: "316E55239BC227E0"
+				item: "gtceu:lp_steam_macerator"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["02F925CFA2D21219"]
+			id: "1810078711A6B535"
+			tasks: [{
+				id: "610BB44E930E8E0C"
+				item: "gtceu:lp_steam_forge_hammer"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+	]
 	title: "Ore Processing"
 }

@@ -192,8 +192,7 @@ GTCEuServerEvents.oreVeins((event) => {
               .size(2, 4),
           )
           .layer((l) => l.weight(1).mat(GTMaterials.NetherQuartz).size(1, 1))
-          .layer((l) => l.weight(1).mat(GTMaterials.CertusQuartz).size(1, 1))
-          .layer((l) => l.weight(2).mat(GTMaterials.Barite).size(1, 2)),
+          .layer((l) => l.weight(1).mat(GTMaterials.CertusQuartz).size(1, 1)),
       ),
     );
   });

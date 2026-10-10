@@ -16,11 +16,19 @@
 		{
 			dependencies: ["6BE46F4DEB3D95CD"]
 			id: "1AC027F8816A3004"
+			rewards: [{
+				count: 16
+				id: "550C6D2EA0064C3C"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			subtitle: "Torches finally!"
 			tasks: [{
 				id: "1F38AADE0C9173A6"
 				item: "gtceu:coke_oven"
 				type: "item"
 			}]
+			title: "The coke oven"
 			x: -2.0d
 			y: -3.5d
 		}
@@ -34,6 +42,27 @@
 			}]
 			x: 0.0d
 			y: -3.5d
+		}
+		{
+			id: "142F105DAC2E8DC6"
+			size: 2.0d
+			tasks: [{
+				id: "0EB9E740D3102F9D"
+				title: "Building Multiblocks"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			id: "7889D33188C2788D"
+			tasks: [{
+				id: "0E043DCC40B83EBF"
+				item: "gtceu:electric_blast_furnace"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
 		}
 	]
 	title: "Multiblocks Galore"

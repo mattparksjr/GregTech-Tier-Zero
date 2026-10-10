@@ -84,6 +84,17 @@
 			x: 2.0d
 			y: -2.0d
 		}
+		{
+			dependencies: ["6C1065B1FF6840F0"]
+			id: "40C1F198C4696CF8"
+			tasks: [{
+				id: "7B4DBF77CDB87075"
+				title: "So thats how power works"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
 	]
 	title: "Tips and Tricks"
 }

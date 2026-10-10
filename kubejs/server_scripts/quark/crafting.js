@@ -10,14 +10,10 @@
   function remove(event) {
     GTT0.removeById(event, "Quark", [
       "quark:building/crafting/compressed/golden_carrot_crate_uncompress",
+      "quark:tweaks/crafting/dirty_glass",
+      "quark:tweaks/crafting/clear_glass",
     ]);
     GTT0.removeByOutput(event, "Quark", ["quark:golden_carrot_crate"]);
-
-    event.remove({
-      id: "quark:building/crafting/compressed/golden_carrot_crate_uncompress",
-    });
-
-    event.remove({ output: "quark:golden_carrot_crate" });
   }
 
   function add(event) {

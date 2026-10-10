@@ -7,16 +7,35 @@
 	id: "039FC443CD3C6ACA"
 	order_index: 4
 	quest_links: [ ]
-	quests: [{
-		id: "689A09F656BC0FC6"
-		tasks: [{
-			advancement: "minecraft:adventure/kill_a_mob"
-			criterion: ""
-			id: "6498F9240DC51247"
-			type: "advancement"
-		}]
-		x: -1.5d
-		y: -0.5d
-	}]
+	quests: [
+		{
+			id: "689A09F656BC0FC6"
+			tasks: [{
+				advancement: "minecraft:adventure/kill_a_mob"
+				criterion: ""
+				id: "6498F9240DC51247"
+				type: "advancement"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["689A09F656BC0FC6"]
+			id: "0CD7B40783F7E492"
+			rewards: [{
+				count: 8
+				id: "334A3BE4732F9832"
+				item: "minecraft:wheat_seeds"
+				type: "item"
+			}]
+			tasks: [{
+				id: "20DC674D5F13747B"
+				item: "mysticalagriculture:inferium_essence"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+	]
 	title: "Bounty Board"
 }

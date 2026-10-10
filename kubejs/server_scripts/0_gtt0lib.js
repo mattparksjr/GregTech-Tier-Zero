@@ -13,6 +13,7 @@ global.GTT0 = {
   SAW: Ingredient.of("#gtceu:tools/crafting_saws"),
   SCREWDRIVER: Ingredient.of("#gtceu:tools/crafting_screwdrivers"),
   MORTAR: Ingredient.of("#gtceu:tools/crafting_mortars"),
+  KNIFE: Ingredient.of("#gtceu:tools/crafting_knives"),
 
   /**
    * Remove all mod recipes
@@ -75,16 +76,20 @@ global.GTT0 = {
    * @param {string} id
    * @param {string} block
    * @param {string} item
-   * @param {*} count
+   * @param {integer} count not required
+   * @param {integer} eu not required
+   * @param {integer} duration not required
    */
-  basicBlockCompressor(event, id, block, item, count) {
+  basicBlockCompressor(event, id, block, item, count, eu, duration) {
     const n = count === undefined ? 9 : count;
+    const p = count === undefined ? 12 : eu;
+    const d = count === undefined ? 100 : duration;
     event.recipes.gtceu
       .compressor(id)
       .itemInputs(`${n}x ${item}`)
       .itemOutputs(block)
-      .EUt(8)
-      .duration(100);
+      .EUt(p)
+      .duration(d);
   },
 
   /**
@@ -92,11 +97,21 @@ global.GTT0 = {
    * @param {*} event
    * @param {string} mod
    * @param {{id: string, block: string, item: string}[]} recipes
-   * @param {*} count
+   * @param {integer} count not required
+   * @param {integer} eu not required
+   * @param {integer} duration not required
    */
-  basicBlockCompressorBatch(event, mod, recipes, count) {
+  basicBlockCompressorBatch(event, mod, recipes, count, eu, duration) {
     recipes.forEach((r) => {
-      this.basicBlockCompressor(event, r.id, r.block, r.item, count);
+      this.basicBlockCompressor(
+        event,
+        r.id,
+        r.block,
+        r.item,
+        count,
+        eu,
+        duration,
+      );
     });
 
     this.log(mod, `Added ${recipes.length} compressor batch recipe(s)`);

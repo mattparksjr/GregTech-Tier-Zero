@@ -30,11 +30,19 @@
 			]
 			id: "6BA7536D730F159C"
 			subtitle: "Its almost like the nether..."
-			tasks: [{
-				id: "28B91A49FCB6B439"
-				item: "undergarden:catalyst"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "28B91A49FCB6B439"
+					item: "undergarden:catalyst"
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "636DAE547D8F35A3"
+					item: { Count: 14, id: "chisel:cut/diorite" }
+					type: "item"
+				}
+			]
 			title: "Entering the undergarden"
 			x: -2.0d
 			y: 0.0d

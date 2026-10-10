@@ -21,7 +21,7 @@
   }
 
   function add(event) {
-    /*    event.shaped("sophisticatedbackpacks:backpack", ["SLS", "LBL", "FPF"], {
+    event.shaped("sophisticatedbackpacks:backpack", ["SLS", "LBL", "FPF"], {
       S: "#forge:screws/bronze",
       L: "minecraft:leather",
       B: "gtceu:wood_crate",
@@ -29,6 +29,7 @@
       P: "#forge:plates/red_alloy",
     });
 
+    /* 
     event.custom({
       type: "sophisticatedbackpacks:backpack_upgrade",
       conditions: [

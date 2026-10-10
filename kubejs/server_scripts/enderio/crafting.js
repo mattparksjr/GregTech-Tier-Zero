@@ -5,7 +5,11 @@
     const MOD = "EnderIO";
     GTT0.logModify(MOD);
 
-    GTT0.removeTypes(event, MOD, ["enderio:alloying", "enderio:sag_milling"]);
+    GTT0.removeTypes(event, MOD, [
+      "enderio:alloying",
+      "enderio:sag_milling",
+      "enderio:primitive_alloy_smelting",
+    ]);
 
     GTT0.removeByOutput(event, MOD, ["enderio:flour"]);
 

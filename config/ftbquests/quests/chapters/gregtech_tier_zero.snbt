@@ -31,16 +31,13 @@
 				""
 				"Welcome &cprisoner,&r to GregTech: &4Tier Zero&r."
 				""
-				"You have woken up in the &blobby&r of your local jail. After turning in your"
-				"paperwork, you will be able to begin your &csentence.&r "
+				"The lowest level possible for a &ccriminal&r like yourself."
 				""
-				"You have been sent to &n&4Tier Zero&r&r. The lowest level possible for a &ccriminal&r like yourself."
-				""
-				"It seems however, that due to your &bconfession&r and the information on your friends that you gave us, you have a chance at returning home. If you complete &6&lTHE PROJECT&r&r."
+				"It seems however, that due to your &bconfession&r and the &binformation&r on your &cfriends&r that you gave us, you have a better chance at returning home. Your selected planet is earth like, and is rich with &6resources&r. If you wish to see your cats again, you will need to complete &6&lTHE PROJECT&r&r."
 				""
 				"&7Ha, good luck&r"
 			]
-			icon: "chipped:victorian_iron_bars_pikes"
+			icon: "minecraft:iron_bars"
 			id: "5E3C05B265C2CC3D"
 			rewards: [
 				{
@@ -135,7 +132,7 @@
 						tag: {
 							display: {
 								Lore: ["[{\"text\":\"It gets very dark at night...\",\"italic\":false,\"color\":\"gray\"}]"]
-								Name: "[{\"text\":\"Guiding Light\",\"italic\":false,\"color\":\"dark_aqua\"}]"
+								Name: "[{\"text\":\"Guiding Light\",\"italic\":false,\"bold\":true,\"color\":\"dark_aqua\"}]"
 							}
 						}
 					}
@@ -146,13 +143,9 @@
 			size: 1.5d
 			subtitle: "Ready to begin your sentence?"
 			tasks: [{
-				icon: "enderio:nutritious_stick"
-				id: "39A6860614CD2B65"
-				observe_type: 5
-				timer: 0L
-				title: "Talk to the jailer"
-				to_observe: "minecraft:zombie_villager"
-				type: "observation"
+				id: "4C89296F2BC335E2"
+				title: "Begin Sentence"
+				type: "checkmark"
 			}]
 			title: "Welcome to &4Tier Zero"
 			x: 0.5d
@@ -197,7 +190,7 @@
 							value: "minecraft:logs"
 						}
 					}
-					title: "Grab some logs. (any)"
+					title: "Grab some logs. (any type)"
 					type: "item"
 				}
 				{
@@ -281,8 +274,13 @@
 				""
 				"Come check out my &6guides&r sometime, I'm sure they'll be helpful!"
 			]
-			icon: "computercraft:monitor_advanced"
+			icon: "gtceu:terminal"
 			id: "4A8E82E137B1112B"
+			rewards: [{
+				id: "463B7D16EC7FC734"
+				type: "xp"
+				xp: 5
+			}]
 			shape: "circle"
 			size: 0.75d
 			subtitle: "Snitches get... guides??"
@@ -382,7 +380,7 @@
 			description: [
 				"&6&n&lPROJECT MANAGER:&r&r&r"
 				""
-				"In order to keep yourself safe, I would highly &6recommned&r finding or creating a home. Grab these &esupplies&r to truly make yourself at &bhome&r."
+				"In order to keep yourself safe, I would highly &6recommend&r finding or creating a home. Grab these &esupplies&r to truly make yourself at &bhome&r."
 			]
 			icon: "handcrafted:acacia_fancy_bed"
 			id: "7FABAC2EF552971F"
@@ -485,8 +483,8 @@
 				}
 			]
 			title: "Cutting board"
-			x: 6.5d
-			y: -0.5d
+			x: 5.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7FABAC2EF552971F"]
@@ -564,7 +562,7 @@
 			description: [
 				"&6&n&lPROJECT MANAGER:&r&r&r"
 				""
-				"It is time to get &6serious&r about your progress. First, &d8&r furances might seem like alot, but you will need these in short time."
+				"It is time to get &6serious&r about your progress. First, &d8&r furances might seem like alot, but you &dwill&r need these in due time."
 				""
 				"Next, create the &bCoke Oven&r. Check the quest page in &eMulitblock Galore&r for more info"
 			]
@@ -644,7 +642,7 @@
 					type: "item"
 				}
 				{
-					count: 32L
+					count: 64L
 					icon: "minecraft:oak_log"
 					id: "651017AD73351A34"
 					item: {
@@ -659,7 +657,7 @@
 				}
 			]
 			title: "Need wood?"
-			x: 4.5d
+			x: 3.5d
 			y: -1.0d
 		}
 		{
@@ -678,11 +676,31 @@
 		}
 		{
 			dependencies: ["4FCED0BCD5B7DCBE"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"You may notice some piles of &brocks&r on the ground of your planet. These indicate where &6ores&r are below the ground. Picking some up will add the &evein&r your your map, accessable with '&dJ&r'. "
+				""
+				"Ore generates is a &cvery&r different way then you may expect. The next page should give you a &ebasic&r idea."
+				""
+				"{@pagebreak}"
+				"On this planet, ore generates a &blarge&r, multichunk veins across the world. They are &6seperated&r into a &d3x3&r grid. This means that if a chunk contains &bore&r, 3 chunks in all cardinal directions will also have &bore&r veins. This is true for every planet and dimension. Chunks can also contain two veins, one typically &2higher&r up then its counter part. "
+				""
+				"If you happen to find ores below ground, &dmining&r one or right clicking will also add a vein to your &emap&r."
+				"For more information on ore specifics, check &bthe ore generation&r tab. Vein info is viewable by &eclicking&r on an ore."
+			]
 			id: "02A0CDBE0307EAF4"
+			rewards: [{
+				count: 16
+				id: "4F744B4531C63D6B"
+				item: "minecraft:ladder"
+				type: "item"
+			}]
 			shape: "circle"
 			subtitle: "Science Rocks"
 			tasks: [{
 				count: 4L
+				icon: "gtceu:tiny_tantalite_dust"
 				id: "5545CD6AB3BF6DD7"
 				item: {
 					Count: 1
@@ -700,6 +718,13 @@
 		}
 		{
 			dependencies: ["5D5BC2A7937EDE00"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"The first tool you'll want to make is a &bhammer&r. It is required to make most of the other &6basic&r tools too. "
+				""
+				"For now, &7iron&r is a good material. It might be worth &bchecking&r from time to time to see if you can make &6better&r tools with the new &6resources&r you unlock."
+			]
 			icon: {
 				Count: 1
 				id: "gtceu:iron_hammer"
@@ -788,8 +813,8 @@
 				type: "item"
 			}]
 			title: "Chef time"
-			x: 7.5d
-			y: -2.0d
+			x: 5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["6BE46F4DEB3D95CD"]
@@ -838,6 +863,13 @@
 				"34ABAFBC574897FD"
 				"4F981170790BABE2"
 			]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"You &cwill&r be needing an ever growing amount of resources. Until you &bprogress&r much further you will need to do this by hand."
+				""
+				"&6Mining hammers&r have decent durability and mine in a &d3x3&r area, perfect for those &ehuge&r ore veins."
+			]
 			icon: {
 				Count: 1
 				id: "gtceu:iron_mining_hammer"
@@ -863,6 +895,12 @@
 				}
 			}
 			id: "517D59F354FF6F2D"
+			rewards: [{
+				count: 16
+				id: "1E812C7E716BC682"
+				item: "framedblocks:framed_torch"
+				type: "item"
+			}]
 			shape: "circle"
 			subtitle: "3x3?!?!?"
 			tasks: [{
@@ -908,13 +946,61 @@
 				"Hammer your &6bronze&r into plates, you will need a lot of these in the &6steam age&r. You will soon get a better &erecipe&r though, so don't craft &dtoo&r many..."
 			]
 			id: "22C13C0F238F6165"
-			rewards: [{
-				count: 2
-				id: "631785FC0A06AB50"
-				item: "farmersdelight:mutton_wrap"
-				random_bonus: 2
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "631785FC0A06AB50"
+					item: "farmersdelight:mutton_wrap"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "3500178F034F735E"
+					item: {
+						Count: 1
+						id: "supplementaries:present"
+						tag: {
+							BlockEntityTag: {
+								Description: "for me. \n\n\n- Your partner"
+								ForgeCaps: { }
+								Items: [{
+									Count: 1b
+									Slot: 0b
+									id: "gtceu:damascus_steel_mining_hammer"
+									tag: {
+										Damage: 0
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											AoEColumn: 1
+											AoELayer: 0
+											AoERow: 1
+											MaxAoEColumn: 1
+											MaxAoELayer: 0
+											MaxAoERow: 1
+											TorchPlacing: 1b
+										}
+										GT.Tool: {
+											AttackDamage: 5.5f
+											AttackSpeed: -2.9f
+											DefaultEnchantments: [{
+												id: "minecraft:fortune"
+												lvl: 3s
+											}]
+											HarvestLevel: 3
+											MaxDamage: 3071
+											ToolSpeed: 6.4f
+										}
+										HideFlags: 2
+									}
+								}]
+								Recipient: "My sweet love, do it"
+								Sender: "Your partner"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "circle"
 			size: 1.5d
 			subtitle: "DING DING DING DING "
@@ -958,13 +1044,29 @@
 		}
 		{
 			dependencies: ["7EB9606E3DE994C2"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"Steel will be a &6vital&r resource in the &7Low Voltage&r age."
+				""
+				"However for the time being, you should be stock piling &las much as you can&r in the background. I cannot overstate how much you will need going forward."
+				""
+				"For now, you need to build a &aPrimitve Blast Furnace&r."
+			]
 			id: "6C3F80DCBD0C5487"
+			rewards: [{
+				id: "15108EF2A0F28621"
+				item: "corn_delight:cob_pipe"
+				type: "item"
+			}]
+			subtitle: "Much better then iron"
 			tasks: [{
 				count: 8L
 				id: "24CD35CC653E2B04"
 				item: "gtceu:steel_ingot"
 				type: "item"
 			}]
+			title: "Steel"
 			x: 14.0d
 			y: 4.5d
 		}
@@ -973,8 +1075,21 @@
 				"34ABAFBC574897FD"
 				"4F981170790BABE2"
 			]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"&dWrought iron&r is a super useful metal. First, it can be used to make tools with higher &6durability&r then iron. "
+				""
+				"Not only that, but it is &crequired&r in order to progress to &7LV&r, as well as halving the time required to make steel in a &bblast furnace&r. It's a win all around!"
+			]
 			icon: "gtceu:wrought_iron_ingot"
 			id: "3E8DBDCAAC05C51D"
+			rewards: [{
+				id: "11A85345A9C47630"
+				item: "gtceu:steel_brick_casing"
+				type: "item"
+			}]
+			subtitle: "Not quite steel...."
 			tasks: [
 				{
 					count: 63L
@@ -998,7 +1113,7 @@
 			description: [
 				"&6&n&lPROJECT MANAGER:&r&r&r"
 				""
-				"Your &ecutting board&r has a much easier way to get &8flint&r, take your gravel and sift though it with a &dshovel&r. It is just a 10% chance, but it beats mining &9underwater&r."
+				"Your &ecutting board&r has a much easier way to get &8flint&r, take your gravel and sift though it with a &dshovel&r. It is just a 10% chance, but it beats digging &9underwater&r."
 			]
 			id: "34D86B86F5D24969"
 			rewards: [{
@@ -1020,8 +1135,8 @@
 				type: "item"
 			}]
 			title: "A better way to get flint"
-			x: 7.5d
-			y: -3.5d
+			x: 7.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["34D86B86F5D24969"]
@@ -1071,15 +1186,38 @@
 				type: "item"
 			}]
 			title: "An even BETTER way to get flint"
-			x: 9.5d
-			y: -3.5d
+			x: 8.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
 				"3E8DBDCAAC05C51D"
 				"6C1065B1FF6840F0"
 			]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"In order for a &ecasing&r to be made into a ma&6chine,&r you need to apply some &bupgrades.&r"
+				""
+				"This requires &erubber,&r wires, and &dwrought&r iron. Expensive for now, but these machines will stay with you for &dquite&r some time."
+				""
+				"&bThis quest unlocks a guide.&r"
+			]
 			id: "4ADB39C7032E2DC0"
+			rewards: [
+				{
+					id: "2CB874DC922D745D"
+					item: "gtceu:tin_hex_wire"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "2B118480575B43EB"
+					item: "brewinandchewin:beer"
+					type: "item"
+				}
+			]
+			subtitle: "Well it needs power. Duh."
 			tasks: [{
 				id: "2250DBE96CEF891E"
 				item: "gtceu:lv_machine_hull"
@@ -1090,7 +1228,21 @@
 		}
 		{
 			dependencies: ["6C3F80DCBD0C5487"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"Ready to enter the &7LV&r age? No, seriously. If you don't have a &6decent&r steel supply and access to &dprocessed&r rubber, you might want to wait. "
+				""
+				"The &7LV&r machine casing is the &bbase&r for most &7LV&r machines."
+			]
 			id: "6C1065B1FF6840F0"
+			rewards: [{
+				count: 8
+				id: "3E7F73C8AFA887DC"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			subtitle: "A frame fit for a"
 			tasks: [{
 				id: "0B10ED5CCA774F5B"
 				item: "gtceu:lv_machine_casing"
@@ -1098,6 +1250,46 @@
 			}]
 			x: 15.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["7FABAC2EF552971F"]
+			icon: "minecraft:campfire"
+			id: "7D9AB4154C9E062A"
+			rewards: [{
+				id: "36E3121132296E87"
+				item: "mcwfurnitures:oak_modern_chair"
+				type: "item"
+			}]
+			shape: "circle"
+			subtitle: "Warm and cozy <3"
+			tasks: [
+				{
+					id: "734E5002680EAC44"
+					item: "minecraft:campfire"
+					type: "item"
+				}
+				{
+					id: "6C5D6CD9FBF44E79"
+					title: "Oh boy!"
+					type: "checkmark"
+				}
+			]
+			title: "Base building"
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6C3F80DCBD0C5487"]
+			id: "121EFDE9E1D9945C"
+			shape: "circle"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "49F4843F973531CC"
+				title: "Into hell"
+				type: "dimension"
+			}]
+			x: 15.5d
+			y: 6.0d
 		}
 	]
 	subtitle: ["The sentence begins"]

@@ -134,6 +134,12 @@
 		{
 			dependencies: ["429B9DAEC54E3E2A"]
 			id: "018F0F8996576D39"
+			rewards: [{
+				count: 2
+				id: "5BB29A3E3C18B1E8"
+				item: "delightful:cantaloupe_bread"
+				type: "item"
+			}]
 			subtitle: "No money involved"
 			tasks: [{
 				count: 8L
@@ -228,7 +234,7 @@
 				title: "Seasons change"
 				type: "checkmark"
 			}]
-			title: "Why wont my cropps grow?"
+			title: "Why wont my crops grow?"
 			x: 1.0d
 			y: -1.5d
 		}
@@ -301,6 +307,34 @@
 			}]
 			x: 1.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["3C486B2F9687DA72"]
+			id: "2DBB46FC92824442"
+			tasks: [{
+				id: "4B122BAC4702686E"
+				item: {
+					Count: 1
+					id: "minecraft:fishing_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2DBB46FC92824442"]
+			id: "14D66A49FE69D927"
+			tasks: [{
+				id: "57BBA8FB167BDC9C"
+				item: "crabbersdelight:crab_trap"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
 		}
 	]
 	subtitle: ["Staying fed!"]

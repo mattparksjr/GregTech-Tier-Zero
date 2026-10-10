@@ -9,6 +9,7 @@
 
   function remove(event) {
     GTT0.removeById(event, "Undergarden", ["undergarden:catalyst"]);
+    GTT0.removeByOutput(event, "Undergarden", ["undergarden:ditchbulb_paste"]);
   }
 
   function add(event) {
@@ -24,5 +25,12 @@
       .itemOutputs("undergarden:catalyst")
       .duration(400)
       .EUt(32);
+
+    event.recipes.gtceu
+      .macerator("ditchbulb_to_paste")
+      .itemInputs("undergarden:ditchbulb")
+      .itemOutputs("undergarden:ditchbulb_paste")
+      .EUt(2)
+      .duration(80);
   }
 })();
