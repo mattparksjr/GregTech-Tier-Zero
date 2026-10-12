@@ -26,11 +26,11 @@
 
     event
       .shaped("farmersdelight:cutting_board", [" H ", "SPP", "SPP"], {
-        H: GTT0.MELLET,
+        H: GTT0.MALLET,
         S: "#forge:rods/wooden",
         P: "#minecraft:planks",
       })
-      .damageIngredient(GTT0.MELLET, 2);
+      .damageIngredient(GTT0.MALLET, 2);
 
     event.shaped("farmersdelight:cooking_pot", ["SHS", "RBR", "PPP"], {
       H: "minecraft:wooden_shovel",

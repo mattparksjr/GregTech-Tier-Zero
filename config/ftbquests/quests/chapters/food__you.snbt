@@ -82,6 +82,11 @@
 		}
 		{
 			dependencies: ["3C486B2F9687DA72"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"Bread is &crequired&r to feed empires. Make a wheat farm. It will have &bmore then one&r use later..."
+			]
 			id: "429B9DAEC54E3E2A"
 			rewards: [{
 				count: 4
@@ -133,6 +138,13 @@
 		}
 		{
 			dependencies: ["429B9DAEC54E3E2A"]
+			description: [
+				"&b&n&lOops-E:&r&r&r"
+				""
+				"Your w&6heat&r can be turned into dough! This will give you access to &dbread&r and so many &asweet&r treats. "
+				""
+				"Yes I read your file. It's ok, most humans still like &bsugar&r still. "
+			]
 			id: "018F0F8996576D39"
 			rewards: [{
 				count: 2
@@ -221,6 +233,13 @@
 		}
 		{
 			dependencies: ["3C486B2F9687DA72"]
+			description: [
+				"&b&n&lOops-E:&r&r&r"
+				""
+				"You might have noticed your seeds have &dseasons&r on them. Just like what &cused&r to happen on our home, this planet has seasons. Most &bfoods&r and crops will only grow during their &dpreferred&r season."
+				""
+				"I'll look into a way to fix this for you.&7 Just need more time...&r"
+			]
 			icon: "sereneseasons:calendar"
 			id: "2212F2CF94FF13F6"
 			rewards: [{
@@ -235,7 +254,7 @@
 				type: "checkmark"
 			}]
 			title: "Why wont my crops grow?"
-			x: 1.0d
+			x: 2.5d
 			y: -1.5d
 		}
 		{
@@ -276,7 +295,39 @@
 		}
 		{
 			dependencies: ["33F9E32A08751BA4"]
+			description: [
+				"&b&n&lOops-E:&r&r&r"
+				""
+				"Using your new &bknife&r and &6cutting board&r, you can cut your animal products into &dnew&r foods. This unlocks &n&dmany&r&r new foods to try!"
+			]
 			id: "29AD5A592545FBC8"
+			rewards: [
+				{
+					count: 2
+					id: "3550847DD8DD9438"
+					item: "minecraft:mutton"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "079C8E6F7213F902"
+					item: "minecraft:beef"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0AD665CD2BDD82C4"
+					item: "minecraft:porkchop"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "604EF65273211F3F"
+					item: "minecraft:cod"
+					type: "item"
+				}
+			]
+			subtitle: "Getting more out of the catch"
 			tasks: [
 				{
 					count: 8L
@@ -291,6 +342,7 @@
 					type: "item"
 				}
 			]
+			title: "Butchering!"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -310,7 +362,20 @@
 		}
 		{
 			dependencies: ["3C486B2F9687DA72"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"&o&cOh lucky you. I mean seriously... &r&r"
+				""
+				"This planet also contains &bdiverse&r aquautic life. Fish can be found by the &6plenty&r."
+			]
 			id: "2DBB46FC92824442"
+			rewards: [{
+				id: "6945C7BE88361702"
+				item: "mcwfurnitures:stripped_jungle_chair"
+				type: "item"
+			}]
+			subtitle: "Blub, blub, blub blub"
 			tasks: [{
 				id: "4B122BAC4702686E"
 				item: {
@@ -322,12 +387,31 @@
 				}
 				type: "item"
 			}]
+			title: "Fih!"
 			x: -2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["2DBB46FC92824442"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"Crabs can be &bcaught&r using some of your &6spare&r fish. Even more &dunique&r foods for you..."
+			]
 			id: "14D66A49FE69D927"
+			rewards: [{
+				count: 2
+				id: "3B508B01A50B64E0"
+				item: {
+					Count: 1
+					id: "crabbersdelight:bucket_of_crab_chum"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Don't get crabby with me son"
 			tasks: [{
 				id: "57BBA8FB167BDC9C"
 				item: "crabbersdelight:crab_trap"
@@ -335,6 +419,78 @@
 			}]
 			x: -2.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["29AD5A592545FBC8"]
+			description: [
+				"&b&n&lOops-E:&r&r&r"
+				""
+				"&cStruggling&r to farm enough? The &dbutchers knife&r is a GT tool that naturally comes with &6looting&r on it. Perfect for pruning the heard."
+			]
+			id: "71F3300148E845D2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "042D2F94CBBA4375"
+				table_id: 7691512157955919655L
+				type: "choice"
+			}]
+			subtitle: "Looting for free?!?!"
+			tasks: [{
+				id: "283B59B5DB334B34"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/butchery_knives"
+					}
+				}
+				title: "Any #forge:tools/butchery_knives"
+				type: "item"
+			}]
+			title: "A new knife?"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7D9AB4154C9E062A"]
+			id: "440829F728FDAFED"
+			rewards: [
+				{
+					id: "233587972F105AF0"
+					item: "brewinandchewin:coaster"
+					type: "item"
+				}
+				{
+					id: "04887576EF4C5099"
+					item: "brewinandchewin:tankard"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "643B2C04BFDCDDD7"
+				item: "brewinandchewin:keg"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["440829F728FDAFED"]
+			id: "7513BFF1837BE4F3"
+			tasks: [
+				{
+					id: "562D9304A5883EFF"
+					item: "brewinandchewin:heating_cask"
+					type: "item"
+				}
+				{
+					id: "15F5FD414554BA9C"
+					item: "brewinandchewin:ice_crate"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 4.5d
 		}
 	]
 	subtitle: ["Staying fed!"]

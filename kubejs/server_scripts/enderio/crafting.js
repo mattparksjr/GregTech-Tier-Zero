@@ -11,7 +11,10 @@
       "enderio:primitive_alloy_smelting",
     ]);
 
-    GTT0.removeByOutput(event, MOD, ["enderio:flour"]);
+    GTT0.removeByOutput(event, MOD, [
+      "enderio:flour",
+      "enderio:dark_steel_sword",
+    ]);
 
     add(event);
   });

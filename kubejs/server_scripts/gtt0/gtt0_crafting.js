@@ -27,6 +27,8 @@
     ]);
 
     GTT0.removeById(event, "GTT0", [
+      "toolbelt:belt",
+      "toolbelt:pouch",
       "minecraft:golden_carrot",
       "craftingstationjei:crafting_station",
       "craftingstationjei:crafting_station_slab",
@@ -42,6 +44,20 @@
         S: "#forge:rods/wooden",
       })
       .damageIngredient(GTT0.HAMMER, 2);
+
+    event.shaped("toolbelt:belt", ["IRI", "LCL", "LRL"], {
+      I: "#forge:rings/iron",
+      R: "farmersdelight:rope",
+      L: "minecraft:leather",
+      C: "#forge:chests",
+    });
+
+    event.shaped("toolbelt:pouch", ["RGR", "LCL", "RLR"], {
+      G: "#forge:rings/gold",
+      R: "farmersdelight:rope",
+      L: "minecraft:leather",
+      C: "#forge:chests",
+    });
 
     event
       .shaped("craftingstationjei:crafting_station", ["CS"], {
@@ -173,56 +189,56 @@
       .itemInputs("1x minecraft:ender_eye", "4x minecraft:leather")
       .itemOutputs("enderchests:ender_pouch")
       .duration(100)
-      .EUt(128);
+      .EUt(256);
 
     event.recipes.gtceu
       .assembler("ender_bag")
       .itemInputs(
         "1x enderchests:ender_pouch",
         "4x minecraft:blaze_powder",
-        "2x #forge:ingots/steel",
+        "2x #forge:ingots/stainless_steel",
         "2x #minecraft:wool",
       )
       .itemOutputs("enderchests:ender_bag")
       .duration(100)
-      .EUt(128);
+      .EUt(256);
 
     event.recipes.gtceu
       .assembler("ender_chest")
       .itemInputs(
         "1x enderchests:ender_pouch",
         "4x minecraft:blaze_powder",
-        "2x #forge:ingots/steel",
+        "2x #forge:ingots/stainless_steel",
         "4x minecraft:obsidian",
       )
       .itemOutputs("enderchests:ender_chest")
       .duration(140)
-      .EUt(128);
+      .EUt(256);
 
     event.recipes.gtceu
       .assembler("ender_tank")
       .itemInputs(
         "1x gtceu:wood_drum",
         "4x minecraft:blaze_powder",
-        "2x #forge:ingots/steel",
+        "2x #forge:ingots/stainless_steel",
         "2x gtceu:ender_pearl_dust",
         "4x minecraft:obsidian",
       )
       .itemOutputs("endertanks:ender_tank")
       .duration(140)
-      .EUt(128);
+      .EUt(256);
 
     event.recipes.gtceu
       .assembler("ender_bucket")
       .itemInputs(
         "1x minecraft:bucket",
         "4x minecraft:blaze_powder",
-        "2x #forge:ingots/steel",
+        "2x #forge:ingots/stainless_steel",
         "2x gtceu:ender_pearl_dust",
         "1x minecraft:obsidian",
       )
       .itemOutputs("endertanks:ender_bucket")
       .duration(140)
-      .EUt(128);
+      .EUt(256);
   }
 })();

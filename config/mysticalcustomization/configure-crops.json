@@ -2,7 +2,49 @@
   "mysticalagriculture:stone": {
     "enabled": false
   },
+  "mysticalagriculture:dirt": {
+    "enabled": false
+  },
+  "mysticalagriculture:wood": {
+    "enabled": false
+  },
+  "mysticalagriculture:coal": {
+    "enabled": false
+  },
+  "mysticalagriculture:copper": {
+    "enabled": false
+  },
   "mysticalagriculture:iron": {
+    "enabled": false
+  },
+  "mysticalagriculture:gold": {
+    "enabled": false
+  },
+  "mysticalagriculture:redstone": {
+    "enabled": false
+  },
+  "mysticalagriculture:lapis_lazuli": {
+    "enabled": false
+  },
+  "mysticalagriculture:diamond": {
+    "enabled": false
+  },
+  "mysticalagriculture:emerald": {
+    "enabled": false
+  },
+  "mysticalagriculture:nether_quartz": {
+    "enabled": false
+  },
+  "mysticalagriculture:obsidian": {
+    "enabled": false
+  },
+  "mysticalagriculture:glowstone": {
+    "enabled": false
+  },
+  "mysticalagriculture:netherite": {
+    "enabled": false
+  },
+  "mysticalagriculture:experience": {
     "enabled": false
   }
 }

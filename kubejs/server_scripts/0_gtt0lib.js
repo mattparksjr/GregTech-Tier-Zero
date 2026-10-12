@@ -82,8 +82,8 @@ global.GTT0 = {
    */
   basicBlockCompressor(event, id, block, item, count, eu, duration) {
     const n = count === undefined ? 9 : count;
-    const p = count === undefined ? 12 : eu;
-    const d = count === undefined ? 100 : duration;
+    const p = eu === undefined ? 12 : eu;
+    const d = duration === undefined ? 100 : duration;
     event.recipes.gtceu
       .compressor(id)
       .itemInputs(`${n}x ${item}`)
@@ -101,16 +101,16 @@ global.GTT0 = {
    * @param {integer} eu not required
    * @param {integer} duration not required
    */
-  basicBlockCompressorBatch(event, mod, recipes, count, eu, duration) {
+  basicBlockCompressorBatch(event, mod, recipes) {
     recipes.forEach((r) => {
       this.basicBlockCompressor(
         event,
         r.id,
         r.block,
         r.item,
-        count,
-        eu,
-        duration,
+        r.count,
+        r.eu,
+        r.duration,
       );
     });
 

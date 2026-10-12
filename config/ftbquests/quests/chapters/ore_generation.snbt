@@ -14,6 +14,16 @@
 		x: 0.0d
 		y: 0.0d
 	}]
-	quests: [ ]
+	quests: [{
+		dependencies: ["02A0CDBE0307EAF4"]
+		id: "35A43B88F654CA7E"
+		tasks: [{
+			id: "6DF51B90234E1FFA"
+			title: "(M)ore ores!"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 2.0d
+	}]
 	title: "Ore Generation"
 }

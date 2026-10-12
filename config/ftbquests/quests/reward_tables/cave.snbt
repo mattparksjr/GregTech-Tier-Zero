@@ -1,0 +1,10 @@
+{
+	id: "6AA0BC5B2E72DC45"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{ count: 16, item: "minecraft:torch" }
+		{ count: 4, item: "minecraft:iron_ingot", random_bonus: 6 }
+	]
+	title: "cave"
+}

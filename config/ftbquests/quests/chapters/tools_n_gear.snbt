@@ -268,6 +268,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["5621B53841E43923"]
 			id: "5A8A5A43AEE7EEE3"
 			rewards: [
 				{
@@ -282,6 +283,7 @@
 					type: "item"
 				}
 			]
+			subtitle: "Yeehawwwwww"
 			tasks: [
 				{
 					id: "3A21D1B6C5930C7B"
@@ -295,7 +297,8 @@
 					type: "advancement"
 				}
 			]
-			x: 5.0d
+			title: "Hitchin' a ride"
+			x: 4.5d
 			y: 3.0d
 		}
 		{
@@ -410,6 +413,7 @@
 				type: "item"
 			}]
 			tasks: [{
+				count: 2L
 				id: "700523F042D6D591"
 				item: "sophisticatedbackpacks:upgrade_base"
 				type: "item"
@@ -417,6 +421,234 @@
 			x: 2.5d
 			y: -1.5d
 		}
+		{
+			dependencies: ["3C486B2F9687DA72"]
+			id: "5B3C9BDA683AA30A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5ABD18B8602CB079"
+				table_id: 6016984705256332934L
+				type: "random"
+			}]
+			subtitle: "Not useless!"
+			tasks: [{
+				id: "58A3692D4922E4E0"
+				item: "quark:seed_pouch"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5D5BC2A7937EDE00"]
+			description: [
+				"&b&n&lOops-E:&r&r&r"
+				""
+				"Swords don't really come with &dnatural&r abilities, but some can come with a free &6enchantment&r. For now, make some sort of iron sword. It is up to you if you want to mainly use &bvanilla&r or &dGT&r swords, but some GT materials offer &dlarge&r damage later on..."
+			]
+			id: "0A258CCF1DF5BD9C"
+			rewards: [
+				{
+					id: "2C63029C47B6FD5D"
+					item: {
+						Count: 1
+						id: "minecraft:shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "6754B38163694C6F"
+					item: "veggiesdelight:mashed_potatoes"
+					type: "item"
+				}
+			]
+			subtitle: "Iron time!"
+			tasks: [{
+				id: "625776775D3A3D65"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:iron_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:iron_sword"
+								tag: {
+									Damage: 0
+									DisallowContainerItem: 0b
+									GT.Behaviours: { }
+									GT.Tool: {
+										AttackDamage: 5.0f
+										AttackSpeed: -2.4f
+										DefaultEnchantments: [ ]
+										MaxDamage: 255
+									}
+									HideFlags: 2
+								}
+							}
+						]
+					}
+				}
+				title: "Make an iron sword"
+				type: "item"
+			}]
+			title: "Sword upgrade"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5621B53841E43923"]
+			id: "21D9C93AEA5FA182"
+			tasks: [{
+				id: "7C42FE89A5CF93CF"
+				item: "toolbelt:belt"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["21D9C93AEA5FA182"]
+			id: "5C5B6945FB4C5964"
+			tasks: [{
+				id: "4474D29B82C437E1"
+				item: "toolbelt:pouch"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4C3A24EE6DDEA73A"]
+			id: "68596073F6C277B4"
+			tasks: [{
+				id: "6E35805F66CFDBE6"
+				item: {
+					Count: 1
+					id: "sophisticatedbackpacks:gold_backpack"
+					tag: {
+						inventorySlots: 81
+						upgradeSlots: 3
+					}
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["68596073F6C277B4"]
+			id: "2340FA1C18AD54B4"
+			tasks: [{
+				id: "39B69BF202F9A979"
+				item: {
+					Count: 1
+					id: "sophisticatedbackpacks:diamond_backpack"
+					tag: {
+						inventorySlots: 108
+						upgradeSlots: 5
+					}
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2340FA1C18AD54B4"]
+			id: "60948FD77C2F2B24"
+			tasks: [{
+				id: "6669BA3816F42665"
+				item: {
+					Count: 1
+					id: "sophisticatedbackpacks:netherite_backpack"
+					tag: {
+						inventorySlots: 120
+						upgradeSlots: 7
+					}
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5D5BC2A7937EDE00"]
+			id: "4879742B693BB2F2"
+			subtitle: "Not just for looks..."
+			tasks: [
+				{
+					id: "6D2CB8BC7B8EDE31"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "53A76A52E671F553"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "602E4373C92FDA5C"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "00468AF9C47B2E9B"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7AE080D390E09F1C"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Diamond set"
+			x: 0.0d
+			y: -1.5d
+		}
 	]
+	subtitle: ["It gets dangerous"]
 	title: "Tools n' Gear"
 }

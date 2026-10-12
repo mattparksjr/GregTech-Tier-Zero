@@ -70,6 +70,28 @@
 			x: -1.5d
 			y: 4.0d
 		}
+		{
+			dependencies: ["3100D8693E80D0ED"]
+			id: "39913CF4C6EEBF65"
+			tasks: [{
+				id: "1F74516FFFED6C63"
+				item: "gtceu:lv_gas_turbine"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3100D8693E80D0ED"]
+			id: "399097672CBB201D"
+			tasks: [{
+				id: "2756066C502D6255"
+				item: "gtceu:lv_combustion"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
 	]
 	subtitle: ["Finally the power is on"]
 	title: "LV (Low voltage)"

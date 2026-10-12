@@ -1,0 +1,13 @@
+{
+	id: "43BB29C3A09CB270"
+	loot_size: 1
+	order_index: 6
+	rewards: [
+		{ item: "mcwwindows:hammer" }
+		{ item: "mcwroofs:roofing_hammer" }
+		{ item: "chisel:chisel" }
+		{ item: "minecraft:stonecutter" }
+		{ item: "handcrafted:hammer" }
+	]
+	title: "base"
+}

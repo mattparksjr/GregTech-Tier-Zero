@@ -67,7 +67,22 @@
 		}
 		{
 			dependencies: ["7EB9606E3DE994C2"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"I would &cnot&r start your boiler if I were you. You are gonna need some &9water&r first. This machine when powered with steam will pump &9water&r for you. "
+				""
+				"The &6chicken&r and the egg problem? Just use a bucket. Duh."
+				""
+				"&bThis quest unlocks a guide.&r"
+			]
 			id: "5EF557A57C0D6CE5"
+			rewards: [{
+				count: 4
+				id: "623DA671AE29BC3E"
+				item: "gtceu:wood_normal_fluid_pipe"
+				type: "item"
+			}]
 			subtitle: "I hope you have some rubber"
 			tasks: [
 				{
@@ -397,6 +412,27 @@
 			}]
 			x: 5.0d
 			y: 5.5d
+		}
+		{
+			dependencies: ["5EF557A57C0D6CE5"]
+			id: "04BE903930137E9F"
+			rewards: [{
+				count: 4
+				id: "1D548DD13CEEF205"
+				item: "gtceu:sticky_resin"
+				random_bonus: 12
+				type: "item"
+			}]
+			size: 0.75d
+			subtitle: "Please no more rubber...."
+			tasks: [{
+				id: "354ABF5296B177E6"
+				item: "gtceu:treated_wood_normal_fluid_pipe"
+				type: "item"
+			}]
+			title: "Need an upgrade?"
+			x: 1.0d
+			y: -3.0d
 		}
 	]
 	subtitle: ["The industrial revolution!"]

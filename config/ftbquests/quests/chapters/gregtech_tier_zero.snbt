@@ -346,6 +346,7 @@
 				"&6&n&lPROJECT MANAGER:&r&r&r"
 				""
 				"Yeah, you likely assumed you can just make charcoal. &4Wrong&r. "
+				""
 				"In order to craft more &6torches&r, you will need to make a &bCoke Oven&r. It's not all bad though, it has some useful &ebyproducts&r."
 			]
 			icon: "minecraft:charcoal"
@@ -372,8 +373,8 @@
 				}
 			]
 			title: "No torches yet..."
-			x: 3.5d
-			y: 3.5d
+			x: 4.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["73F509181B98AA29"]
@@ -594,8 +595,8 @@
 				}
 			]
 			title: "Let's get serious"
-			x: 6.5d
-			y: 3.5d
+			x: 5.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["73F509181B98AA29"]
@@ -608,7 +609,13 @@
 				""
 				"For your first one, make it out of &8flint.&r The better the material, the more &edurability.&r"
 			]
-			icon: "minecraft:oak_log"
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_axe"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "63D04BA5740B134B"
 			rewards: [{
 				count: 4
@@ -652,7 +659,7 @@
 							value: "minecraft:logs"
 						}
 					}
-					title: "32x Logs"
+					title: "64x Logs"
 					type: "item"
 				}
 			]
@@ -662,12 +669,25 @@
 		}
 		{
 			dependencies: ["6BE46F4DEB3D95CD"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"&dCaves&r &cdo not&r have ores. Just a heads up."
+				""
+				"They might still be &bworth&r exploring, but don't be &dexpecting&r to find any ore..."
+			]
 			icon: "minecraft:water_bucket"
 			id: "4FCED0BCD5B7DCBE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "308B2746F7F50EA2"
+				table_id: 7683348064101391429L
+				type: "choice"
+			}]
 			subtitle: "No matter how tempting"
 			tasks: [{
 				id: "09215F6322B44184"
-				title: "Dont enter random holes..."
+				title: "I will not enter random holes"
 				type: "checkmark"
 			}]
 			title: "Don't enter random holes"
@@ -809,7 +829,7 @@
 						value: "gtceu:tools/crafting_knives"
 					}
 				}
-				title: "Any #gtceu:tools/crafting_knives"
+				title: "Make any knife"
 				type: "item"
 			}]
 			title: "Chef time"
@@ -855,7 +875,7 @@
 				}
 			]
 			title: "The first alloy"
-			x: 8.5d
+			x: 9.5d
 			y: 3.5d
 		}
 		{
@@ -1039,8 +1059,8 @@
 				title: "It gets real dark..."
 				type: "checkmark"
 			}]
-			x: 5.5d
-			y: 2.5d
+			x: 5.625d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7EB9606E3DE994C2"]
@@ -1049,7 +1069,7 @@
 				""
 				"Steel will be a &6vital&r resource in the &7Low Voltage&r age."
 				""
-				"However for the time being, you should be stock piling &las much as you can&r in the background. I cannot overstate how much you will need going forward."
+				"However for the time being, you should be &bstock piling&r &las much as you can&r in the background. I cannot &6overstate&r how much you will &dneed&r going forward."
 				""
 				"For now, you need to build a &aPrimitve Blast Furnace&r."
 			]
@@ -1197,7 +1217,7 @@
 			description: [
 				"&6&n&lPROJECT MANAGER:&r&r&r"
 				""
-				"In order for a &ecasing&r to be made into a ma&6chine,&r you need to apply some &bupgrades.&r"
+				"In order for a &ecasing&r to be made into a &6machine,&r you need to apply some &bupgrades.&r"
 				""
 				"This requires &erubber,&r wires, and &dwrought&r iron. Expensive for now, but these machines will stay with you for &dquite&r some time."
 				""
@@ -1253,13 +1273,26 @@
 		}
 		{
 			dependencies: ["7FABAC2EF552971F"]
+			description: [
+				"&b&n&lOops-E:&r&r&r"
+				""
+				"There are many options to &bdecorate&r your base. Many new blocks and variants, and many cool &ddetails&r like chairs or &efactory&r blocks. Data shows that &cprisoners&r who develop their infrastructure are &d62&r% more likely to complete &6THE PROJECT&r"
+			]
 			icon: "minecraft:campfire"
 			id: "7D9AB4154C9E062A"
-			rewards: [{
-				id: "36E3121132296E87"
-				item: "mcwfurnitures:oak_modern_chair"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "36E3121132296E87"
+					item: "mcwfurnitures:oak_modern_chair"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2A06BB790A0E7E33"
+					table_id: 4880540541376049776L
+					type: "choice"
+				}
+			]
 			shape: "circle"
 			subtitle: "Warm and cozy <3"
 			tasks: [
@@ -1280,16 +1313,154 @@
 		}
 		{
 			dependencies: ["6C3F80DCBD0C5487"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"The &cnether&r is one of the dimensions connected to this planet. It contains &bvital&r resources for your progression into &6LV&r. "
+				""
+				"I'd check my &dgear&r if I were you..."
+			]
 			id: "121EFDE9E1D9945C"
+			rewards: [
+				{
+					id: "454CBAC6BE409BC8"
+					item: {
+						Count: 1
+						id: "minecraft:splash_potion"
+						tag: {
+							Potion: "minecraft:fire_resistance"
+						}
+					}
+					random_bonus: 3
+					type: "item"
+				}
+				{
+					id: "0BBD790B0DC3CE22"
+					item: {
+						Count: 1
+						id: "minecraft:splash_potion"
+						tag: {
+							Potion: "minecraft:long_fire_resistance"
+						}
+					}
+					random_bonus: 2
+					type: "item"
+				}
+			]
 			shape: "circle"
-			tasks: [{
-				dimension: "minecraft:the_nether"
-				id: "49F4843F973531CC"
-				title: "Into hell"
-				type: "dimension"
-			}]
+			subtitle: "Not really. It's just the nether"
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "49F4843F973531CC"
+					title: "Into hell"
+					type: "dimension"
+				}
+				{
+					count: 12L
+					id: "0751238B04684241"
+					item: { Count: 12, id: "minecraft:obsidian" }
+					type: "item"
+				}
+				{
+					id: "0CD334C4266A2F15"
+					item: {
+						Count: 1
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Into &4HELL"
 			x: 15.5d
 			y: 6.0d
+		}
+		{
+			dependencies: ["7FABAC2EF552971F"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"Again your &6confession&r proves useful. This planet has some animals we &cused&r to have back home like cows. &bLeather&r can be used to make some very &6useful&r tools. It is worth farming multiple animals. You will need a lot of &bmeat&r for all your meals later!"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:stone_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5621B53841E43923"
+			rewards: [
+				{
+					count: 4
+					id: "47567D29ACF67B38"
+					item: "minecraft:leather"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1EC6EA1E8B884624"
+					item: "minecraft:wheat"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0D0CFB76FC0FCAC8"
+					item: "minecraft:carrot"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "6527D95D8D68D095"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+			]
+			subtitle: "Run rabbit run!"
+			tasks: [
+				{
+					id: "2587CFE5DC94638C"
+					item: {
+						Count: 1
+						id: "minecraft:stone_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0B1BADE124D9F565"
+					item: { Count: 4, id: "minecraft:leather" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2745E978B45185C4"
+					item: { Count: 4, id: "minecraft:beef" }
+					type: "item"
+				}
+			]
+			title: "Sword! Ready!"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			icon: "ae2:sky_stone_chest"
+			id: "1851E8B7A96138A8"
+			invisible: true
+			tasks: [{
+				id: "6C80C764DF77AC5B"
+				structure: "ae2:meteorite"
+				title: "Meteor! Get down!"
+				type: "structure"
+			}]
+			x: 3.0d
+			y: 2.5d
 		}
 	]
 	subtitle: ["The sentence begins"]

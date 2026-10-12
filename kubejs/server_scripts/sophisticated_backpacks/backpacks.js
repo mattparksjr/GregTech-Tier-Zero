@@ -17,10 +17,23 @@
       "sophisticatedbackpacks:gold_backpack",
       "sophisticatedbackpacks:diamond_backpack",
       "sophisticatedbackpacks:netherite_backpack",
+      "sophisticatedbackpacks:upgrade_base",
     ]);
   }
 
   function add(event) {
+    event.recipes.gtceu
+      .assembler("upgrade_base")
+      .itemInputs(
+        "2x #forge:rings/bronze",
+        "3x minecraft:leather",
+        "2x farmersdelight:rope",
+        "2x #forge:rods/iron",
+      )
+      .itemOutputs("sophisticatedbackpacks:upgrade_base")
+      .duration(80)
+      .EUt(32);
+
     event.shaped("sophisticatedbackpacks:backpack", ["SLS", "LBL", "FPF"], {
       S: "#forge:screws/bronze",
       L: "minecraft:leather",
@@ -29,22 +42,21 @@
       P: "#forge:plates/red_alloy",
     });
 
-    /* 
     event.custom({
       type: "sophisticatedbackpacks:backpack_upgrade",
       conditions: [
         {
-          itemRegistryName: "iron_backpack",
-          type: "sophisticatedbackpacks:item_enabled",
+          type: "sophisticatedcore:item_enabled",
+          itemRegistryName: "sophisticatedbackpacks:copper_backpack",
         },
       ],
       pattern: ["SLS", "LBL", "FPF"],
       key: {
-        S: { tag: "forge:screws/wrought_iron" },
+        S: { tag: "#forge:screws/wrought_iron" },
         L: { item: "minecraft:leather" },
         B: { item: "sophisticatedbackpacks:backpack" },
         F: { item: "farmersdelight:rope" },
-        P: { tag: "forge:plates/wrought_iron" },
+        P: { item: "sophisticatedstorage:iron_chest" },
       },
       result: { item: "sophisticatedbackpacks:copper_backpack" },
     });
@@ -53,8 +65,8 @@
       type: "sophisticatedbackpacks:backpack_upgrade",
       conditions: [
         {
-          itemRegistryName: "iron_backpack",
-          type: "sophisticatedbackpacks:item_enabled",
+          type: "sophisticatedcore:item_enabled",
+          itemRegistryName: "sophisticatedbackpacks:iron_backpack",
         },
       ],
       pattern: ["SLS", "LBL", "FPF"],
@@ -72,8 +84,8 @@
       type: "sophisticatedbackpacks:backpack_upgrade",
       conditions: [
         {
-          itemRegistryName: "gold_backpack",
-          type: "sophisticatedbackpacks:item_enabled",
+          type: "sophisticatedcore:item_enabled",
+          itemRegistryName: "sophisticatedbackpacks:gold_backpack",
         },
       ],
       pattern: ["SLS", "LBL", "FPF"],
@@ -91,8 +103,8 @@
       type: "sophisticatedbackpacks:backpack_upgrade",
       conditions: [
         {
-          itemRegistryName: "diamond_backpack",
-          type: "sophisticatedbackpacks:item_enabled",
+          type: "sophisticatedcore:item_enabled",
+          itemRegistryName: "sophisticatedbackpacks:diamond_backpack",
         },
       ],
       pattern: ["SLS", "LBL", "FPF"],
@@ -110,19 +122,19 @@
       type: "sophisticatedbackpacks:backpack_upgrade",
       conditions: [
         {
-          itemRegistryName: "netherite_backpack",
-          type: "sophisticatedbackpacks:item_enabled",
+          type: "sophisticatedcore:item_enabled",
+          itemRegistryName: "sophisticatedbackpacks:netherite_backpack",
         },
       ],
       pattern: ["SLS", "LBL", "FPF"],
       key: {
-        S: { tag: "forge:screws/titanium" },
+        S: { tag: "forge:screws/stainless_steel" },
         L: { item: "minecraft:leather" },
         B: { item: "sophisticatedbackpacks:diamond_backpack" },
         F: { item: "gtceu:carbon_fibers" },
-        P: { tag: "forge:plates/epoxy" },
+        P: { tag: "forge:plates/polytetrafluoroethylene" },
       },
       result: { item: "sophisticatedbackpacks:netherite_backpack" },
-    });*/
+    });
   }
 })();

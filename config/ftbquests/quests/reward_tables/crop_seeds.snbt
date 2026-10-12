@@ -1,0 +1,19 @@
+{
+	id: "53809FB5C7C31E86"
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{ count: 8, item: "minecraft:wheat_seeds" }
+		{ count: 8, item: "minecraft:beetroot_seeds" }
+		{ count: 8, item: "supplementaries:flax_seeds" }
+		{ count: 8, item: "farmersdelight:tomato_seeds" }
+		{ count: 8, item: "delightful:cantaloupe_seeds" }
+		{ count: 8, item: "veggiesdelight:bellpepper_seeds" }
+		{ count: 8, item: "veggiesdelight:broccoli_seeds" }
+		{ count: 8, item: "veggiesdelight:cauliflower_seeds" }
+		{ count: 8, item: "veggiesdelight:turnip_seeds" }
+		{ count: 8, item: "veggiesdelight:zucchini_seeds" }
+		{ count: 8, item: "corn_delight:corn_seeds" }
+	]
+	title: "crop_seeds"
+}

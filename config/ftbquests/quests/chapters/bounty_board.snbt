@@ -6,16 +6,37 @@
 	icon: "mysticalagriculture:awakened_supremium_sword"
 	id: "039FC443CD3C6ACA"
 	order_index: 4
-	quest_links: [ ]
+	quest_links: [{
+		id: "18522B1FEB9787FA"
+		linked_quest: "5621B53841E43923"
+		x: -1.5d
+		y: 1.0d
+	}]
 	quests: [
 		{
+			dependencies: ["73F509181B98AA29"]
 			id: "689A09F656BC0FC6"
+			rewards: [
+				{
+					count: 2
+					id: "5C9B89D49EFBABF5"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+				{
+					id: "0323311A4C4F003C"
+					type: "xp"
+					xp: 20
+				}
+			]
+			subtitle: "This planet is full of them..."
 			tasks: [{
 				advancement: "minecraft:adventure/kill_a_mob"
 				criterion: ""
 				id: "6498F9240DC51247"
 				type: "advancement"
 			}]
+			title: "Kill a mob"
 			x: -1.5d
 			y: -0.5d
 		}
@@ -28,6 +49,7 @@
 				item: "minecraft:wheat_seeds"
 				type: "item"
 			}]
+			subtitle: "It's magical"
 			tasks: [{
 				id: "20DC674D5F13747B"
 				item: "mysticalagriculture:inferium_essence"
@@ -35,6 +57,66 @@
 			}]
 			x: -1.5d
 			y: -2.5d
+		}
+		{
+			dependencies: ["5621B53841E43923"]
+			id: "2D2E27926195B6EA"
+			tasks: [{
+				entity: "minecraft:cow"
+				id: "068CAE1E0F4FA14F"
+				type: "kill"
+				value: 25L
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5621B53841E43923"]
+			id: "7BB2E3A054B9EAEA"
+			tasks: [{
+				entity: "minecraft:chicken"
+				id: "31830A4E373F55C0"
+				type: "kill"
+				value: 25L
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5621B53841E43923"]
+			id: "616C690FAA78CBFB"
+			tasks: [{
+				entity: "minecraft:sheep"
+				id: "2AF86B61D08DC1BC"
+				type: "kill"
+				value: 25L
+			}]
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5621B53841E43923"]
+			id: "0EC1469CEC188B6A"
+			tasks: [{
+				entity: "minecraft:pig"
+				id: "70A83B6667FBE8CB"
+				type: "kill"
+				value: 25L
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5621B53841E43923"]
+			id: "0CFC4B7FA9506E1C"
+			tasks: [{
+				entity: "crabbersdelight:crab"
+				id: "08FD2B4B6412E7B1"
+				type: "kill"
+				value: 25L
+			}]
+			x: -4.5d
+			y: 2.5d
 		}
 	]
 	title: "Bounty Board"
