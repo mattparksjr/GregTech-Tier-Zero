@@ -134,7 +134,7 @@ hash = "f7ffe618783c0cab2ce06335a7bffe4595aa2bd412c4247af55ef9de226e2b9a"
 
 [[files]]
 file = "config/gtmutils.yaml"
-hash = "f39d1422b28edda73e85a1832b2f243ff101c18ff6f764c76dd0a8eedbb7e7dd"
+hash = "f7a913d48ce39443c28d177463c92f18f5e33ee64533257536ad0b6d0ec39aed"
 
 [[files]]
 file = "config/memorysettings.json"
@@ -369,16 +369,16 @@ file = "kubejs/assets/gtt0/lang/en_us.json"
 hash = "d283e3b4a8e3454d9d346e76555ea768d06aacf72bd501e028525e50c70f8a30"
 
 [[files]]
+file = "kubejs/assets/gtt0/textures/gui/icon.png"
+hash = "767787e282b97ca09f91ce04ce49eab39be03b7232d3867c1375c404e3e2924d"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/block/example_block.png"
 hash = "783d78bd1ee61d3b32273670dff9d82c34cd74c5ae899a10f104f473828d5bbc"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/item/intake_form.png"
-hash = "e4b6dfda3d00dfdaace1183165220e8f98e8bc28bdf21917f689a222c2e843b7"
-
-[[files]]
-file = "kubejs/assets/kubejs/textures/item/intake_slip.png"
-hash = "330fa6ad6300f10d4d213f0f29537feb056bfaeb6adb44fbd7c26e651ddc5546"
+file = "kubejs/assets/kubejs/textures/item/info_tablet.png"
+hash = "c4af6b9c0df4b37c5e85e267abd32e5fabbc94febdebc55b4dc10ef1e0dfee95"
 
 [[files]]
 file = "kubejs/assets/sophisticatedbackpacks/lang/en_us.json"
@@ -473,6 +473,10 @@ file = "kubejs/server_scripts/gtt0/gtt0_removals.js"
 hash = "2841fc4dc6bdc7f12448997e7a0ac8fb6e4954c6603db6ff06c5373e1bcfacde"
 
 [[files]]
+file = "kubejs/server_scripts/intro.js"
+hash = "2b879c50b6a8c1e26508186b962b90d025372d2a9f405da4fef40fa365c76f97"
+
+[[files]]
 file = "kubejs/server_scripts/mysticalagriculture/crafting.js"
 hash = "1ce7446ea98f33c39b5102a4df03b5ceaa6962df4f7d3c257323135dd1552dc5"
 
@@ -526,7 +530,11 @@ hash = "691d21c346ff9a88c853a5ff81e92dc7083fa551aece3c9ef2b779ed51a21ee9"
 
 [[files]]
 file = "kubejs/startup_scripts/gtt0items.js"
-hash = "23fbc5af52e7a960c60f20858f382145dd5e18c560ec6c5a41a3d20608b63436"
+hash = "65cc9f246c65e8894f2373765bd4c50cfe085a74279c3ab1d03c8d8876ea7159"
+
+[[files]]
+file = "kubejs/startup_scripts/intro.js"
+hash = "9408c22fa4a077a9851cae9dafb1e279d1a52613e967c46606442920e3fcb189"
 
 [[files]]
 file = "mods/addonslib.pw.toml"
