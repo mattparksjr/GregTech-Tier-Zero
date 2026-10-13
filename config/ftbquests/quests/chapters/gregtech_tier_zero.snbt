@@ -659,7 +659,7 @@
 							value: "minecraft:logs"
 						}
 					}
-					title: "64x Logs"
+					title: "32x Logs"
 					type: "item"
 				}
 			]

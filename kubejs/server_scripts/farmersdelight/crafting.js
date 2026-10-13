@@ -40,6 +40,13 @@
       R: "#forge:rods/iron",
     });
 
+    event
+      .shaped("farmersdelight:rich_soil_farmland", ["SH"], {
+        H: "#forge:tools/hoes",
+        S: "farmersdelight:rich_soil",
+      })
+      .damageIngredient(GTT0.MALLET, 2);
+
     event.shaped("farmersdelight:rope", ["SS", "SS"], {
       S: "farmersdelight:straw",
     });

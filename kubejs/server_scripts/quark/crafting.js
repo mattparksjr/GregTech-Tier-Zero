@@ -13,7 +13,10 @@
       "quark:tweaks/crafting/dirty_glass",
       "quark:tweaks/crafting/clear_glass",
     ]);
-    GTT0.removeByOutput(event, "Quark", ["quark:golden_carrot_crate"]);
+    GTT0.removeByOutput(event, "Quark", [
+      "quark:golden_carrot_crate",
+      "quark:feeding_trough",
+    ]);
   }
 
   function add(event) {
@@ -23,5 +26,16 @@
       "quark:golden_carrot_crate",
       "minecraft:golden_carrot",
     );
+
+    event.recipes.gtceu
+      .assembler("feeding_trough")
+      .itemInputs(
+        "7x gtceu:treated_wood_planks",
+        "1x minecraft:golden_carrot",
+        "2x #forge:rings/iron",
+      )
+      .itemOutputs("quark:feeding_trough")
+      .duration(100)
+      .EUt(32);
   }
 })();

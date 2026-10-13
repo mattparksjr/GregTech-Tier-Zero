@@ -52,7 +52,7 @@
       ],
       pattern: ["SLS", "LBL", "FPF"],
       key: {
-        S: { tag: "#forge:screws/wrought_iron" },
+        S: { tag: "forge:screws/wrought_iron" },
         L: { item: "minecraft:leather" },
         B: { item: "sophisticatedbackpacks:backpack" },
         F: { item: "farmersdelight:rope" },

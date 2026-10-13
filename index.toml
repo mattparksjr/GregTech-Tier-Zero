@@ -62,7 +62,7 @@ hash = "cbfcdaf90b369d9fe3b831b3c0c5582623401577d823806e8a2ad7a207b0bfae"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/gregtech_tier_zero.snbt"
-hash = "d21f594502d48db8688494e05090ae5ef2ea5bb702b7a91e9a2a0e4ca105e9e5"
+hash = "b29dcf1d2c275434e8f002880f7ea0bddb09517418a245a2f95cba68432822a2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/growing_rich.snbt"
@@ -223,6 +223,10 @@ hash = "535468d9a51c56b0e05dbfffa92ce66128a61a3d8566e969ccff1e40bee455eb"
 [[files]]
 file = "config/supplementaries-client.toml"
 hash = "09452203a4a93b5043d60521742c7ad34b1ae362df58876adf444dac0627ecd4"
+
+[[files]]
+file = "config/tectonic.json"
+hash = "fdbf951739d96207a1f3c7b3108dbd65936a944d1483d6138527541da7d92db7"
 
 [[files]]
 file = "config/undergarden-common.toml"
@@ -486,7 +490,7 @@ hash = "36c868a4d489659f2f63bb3fb2a7fbff55373fc9365723187893d7e8d18f4458"
 
 [[files]]
 file = "kubejs/server_scripts/0_gtt0lib.js"
-hash = "a1f15a4bb052c41a1bd7e6de93d97c9675112dfde0c2d1b439e2ad879702ed00"
+hash = "2956e416b8abf667a583246141510838787df89e71f06d85a4ef8b57a0ae3b8a"
 
 [[files]]
 file = "kubejs/server_scripts/ae2/crafting.js"
@@ -498,7 +502,7 @@ hash = "e4d7cc9ec0ccc75f8f8e1462f84fad3ae73cbee820ca1504329f50b1d72cec89"
 
 [[files]]
 file = "kubejs/server_scripts/farmersdelight/crafting.js"
-hash = "6786dc2be3c4013ecb261376eadc20df3756d87530581281595f1bdd2308f399"
+hash = "53125685a352197d5f850484e35124d10a41ea549bb7255eab647e589efb9033"
 
 [[files]]
 file = "kubejs/server_scripts/greg/crafting.js"
@@ -530,7 +534,7 @@ hash = "5e44003cd1dda8365af4283b6220e90adc2fa93ab5e742ed136085ed08058fbb"
 
 [[files]]
 file = "kubejs/server_scripts/sophisticated_backpacks/backpacks.js"
-hash = "6d76de84b0883059f085d15b92f0e58265980e5475454f9744cf93e495adc02b"
+hash = "50511ea1669f1df351496f7eb15d51d97f1916e8fa2fced9e395222df15adcf7"
 
 [[files]]
 file = "kubejs/server_scripts/supplementaries/crafting.js"
@@ -650,6 +654,11 @@ metafile = true
 [[files]]
 file = "mods/attributefix.pw.toml"
 hash = "828d571a91296e2ee3be1ec509619ea01f6a61a03958461fbe543bd377daa194"
+metafile = true
+
+[[files]]
+file = "mods/auth-me.pw.toml"
+hash = "a9765b6887b4018717455e9caf1411f2afe216bcd127ef57f4577212c164f8b7"
 metafile = true
 
 [[files]]
@@ -1300,6 +1309,11 @@ metafile = true
 [[files]]
 file = "mods/natures-compass.pw.toml"
 hash = "937c7ae4c8274ee0717546a2ca736099b1640a178b8f06027f62ca310517e413"
+metafile = true
+
+[[files]]
+file = "mods/neapolitan.pw.toml"
+hash = "7bb01abc93a90da48ae8452f501ba60e32c468438c0f864e6bc7ef1b5746c712"
 metafile = true
 
 [[files]]

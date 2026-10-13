@@ -38,10 +38,10 @@
         .shaped(`minecraft:${color}_bed`, ["CCC", "PPP", "FHF"], {
           C: `minecraft:${color}_carpet`,
           P: "#minecraft:planks",
-          H: GTT0.MELLET,
+          H: GTT0.MALLET,
           F: "#forge:fences/wooden",
         })
-        .damageIngredient(GTT0.MELLET, 10);
+        .damageIngredient(GTT0.MALLET, 10);
     });
 
     event.shaped("minecraft:crafting_table", ["FF", "PP"], {

@@ -17,4 +17,5 @@ ClientEvents.lang("en_us", (event) => {
   );
   event.add("gtceu.jei.ore_vein.under_inferium", "Inferium Vein (Undergarden)");
   event.add("gtceu.jei.ore_vein.end_inferium", "Inferium Vein (End)");
+  event.add("gtceu.jei.ore_vein.nether_inferium", "Inferium Vein (Nether)");
 });

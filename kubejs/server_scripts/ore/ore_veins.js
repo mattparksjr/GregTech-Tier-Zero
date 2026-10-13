@@ -161,12 +161,42 @@ GTCEuServerEvents.oreVeins((event) => {
           .layer((l) =>
             l
               .weight(3)
-              .block(() => Block.getBlock("mysticalagriculture:inferium_ore"))
+              .block(() =>
+                Block.getBlock("mysticalagriculture:deepslate_inferium_ore"),
+              )
               .size(2, 4),
           )
           .layer((l) => l.weight(2).mat(GTMaterials.Quartzite).size(1, 2))
           .layer((l) => l.weight(1).mat(GTMaterials.CertusQuartz).size(1, 1))
           .layer((l) => l.weight(2).mat(GTMaterials.Barite).size(1, 2)),
+      ),
+    );
+  });
+
+  event.add("gtt0:nether_inferium", (vein) => {
+    vein.weight(25);
+    vein.clusterSize(20);
+    vein.density(0.2);
+    vein.discardChanceOnAirExposure(0);
+
+    vein.layer("netherrack");
+    vein.biomes("#minecraft:is_nether");
+
+    vein.heightRangeUniform(10, 69);
+
+    vein.layeredVeinGenerator((generator) =>
+      generator.buildLayerPattern((pattern) =>
+        pattern
+          .layer((l) =>
+            l
+              .weight(2)
+              .block(() =>
+                Block.getBlock("mysticalagradditions:nether_inferium_ore"),
+              )
+              .size(2, 4),
+          )
+          .layer((l) => l.weight(1).mat(GTMaterials.NetherQuartz).size(1, 1))
+          .layer((l) => l.weight(1).mat(GTMaterials.CertusQuartz).size(1, 1)),
       ),
     );
   });
@@ -188,7 +218,9 @@ GTCEuServerEvents.oreVeins((event) => {
           .layer((l) =>
             l
               .weight(3)
-              .block(() => Block.getBlock("mysticalagriculture:inferium_ore"))
+              .block(() =>
+                Block.getBlock("mysticalagradditions:end_inferium_ore"),
+              )
               .size(2, 4),
           )
           .layer((l) => l.weight(1).mat(GTMaterials.NetherQuartz).size(1, 1))

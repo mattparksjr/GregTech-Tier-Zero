@@ -12,7 +12,6 @@
 
     GTT0.removeByOutput(event, "Mystical Agriculture", [
       "mysticalagriculture:prosperity_shard",
-      "mysticalagriculture:inferium_furnace",
       "mysticalagriculture:prudentium_furnace",
       "mysticalagriculture:turtium_furnace",
       "mysticalagriculture:imperium_furnace",

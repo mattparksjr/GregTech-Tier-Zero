@@ -37,9 +37,14 @@ const DISABLED_ITEMS = [
   "aquaculturedelight:neptunium_knife",
   "enderio:sag_mill",
   "enderio:alloy_smelter",
+  "enderio:primitive_alloy_smelter",
   "enderio:wood_gear",
   "enderio:stone_gear",
   "expatternprovider:circuit_cutter",
+  "mysticalagriculture:inferium_upgrade",
+  "mysticalagriculture:inferium_furnace",
+  "mysticalagriculture:inferium_ore",
+  "mysticalagriculture:inferium_growth_accelerator",
 ];
 
 const HIDDEN_MODS = ["itemfilters", "ftbquests", "ftbfiltersystem"];
