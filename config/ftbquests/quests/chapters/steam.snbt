@@ -5,6 +5,14 @@
 	group: "747D79EDBEC17087"
 	icon: "gtceu:bronze_ingot"
 	id: "02F925CFA2D21219"
+	images: [{
+		height: 1.0d
+		image: "gtceu:block/multiblock/steam_oven/overlay_front_active"
+		rotation: 0.0d
+		width: 1.0d
+		x: 0.5d
+		y: 2.0d
+	}]
 	order_index: 0
 	quest_links: [{
 		id: "13573EFB5535F735"
@@ -21,6 +29,8 @@
 				"Think your ready for the &6steam age&r? Or do you just want that &dbackpack&r?"
 				"In any case, you will need a &eboiler&r. Take note that it generates a very tiny amount of &fsteam&r, so a pipe buffer might be helpful."
 				""
+				"At &d6mb/t&r, each &6boiler&r makes &d120&r steam/s"
+				""
 				"&bThis quest unlocks a guide.&r"
 			]
 			id: "7EB9606E3DE994C2"
@@ -30,6 +40,7 @@
 				item: "gtceu:bronze_normal_fluid_pipe"
 				type: "item"
 			}]
+			size: 1.5d
 			subtitle: "Hot and steamy..."
 			tasks: [{
 				id: "7601AAA9AB5D1C44"
@@ -49,8 +60,8 @@
 				item: "minecraft:anvil"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 2.0d
+			x: 10.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5282C6AFBBF7E46D"]
@@ -62,15 +73,15 @@
 				type: "item"
 			}]
 			title: "Compressor"
-			x: 5.5d
-			y: 2.0d
+			x: 10.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7EB9606E3DE994C2"]
 			description: [
 				"&6&n&lPROJECT MANAGER:&r&r&r"
 				""
-				"I would &cnot&r start your boiler if I were you. You are gonna need some &9water&r first. This machine when powered with steam will pump &9water&r for you. "
+				"I would &cnot&r start your boiler if I were you. You are gonna need some &9water&r first. This machine, when powered with steam will pump &9water&r for you. "
 				""
 				"The &6chicken&r and the egg problem? Just use a bucket. Duh."
 				""
@@ -114,18 +125,40 @@
 		}
 		{
 			dependencies: ["7EB9606E3DE994C2"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"The first &6steam machine&r you will need is the &balloy smelter&r. It is required to craft some of the later &dsteam&r machines, and even unlocks some super &buseful&r tools like the backpack."
+				""
+				"The alloy smelter may use a lot of &6steam&r, but it will give you a better &eratio&r on your bronze crafting!"
+			]
 			id: "5BF8E876B8B7C6D3"
+			rewards: [
+				{
+					count: 15
+					id: "7E045F73BAA5A688"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "53E011108332285F"
+					item: "gtceu:tin_ingot"
+					type: "item"
+				}
+			]
+			subtitle: "More bronze for your... copper"
 			tasks: [{
 				id: "3AC9ED812A35DB33"
 				item: "gtceu:lp_steam_alloy_smelter"
 				type: "item"
 			}]
-			title: "First alloys"
+			title: "Easier alloys!"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["5282C6AFBBF7E46D"]
+			dependencies: ["3BA8D6F3BBBAA35C"]
 			id: "7B926195E8B0ACD5"
 			subtitle: "Doubles ore btw..."
 			tasks: [{
@@ -134,8 +167,8 @@
 				type: "item"
 			}]
 			title: "Grinder"
-			x: 7.5d
-			y: 0.0d
+			x: 7.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5D5AA282130DEA7A"]
@@ -166,12 +199,40 @@
 				type: "item"
 			}]
 			title: "Forge Hammer"
-			x: 4.5d
-			y: 4.0d
+			x: 9.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7EB9606E3DE994C2"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"One of the first alloys you will make is &cRed Alloy&r. "
+				""
+				"Red alloy requires &bredstone&r and &6copper&r. At a &d4:1&r ratio."
+				""
+				"If I were you I would &bstock&r up on redstone."
+			]
+			icon: "minecraft:redstone"
 			id: "547910044CE964F4"
+			rewards: [
+				{
+					id: "72E17E5CD865C775"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:strong_swiftness"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "45365ACF40A99AD9"
+					item: "artifacts:digging_claws"
+					type: "item"
+				}
+			]
 			shape: "circle"
 			subtitle: "Wow thats alot!"
 			tasks: [
@@ -189,11 +250,14 @@
 				}
 			]
 			title: "Early game redstone"
-			x: 1.0d
+			x: 2.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["5BF8E876B8B7C6D3"]
+			dependencies: [
+				"5BF8E876B8B7C6D3"
+				"547910044CE964F4"
+			]
 			id: "5D5AA282130DEA7A"
 			subtitle: "Electric (not really)"
 			tasks: [{
@@ -216,8 +280,8 @@
 				type: "item"
 			}]
 			title: "Glass"
-			x: 2.5d
-			y: -2.0d
+			x: 2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["66A937134133C737"]
@@ -228,8 +292,8 @@
 				type: "item"
 			}]
 			title: "Extractor!"
-			x: 4.5d
-			y: -2.0d
+			x: 4.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["7FBE2CC8962691CD"]
@@ -267,6 +331,7 @@
 		{
 			dependencies: ["305AF102D042430D"]
 			id: "57B0250DAC3E10BB"
+			subtitle: "Try less caffeine <3"
 			tasks: [
 				{
 					count: 8L
@@ -280,9 +345,22 @@
 					item: { Count: 8, id: "gtceu:tin_single_cable" }
 					type: "item"
 				}
+				{
+					count: 8L
+					id: "5651D20E39A4431F"
+					item: { Count: 8, id: "gtceu:red_alloy_single_wire" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "0409AAE0A17A91A1"
+					item: { Count: 8, id: "gtceu:red_alloy_single_cable" }
+					type: "item"
+				}
 			]
-			x: 10.5d
-			y: -2.0d
+			title: "Wired?"
+			x: 9.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["7FBE2CC8962691CD"]
@@ -294,7 +372,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -3.0d
+			y: -4.125d
 		}
 		{
 			dependencies: ["7EB9606E3DE994C2"]
@@ -321,15 +399,29 @@
 		}
 		{
 			dependencies: ["7EB9606E3DE994C2"]
+			description: [
+				"&b&n&lOops-E:&r&r&r"
+				""
+				"If you have access to &8steel&r, and are running &clow&r on steam, the &bhigh pressure&r variant may be for you!"
+				""
+				"At &d15mb/t&r, the &6boiler&r makes &d300&r steam /s"
+			]
 			id: "6C76BC81184800C4"
+			rewards: [{
+				count: 8
+				id: "7F8446329BFEAD11"
+				item: "gtceu:coke_gem"
+				type: "item"
+			}]
 			size: 0.75d
+			subtitle: "MORE! MOOOORE!"
 			tasks: [{
 				id: "00C36C3B1212238B"
 				item: "gtceu:hp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -1.0d
+			x: -1.125d
+			y: -1.125d
 		}
 		{
 			dependencies: ["7EB9606E3DE994C2"]
@@ -362,7 +454,7 @@
 				item: "gtceu:lp_steam_furnace"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 5.5d
 			y: 1.5d
 		}
 		{
@@ -374,8 +466,8 @@
 				item: "gtceu:hp_steam_furnace"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 3.0d
+			x: 4.5d
+			y: 1.875d
 		}
 		{
 			dependencies: ["7B926195E8B0ACD5"]
@@ -386,8 +478,8 @@
 				item: "gtceu:hp_steam_macerator"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -0.5d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7499DE8654E6D85F"]
@@ -398,8 +490,8 @@
 				item: "gtceu:hp_steam_compressor"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 3.5d
+			x: 11.625d
+			y: 0.75d
 		}
 		{
 			dependencies: ["54F4AB7CC785BB84"]
@@ -410,8 +502,8 @@
 				item: "gtceu:hp_steam_forge_hammer"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 5.5d
+			x: 9.75d
+			y: 2.625d
 		}
 		{
 			dependencies: ["5EF557A57C0D6CE5"]
@@ -431,8 +523,96 @@
 				type: "item"
 			}]
 			title: "Need an upgrade?"
-			x: 1.0d
-			y: -3.0d
+			x: 0.375d
+			y: -3.375d
+		}
+		{
+			dependencies: ["5282C6AFBBF7E46D"]
+			icon: "minecraft:diamond"
+			id: "3BA8D6F3BBBAA35C"
+			subtitle: "Not so rare huh..."
+			tasks: [
+				{
+					count: 16L
+					id: "5CF0A7FF27B824E9"
+					item: { Count: 16, id: "gtceu:raw_diamond" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "19EAF958A888CC91"
+					item: { Count: 16, id: "gtceu:raw_coal" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "47D9E9638F259649"
+					item: { Count: 16, id: "gtceu:raw_graphite" }
+					type: "item"
+				}
+			]
+			title: "&bDiamonds!"
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"7499DE8654E6D85F"
+				"57B0250DAC3E10BB"
+			]
+			id: "16AD5762D2E67A43"
+			tasks: [{
+				id: "6AD2C884161A08BE"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			title: "The electronic age"
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["121EFDE9E1D9945C"]
+			id: "398C1D1A4CDB4103"
+			tasks: [{
+				count: 16L
+				id: "554B5911D4594604"
+				item: { Count: 16, id: "gtceu:raw_quartzite" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5BF8E876B8B7C6D3"]
+			icon: "gtceu:block_casting_mold"
+			id: "275471BFC5AF3D0A"
+			shape: "circle"
+			size: 0.75d
+			tasks: [
+				{
+					id: "403B718466D7BA86"
+					item: "gtceu:empty_mold"
+					type: "item"
+				}
+				{
+					id: "555F69E982BE3469"
+					item: "gtceu:plate_casting_mold"
+					type: "item"
+				}
+				{
+					id: "6D6FC59C94C4E4A4"
+					item: "gtceu:block_casting_mold"
+					type: "item"
+				}
+				{
+					id: "219AC39E5145F322"
+					item: "gtceu:ingot_casting_mold"
+					type: "item"
+				}
+			]
+			title: "Mold?"
+			x: 3.0d
+			y: -1.5d
 		}
 	]
 	subtitle: ["The industrial revolution!"]

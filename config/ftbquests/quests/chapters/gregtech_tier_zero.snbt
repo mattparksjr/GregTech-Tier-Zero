@@ -7,6 +7,32 @@
 	hide_quest_until_deps_complete: true
 	icon: "gtceu:sterling_silver_gear"
 	id: "497C7ED634653892"
+	images: [
+		{
+			height: 1.0d
+			image: "factory_blocks:block/fan/fast"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			height: 1.0d
+			image: "factory_blocks:block/fan/malfunction"
+			rotation: 0.0d
+			width: 1.0d
+			x: 12.0d
+			y: -0.5d
+		}
+		{
+			height: 1.0d
+			image: "gtceu:block/casings/coils/machine_coil_molybdenum_disilicide_bloom"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: -1.0d
+		}
+	]
 	order_index: 0
 	progression_mode: "linear"
 	quest_links: [
@@ -373,8 +399,8 @@
 				}
 			]
 			title: "No torches yet..."
-			x: 4.5d
-			y: 5.0d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["73F509181B98AA29"]
@@ -595,8 +621,8 @@
 				}
 			]
 			title: "Let's get serious"
-			x: 5.5d
-			y: 3.0d
+			x: 5.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["73F509181B98AA29"]
@@ -1059,8 +1085,8 @@
 				title: "It gets real dark..."
 				type: "checkmark"
 			}]
-			x: 5.625d
-			y: 1.5d
+			x: 4.875d
+			y: 2.25d
 		}
 		{
 			dependencies: ["7EB9606E3DE994C2"]
@@ -1221,6 +1247,8 @@
 				""
 				"This requires &erubber,&r wires, and &dwrought&r iron. Expensive for now, but these machines will stay with you for &dquite&r some time."
 				""
+				"Next, you'll need a &ecircuit&r to make it think."
+				""
 				"&bThis quest unlocks a guide.&r"
 			]
 			id: "4ADB39C7032E2DC0"
@@ -1320,6 +1348,7 @@
 				""
 				"I'd check my &dgear&r if I were you..."
 			]
+			icon: "minecraft:warped_roots"
 			id: "121EFDE9E1D9945C"
 			rewards: [
 				{
@@ -1446,20 +1475,94 @@
 				}
 			]
 			title: "Sword! Ready!"
-			x: 7.5d
-			y: 3.0d
+			x: 6.5d
+			y: 3.5d
 		}
 		{
 			icon: "ae2:sky_stone_chest"
 			id: "1851E8B7A96138A8"
 			invisible: true
+			rewards: [
+				{
+					count: 8
+					id: "4F6AC0FD15D857DD"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "1F1ACA66B142226A"
+					item: "ae2:guide"
+					type: "item"
+				}
+				{
+					id: "765881B8B1CCAD1B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "Hope you got them all"
 			tasks: [{
-				id: "6C80C764DF77AC5B"
-				structure: "ae2:meteorite"
-				title: "Meteor! Get down!"
-				type: "structure"
+				icon: "ae2:sky_stone_block"
+				id: "31CCD7EF2F16B14B"
+				observe_type: 0
+				timer: 0L
+				title: "Find a meteor!"
+				to_observe: "ae2:sky_stone_block"
+				type: "observation"
 			}]
-			x: 3.0d
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7FABAC2EF552971F"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"As you &6progress&r, you should try to farm or automate &bresources&r you need a lot of in advance. Otherwise new &btechnology&r may become &ctoo much&r of a challange. "
+				""
+				"For now, &6rubber trees&r are super important for the &7LV&r age, and easy to farm. Oh, and &cdon't forget&r to grow some sugar!"
+			]
+			icon: "gtceu:sticky_resin"
+			id: "4A6FF09BC64E00D5"
+			rewards: [
+				{
+					count: 4
+					id: "4A5C6A423D93A683"
+					item: "gtceu:sticky_resin"
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					count: 4
+					id: "17CFCB0FDF000D4A"
+					item: "gtceu:rubber_sapling"
+					random_bonus: 6
+					type: "item"
+				}
+			]
+			subtitle: "Farms, farms, and more farms!"
+			tasks: [
+				{
+					count: 4L
+					id: "11768F487A3ECD14"
+					item: "gtceu:rubber_sapling"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "378FB73C7E92AF2B"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2F7AC13EA8E52651"
+					item: "gtceu:sticky_resin"
+					type: "item"
+				}
+			]
+			title: "Don't slack..."
+			x: 8.0d
 			y: 2.5d
 		}
 	]

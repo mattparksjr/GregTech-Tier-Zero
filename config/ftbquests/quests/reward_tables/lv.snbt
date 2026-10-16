@@ -1,0 +1,69 @@
+{
+	id: "0C6E4BD0A0F96602"
+	loot_size: 1
+	order_index: 7
+	rewards: [
+		{ count: 8, item: "gtceu:steel_ingot" }
+		{ count: 16, item: "minecraft:iron_ingot" }
+		{ item: "gtceu:basic_electronic_circuit", weight: 0.2f }
+		{ item: "gtceu:lv_machine_casing", weight: 0.5f }
+		{ count: 4, item: "veggiesdelight:steak_and_broccoli" }
+		{ count: 4, item: "veggiesdelight:garlic_rice_with_cauliflower" }
+		{ count: 4, item: "veggiesdelight:pasta_with_broccoli" }
+		{ count: 4, item: "veggiesdelight:shakshouka" }
+		{ item: "gtceu:lv_steam_turbine", weight: 0.7f }
+		{ count: 64, item: "minecraft:rotten_flesh" }
+		{
+			item: {
+				Count: 1
+				id: "gtceu:aluminium_mining_hammer"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						AoEColumn: 1
+						AoELayer: 0
+						AoERow: 1
+						MaxAoEColumn: 1
+						MaxAoELayer: 0
+						MaxAoERow: 1
+						TorchPlacing: 1b
+					}
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 2
+						MaxDamage: 2303
+						ToolSpeed: 6.4f
+					}
+					HideFlags: 2
+				}
+			}
+			weight: 0.7f
+		}
+		{ count: 16, item: "gtceu:wrought_iron_ingot" }
+		{ count: 4, item: "mysticalagriculture:inferium_seeds" }
+		{ count: 16, item: "mysticalagriculture:inferium_essence" }
+		{
+			item: {
+				Count: 1
+				id: "mysticalagriculture:inferium_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			weight: 0.9f
+		}
+		{
+			item: {
+				Count: 1
+				id: "mysticalagriculture:watering_can"
+				tag: {
+					Water: 0b
+				}
+			}
+		}
+		{ count: 2, item: "mysticalagriculture:inferium_farmland", weight: 0.7f }
+		{ count: 4, item: "veggiesdelight:sweet_potato_pancakes" }
+	]
+	title: "lv"
+}

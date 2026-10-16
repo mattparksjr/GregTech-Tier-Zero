@@ -1,0 +1,16 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storage_solutions"
+	group: "654FB0E3A74D3A0F"
+	id: "56848F2B0DCA2357"
+	order_index: 5
+	quest_links: [{
+		id: "7C28AE231D1EDCFF"
+		linked_quest: "7FABAC2EF552971F"
+		x: 0.0d
+		y: 0.0d
+	}]
+	quests: [ ]
+	title: "Storage Solutions"
+}

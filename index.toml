@@ -45,6 +45,98 @@ file = "config/expanded_ecosphere/replace_biomes.json5"
 hash = "d26f38c0b743644dcc7191b54563abb3b73500b8e542bc32d71a5eea7904f7ca"
 
 [[files]]
+file = "config/fancymenu/assets/gtt0.png"
+hash = "004c5e67f723bafc1c4b1a5964da0437f4fc9fbe7b6485410816900a6dad1b63"
+
+[[files]]
+file = "config/fancymenu/assets/ichannel0.png"
+hash = "9ce2c610625bb1daa82078cc09d685d9f22e8a23d1bea481bcbb1ff97d13fcc8"
+
+[[files]]
+file = "config/fancymenu/assets/ichannel1.png"
+hash = "fb06bf58239a59cf0e2cc69b1b081941ac4ccb69b180920f4c5f22544e00b072"
+
+[[files]]
+file = "config/fancymenu/assets/ichannel2.png"
+hash = "1d3fc037fe537cc7792ff0fec2081a4d6d3ac95ce599b841a981cf62f9fd7a6f"
+
+[[files]]
+file = "config/fancymenu/assets/ichannel3.png"
+hash = "1d3fc037fe537cc7792ff0fec2081a4d6d3ac95ce599b841a981cf62f9fd7a6f"
+
+[[files]]
+file = "config/fancymenu/assets/icon.png"
+hash = "767787e282b97ca09f91ce04ce49eab39be03b7232d3867c1375c404e3e2924d"
+
+[[files]]
+file = "config/fancymenu/custom_gui_screens.txt"
+hash = "70d16728cf70d22a96bdb3a471ca550701e0cb08564d7d8f881349da97df161a"
+
+[[files]]
+file = "config/fancymenu/customizablemenus.txt"
+hash = "9f0ada5a7f0193d2d717d1c1736f545f5235c2597213731493b97488617ebbf2"
+
+[[files]]
+file = "config/fancymenu/customization/intro_layout.txt"
+hash = "5bcc265a47fcb6fb2bebe4df1308a168c39c98e4ce8370e8d825f4cc0ddbd39f"
+
+[[files]]
+file = "config/fancymenu/customization/title_screen_layout.txt"
+hash = "9e46b99bd3ed1d7446a115094a8df638326b3f11f7118398d555db75d0a11ddb"
+
+[[files]]
+file = "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget"
+hash = "051d700ea7ff1bd626063d60f9a9cd65a0af1fed5903706d1e70fce20bcb2495"
+
+[[files]]
+file = "config/fancymenu/legacy_checklist.txt"
+hash = "9a25d3dc708e43eabafce5479a13c02dae15bc7f673afb2745b8b2ba48a97dc0"
+
+[[files]]
+file = "config/fancymenu/options.txt"
+hash = "df2b487409d28bf5cac1840aa64eff0d2ca155b696177f6a9c534fdd0c25a2a5"
+
+[[files]]
+file = "config/fancymenu/ui_themes/cherry_blossom.json"
+hash = "993c16664fe2d1b9e8ad107bf1c19c1dbb244729c403ed058ca2e54616dc5452"
+
+[[files]]
+file = "config/fancymenu/ui_themes/cozy_campfire.json"
+hash = "1e7505231b9d99e6315845043ce810dfc7004ce1d8f5a4ceddb4ecb96c03ac50"
+
+[[files]]
+file = "config/fancymenu/ui_themes/dark.json"
+hash = "01e2a3b5d250c0259a7f97f0d353785bfeab6d7ee2e147c16bb910f1d23e9498"
+
+[[files]]
+file = "config/fancymenu/ui_themes/dark_high_contrast.json"
+hash = "54316a2b309ddb472b9133f8ccb8694dce9b57be6ebcfb3c2e9d1bbfdade3f26"
+
+[[files]]
+file = "config/fancymenu/ui_themes/light.json"
+hash = "a05e95f7b62f338049fe0045d9a6a50060d3aba52d5ab83ac1ed6ff55cac1153"
+
+[[files]]
+file = "config/fancymenu/ui_themes/light_high_contrast.json"
+hash = "7c96ba2f2cb4d59d20eaf88960de7a9308ce8a3460c4e1757e07c42e174ea65a"
+
+[[files]]
+file = "config/fancymenu/ui_themes/pumpkin_soup.json"
+hash = "7c6a5d5b19e53ca2f88371c2e867f51339b045697aab29864df5877a6bba9311"
+
+[[files]]
+file = "config/fancymenu/ui_themes/purple_void.json"
+hash = "fa63577441fd576ebac90ecf06b7ded376cbf80ca5103d398bc9a73a25c6c2c0"
+
+[[files]]
+file = "config/fancymenu/ui_themes/spooky_season.json"
+hash = "cfa46554bbb027efe3c2184a073ee652000acac2500cd5136764f901355ec0cd"
+
+[[files]]
+file = "config/fancymenu/user_variables.db"
+hash = "3d7d4cda73d6bde134a568ccbe4e8d2e7fbe701570012b71fa45acdb2258c823"
+
+[[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "973380600dcc71aef58bfe34f2f6c83d7a023b7eab71b92c2196c30bdd8fa59d"
 
@@ -54,23 +146,23 @@ hash = "b388a9675766d574d578061c88583645ab7001aa561d3a77c2cc7d5236269272"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/circuits.snbt"
-hash = "3a6654480b4f6b3271707eec2adb456112bd2aacc1c6a82132e6d67bbc5bf95f"
+hash = "0f6ba3a1f867daa2e21e754803900488c6c8cb1bd6f9858b69d48ba3cc35fdb8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ev_extreme_voltage.snbt"
-hash = "d59c8abb175597d0c1faa445408c4b939d25ecbcf62e2e479ef5d2705e00dcd7"
+hash = "8a0c80809e1b3a1713e611ba93dfd86686687c0818bfcf491c34113ce0f63cf4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/food__you.snbt"
-hash = "cbfcdaf90b369d9fe3b831b3c0c5582623401577d823806e8a2ad7a207b0bfae"
+hash = "788dec68b6af54fd65860d4e5eb6bd65ade5c870a46384542ffdca2de3c4dba4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/gregtech_tier_zero.snbt"
-hash = "d21f594502d48db8688494e05090ae5ef2ea5bb702b7a91e9a2a0e4ca105e9e5"
+hash = "363673aa452931980c4170c1c142e459b05360111903b230196ce5e1492a5b6f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/growing_rich.snbt"
-hash = "7a63801a2b6fe39ed3d5b7a5f6da0e171a87ab312eebc15d8502eded6629f511"
+hash = "fb279ae58b21b91429baa08f3fb00ad63e7975f443b10025de991e622e14dff9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/heating_coils.snbt"
@@ -78,27 +170,27 @@ hash = "75fdfa8215dd47313d2155388ac14c0019947bc5a493781612e1e0ae2fdc1f81"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/hv_high_voltage.snbt"
-hash = "20e90d216a6c7a0904c76c711471b27defc0e123533b7f12ca5b4163f1c97910"
+hash = "cf0161582e93a25e22ccb70d3b0a0947defb0816bea15bbf9f52f32cfdbc17a9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/iv_insane_voltage.snbt"
-hash = "f606640c78021e49227f1a9c49bcedc5217dd8cc1d3549f3bd5fecc901bfffff"
+hash = "30b24aaa01e9a7cecfcb3b4babdfcdfdd1f4d635cc8cbf8a4aea535c8583d94d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/luv_ludicrous_voltage.snbt"
-hash = "befdf1692baf60c149e7f3b30efea8a114e57bfe504fbbd49364977dacc79ff6"
+hash = "e24a2a6ea7de112ef24d18e972a14b46f0013299e3caa4c2d7b03b3cbd77be02"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/lv_low_voltage.snbt"
-hash = "54289422271b89f48251aa8aba17a550841aa773d5f14e30a8b193c7205816fe"
+hash = "a0aca01c4eadfcf388c12fe476f6929386ebf68943f0b172b5980aca66d2d518"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/multiblocks_galore.snbt"
-hash = "b81ea66db54ad9067d13ebb7528939ee8e0a84ef715ad87da7ddeae4395a0646"
+hash = "3acbbe8fbf097fbb9b2fe828728aaa7d7274af52029768d66e68d5c8f2cfd13c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mv_medium_voltage.snbt"
-hash = "eef3cb033cd196eb53a403ae14ad7ee4191b78705b5053b94b3a3f74ab02acf8"
+hash = "17871986f7855d6b861846b7e686f2916e7fb61654c6d65b4a43d59104ff1ce1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ore_generation.snbt"
@@ -110,11 +202,15 @@ hash = "d1da01cca88ffcd003d2cf6c334454dd2a566c2e5d1e6546380bd45ec23e5348"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/steam.snbt"
-hash = "5a84f72676dd9abae593fc567d556e007027e20f60370813d9da0b8f543ccc39"
+hash = "d3ad06e85e74b042457a3245293138d11aef767948b396e14419ab8d43c625b8"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/storage_solutions.snbt"
+hash = "9104a4495aeb3ba254b10e66f9d43164922159dadad9251bbe627445f72fb8c7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/the_project.snbt"
-hash = "60e575fec453406c83604a0841bf25f3bf54fa13f6e135fa5d0bf26160b32119"
+hash = "80e61bf85387f29d1e263f37ab5e09fdeb8286db37b31c360dadfd935c60950f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/the_undergarden.snbt"
@@ -122,19 +218,19 @@ hash = "828229c814fe007b4e5eea658e5881680586f438e0f6495b6ac5e6fa811909af"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tips_and_tricks.snbt"
-hash = "d186f718c68f3b6efcb923cb008390a250c17aa79a9939b59ea934584f3651ce"
+hash = "91e49f273ff1682a4f13249a069ed96104ad76dfbc909c210dc5a59ca42fded0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tools_n_gear.snbt"
-hash = "6bfa13cc0f3c3a0488d0a71dace89079a07f8a4f8ba660b074e602d9cad5a3c1"
+hash = "42663a97bdc9da1a33da8aab2546d51acbd463d2af6aadc6145533cc8883f557"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/uv_ultimate_voltage.snbt"
-hash = "c763a310d93b3315b9a3c3ee97ef34340195298e45470f4ef0afb9035e6ad99f"
+hash = "2feeeb3a2995e1effa4bf47e17f5713caf8434c7e721f33acf6f77a5c47eee2f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/zpm_zero_point_module.snbt"
-hash = "0e422a11fd60f3c2b6fee83847d026e9b2d6d22b8f8fa0f45c49c272c5590296"
+hash = "e2a454268d7a6724a501bceb5665979c5f678e471cce9809ee28349d42f65cb7"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -159,6 +255,10 @@ hash = "7175ad076d88f9589dd1ff7c3f142245fb072f50ba34000b91baa526ca377bf3"
 [[files]]
 file = "config/ftbquests/quests/reward_tables/crop_seeds.snbt"
 hash = "79eee477b11a1f171caafbaa3e2483e240d2582ac0f58d69cc12f2b3881518cb"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/lv.snbt"
+hash = "eaab2aced09cef1e2ded1de77ce3c70161dd8e97e8110b77d2e4d1728d1e2a29"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/paper_lights.snbt"
@@ -198,7 +298,7 @@ hash = "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
 
 [[files]]
 file = "config/mysticalcustomization/configure-crops.json"
-hash = "d7a2c3364477256f0f7780334236e8b7972396ee2e07274abc0ae7bdd79f2458"
+hash = "0e8546c0f7872294c0fe33b889201ec7300e352b9a9545d17f7d94398e36ee33"
 
 [[files]]
 file = "config/mysticalcustomization/configure-mobsoultypes.json"
@@ -219,6 +319,10 @@ hash = "41995fd8463a9297c687c982560c4366c63be7d8c5179b68be95bf8ed92fcda3"
 [[files]]
 file = "config/quark-common.toml"
 hash = "daa82552e9cc501eba2d4980c42d6d64fd82b766c64852af110af817c78e7685"
+
+[[files]]
+file = "config/sereneseasons/seasons.toml"
+hash = "53829be2c1d73b30ea3cdf56ade4e190911b4ff1a050c6eeea4a9bca94e6d1d9"
 
 [[files]]
 file = "config/structurify.json"
@@ -274,7 +378,11 @@ hash = "57d677e5d75b437b911ae93584d335305ffcf0822c13fd6ae9d8d42495d497ce"
 
 [[files]]
 file = "kubejs/assets/ftbquests/ftb_quests_theme.txt"
-hash = "ef92b16e467c2cc7d4cb1096e0ef6df3b2d81c96c720cb026252acec047c5c80"
+hash = "5a0c600310e57749992ebfa5769e8247f17345587e515b436a477c58ae3e459c"
+
+[[files]]
+file = "kubejs/assets/ftbquests/lang/en_us.json"
+hash = "52b40d6f47b06529ebee067451cc81cc45426d300e50c4bc8ac1d8af74e9048e"
 
 [[files]]
 file = "kubejs/assets/ftbquests/textures/gui/terminal/alert.png"
@@ -409,6 +517,18 @@ file = "kubejs/assets/ftbquests/textures/item/book.png"
 hash = "c4af6b9c0df4b37c5e85e267abd32e5fabbc94febdebc55b4dc10ef1e0dfee95"
 
 [[files]]
+file = "kubejs/assets/ftbquests/textures/shapes/gear/background.png"
+hash = "3420b68ca3a69e98161b97858236e588de4bb7b20748eefa28ec990716b085c0"
+
+[[files]]
+file = "kubejs/assets/ftbquests/textures/shapes/gear/outline.png"
+hash = "33747d7d2cf2e9e845a09d60971e423cb9dcc9d24d31e8f2db37fbb73dc74441"
+
+[[files]]
+file = "kubejs/assets/ftbquests/textures/shapes/gear/shape.png"
+hash = "ec448d54d41f9182d352824b6b79a5f1ed0a8f4db77368b59ca384eb42fcfa1a"
+
+[[files]]
 file = "kubejs/assets/gtceu/lang/en_us.json"
 hash = "b250066d7259de55d1bf1e5b7cf13911b8b6f4d1eee7e07db5f7b1081ca25d98"
 
@@ -502,7 +622,7 @@ hash = "ab40874a5219c77dad741a88b91f03b89316c69bf72ba5292ee2492cf67fbbeb"
 
 [[files]]
 file = "kubejs/server_scripts/botanypots/crafting.js"
-hash = "88ea688ca5dcad185a82c64a8b51a97672ec77c503a323eddb5f62d362b611d0"
+hash = "91e22bf6ba736bf7c250b76a834ddf8cd3931d77e5d3ade76390ef976944c243"
 
 [[files]]
 file = "kubejs/server_scripts/enderio/crafting.js"
@@ -510,7 +630,7 @@ hash = "e4d7cc9ec0ccc75f8f8e1462f84fad3ae73cbee820ca1504329f50b1d72cec89"
 
 [[files]]
 file = "kubejs/server_scripts/farmersdelight/crafting.js"
-hash = "bf3f98c54e064406fb482cb543837b3ae098423b776ddf84a835f7350636f636"
+hash = "302565e330b094b15bc454661b7c6d26f1a11c244d867920986743d77da06b7e"
 
 [[files]]
 file = "kubejs/server_scripts/greg/crafting.js"
@@ -518,7 +638,7 @@ hash = "570b96216744610c07c5a7feb4d24d2cabfa1d19f5f22c404b426058cab9666d"
 
 [[files]]
 file = "kubejs/server_scripts/gtt0/gtt0_crafting.js"
-hash = "3ea82d55ca13772cc510c11e3ebc1414bf930f7e3b18fac7cb42e069fbbc34b5"
+hash = "d33f10aefc697ad3faa50f33c1ce1ba97cf52fa268eee7ca253b993bf152e914"
 
 [[files]]
 file = "kubejs/server_scripts/gtt0/gtt0_removals.js"
@@ -526,7 +646,7 @@ hash = "9538828e4812f44ca38ba6bbcf520d1525dd9f22c597b66183f495fbd80fff6b"
 
 [[files]]
 file = "kubejs/server_scripts/intro.js"
-hash = "86908a141d98e97f0f020bc9f5610067215109ceafce3efafa598a64d3a3443d"
+hash = "1e834aba61d8516e30dfde720b776a893288ef51e5bfed839d6767e654a404bd"
 
 [[files]]
 file = "kubejs/server_scripts/mysticalagriculture/crafting.js"
@@ -534,7 +654,7 @@ hash = "408c69f6b9b158f77881339eb7efa26c93ad500351b68585c8537c66296a44b5"
 
 [[files]]
 file = "kubejs/server_scripts/mysticalagriculture/essence/inferium.js"
-hash = "0e07a848600d8ce33e6566e9869ce60b7a45ffa856a404e3b7ca119f0b1f9bf3"
+hash = "e2c31f16d7787bee200ef15f1a7655d0a1c1b20151596e8155d0c5a6387c5727"
 
 [[files]]
 file = "kubejs/server_scripts/ore/ore_veins.js"
@@ -591,6 +711,11 @@ hash = "0877117fe5c3062bb0f813cf6a80a6ea14960ee6f364497fd843c3c7cd3437b3"
 [[files]]
 file = "mods/abnormals-delight.pw.toml"
 hash = "7dd9dc01340eb4fbd334ac9d4277b403dfd1e406e0230111aed4b9210465b116"
+metafile = true
+
+[[files]]
+file = "mods/adaptive-performance-tweaks.pw.toml"
+hash = "390fe9bb8b3804343397bd07ed7393c74a52b113bb5f78bb9fc414dd5574d5e3"
 metafile = true
 
 [[files]]
@@ -969,6 +1094,16 @@ hash = "75aa30ef36dde7927544464166076277e1990d7a5ea15309b6280440e14e5225"
 metafile = true
 
 [[files]]
+file = "mods/fancy-entity-renderer.pw.toml"
+hash = "2eff18bde289fad8ef80d895992873112b910ce1e3b15f22d80ec2b55c72e9fa"
+metafile = true
+
+[[files]]
+file = "mods/fancymenu.pw.toml"
+hash = "90891e466f3793b8555b147b7d61971f6143783f311cedc427a2185e6daacc81"
+metafile = true
+
+[[files]]
 file = "mods/farmers-delight.pw.toml"
 hash = "349c06c50fa315e9eb618d115f7d1391062706021c645e14f86afae3109d4662"
 metafile = true
@@ -1174,6 +1309,11 @@ hash = "664a573384edf644e9b788c7c29fe32593917ac8283bb794cc46b471a0a6504a"
 metafile = true
 
 [[files]]
+file = "mods/konkrete.pw.toml"
+hash = "143102be700d30cf68d0988bc9f1b523545e37b7074ee786faac56a388e6f0e9"
+metafile = true
+
+[[files]]
 file = "mods/kubejs-botany-pots.pw.toml"
 hash = "1923934e70e6c3ea996b9f263ba35fa95a2249aa366ab4d3d64d5a0d4793f54e"
 metafile = true
@@ -1276,6 +1416,11 @@ metafile = true
 [[files]]
 file = "mods/make-bubbles-pop.pw.toml"
 hash = "04ac0d3a90122b53343e4603d4c2e6765637a79021a3f9b4aa80989683394bd8"
+metafile = true
+
+[[files]]
+file = "mods/melody.pw.toml"
+hash = "0b9cc190139b0eb2d5f0153f05717ed53edd499ad2a3eeee99ea75d22fd0ef1c"
 metafile = true
 
 [[files]]

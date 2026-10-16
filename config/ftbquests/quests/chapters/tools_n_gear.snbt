@@ -584,7 +584,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["5D5BC2A7937EDE00"]
+			dependencies: ["3BA8D6F3BBBAA35C"]
 			id: "4879742B693BB2F2"
 			subtitle: "Not just for looks..."
 			tasks: [
@@ -646,6 +646,113 @@
 			]
 			title: "Diamond set"
 			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4879742B693BB2F2"]
+			id: "4967B3963157FF27"
+			tasks: [
+				{
+					id: "0C20EE163E5135FB"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:inferium_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3CF58A45BE6752BB"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:inferium_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "58DC25895368607A"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:inferium_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7FF58B2F8BD792F1"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:inferium_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "24233EAADAE27833"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:inferium_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "28AC7E76DBE8A1D5"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:inferium_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "027A6F191718D4A0"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:inferium_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "10D9873D9340CFF3"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:inferium_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "69A1B7FB34A8388F"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:inferium_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -1.5d
 			y: -1.5d
 		}
 	]

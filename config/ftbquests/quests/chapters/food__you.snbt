@@ -7,6 +7,14 @@
 	hide_quest_until_deps_complete: true
 	icon: "corn_delight:cornbread_batter"
 	id: "0A7C83D2F80CA56A"
+	images: [{
+		height: 1.0d
+		image: "minecraft:textures/particle/goldheart_2.png"
+		rotation: 0.0d
+		width: 1.0d
+		x: 0.0d
+		y: -1.5d
+	}]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -358,7 +366,7 @@
 				type: "checkmark"
 			}]
 			x: 1.5d
-			y: 1.5d
+			y: 0.75d
 		}
 		{
 			dependencies: ["3C486B2F9687DA72"]
@@ -491,6 +499,25 @@
 			]
 			x: 4.5d
 			y: 4.5d
+		}
+		{
+			dependencies: ["3C486B2F9687DA72"]
+			id: "255850C249069910"
+			rewards: [{
+				count: 8
+				id: "72D6BA8B7804EC26"
+				item: "crabbersdelight:tropical_fish_slice"
+				type: "item"
+			}]
+			subtitle: "Humble, but good"
+			tasks: [{
+				id: "49A09CB44F8A6321"
+				item: "minecraft:smoker"
+				type: "item"
+			}]
+			title: "Kitchen 0.5"
+			x: 1.5d
+			y: 2.0d
 		}
 	]
 	subtitle: ["Staying fed!"]

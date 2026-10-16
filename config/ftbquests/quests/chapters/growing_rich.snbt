@@ -12,6 +12,26 @@
 		x: 0.0d
 		y: 0.5d
 	}]
-	quests: [ ]
+	quests: [{
+		dependencies: [
+			"0CD7B40783F7E492"
+			"549BA6DEF2F6C211"
+		]
+		id: "620972A605C95C64"
+		rewards: [{
+			count: 5
+			id: "62321C0AC85955B3"
+			item: "mysticalagriculture:inferium_seeds"
+			random_bonus: 5
+			type: "item"
+		}]
+		tasks: [{
+			id: "70E4648BDD2D80FC"
+			item: "mysticalagriculture:inferium_seeds"
+			type: "item"
+		}]
+		x: 0.0d
+		y: -1.5d
+	}]
 	title: "Growing rich"
 }

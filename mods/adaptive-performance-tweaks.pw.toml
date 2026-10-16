@@ -1,0 +1,13 @@
+name = "Adaptive Performance Tweaks"
+filename = "adaptive_performance_tweaks-forge-1.20.1-12.10.0.jar"
+side = "server"
+
+[download]
+hash-format = "sha1"
+hash = "4dd5dd8b5dfa0f72d2341c1fc0f83a684f517db4"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9093052
+project-id = 450269

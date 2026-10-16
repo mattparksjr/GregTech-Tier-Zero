@@ -14,6 +14,7 @@
 	order_index: 1
 	quest_links: [ ]
 	quests: [{
+		dependencies: ["194255C29507A318"]
 		id: "784A9972859C1CB8"
 		tasks: [{
 			id: "123B89C3E7EAA629"

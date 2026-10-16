@@ -19,6 +19,7 @@
 				""
 				"Oh, and quests that unlock a &bguide&r will say so at the &dbottom&r!"
 			]
+			icon: "gtceu:computer_monitor_cover"
 			id: "458115097246E448"
 			rewards: [{
 				id: "372B8505B009FE9D"
@@ -44,6 +45,7 @@
 				""
 				"This will allow you to share both &dland claims&r and quest progress. Each person also gets their own &drewards&r!"
 			]
+			icon: "artifacts:crystal_heart"
 			id: "64D3DAAD174AA783"
 			rewards: [{
 				id: "60A360903C6D5BB9"
@@ -68,6 +70,7 @@
 				""
 				"Check &d/pregen&r!"
 			]
+			icon: "enderio:zombie_electrode"
 			id: "3DB5A9A5A02EABFA"
 			rewards: [{
 				id: "1CCAA6F2B2BB8D8A"
@@ -86,6 +89,7 @@
 		}
 		{
 			dependencies: ["6C1065B1FF6840F0"]
+			icon: "gtceu:fine_annealed_copper_wire"
 			id: "40C1F198C4696CF8"
 			tasks: [{
 				id: "7B4DBF77CDB87075"
@@ -134,6 +138,46 @@
 			title: "Boiler Safety"
 			x: 2.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["5D5BC2A7937EDE00"]
+			icon: {
+				Count: 1
+				id: "gtceu:naquadah_alloy_wrench"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						Mode: 2b
+						RelocateMinedBlocks: 1b
+						RelocateMobDrops: 1b
+					}
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 5
+						MaxDamage: 3071
+						ToolSpeed: 44.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "0EA007E572FC7996"
+			subtitle: "How do pipes... pipe."
+			tasks: [{
+				id: "53A8A2602C562EAD"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_wrenches)"
+					}
+				}
+				title: "Any #gtceu:tools/crafting_wrenches"
+				type: "item"
+			}]
+			title: "Pipe wrench???"
+			x: 4.0d
+			y: -2.0d
 		}
 	]
 	title: "Tips and Tricks"

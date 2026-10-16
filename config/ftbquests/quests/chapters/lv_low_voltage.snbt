@@ -8,12 +8,26 @@
 	icon: "gtceu:lv_electric_motor"
 	id: "01014269DA87B155"
 	order_index: 1
-	quest_links: [{
-		id: "7017817C89249E42"
-		linked_quest: "4ADB39C7032E2DC0"
-		x: 0.0d
-		y: 0.0d
-	}]
+	quest_links: [
+		{
+			id: "7017817C89249E42"
+			linked_quest: "4ADB39C7032E2DC0"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "1B9347FAACAFF86D"
+			linked_quest: "7889D33188C2788D"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			id: "6AE622BC64A15652"
+			linked_quest: "620972A605C95C64"
+			x: 4.5d
+			y: 3.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["3100D8693E80D0ED"]
@@ -34,12 +48,22 @@
 				item: "gtceu:lv_assembler"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 2.5d
+			x: 2.0d
+			y: 6.0d
 		}
 		{
-			dependencies: ["4ADB39C7032E2DC0"]
+			dependencies: [
+				"4ADB39C7032E2DC0"
+				"16AD5762D2E67A43"
+			]
+			dependency_requirement: "one_completed"
 			id: "3100D8693E80D0ED"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "11AB002A140C05B7"
+				table_id: 895736735319287298L
+				type: "random"
+			}]
 			tasks: [{
 				id: "68166D9AA51C35BC"
 				item: "gtceu:lv_steam_turbine"
@@ -91,6 +115,40 @@
 			}]
 			x: -2.0d
 			y: 0.5d
+		}
+		{
+			dependencies: ["784567B055370771"]
+			id: "2D81C2E2BB56CA3D"
+			tasks: [{
+				count: 16L
+				id: "7D888B83BA27DDFE"
+				item: { Count: 16, id: "gtceu:cupronickel_ingot" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3100D8693E80D0ED"]
+			id: "36BB30A427152CD6"
+			tasks: [{
+				id: "3B4F676D7051B3DD"
+				item: "gtceu:lv_extractor"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3100D8693E80D0ED"]
+			id: "549BA6DEF2F6C211"
+			tasks: [{
+				id: "3F4B5619E70ED70D"
+				item: "gtceu:lv_chemical_bath"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
 		}
 	]
 	subtitle: ["Finally the power is on"]
