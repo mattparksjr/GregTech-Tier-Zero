@@ -22,7 +22,7 @@
   }
 
   function add(event) {
-    console.log("GTT0: Adding Farmers Delight recipes");
+    GTT0.log("Farmers Delight", "Adding recipies");
 
     event
       .shaped("farmersdelight:cutting_board", [" H ", "SPP", "SPP"], {

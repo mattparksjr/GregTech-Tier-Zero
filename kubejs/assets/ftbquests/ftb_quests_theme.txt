@@ -1,6 +1,6 @@
 [*]
 background: ftbquests:textures/gui/terminal/background.png; tile_size=64
-extra_quest_shapes: terminal
+extra_quest_shapes: gear
 text_color: #A8FFC0
 hover_text_color: #E9FFF0
 disabled_text_color: #3C6B4A

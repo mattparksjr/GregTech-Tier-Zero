@@ -179,10 +179,10 @@
 
     event.recipes.gtceu
       .alloy_smelter("glass_from_dust")
-      .itemInputs("2x gtceu:glass_dust")
+      .itemInputs("3x gtceu:glass_dust")
       .itemOutputs("minecraft:glass")
-      .EUt(2)
-      .duration(100);
+      .EUt(16)
+      .duration(240);
 
     event.recipes.gtceu
       .assembler("ender_pouch")

@@ -18,7 +18,7 @@
       "mysticalagriculture:inferium_gemstone",
       "mysticalagriculture:inferium_seeds",
       "mysticalagradditions:inferium_coal",
-      "mysticalagriculture:inferium_apple",
+      "mysticalagradditions:inferium_apple",
       "mysticalagriculture:inferium_ingot_block",
       "mysticalagradditions:inferium_coal_block",
       "mysticalagriculture:inferium_gemstone_block",
@@ -126,8 +126,6 @@
       .duration(60)
       .EUt(24);
 
-    // add auth mod, fix the apple recipe, it might not be base mod lol
-
     event.recipes.gtceu
       .forge_hammer("inferium_coal_block_uncraft")
       .itemInputs("mysticalagradditions:inferium_coal_block")
@@ -163,8 +161,8 @@
       .itemInputs("2x minecraft:wheat_seeds")
       .inputFluids("mysticalagradditions:molten_inferium 1152")
       .itemOutputs("mysticalagriculture:inferium_seeds")
-      .duration(120)
-      .EUt(24);
+      .duration(300)
+      .EUt(32);
 
     event.recipes.gtceu
       .assembler("inferium_paxel")
