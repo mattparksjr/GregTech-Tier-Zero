@@ -1,0 +1,7 @@
+{
+  "minecraft:crafting": { "order": 0 },
+  "gtceu:assembler": { "order": 1 },
+  "farmersdelight:cutting": { "order": 10 },
+  "emi:anvil_repairing": { "order": 49 },
+  "emi:grinding": { "order": 50 }
+}

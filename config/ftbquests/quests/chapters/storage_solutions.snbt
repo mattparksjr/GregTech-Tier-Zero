@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "storage_solutions"
 	group: "654FB0E3A74D3A0F"
+	icon: "ae2:cell_component_256k"
 	id: "56848F2B0DCA2357"
 	order_index: 5
 	quest_links: [{
@@ -11,6 +12,43 @@
 		x: 0.0d
 		y: 0.0d
 	}]
-	quests: [ ]
-	title: "Storage Solutions"
+	quests: [
+		{
+			dependencies: ["7FABAC2EF552971F"]
+			id: "709CA45157EE163A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "225A91C4BC38425D"
+				table_id: 760424142743922967L
+				type: "choice"
+			}]
+			tasks: [{
+				count: 8L
+				id: "0BA860C55D9C2B35"
+				item: { Count: 8, id: "minecraft:chest" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["709CA45157EE163A"]
+			id: "1E638BEE58B52559"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "706A45145B05B0D6"
+				table_id: 760424142743922967L
+				type: "choice"
+			}]
+			tasks: [{
+				count: 4L
+				id: "3A405D45FDDE9CED"
+				item: { Count: 4, id: "minecraft:barrel" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+	]
+	title: "&bStorage Solutions"
 }

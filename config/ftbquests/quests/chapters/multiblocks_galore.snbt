@@ -92,6 +92,28 @@
 			x: -2.0d
 			y: 0.5d
 		}
+		{
+			dependencies: ["6C76BC81184800C4"]
+			id: "430BA048155D09B3"
+			tasks: [{
+				id: "190BA8AD2F4A5E55"
+				item: "gtceu:bronze_large_boiler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["430BA048155D09B3"]
+			id: "362F95FC13511558"
+			tasks: [{
+				id: "2198C9C943732BEB"
+				item: "gtceu:steel_large_boiler"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
 	]
 	title: "Multiblocks Galore"
 }

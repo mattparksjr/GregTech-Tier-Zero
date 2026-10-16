@@ -2,7 +2,7 @@
   const GTT0 = global.GTT0;
 
   ServerEvents.recipes((event) => {
-    GTT0.logModify("Sophisticated Backpacks");
+    GTT0.logModify("Sophisticated Backpacks (Backpacks)");
 
     remove(event);
     add(event);
@@ -17,23 +17,10 @@
       "sophisticatedbackpacks:gold_backpack",
       "sophisticatedbackpacks:diamond_backpack",
       "sophisticatedbackpacks:netherite_backpack",
-      "sophisticatedbackpacks:upgrade_base",
     ]);
   }
 
   function add(event) {
-    event.recipes.gtceu
-      .assembler("upgrade_base")
-      .itemInputs(
-        "2x #forge:rings/bronze",
-        "3x minecraft:leather",
-        "2x farmersdelight:rope",
-        "2x #forge:rods/iron",
-      )
-      .itemOutputs("sophisticatedbackpacks:upgrade_base")
-      .duration(80)
-      .EUt(32);
-
     event.shaped("sophisticatedbackpacks:backpack", ["SLS", "LBL", "FPF"], {
       S: "#forge:screws/bronze",
       L: "minecraft:leather",
@@ -128,7 +115,7 @@
       ],
       pattern: ["SLS", "LBL", "FPF"],
       key: {
-        S: { tag: "forge:screws/stainless_steel" },
+        S: { tag: "forge:screws/titanium" },
         L: { item: "minecraft:leather" },
         B: { item: "sophisticatedbackpacks:diamond_backpack" },
         F: { item: "gtceu:carbon_fibers" },

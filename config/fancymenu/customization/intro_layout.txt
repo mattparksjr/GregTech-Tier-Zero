@@ -470,7 +470,7 @@ element {
 
 element {
   interactable = true
-  source = Welcome to Tier Zero. You have been sent here as punishment for. Your crimes. You must complete THE PROJECT in order to return home. If you think you have what it takes, your quest log can be opened with '`' or in your inventory
+  source = Welcome to Tier Zero. You have been sent here as punishment for your crimes. You must complete THE PROJECT in order to return home. If you think you have what it takes, your quest log can be opened with '`' or in your inventory
   source_mode = direct
   shadow = true
   enable_scrolling = false

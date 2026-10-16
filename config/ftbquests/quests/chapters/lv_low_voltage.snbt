@@ -7,6 +7,14 @@
 	hide_quest_until_deps_complete: true
 	icon: "gtceu:lv_electric_motor"
 	id: "01014269DA87B155"
+	images: [{
+		height: 1.4d
+		image: "gtceu:item/lv_electric_motor"
+		rotation: 0.0d
+		width: 1.4d
+		x: -0.5d
+		y: -1.5d
+	}]
 	order_index: 1
 	quest_links: [
 		{
@@ -26,6 +34,12 @@
 			linked_quest: "620972A605C95C64"
 			x: 4.5d
 			y: 3.0d
+		}
+		{
+			id: "10EF50C9F038E097"
+			linked_quest: "6BA7536D730F159C"
+			x: 0.0d
+			y: 6.0d
 		}
 	]
 	quests: [

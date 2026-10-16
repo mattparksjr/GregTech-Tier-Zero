@@ -45,9 +45,17 @@ const DISABLED_ITEMS = [
   "mysticalagriculture:inferium_furnace",
   "mysticalagriculture:inferium_ore",
   "mysticalagriculture:inferium_growth_accelerator",
+  "mysticalagriculture:prudentium_upgrade",
+  "mysticalagriculture:prudentium_furnace",
+  "mysticalagriculture:prudentium_ore",
+  "mysticalagriculture:prudentium_growth_accelerator",
+  "sophisticatedbackpacks:battery_upgrade",
+  "sophisticatedbackpacks:mob_catcher_upgrade",
+  "sophisticatedbackpacks:compacting_upgrade",
+  "sophisticatedbackpacks:stack_downgrade_tier_1",
+  "sophisticatedbackpacks:stack_downgrade_tier_2",
+  "sophisticatedbackpacks:stack_downgrade_tier_3",
 ];
-
-const HIDDEN_MODS = ["itemfilters", "ftbquests", "ftbfiltersystem"];
 
 ServerEvents.recipes((event) => {
   console.log("GTT0 - Running mass item recipe removals.");
@@ -59,9 +67,6 @@ ServerEvents.recipes((event) => {
 ServerEvents.tags("item", (event) => {
   console.log("GTT0: - Running mass item #hide tag");
   DISABLED_ITEMS.forEach((item) => {
-    event.add("c:hidden_from_recipe_viewers", item);
-  });
-  HIDDEN_MODS.forEach((item) => {
     event.add("c:hidden_from_recipe_viewers", item);
   });
 });

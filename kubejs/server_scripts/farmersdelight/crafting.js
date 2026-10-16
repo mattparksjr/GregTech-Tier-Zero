@@ -18,6 +18,7 @@
       "farmersdelight:wheat_dough_from_water",
       "farmersdelight:wheat_dough_from_egg",
       "farmersdelight:rope",
+      "farmersdelight:canvas",
     ]);
   }
 
@@ -48,6 +49,10 @@
       .damageIngredient(GTT0.MALLET, 2);
 
     event.shaped("farmersdelight:rope", ["SS", "SS"], {
+      S: "farmersdelight:straw",
+    });
+
+    event.shaped("farmersdelight:canvas", ["SSS", "SSS", "SSS"], {
       S: "farmersdelight:straw",
     });
 

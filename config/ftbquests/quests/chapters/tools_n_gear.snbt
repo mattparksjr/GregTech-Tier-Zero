@@ -27,6 +27,13 @@
 	quests: [
 		{
 			dependencies: ["5D5BC2A7937EDE00"]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "4B4B828B17B26F5D"
 			subtitle: "No iron man jokes I promise"
 			tasks: [
@@ -303,6 +310,13 @@
 		}
 		{
 			dependencies: ["6C3F80DCBD0C5487"]
+			icon: {
+				Count: 1
+				id: "gtceu:steel_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "082BF2B876E9E0E6"
 			rewards: [{
 				id: "146AC7F709278C64"
@@ -585,6 +599,13 @@
 		}
 		{
 			dependencies: ["3BA8D6F3BBBAA35C"]
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "4879742B693BB2F2"
 			subtitle: "Not just for looks..."
 			tasks: [
@@ -650,6 +671,13 @@
 		}
 		{
 			dependencies: ["4879742B693BB2F2"]
+			icon: {
+				Count: 1
+				id: "mysticalagriculture:inferium_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "4967B3963157FF27"
 			tasks: [
 				{

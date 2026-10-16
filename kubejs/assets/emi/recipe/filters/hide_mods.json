@@ -1,0 +1,7 @@
+{
+  "filters": [
+    { "id": "/^itemfilters:/" },
+    { "id": "/^ftbquests:/" },
+    { "id": "/^ftbfiltersystem:/" }
+  ]
+}

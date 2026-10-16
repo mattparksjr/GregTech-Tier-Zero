@@ -28,7 +28,29 @@
 				"36343A2284976FD5"
 				"741BFC9292659ABC"
 			]
+			icon: "undergarden:catalyst"
 			id: "6BA7536D730F159C"
+			rewards: [
+				{
+					count: 4
+					id: "4CE2466636932F07"
+					item: {
+						Count: 1
+						id: "minecraft:splash_potion"
+						tag: {
+							Potion: "minecraft:long_night_vision"
+						}
+					}
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					count: 32
+					id: "5C55B490906ECB4A"
+					item: "minecraft:torch"
+					type: "item"
+				}
+			]
 			subtitle: "Its almost like the nether..."
 			tasks: [
 				{
@@ -49,7 +71,9 @@
 		}
 		{
 			dependencies: ["257591E6FAAB463F"]
+			icon: "gtceu:raw_lead"
 			id: "55480DBA01A8AE1B"
+			subtitle: "Danger!"
 			tasks: [{
 				count: 16L
 				id: "2A3A691B410E97CF"
@@ -71,6 +95,7 @@
 				}
 				type: "item"
 			}]
+			title: "Lead ore"
 			x: 2.0d
 			y: 0.0d
 		}

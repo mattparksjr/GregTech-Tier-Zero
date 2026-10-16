@@ -377,11 +377,13 @@
 		{
 			dependencies: ["7EB9606E3DE994C2"]
 			id: "49A7BD36656A4731"
+			subtitle: "UV Rays != UV Power"
 			tasks: [{
 				id: "59F41A711C91ECFF"
 				item: "gtceu:lp_steam_solar_boiler"
 				type: "item"
 			}]
+			title: "Solar powered!"
 			x: -1.0d
 			y: 1.5d
 		}

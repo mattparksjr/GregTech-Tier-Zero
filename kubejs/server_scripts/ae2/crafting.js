@@ -1,8 +1,15 @@
 (() => {
   const GTT0 = global.GTT0;
+  const MOD = "AE2";
+
+  const presses = [
+    "ae2:silicon_press",
+    "ae2:calculation_processor_press",
+    "ae2:engineering_processor_press",
+    "ae2:logic_processor_press",
+  ];
 
   ServerEvents.recipes((event) => {
-    const MOD = "AE2";
     GTT0.logModify(MOD);
 
     GTT0.removeTypes(event, MOD, [
@@ -40,5 +47,15 @@
       .itemOutputs("ae2:nether_quartz_cutting_knife")
       .duration(200)
       .EUt(128);
+
+    presses.forEach((press) => {
+      event.recipes.gtceu
+        .assembler(`gtt0/press_copy/${press.split(":")[1]}`)
+        .itemInputs("gtceu:steel_block")
+        .notConsumable(press)
+        .itemOutputs(press)
+        .duration(300)
+        .EUt(2048);
+    });
   }
 })();
