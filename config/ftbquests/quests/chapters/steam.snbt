@@ -40,7 +40,8 @@
 				item: "gtceu:bronze_normal_fluid_pipe"
 				type: "item"
 			}]
-			size: 1.5d
+			shape: "gear"
+			size: 2.0d
 			subtitle: "Hot and steamy..."
 			tasks: [{
 				id: "7601AAA9AB5D1C44"
@@ -259,6 +260,20 @@
 				"547910044CE964F4"
 			]
 			id: "5D5AA282130DEA7A"
+			rewards: [
+				{
+					count: 4
+					id: "143459056AE380AB"
+					item: "gtceu:red_alloy_ingot"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "3B9D43A5EE44FBB3"
+					item: "minecraft:redstone_block"
+					type: "item"
+				}
+			]
 			subtitle: "Electric (not really)"
 			tasks: [{
 				count: 8L
@@ -272,20 +287,77 @@
 		}
 		{
 			dependencies: ["5BF8E876B8B7C6D3"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"This glass is &cnot&r for decoration. It is &6required&r to progress. For now you can make glass in the &balloy smelter&r in a &cterrible&r ratio. If you don't want to do that, the &bmold&r will give you a &d1:1&r ratio for your glass dust."
+			]
 			id: "66A937134133C737"
+			rewards: [
+				{
+					count: 4
+					id: "4B08E3DFE3D46C12"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "6BAE45EDC0C150F5"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_mortar"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								MaxDamage: 383
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "I see you!"
-			tasks: [{
-				id: "5F0273B103DB8C95"
-				item: "minecraft:glass"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 8L
+					id: "5F0273B103DB8C95"
+					item: "gtceu:quartz_sand_dust"
+					type: "item"
+				}
+				{
+					id: "2A7C519B31CA99F2"
+					item: "gtceu:flint_dust"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "54541F963473ACDD"
+					item: { Count: 4, id: "minecraft:glass" }
+					type: "item"
+				}
+			]
 			title: "Glass"
 			x: 2.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["66A937134133C737"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"If you plan to reach the &delectric&r age, you will need an &bextractor&r. It is &crequired&r for rubber production, can craft dyes, and can even be used to make &dfish oil&r. A possible way to make &6lube&r!"
+			]
 			id: "7FBE2CC8962691CD"
+			rewards: [{
+				count: 8
+				id: "6485F78A316F5EAF"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
+			subtitle: "Suckinator 0.1"
 			tasks: [{
 				id: "4E7B875E18D6DA3F"
 				item: "gtceu:lp_steam_extractor"
@@ -293,7 +365,7 @@
 			}]
 			title: "Extractor!"
 			x: 4.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7FBE2CC8962691CD"]
@@ -365,13 +437,14 @@
 		{
 			dependencies: ["7FBE2CC8962691CD"]
 			id: "23A6138E73612B8A"
+			shape: "circle"
 			size: 0.75d
 			tasks: [{
 				id: "02900565436A4BA4"
 				item: "gtceu:hp_steam_extractor"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 4.0d
 			y: -4.125d
 		}
 		{
@@ -415,6 +488,7 @@
 				item: "gtceu:coke_gem"
 				type: "item"
 			}]
+			shape: "circle"
 			size: 0.75d
 			subtitle: "MORE! MOOOORE!"
 			tasks: [{
@@ -427,6 +501,7 @@
 		}
 		{
 			dependencies: ["7EB9606E3DE994C2"]
+			description: [""]
 			id: "19286CB091AA4DC5"
 			tasks: [{
 				id: "121A6AC7D879C8D0"
@@ -439,6 +514,7 @@
 		{
 			dependencies: ["19286CB091AA4DC5"]
 			id: "07061B3840E4C3E2"
+			shape: "circle"
 			size: 0.75d
 			tasks: [{
 				id: "2AE3B0B0210302DB"
@@ -588,8 +664,22 @@
 			dependencies: ["5BF8E876B8B7C6D3"]
 			icon: "gtceu:block_casting_mold"
 			id: "275471BFC5AF3D0A"
+			rewards: [
+				{
+					count: 16
+					id: "748AE96BD7A2803B"
+					item: "gtceu:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "04CA15E000E5DEB3"
+					type: "xp"
+					xp: 50
+				}
+			]
 			shape: "circle"
 			size: 0.75d
+			subtitle: "Press em' into shape"
 			tasks: [
 				{
 					id: "403B718466D7BA86"

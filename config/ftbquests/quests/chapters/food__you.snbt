@@ -7,14 +7,24 @@
 	hide_quest_until_deps_complete: true
 	icon: "corn_delight:cornbread_batter"
 	id: "0A7C83D2F80CA56A"
-	images: [{
-		height: 1.0d
-		image: "minecraft:textures/particle/goldheart_2.png"
-		rotation: 0.0d
-		width: 1.0d
-		x: 0.0d
-		y: -1.5d
-	}]
+	images: [
+		{
+			height: 1.0d
+			image: "minecraft:textures/particle/goldheart_2.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			height: 2.0d
+			image: "gtt0:textures/gui/food_you.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: 0.5d
+			y: -3.0d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -518,6 +528,29 @@
 			title: "Kitchen 0.5"
 			x: 1.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["2DBB46FC92824442"]
+			icon: "aquaculture:brown_trout"
+			id: "6609ED3D6CE780A0"
+			subtitle: "A beautiful day on the lake"
+			tasks: [{
+				count: 16L
+				icon: "aquaculture:pollock"
+				id: "6AE21112610E8C4A"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:raw_fishes)"
+					}
+				}
+				title: "16x Raw Fish"
+				type: "item"
+			}]
+			title: "Relax!"
+			x: -4.0d
+			y: 3.5d
 		}
 	]
 	subtitle: ["Staying fed!"]

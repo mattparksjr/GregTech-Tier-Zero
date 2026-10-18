@@ -55,6 +55,9 @@ const DISABLED_ITEMS = [
   "sophisticatedbackpacks:stack_downgrade_tier_1",
   "sophisticatedbackpacks:stack_downgrade_tier_2",
   "sophisticatedbackpacks:stack_downgrade_tier_3",
+  "storagedrawers:personal_key_cofh",
+  "storagedrawers:conversion_upgrade",
+  "storagedrawers:portability_upgrade", // RE-ADD IN FUTURE?
 ];
 
 ServerEvents.recipes((event) => {

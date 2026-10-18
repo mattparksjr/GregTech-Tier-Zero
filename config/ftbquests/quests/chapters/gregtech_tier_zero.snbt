@@ -25,12 +25,36 @@
 			y: -0.5d
 		}
 		{
-			height: 1.0d
+			height: 1.5d
 			image: "gtceu:block/casings/coils/machine_coil_molybdenum_disilicide_bloom"
 			rotation: 0.0d
-			width: 1.0d
+			width: 1.5d
 			x: 2.0d
 			y: -1.0d
+		}
+		{
+			height: 6.0d
+			image: "gtt0:textures/gui/gtt0.png"
+			rotation: 0.0d
+			width: 13.0d
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			height: 1.0d
+			image: "gtceu:block/casings/slicing_blades/top"
+			rotation: 0.0d
+			width: 1.0d
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			height: 1.0d
+			image: "gtceu:block/casings/signs/machine_casing_highvoltagehazard"
+			rotation: 0.0d
+			width: 1.0d
+			x: 16.0d
+			y: 0.0d
 		}
 	]
 	order_index: 0
@@ -165,8 +189,8 @@
 					type: "item"
 				}
 			]
-			shape: "rsquare"
-			size: 1.5d
+			shape: "gear"
+			size: 2.0d
 			subtitle: "Ready to begin your sentence?"
 			tasks: [{
 				id: "4C89296F2BC335E2"
@@ -315,8 +339,8 @@
 				title: "Sure... Oops-E...."
 				type: "checkmark"
 			}]
-			x: 0.375d
-			y: -0.375d
+			x: 0.5d
+			y: -0.75d
 		}
 		{
 			dependencies: ["5E3C05B265C2CC3D"]
@@ -1047,7 +1071,7 @@
 					type: "item"
 				}
 			]
-			shape: "circle"
+			shape: "gear"
 			size: 1.5d
 			subtitle: "DING DING DING DING "
 			tasks: [{
@@ -1212,7 +1236,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "Who like manual labor anyways?"
+			subtitle: "Who likes manual labor anyways?"
 			tasks: [{
 				id: "4EFD63EF9A14D76E"
 				item: {

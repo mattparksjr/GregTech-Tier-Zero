@@ -15,6 +15,15 @@ global.GTT0 = {
   MORTAR: Ingredient.of("#gtceu:tools/crafting_mortars"),
   KNIFE: Ingredient.of("#gtceu:tools/crafting_knives"),
 
+  LV: 32,
+  MV: 128,
+  HV: 512,
+  EV: 2048,
+  IV: 8192,
+  LUV: 32768,
+  ZPM: 131072,
+  UV: 524288,
+
   /**
    * Remove all mod recipes
    * @param {*} event

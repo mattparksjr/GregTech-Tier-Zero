@@ -7,6 +7,14 @@
 	hide_quest_until_deps_complete: true
 	icon: "undergarden:shard_o_lantern"
 	id: "46548B6DB530C094"
+	images: [{
+		height: 2.0d
+		image: "gtt0:textures/gui/undergarden.png"
+		rotation: 0.0d
+		width: 12.0d
+		x: 0.5d
+		y: -3.5d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [

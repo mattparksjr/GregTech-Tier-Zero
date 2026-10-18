@@ -5,6 +5,14 @@
 	group: "654FB0E3A74D3A0F"
 	icon: "ae2:cell_component_256k"
 	id: "56848F2B0DCA2357"
+	images: [{
+		height: 2.0d
+		image: "gtt0:textures/gui/storage_solutions.png"
+		rotation: 0.0d
+		width: 12.0d
+		x: 2.5d
+		y: -1.5d
+	}]
 	order_index: 5
 	quest_links: [{
 		id: "7C28AE231D1EDCFF"
@@ -48,6 +56,29 @@
 			}]
 			x: 4.5d
 			y: 0.0d
+		}
+		{
+			id: "11B7CCF39C1C56A3"
+			tasks: [{
+				id: "1B81A4F48A605855"
+				item: "sophisticatedstorage:basic_tier_upgrade"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["709CA45157EE163A"]
+			hide_dependency_lines: false
+			id: "376913D27E8AB6A1"
+			tasks: [{
+				count: 4L
+				id: "3A0CB202AAAAE28A"
+				item: { Count: 4, id: "storagedrawers:oak_full_drawers_1" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
 		}
 	]
 	title: "&bStorage Solutions"
