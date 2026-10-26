@@ -6,7 +6,7 @@
 	icon: "ae2:cell_component_256k"
 	id: "56848F2B0DCA2357"
 	images: [{
-		height: 2.0d
+		height: 2.2d
 		image: "gtt0:textures/gui/storage_solutions.png"
 		rotation: 0.0d
 		width: 12.0d
@@ -23,6 +23,11 @@
 	quests: [
 		{
 			dependencies: ["7FABAC2EF552971F"]
+			description: [
+				"&b&n&lOops-E:&r&r&r"
+				""
+				"It is is a good idea to keep all your items &dsafe&r and &6organized&r. Regular chests will do for now, but there are &o&dfar better&r&r options in the future!"
+			]
 			id: "709CA45157EE163A"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -30,12 +35,14 @@
 				table_id: 760424142743922967L
 				type: "choice"
 			}]
+			subtitle: "Don't leave a chest monster on the lawn..."
 			tasks: [{
 				count: 8L
 				id: "0BA860C55D9C2B35"
 				item: { Count: 8, id: "minecraft:chest" }
 				type: "item"
 			}]
+			title: "Storage time!"
 			x: 2.5d
 			y: 0.0d
 		}
@@ -58,13 +65,18 @@
 			y: 0.0d
 		}
 		{
+			dependencies: [
+				"1E638BEE58B52559"
+				"709CA45157EE163A"
+			]
+			dependency_requirement: "one_completed"
 			id: "11B7CCF39C1C56A3"
 			tasks: [{
 				id: "1B81A4F48A605855"
 				item: "sophisticatedstorage:basic_tier_upgrade"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 3.5d
 			y: 1.5d
 		}
 		{
@@ -77,8 +89,8 @@
 				item: { Count: 4, id: "storagedrawers:oak_full_drawers_1" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.0d
+			x: 1.5d
+			y: 1.5d
 		}
 	]
 	title: "&bStorage Solutions"

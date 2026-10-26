@@ -8,4 +8,8 @@ StartupEvents.registry("item", (event) => {
       Text.of("Contains information about your situation.").italic().gold(),
     )
     .tooltip(Text.of("Right click to open.").aqua());
+
+  event
+    .create("mass_diamond")
+    .tooltip(Text.translatable("item.kubejs.mass_diamond.tooltip").gray());
 });

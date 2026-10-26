@@ -149,7 +149,7 @@
 
     event.recipes.gtceu
       .chemical_bath("prudentium_farmland")
-      .itemInputs("farmersdelight:rich_soil_farmland")
+      .itemInputs("mysticalagriculture:inferium_farmland")
       .inputFluids("mysticalagradditions:molten_prudentium 576")
       .itemOutputs("mysticalagriculture:prudentium_farmland")
       .duration(300)
@@ -163,7 +163,7 @@
         "1x mysticalagriculture:prudentium_pickaxe",
       )
       .itemOutputs("mysticalagradditions:prudentium_paxel")
-      .duration(40)
+      .duration(300)
       .EUt(128);
 
     event.recipes.gtceu

@@ -25,6 +25,7 @@
 			random_bonus: 5
 			type: "item"
 		}]
+		subtitle: "Magic seeds?"
 		tasks: [{
 			id: "70E4648BDD2D80FC"
 			item: "mysticalagriculture:inferium_seeds"

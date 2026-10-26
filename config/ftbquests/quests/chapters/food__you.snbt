@@ -125,6 +125,7 @@
 		}
 		{
 			dependencies: ["33F9E32A08751BA4"]
+			icon: "farmersdelight:stove"
 			id: "2D4D39918DE91C0F"
 			subtitle: "Warm, fresh meals"
 			tasks: [
@@ -183,6 +184,7 @@
 		}
 		{
 			dependencies: ["2D4D39918DE91C0F"]
+			icon: "cookingforblockheads:cooking_table"
 			id: "60F58B345F6AA612"
 			tasks: [
 				{
@@ -361,8 +363,8 @@
 				}
 			]
 			title: "Butchering!"
-			x: -2.0d
-			y: 0.0d
+			x: 7.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3C486B2F9687DA72"]
@@ -466,8 +468,8 @@
 				type: "item"
 			}]
 			title: "A new knife?"
-			x: -2.0d
-			y: -1.5d
+			x: 7.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["7D9AB4154C9E062A"]
@@ -484,13 +486,15 @@
 					type: "item"
 				}
 			]
+			subtitle: "Hard beer for hard workers"
 			tasks: [{
 				id: "643B2C04BFDCDDD7"
 				item: "brewinandchewin:keg"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 2.5d
+			title: "Beer?!?!?"
+			x: 3.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["440829F728FDAFED"]
@@ -507,8 +511,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 4.5d
+			x: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["3C486B2F9687DA72"]
@@ -531,8 +535,18 @@
 		}
 		{
 			dependencies: ["2DBB46FC92824442"]
+			description: [
+				"&b&n&lOops-E:&r&r&r"
+				""
+				"There are &bplenty&r of fish in the sea! If you are too &cstressed&r, swtiching tasks may be helpful!"
+			]
 			icon: "aquaculture:brown_trout"
 			id: "6609ED3D6CE780A0"
+			rewards: [{
+				id: "33836AFF50DC4556"
+				item: "minecraft:cod_bucket"
+				type: "item"
+			}]
 			subtitle: "A beautiful day on the lake"
 			tasks: [{
 				count: 16L
@@ -551,6 +565,153 @@
 			title: "Relax!"
 			x: -4.0d
 			y: 3.5d
+		}
+		{
+			dependencies: ["3C486B2F9687DA72"]
+			icon: "minecraft:cow_spawn_egg"
+			id: "4BB63E9033748A6A"
+			rewards: [{
+				id: "5D81C9A5BDFC14E9"
+				item: {
+					Count: 1
+					id: "gtceu:rose_gold_butchery_knife"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							AttackDamage: 3.5f
+							AttackSpeed: -1.3f
+							DefaultEnchantments: [{
+								id: "minecraft:looting"
+								lvl: 3s
+							}]
+							MaxDamage: 767
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Sweet sweet leather"
+			tasks: [
+				{
+					count: 16L
+					id: "049645D0BEC484EB"
+					item: { Count: 16, id: "minecraft:leather" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "17029349A040A107"
+					item: { Count: 16, id: "minecraft:mutton" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "76E7D160DA83ECB3"
+					item: { Count: 16, id: "minecraft:porkchop" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "32225627964A31E9"
+					item: { Count: 12, id: "minecraft:egg" }
+					type: "item"
+				}
+			]
+			title: "Animal farm"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E6AA5BF616626DB"]
+			id: "393ACAD1AC2671B9"
+			rewards: [{
+				id: "2341510AF81C6EB7"
+				item: "minecraft:armor_stand"
+				type: "item"
+			}]
+			subtitle: "Free scarecrow!"
+			tasks: [{
+				id: "200A7DCA8487FBFD"
+				item: "corn_delight:corn_seeds"
+				type: "item"
+			}]
+			title: "Corn farmer"
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7E6AA5BF616626DB"]
+			icon: "veggiesdelight:garlic"
+			id: "07C2DA403CF82EAD"
+			rewards: [
+				{
+					count: 32
+					id: "6AC8DCE6D2420F77"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "32C61752B7188AEF"
+					item: "mysticalagriculture:mystical_fertilizer"
+					type: "item"
+				}
+			]
+			subtitle: "Grilled and baked"
+			tasks: [
+				{
+					id: "79580302D91AC3B2"
+					item: "veggiesdelight:bellpepper"
+					type: "item"
+				}
+				{
+					id: "17D1C7C41007C9B4"
+					item: "veggiesdelight:broccoli"
+					type: "item"
+				}
+				{
+					id: "2F4811399B239DB4"
+					item: "veggiesdelight:cauliflower"
+					type: "item"
+				}
+				{
+					id: "1DEDB88A481F5C67"
+					item: "veggiesdelight:garlic"
+					type: "item"
+				}
+				{
+					id: "0E7CF96B1695E970"
+					item: "veggiesdelight:sweet_potato"
+					type: "item"
+				}
+				{
+					id: "70BD1D7BAE62E87A"
+					item: "veggiesdelight:turnip"
+					type: "item"
+				}
+				{
+					id: "15E62601BAEE9C6A"
+					item: "veggiesdelight:zucchini"
+					type: "item"
+				}
+			]
+			title: "More veggies please!"
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4BB63E9033748A6A"]
+			id: "36C080DB13B6A745"
+			tasks: [{
+				id: "192923444A8B815B"
+				item: "minecraft:milk_bucket"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -0.5d
 		}
 	]
 	subtitle: ["Staying fed!"]

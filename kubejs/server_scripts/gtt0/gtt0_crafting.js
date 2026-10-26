@@ -22,6 +22,7 @@
       "solclassic:wicker_basket",
       "enderchests:ender_chest",
       "enderchests:ender_bag",
+      "enderchests:ender_pouch",
       "endertanks:ender_tank",
       "endertanks:ender_bucket",
     ]);
@@ -218,7 +219,7 @@
     event.recipes.gtceu
       .assembler("ender_tank")
       .itemInputs(
-        "1x gtceu:wood_drum",
+        "1x gtceu:stainless_steel_drum",
         "4x minecraft:blaze_powder",
         "2x #forge:ingots/stainless_steel",
         "2x gtceu:ender_pearl_dust",

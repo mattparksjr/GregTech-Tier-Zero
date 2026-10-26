@@ -42,6 +42,11 @@
 		}
 		{
 			dependencies: ["689A09F656BC0FC6"]
+			description: [
+				"&b&n&lOops-E:&r&r&r"
+				""
+				"Our &6scans&r of this planet has reveled some sort of &o&d\"essence\"&r&r flowing though it's creatures. Collect &bas much&r as you can, it might be useful.."
+			]
 			id: "0CD7B40783F7E492"
 			rewards: [{
 				count: 8
@@ -51,6 +56,7 @@
 			}]
 			subtitle: "It's magical"
 			tasks: [{
+				count: 4L
 				id: "20DC674D5F13747B"
 				item: "mysticalagriculture:inferium_essence"
 				type: "item"

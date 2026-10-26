@@ -100,6 +100,7 @@
 		{
 			dependencies: ["34ABAFBC574897FD"]
 			id: "4F981170790BABE2"
+			subtitle: "Also useful!"
 			tasks: [
 				{
 					id: "2D5506E8D7F702BC"
@@ -169,6 +170,7 @@
 		{
 			dependencies: ["6C3F80DCBD0C5487"]
 			id: "44B5CB7EEA4587B6"
+			subtitle: "IM SOARINGGGG"
 			tasks: [{
 				id: "08B24F6068F868C9"
 				item: {
@@ -186,6 +188,7 @@
 		{
 			dependencies: ["44B5CB7EEA4587B6"]
 			id: "5336AA0D50443FDF"
+			subtitle: "FLYYINNN"
 			tasks: [{
 				id: "60BD6BA3C74E8BF2"
 				item: {
@@ -679,6 +682,13 @@
 				}
 			}
 			id: "4967B3963157FF27"
+			rewards: [{
+				count: 64
+				id: "048761389D613660"
+				item: "mysticalagriculture:inferium_essence"
+				type: "item"
+			}]
+			subtitle: "Seems.... magical..."
 			tasks: [
 				{
 					id: "0C20EE163E5135FB"
@@ -780,8 +790,139 @@
 					type: "item"
 				}
 			]
+			title: "Inferium Set"
 			x: -1.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["4967B3963157FF27"]
+			icon: {
+				Count: 1
+				id: "mysticalagriculture:prudentium_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2A93A6F32EEDA8C5"
+			rewards: [
+				{
+					count: 4
+					id: "10C334E0F7751C07"
+					item: "mysticalagradditions:prudentium_apple"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2DEF693904730AFA"
+					item: "mysticalagradditions:prudentium_coal"
+					type: "item"
+				}
+			]
+			subtitle: "MORE POWER!!!!"
+			tasks: [
+				{
+					id: "77499105F1C658B9"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:prudentium_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "45970F7F222DB966"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:prudentium_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5ED3804933785111"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:prudentium_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6B8EF8360C443E72"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:prudentium_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2977726158CD76B8"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:prudentium_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6336FAFC51A01281"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:prudentium_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "24E5F2F51C1F87B6"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:prudentium_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "40ED80608105F0C7"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:prudentium_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5D0D44DA108DDE74"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:prudentium_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Prudentium Set"
+			x: -1.5d
+			y: 0.0d
 		}
 	]
 	subtitle: ["It gets dangerous"]

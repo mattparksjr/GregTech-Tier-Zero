@@ -1,12 +1,25 @@
 global.GTT0 = {
+  // DEBUG Mode, note this will spam logs, and may not properly apply recipe changes
+  DEBUG: false,
+
+  /**
+   * Log a message for a mod
+   * @param {String} mod
+   * @param {String} msg
+   */
   log(mod, msg) {
     console.log(`[GTT0:${mod}] ${msg}`);
   },
 
+  /**
+   * Notify that you are starting to modify @mod 's recipies
+   * @param {String} mod
+   */
   logModify(mod) {
     console.log(`[GTTO] Modifiying ${mod}'s recipes`);
   },
 
+  // Crafting tools
   HAMMER: Ingredient.of("#gtceu:tools/crafting_hammers"),
   MALLET: Ingredient.of("#gtceu:tools/crafting_mallets"),
   FILE: Ingredient.of("#gtceu:tools/crafting_files"),
@@ -15,6 +28,7 @@ global.GTT0 = {
   MORTAR: Ingredient.of("#gtceu:tools/crafting_mortars"),
   KNIFE: Ingredient.of("#gtceu:tools/crafting_knives"),
 
+  // Base voltage for each tier
   LV: 32,
   MV: 128,
   HV: 512,

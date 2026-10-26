@@ -14,6 +14,8 @@
       "projectvibrantjourneys:mossy_rocks",
       "twigs:pebble",
     ]);
+
+    GTT0.removeByInput(event, "World", ["neapolitan:ice"]);
   }
 
   function add(event) {
@@ -40,6 +42,12 @@
         id: "cobble_from_pebble",
         block: "minecraft:cobblestone",
         item: "twigs:pebble",
+        count: 4,
+      },
+      {
+        id: "ice_from_cubes",
+        block: "minecraft:ice",
+        item: "neapolitan:ice_cubes",
         count: 4,
       },
     ]);

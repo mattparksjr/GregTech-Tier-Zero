@@ -10,5 +10,10 @@
       "undergarden:portal_frame_blocks",
       "rechiseled:stone_smooth_tiles",
     );
+
+    event.add(
+      "mysticalagriculture:crops",
+      "mysticalagriculture:sticky_seed_crop",
+    );
   });
 })();

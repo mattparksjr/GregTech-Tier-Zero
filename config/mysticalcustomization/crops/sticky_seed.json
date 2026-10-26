@@ -1,0 +1,18 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:1",
+  "colors": {
+    "flower": "FAC56D",
+    "essence": "F8DD7A",
+    "seeds": "F1A848"
+  },
+  "textures": {
+    "flower": "mysticalagriculture:block/flower_rock",
+    "essence": "mysticalagriculture:item/essence_rock"
+  },
+  "recipes": {
+    "crafting": false,
+    "infusion": false,
+    "reprocessor": false
+  }
+}

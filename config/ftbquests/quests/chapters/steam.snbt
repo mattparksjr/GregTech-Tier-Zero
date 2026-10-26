@@ -5,21 +5,73 @@
 	group: "747D79EDBEC17087"
 	icon: "gtceu:bronze_ingot"
 	id: "02F925CFA2D21219"
-	images: [{
-		height: 1.0d
-		image: "gtceu:block/multiblock/steam_oven/overlay_front_active"
-		rotation: 0.0d
-		width: 1.0d
-		x: 0.5d
-		y: 2.0d
-	}]
+	images: [
+		{
+			height: 1.0d
+			image: "gtceu:block/multiblock/steam_oven/overlay_front_active"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			height: 1.0d
+			image: "gtceu:block/casings/steam/bronze/top"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			height: 1.0d
+			image: "expatternprovider:block/wireless_hub_lime"
+			rotation: 0.0d
+			width: 1.0d
+			x: 11.5d
+			y: -0.5d
+		}
+		{
+			height: 1.5d
+			image: "gtt0:textures/gui/the_steam_age.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			height: 1.2d
+			image: "minecraft:block/bee_nest_front_honey"
+			rotation: 0.0d
+			width: 1.2d
+			x: 7.5d
+			y: -1.0d
+		}
+	]
 	order_index: 0
-	quest_links: [{
-		id: "13573EFB5535F735"
-		linked_quest: "121EFDE9E1D9945C"
-		x: 7.5d
-		y: -3.5d
-	}]
+	quest_links: [
+		{
+			id: "13573EFB5535F735"
+			linked_quest: "121EFDE9E1D9945C"
+			x: 7.5d
+			y: -3.5d
+		}
+		{
+			id: "661E143BF426938C"
+			linked_quest: "000BA1DD9B239687"
+			shape: "circle"
+			size: 0.75d
+			x: 7.875d
+			y: 3.375d
+		}
+		{
+			id: "5915687F624E09FA"
+			linked_quest: "6629869DC2682F83"
+			shape: "circle"
+			size: 0.75d
+			x: 4.875d
+			y: 2.625d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["22C13C0F238F6165"]
@@ -122,7 +174,7 @@
 			]
 			title: "It's pumpin' time"
 			x: 0.0d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7EB9606E3DE994C2"]
@@ -173,6 +225,11 @@
 		}
 		{
 			dependencies: ["5D5AA282130DEA7A"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"Pistons are needed for some of the next &6machines&r. They are &dmuch&r more &cexpensive&r them you might expect..."
+			]
 			id: "5282C6AFBBF7E46D"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -251,7 +308,7 @@
 				}
 			]
 			title: "Early game redstone"
-			x: 2.0d
+			x: 2.5d
 			y: 1.5d
 		}
 		{
@@ -292,6 +349,7 @@
 				""
 				"This glass is &cnot&r for decoration. It is &6required&r to progress. For now you can make glass in the &balloy smelter&r in a &cterrible&r ratio. If you don't want to do that, the &bmold&r will give you a &d1:1&r ratio for your glass dust."
 			]
+			icon: "minecraft:glass"
 			id: "66A937134133C737"
 			rewards: [
 				{
@@ -370,7 +428,9 @@
 		{
 			dependencies: ["7FBE2CC8962691CD"]
 			id: "039272E5D633D6BA"
+			subtitle: "No, seriously..."
 			tasks: [{
+				count: 32L
 				id: "576330AB2C84354B"
 				item: "gtceu:raw_rubber_dust"
 				type: "item"
@@ -391,12 +451,14 @@
 				item: "gtceu:rubber_plate"
 				type: "item"
 			}]
+			subtitle: "Safety First"
 			tasks: [{
 				count: 8L
 				id: "1A6A640878EE1349"
 				item: "gtceu:rubber_ingot"
 				type: "item"
 			}]
+			title: "Rubberized"
 			x: 8.5d
 			y: -2.0d
 		}
@@ -437,19 +499,37 @@
 		{
 			dependencies: ["7FBE2CC8962691CD"]
 			id: "23A6138E73612B8A"
+			rewards: [{
+				count: 16
+				id: "6BE1EDF07B099DD0"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
 			shape: "circle"
 			size: 0.75d
+			subtitle: "Suckinator 0.2"
 			tasks: [{
 				id: "02900565436A4BA4"
 				item: "gtceu:hp_steam_extractor"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -4.125d
+			x: 4.875d
+			y: -3.375d
 		}
 		{
 			dependencies: ["7EB9606E3DE994C2"]
+			description: [
+				"&b&n&lOops-E:&r&r&r"
+				""
+				"Solar is an &dexcellect&r free power source, although it does &cnot&r work at night, and takes time to &bheat&r up again. "
+			]
 			id: "49A7BD36656A4731"
+			rewards: [{
+				count: 4
+				id: "4470C2293E47B897"
+				item: "ae2:quartz_glass"
+				type: "item"
+			}]
 			subtitle: "UV Rays != UV Power"
 			tasks: [{
 				id: "59F41A711C91ECFF"
@@ -462,15 +542,42 @@
 		}
 		{
 			dependencies: ["49A7BD36656A4731"]
+			description: [
+				"&b&n&lOops-E:&r&r&r"
+				""
+				"At &d18mb&r&b/t&r, 14 of these will provide the &emax&r throughput for a &6large bronze&r pipe!"
+			]
 			id: "7EF8F59A43E22046"
+			rewards: [
+				{
+					count: 8
+					id: "3BEEEAA50DD4C71C"
+					item: "gtceu:raw_silver"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "51761F15C6E75092"
+					item: "gtceu:quartz_sand_dust"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "2F248BE9D2DFFEF4"
+					item: "minecraft:flint"
+					type: "item"
+				}
+			]
+			shape: "circle"
 			size: 0.75d
+			subtitle: "Solar maddess..."
 			tasks: [{
 				id: "46E91B9B6DB84442"
 				item: "gtceu:hp_steam_solar_boiler"
 				type: "item"
 			}]
 			x: -1.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7EB9606E3DE994C2"]
@@ -496,13 +603,24 @@
 				item: "gtceu:hp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: -1.125d
-			y: -1.125d
+			x: -1.5d
+			y: -0.375d
 		}
 		{
 			dependencies: ["7EB9606E3DE994C2"]
-			description: [""]
+			description: [
+				"&b&n&lOops-E:&r&r&r"
+				""
+				"If you find yourself having tons of &6extra&r creosote, you can &cburn&r some for steam. This is &done way&r to automate your &bpower&r early on..."
+			]
 			id: "19286CB091AA4DC5"
+			rewards: [{
+				count: 2
+				id: "7EC6666A18EE1898"
+				item: "gtceu:creosote_bucket"
+				type: "item"
+			}]
+			subtitle: "Don't spill it..."
 			tasks: [{
 				id: "121A6AC7D879C8D0"
 				item: "gtceu:lp_steam_liquid_boiler"
@@ -513,7 +631,17 @@
 		}
 		{
 			dependencies: ["19286CB091AA4DC5"]
+			description: [
+				"&b&n&lOops-E:&r&r&r"
+				""
+				"Same as it's &dsmaller&r brother, but produces &6more&r steam overall."
+			]
 			id: "07061B3840E4C3E2"
+			rewards: [{
+				id: "4D3C2E25C3150B28"
+				item: "gtceu:bronze_drum"
+				type: "item"
+			}]
 			shape: "circle"
 			size: 0.75d
 			tasks: [{
@@ -521,7 +649,7 @@
 				item: "gtceu:hp_steam_liquid_boiler"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -3.0d
 			y: 0.5d
 		}
 		{
@@ -532,24 +660,36 @@
 				item: "gtceu:lp_steam_furnace"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 5.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["2B031DA6FF048612"]
 			id: "2CF5EBE487595FE5"
+			rewards: [{
+				count: 16
+				id: "2F110133BEDCC048"
+				item: "gtceu:wrought_iron_ingot"
+				type: "item"
+			}]
 			size: 0.75d
 			tasks: [{
 				id: "7F55581D30F65094"
 				item: "gtceu:hp_steam_furnace"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 3.75d
 			y: 1.875d
 		}
 		{
 			dependencies: ["7B926195E8B0ACD5"]
 			id: "67D6AE39E4A194BF"
+			rewards: [{
+				count: 16
+				id: "6E46E35B60F3DD53"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
 			size: 0.75d
 			tasks: [{
 				id: "245A3CDC5A43FFD3"
@@ -585,6 +725,11 @@
 		}
 		{
 			dependencies: ["5EF557A57C0D6CE5"]
+			description: [
+				"&b&n&lOops-E:&r&r&r"
+				""
+				"Treated wood pipes have &ddouble&r the throughput vs &6untreated&r wood. Generally, the &dbetter&r the material, the better the throughput!"
+			]
 			id: "04BE903930137E9F"
 			rewards: [{
 				count: 4
@@ -593,6 +738,7 @@
 				random_bonus: 12
 				type: "item"
 			}]
+			shape: "circle"
 			size: 0.75d
 			subtitle: "Please no more rubber...."
 			tasks: [{
@@ -601,13 +747,25 @@
 				type: "item"
 			}]
 			title: "Need an upgrade?"
-			x: 0.375d
-			y: -3.375d
+			x: -0.75d
+			y: -2.25d
 		}
 		{
 			dependencies: ["5282C6AFBBF7E46D"]
+			description: [
+				"&6&n&lPROJECT MANAGER:&r&r&r"
+				""
+				"Diamonds can make some &bnice&r tools, but you &clack&r the ability to create them for now. In the mean time, take some &bdiamonds&r for a new machine. I &dpromise&r it's worth it..."
+			]
 			icon: "minecraft:diamond"
 			id: "3BA8D6F3BBBAA35C"
+			rewards: [{
+				count: 2
+				id: "32C17F8356CCFE1E"
+				item: "gtceu:flawless_diamond_gem"
+				random_bonus: 2
+				type: "item"
+			}]
 			subtitle: "Not so rare huh..."
 			tasks: [
 				{
@@ -658,7 +816,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: -4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5BF8E876B8B7C6D3"]
@@ -708,5 +866,5 @@
 		}
 	]
 	subtitle: ["The industrial revolution!"]
-	title: "&6Steam age"
+	title: "&6Steam Age"
 }

@@ -13,7 +13,9 @@
       "minecraft:wheat",
       "minecraft:golden_carrot",
       "minecraft:bread",
+      "minecraft:bricks",
     ]);
+
     GTT0.removeByOutput(event, "Vanilla", [
       "#minecraft:beds",
       "minecraft:blast_furnace",
@@ -24,7 +26,7 @@
   }
 
   function add(event) {
-    console.log("GTT0: Adding vanilla crafting recipes");
+    GTT0.log("GTT0", "Adding vanilla crafting recipes");
 
     event.campfireCooking(
       "gtceu:small_ash_dust",

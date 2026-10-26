@@ -114,6 +114,28 @@
 			x: 1.5d
 			y: 0.5d
 		}
+		{
+			dependencies: ["7B926195E8B0ACD5"]
+			id: "000BA1DD9B239687"
+			tasks: [{
+				id: "39BFBD4DF300F670"
+				item: "gtceu:steam_grinder"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2B031DA6FF048612"]
+			id: "6629869DC2682F83"
+			tasks: [{
+				id: "5A0339967A7C6A99"
+				item: "gtceu:steam_oven"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
 	]
 	title: "Multiblocks Galore"
 }

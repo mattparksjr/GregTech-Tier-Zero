@@ -12,7 +12,7 @@
   }
 
   function add(event) {
-    console.log("GTT0: Adding Greg recipes");
+    GTT0.log("GregTech", "GTT0: Adding Greg recipes");
     event.recipes.gtceu
       .compressor("firebricks")
       .itemInputs("4x gtceu:firebrick")

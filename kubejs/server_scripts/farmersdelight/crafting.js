@@ -5,6 +5,77 @@
     GTT0.logModify("Farmers Delight");
     remove(event);
     add(event);
+
+    const found = [];
+
+    // Add the straw cutting recipies to the cutting machine, a natural upgrade
+    event.forEachRecipe({ type: "farmersdelight:cutting" }, (r) => {
+      const json = JSON.parse(r.json.toString());
+
+      // result is normally an array, but accept a single object too
+      const results = Array.isArray(json.result) ? json.result : [json.result];
+
+      if (!results.some((res) => res && res.item === "farmersdelight:straw"))
+        return;
+
+      const ing = json.ingredients[0];
+      const input = ing.tag ? "#" + ing.tag : ing.item;
+
+      const guaranteed = [];
+      const chanced = [];
+      results.forEach((res) => {
+        const stack = (res.count || 1) + "x " + res.item;
+        if (res.chance !== undefined && res.chance < 1) {
+          chanced.push({ item: stack, chance: Math.round(res.chance * 10000) });
+        } else {
+          guaranteed.push(stack);
+        }
+      });
+
+      found.push({
+        id: String(r.getId()),
+        input: input,
+        guaranteed: guaranteed,
+        chanced: chanced,
+      });
+    });
+
+    found.forEach((f) => {
+      const name = "gtt0/cutter/" + f.id.replace(/[^a-z0-9_]/g, "_");
+      const recipe = event.recipes.gtceu
+        .cutter(name)
+        .itemInputs(f.input)
+        .duration(40)
+        .EUt(5);
+      if (f.guaranteed.length > 0) recipe.itemOutputs(f.guaranteed);
+      f.chanced.forEach((c) => {
+        if (GTT0.DEBUG) {
+          GTT0.log(
+            "Farmers Delight",
+            "chanced " + c.item + " @ " + c.chance + "/10000",
+          );
+        }
+        recipe.chancedOutput(c.item, c.chance, 0);
+      });
+      if (GTT0.DEBUG) {
+        GTT0.log(
+          "Farmers Delight",
+          f.id +
+            " -> " +
+            f.input +
+            " (" +
+            f.guaranteed.length +
+            " fixed, " +
+            f.chanced.length +
+            " chanced)",
+        );
+      }
+    });
+
+    GTT0.log(
+      "Farmers Delight",
+      "added " + found.length + " straw cutter recipes",
+    );
   });
 
   function remove(event) {

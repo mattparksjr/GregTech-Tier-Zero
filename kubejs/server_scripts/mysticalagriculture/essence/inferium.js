@@ -158,7 +158,7 @@
 
     event.recipes.gtceu
       .chemical_bath("inferium_seeds")
-      .itemInputs("2x minecraft:wheat_seeds")
+      .itemInputs("2x mysticalagriculture:prosperity_seed_base")
       .inputFluids("mysticalagradditions:molten_inferium 1152")
       .itemOutputs("mysticalagriculture:inferium_seeds")
       .duration(300)
@@ -172,7 +172,7 @@
         "1x mysticalagriculture:inferium_pickaxe",
       )
       .itemOutputs("mysticalagradditions:inferium_paxel")
-      .duration(40)
+      .duration(240)
       .EUt(32);
 
     event.recipes.gtceu
