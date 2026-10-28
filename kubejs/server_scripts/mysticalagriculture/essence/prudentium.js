@@ -8,8 +8,6 @@
   });
 
   function remove(event) {
-    console.log("GTT0: Removing Mystical Agriculture recipes (Prudentium)");
-
     GTT0.removeByOutput(event, "Mystical Agriculture(Prudentium)", [
       "mysticalagriculture:prudentium_block",
       "mysticalagriculture:prudentium_farmland",
@@ -49,7 +47,7 @@
   }
 
   function add(event) {
-    console.log("GTT0: Adding Mystical Agriculture recipes (Prudentium)");
+    GTT0.log("Mystical Agriculture (Prudentium)", "Adding recipes");
 
     event.recipes.gtceu
       .compressor("prudentium_block")

@@ -8,8 +8,6 @@
   });
 
   function remove(event) {
-    console.log("GTT0: Removing Mystical Agriculture recipes");
-
     GTT0.removeByOutput(event, "Mystical Agriculture(Inferium)", [
       "mysticalagriculture:inferium_block",
       "mysticalagriculture:inferium_farmland",
@@ -50,7 +48,7 @@
   }
 
   function add(event) {
-    console.log("GTT0: Adding Mystical Agriculture recipes");
+    GTT0.log("Mystical Agriculture (Inferium)", "Adding recipes");
 
     event.recipes.gtceu
       .compressor("inferium_block")

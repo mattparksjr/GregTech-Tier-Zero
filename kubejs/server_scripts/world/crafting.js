@@ -2,7 +2,7 @@
   const GTT0 = global.GTT0;
 
   ServerEvents.recipes((event) => {
-    console.log("GTT0: Modifiying General World recipes");
+    GTT0.logModify("World");
     remove(event);
     add(event);
   });

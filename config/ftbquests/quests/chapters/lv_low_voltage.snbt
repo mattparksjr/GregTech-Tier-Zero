@@ -20,26 +20,26 @@
 		{
 			id: "7017817C89249E42"
 			linked_quest: "4ADB39C7032E2DC0"
-			x: 0.0d
-			y: 0.0d
+			x: -1.5d
+			y: -0.5d
 		}
 		{
 			id: "1B9347FAACAFF86D"
 			linked_quest: "7889D33188C2788D"
-			x: 0.0d
-			y: -3.5d
+			x: 3.0d
+			y: -2.0d
 		}
 		{
 			id: "6AE622BC64A15652"
 			linked_quest: "620972A605C95C64"
-			x: 4.5d
-			y: 3.0d
+			x: -2.5d
+			y: 4.0d
 		}
 		{
 			id: "10EF50C9F038E097"
 			linked_quest: "6BA7536D730F159C"
-			x: 0.0d
-			y: 6.0d
+			x: 4.5d
+			y: 4.5d
 		}
 	]
 	quests: [
@@ -52,23 +52,23 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 0.0d
+			y: 0.5d
 		}
 		{
-			dependencies: ["3100D8693E80D0ED"]
+			dependencies: ["38AF7F6ACC76800A"]
 			id: "36343A2284976FD5"
 			tasks: [{
 				id: "76AC749792D103BA"
 				item: "gtceu:lv_assembler"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 6.0d
+			x: 4.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
-				"4ADB39C7032E2DC0"
 				"16AD5762D2E67A43"
+				"59B8DF73DCB2628E"
 			]
 			dependency_requirement: "one_completed"
 			id: "3100D8693E80D0ED"
@@ -94,7 +94,7 @@
 				item: "gtceu:lv_centrifuge"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 2.0d
 			y: 4.0d
 		}
 		{
@@ -105,8 +105,8 @@
 				item: "gtceu:glue_bucket"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 4.0d
+			x: 1.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["3100D8693E80D0ED"]
@@ -139,30 +139,104 @@
 				item: { Count: 16, id: "gtceu:cupronickel_ingot" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.0d
+			x: 2.0d
+			y: -1.0d
 		}
 		{
-			dependencies: ["3100D8693E80D0ED"]
+			dependencies: ["4DFF0F10D4BFA313"]
 			id: "36BB30A427152CD6"
 			tasks: [{
 				id: "3B4F676D7051B3DD"
 				item: "gtceu:lv_extractor"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 0.5d
+			x: 1.5d
+			y: 6.5d
 		}
 		{
-			dependencies: ["3100D8693E80D0ED"]
+			dependencies: ["4DFF0F10D4BFA313"]
 			id: "549BA6DEF2F6C211"
 			tasks: [{
 				id: "3F4B5619E70ED70D"
 				item: "gtceu:lv_chemical_bath"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 3.0d
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3100D8693E80D0ED"]
+			id: "40BFC8CC1EB33578"
+			subtitle: "Let's get moving!"
+			tasks: [{
+				id: "158FC9BD3EF0CA00"
+				item: "gtceu:lv_conveyor_module"
+				type: "item"
+			}]
+			title: "Conveyerererer"
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4ADB39C7032E2DC0"]
+			id: "59B8DF73DCB2628E"
+			rewards: [{
+				count: 4
+				id: "788102038D73766A"
+				item: "gtceu:magnetic_iron_rod"
+				random_bonus: 3
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "3CE070FD1AB1C496"
+				item: { Count: 2, id: "gtceu:lv_electric_motor" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3100D8693E80D0ED"]
+			id: "4DFF0F10D4BFA313"
+			rewards: [
+				{
+					count: 4
+					id: "5A57177BD4316F25"
+					item: "gtceu:bronze_normal_fluid_pipe"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7DB318110470D3B3"
+					table_id: 4355201344825403736L
+					type: "choice"
+				}
+			]
+			subtitle: "Water beware!"
+			tasks: [{
+				count: 2L
+				id: "09F8F43E8859F86E"
+				item: "gtceu:lv_electric_pump"
+				type: "item"
+			}]
+			title: "A (real) pump"
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["40BFC8CC1EB33578"]
+			id: "38AF7F6ACC76800A"
+			subtitle: "Yes, you need two"
+			tasks: [{
+				count: 2L
+				id: "20329EA55506527E"
+				item: "gtceu:lv_robot_arm"
+				type: "item"
+			}]
+			title: "Robotics?"
+			x: 4.5d
+			y: 2.0d
 		}
 	]
 	subtitle: ["Finally the power is on"]

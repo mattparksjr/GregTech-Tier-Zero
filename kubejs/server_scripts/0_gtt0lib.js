@@ -74,8 +74,8 @@ global.GTT0 = {
   /**
    * Remove a batch of recipes by their exact recipe id
    * @param {*} event
-   * @param {string} mod
-   * @param {string[]} ids
+   * @param {String} mod
+   * @param {String[]} ids
    */
   removeById(event, mod, ids) {
     ids.forEach((id) => event.remove({ id: id }));
@@ -85,8 +85,8 @@ global.GTT0 = {
   /**
    * Mass remove recipe by type
    * @param {*} event
-   * @param {string} mod
-   * @param {string[]} ids
+   * @param {String} mod
+   * @param {String[]} ids
    */
   removeTypes(event, mod, ids) {
     ids.forEach((id) => event.remove({ type: id }));
@@ -94,14 +94,26 @@ global.GTT0 = {
   },
 
   /**
+   * Mass remove recipe by type with mod filter
+   * @param {*} event
+   * @param {String} mod
+   * @param {String} modid
+   * @param {String[]} ids
+   */
+  removeTypesMod(event, mod, modid, ids) {
+    ids.forEach((id) => event.remove({ mod: modid, type: id }));
+    this.log(mod, `Removed ${ids.length} recipe types for mod ${modid}`);
+  },
+
+  /**
    * A basic item to block compressor recipe
    * @param {*} event
-   * @param {string} id
-   * @param {string} block
-   * @param {string} item
-   * @param {integer} count not required
-   * @param {integer} eu not required
-   * @param {integer} duration not required
+   * @param {String} id
+   * @param {String} block
+   * @param {String} item
+   * @param {Integer} count not required
+   * @param {Integer} eu not required
+   * @param {Integer} duration not required
    */
   basicBlockCompressor(event, id, block, item, count, eu, duration) {
     const n = count === undefined ? 9 : count;
@@ -118,8 +130,8 @@ global.GTT0 = {
   /**
    * A batch of a basic compressor recipies
    * @param {*} event
-   * @param {string} mod
-   * @param {{id: string, block: string, item: string}[]} recipes
+   * @param {String} mod
+   * @param {{id: String, block: String, item: String}[]} recipes
    * @param {integer} count not required
    * @param {integer} eu not required
    * @param {integer} duration not required

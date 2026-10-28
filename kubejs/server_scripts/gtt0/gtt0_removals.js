@@ -63,6 +63,10 @@
     "storagedrawers:personal_key_cofh",
     "storagedrawers:conversion_upgrade",
     "storagedrawers:portability_upgrade",
+    "gtceu:lp_steam_miner",
+    "gtceu:hp_steam_miner",
+    "gtceu:lp_steam_rock_crusher",
+    "gtceu:hp_steam_rock_crusher",
   ];
 
   ServerEvents.recipes((event) => {

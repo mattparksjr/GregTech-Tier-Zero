@@ -7,7 +7,7 @@
     add(event);
 
     event.replaceInput(
-      { input: "sophisticatedstorage:basic_tier_upgrade" },
+      { id: "sophisticatedstorage:basic_tier_upgrade" },
       "minecraft:lever",
       Ingredient.of("minecraft:redstone_torch"),
     );

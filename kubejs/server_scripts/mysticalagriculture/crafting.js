@@ -8,7 +8,7 @@
   });
 
   function remove(event) {
-    console.log("GTT0: Removing Mystical Agriculture recipes");
+    GTT0.log("Mystical Agriculture", "Removing recipes");
 
     GTT0.removeByOutput(event, "Mystical Agriculture", [
       "mysticalagriculture:prosperity_shard",
@@ -21,7 +21,7 @@
   }
 
   function add(event) {
-    console.log("GTT0: Adding Mystical Agriculture recipes");
+    GTT0.log("Mystical Agriculture", "Adding recipes");
     event.recipes.gtceu
       .forge_hammer("danburite_to_prosperity_shards")
       .itemInputs("gtceu:danburite_gem")
